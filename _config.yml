@@ -12,11 +12,11 @@ author :
 
 
 # ref: https://github.com/mojombo/jekyll/wiki/Permalinks
-permalink: /:categories/:year/:month/:day/:title 
+permalink: /:title 
 
 
 # 패이지 포함/제외
-include: ['notes']
+include: ["notes"]
 exclude: [".rvmrc", ".rbenv-version", "README.md", "Rakefile", "changelog.md"]
 
 auto: true

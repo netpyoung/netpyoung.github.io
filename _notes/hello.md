@@ -1,9 +1,6 @@
 ---
-layout: post
+layout: page
 title: "hello"
-description: ""
-category: 
-tags: []
 ---
 
 hello world

@@ -16,7 +16,7 @@ permalink: /:title
 
 
 # 패이지 포함/제외
-include: ["notes"]
+include: ["_notes"]
 exclude: [".rvmrc", ".rbenv-version", "README.md", "Rakefile", "changelog.md"]
 
 auto: true

@@ -32,7 +32,7 @@ JB :
   ASSET_PATH : false
 
 
-  archive_path: /archive.html
+  archive_path: /posts.html
   categories_path : /categories.html
   tags_path : /tags.html
   atom_path : /atom.xml

@@ -1,6 +1,6 @@
 # ==================================================
 # jekyll - **0.3.0 : 2013.02.24**
-title : ³İÆò ³²ÁşÇÑ °ø°£.  
+title : ë„·í‰ ë‚¨ì§“í•œ ê³µê°„.  
 tagline: Site Tagline
 author :
   name : Eunpyoung Kim
@@ -15,7 +15,7 @@ author :
 permalink: /:categories/:year/:month/:day/:title 
 
 
-# ÆĞÀÌÁö Æ÷ÇÔ/Á¦¿Ü
+# íŒ¨ì´ì§€ í¬í•¨/ì œì™¸
 include: ['notes']
 exclude: [".rvmrc", ".rbenv-version", "README.md", "Rakefile", "changelog.md"]
 

@@ -1,8 +1,6 @@
 ---
 layout: post
-title: "hello"
-categories: ["hello"]
 ---
+{% include JB/setup %}
 
-{{ page.categories }}
 hello world

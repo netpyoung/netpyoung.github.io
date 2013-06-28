@@ -1,6 +1,72 @@
----
-theme :
-  name : twitter
----
-{% include JB/setup %}
-{% include themes/twitter/default.html %}
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>{{ page.title }}</title>
+
+		<link rel="stylesheet" href="{{ site.Paths.resources }}/jekyll/css/syntax.css">
+		<link rel="stylesheet" href="{{ site.Paths.resources }}/bootstrap/css/bootstrap.min.css" />
+		<link rel="stylesheet" href="{{ site.Paths.resources }}/bootstrap/css/bootstrap-responsive.min.css" />
+		<link rel="stylesheet" href="{{ site.Paths.resources }}/font-awesome/css/font-awesome.css" />
+	</head>
+
+	<body>
+
+		<div class="container">
+
+			<div class="site">
+			
+				<header class="row">
+					<div class="span12">
+
+					  <div class="navbar">
+						<div class="navbar-inner">
+						  <a href="{{ site.Paths.home }}" class="brand"><i class="icon-home"></i> {{ site.title }}</a>
+
+						  <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+							<span class="icon-bar"></span>
+							<span class="icon-bar"></span>
+							<span class="icon-bar"></span>
+						  </a>
+
+						  <div class="nav-collapse collapse">
+							<ul class="nav">
+							  <li><a href="{{ site.Paths.blog }}"><i class="icon-book"></i> blog</a></li>
+							  <li><a href="{{ site.Paths.external }}"><i class="icon-external-link-sign"></i> external</a></li>
+							  <li><a href="http://github.com/{{ site.author.github }}/"><i class="icon-github"></i> github</a></li>
+
+							  <li class="dropdown">
+								<a href="#" class="dropdown-toggle" data-toggle="dropdown">connect
+								  <b class="caret"></b>
+								</a>
+
+								<ul class="dropdown-menu">
+								  <li><a href="#"><i class="icon-facebook-sign"></i> facebook</a></li>
+								  <li class="divider"></li>
+								  <li><a href="#">contact</a></li>
+								</ul>
+							  </li>
+							</ul>
+						  </div>
+						</div>
+					  </div>
+					</div>
+				</header>
+				
+			</div> <!-- /site -->
+
+			<div class="contents">
+			{{ content }}
+			</div> <!-- contents -->
+
+			<div class="footer">
+
+			</div> <!-- footer  -->
+
+		</div> <!-- /container -->
+
+		<script src="http://code.jquery.com/jquery-latest.js"></script>
+		<script src="{{ site.Paths.resources }}/bootstrap/js/bootstrap.min.js"></script>
+	</body>
+</html>

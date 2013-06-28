@@ -1,54 +1,30 @@
-# ==================================================
-# jekyll - **0.3.0 : 2013.02.24**
-title : 넷평 남짓한 공간.  
-tagline: Site Tagline
+title: 넷평 남짓한 공간
+
 author :
   name : Eunpyoung Kim
-  email : netpyoung@gmail.com 
+  email : netpyoung@gmail.com
   github : netpyoung
   facebook : netpyoung
   feedburner : netpyoung
-# ==================================================
 
+include: ["blog", "external"]
+exclude: ["README.md"]
+
+Paths :
+  home: /
+  blog: /blog
+  external: /external
+  resources: /res
+  rss : /rss.xml
+  atom : /atom.xml
 
 # ref: https://github.com/mojombo/jekyll/wiki/Permalinks
-permalink: /:title 
+permalink: /blog/:title
 
+pygments: false
 
-# 패이지 포함/제외
-include: ["_notes"]
-exclude: [".rvmrc", ".rbenv-version", "README.md", "Rakefile", "changelog.md"]
+markdown: redcarpet
+#redcarpet:
+#  extensions: ["no_intra_emphasis", "fenced_code_blocks", "autolink", "tables", "with_toc_data"]
 
-auto: true
-pygments: true
-
-
-production_url : http://netpyoung.github.io
-
-
-JB :
-  version : 0.3.0
-  BASE_PATH : false
-  ASSET_PATH : false
-
-
-  archive_path: /posts.html
-  categories_path : /categories.html
-  tags_path : /tags.html
-  atom_path : /atom.xml
-  rss_path : /rss.xml
-
-
-  comments :
-    provider : facebook
-    disqus :
-      short_name : jekyllbootstrap
-    livefyre :
-      site_id : 123
-    intensedebate :
-      account : 123abc
-    facebook :
-      appid : 123
-      num_posts: 5
-      width: 580
-      colorscheme: light
+  

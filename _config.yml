@@ -7,7 +7,7 @@ author :
   facebook : netpyoung
   feedburner : netpyoung
 
-include: ["blog", "external"]
+include: ["/blog", "/external"]
 exclude: ["README.md"]
 
 Paths :

@@ -37,7 +37,7 @@ Just 2
 ```
 
  이제, 이 값에 함수를 적용하게 되면, __상태에 따라__ 다른 결과를 얻게 될 것입니다.
- 
+
  Functors, 이를 기반으로한 개념(idea) 중에는 Applicatives, Monads, Arrows 등등이 있습니다. `Maybe` 데이터 타입은 두가지 상태로 정의할 수 있습니다.
 
 ![context.png]
@@ -67,7 +67,7 @@ Prelude> (+3) (Just 2)
  ERR - No instance for (Num (Maybe a0))
 ```
 
- `fmap`은 길거리 출신이며, 상자에 대해서 빠삭합니다. `fmap`은 상자에 있는 값에 어떻게 함수를 적용해야 할지를 알고 있습니다. 예를 들어, `Just 2`에 `(+3)`를 적용시켜 봅시다. `fmap`을 이용해보면, 
+ `fmap`은 길거리 출신이며, 상자에 대해서 빠삭합니다. `fmap`은 상자에 있는 값에 어떻게 함수를 적용해야 할지를 알고 있습니다. 예를 들어, `Just 2`에 `(+3)`를 적용시켜 봅시다. `fmap`을 이용해보면,
 
 ```haskell
 > fmap (+3) (Just 2)
@@ -83,7 +83,7 @@ Just 5
 # Functor가 도대체 뭡니까?
 
  `Functor`는 [typeclass]입니다. 여기 정의가 나와있습니다.
- 
+
 ![functor_def.png]
 
  `Functor`는 fmap을 적용시키는 방법을 정의한 데이터 타입입니다. 여기, 어떻게 fmap이 동작하는지가 나와 있습니다.
@@ -100,13 +100,13 @@ Just 5
  `Maybe`역시 `Functor`이기에, `fmap`은 마법과도 같이 함수를 적용하였습니다. 다음으로, `Just`와 `Nothing`에 대해 `fmap`을 적용시키는 방법에 대해 나와있습니다.
 
 ```haskell
-instance Functor Maybe where  
+instance Functor Maybe where
     fmap func (Just val) = Just (func val)
-    fmap func Nothing = Nothing 
+    fmap func Nothing = Nothing
 ```
 
  여기, `fmap (+3) (Just 2)`이라고 쳤을때, 뒤에서 어떠한 일이 발생하는지가 나와있습니다.
- 
+
 ![fmap_just.png]
 
 
@@ -188,7 +188,7 @@ fmap (+3) (+1) :: (Functor ((->) b), Num b) => b -> b
  따라서, 함수 역시 Functor입니다.
 
 ```haskell
-instance Functor ((->) r) where  
+instance Functor ((->) r) where
     fmap f g = f . g
 ```
 
@@ -208,7 +208,7 @@ instance Functor ((->) r) where
 
 
  그럼 자세히 살펴보도록 하겠습니다. Applicatives는 바보가 아닙니다. Control.Applicative는 상자 속 값에, 상자 속 함수를 적용하는 법을 알도록 `<*>`를 정의했습니다.
- 
+
 ![applicative_just.png]
 
  즉, 다음과 같이 할 수 있습니다.
@@ -247,7 +247,7 @@ Just 8
 `Functor`을 옆으로 밀쳐내면서  `Applicative`이 말합니다.
 
  "어른은 여러 인자들을 다룰 수 있는 함수를 쓴단다."
-  
+
  "`<$>`와 `<*>`를 가지고, 상자에 들어있는 값들을, 상자를 열어 볼 수 없는 함수에 넘겨줘서, 속에 값이 들어있는 상자를 얻을 수 있다고! 하하하하!"
 
 ```haskell
@@ -274,7 +274,7 @@ Just 15
 2. 필요없으니 집어 치운다!
 
 Monads는 새로운 해법을 제시하였습니다.
- 
+
 Functors는 상자에 있는 값에 함수를 적용할 수 있습니다.
 
 ![fmap.png]
@@ -284,7 +284,7 @@ Applicatives는 상자에 있는 값에, 상자에 있는 함수를 적용 할 �
 ![applicative.png]
 
  Monads는 상자에 있는 값에 함수를 적용시켜 __값이 들어있는 상자를 반환__할 수 있습니다.
- 
+
  Monads는 이러한 일을 처리하는 ("bind"라 불리는) `>>=`라는 함수를 가지고 있습니다.
 
  예제를 살표봅시다. 이제까지 봐왔던 `Maybe`는 모나드입니다.
@@ -313,7 +313,7 @@ half x = if even x
 ![plunger.jpg]
 
  어떻게 동작하는지 확인해 봅시다.
- 
+
 ```haskell
 > Just 3 >>= half
 Nothing
@@ -326,8 +326,8 @@ Nothing
  내부에서 어떤일이 벌어진 걸까요? `Monad`는 또 다른 [typeclass]입니다. 여기, 정의 중 일부가 나와있습니다.
 
 ```haskell
-class Monad m where    
-    (>>=) :: m a -> (a -> m b) -> m b  
+class Monad m where
+    (>>=) :: m a -> (a -> m b) -> m b
 ```
 
 `>>=`는,
@@ -380,7 +380,7 @@ getLine :: IO String
 ```
 
  `readFile`는 문자열(파일명)을 받아, 파일에 있는 내용을 반환합니다.
- 
+
 ![readFile.png]
 
 ```haskell
@@ -466,15 +466,15 @@ foo = do
  [putStrLn.png]: ./img/putStrLn.png
  [monad_io.png]: ./img/monad_io.png
  [recap.png]: ./img/recap.png
- 
 
- [bill.png]: ./img/bill.png 
+
+ [bill.png]: ./img/bill.png
  [TaTdV.gif]: ./img/TaTdV.gif
  [plunger.jpg]: ./img/plunger.jpg
 
 
  [typeclass]: http://learnyouahaskell.com/types-and-typeclasses#typeclasses-101
  [function composition]:  http://en.wikipedia.org/wiki/Function_composition
- 
+
  [three useful monads]: http://adit.io/posts/2013-06-10-three-useful-monads.html
  [LYAH’s section on Monads]: http://learnyouahaskell.com/a-fistful-of-monads

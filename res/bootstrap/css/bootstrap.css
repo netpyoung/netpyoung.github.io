@@ -975,7 +975,7 @@ code,
 pre {
   padding: 0 3px 2px;
   font-family: Menlo, Monaco, Consolas, "Courier New", monospace;
-  font-size: 12px;
+  font-size: 13px;
   color: #3a3f44;
   -webkit-border-radius: 3px;
      -moz-border-radius: 3px;
@@ -1014,7 +1014,8 @@ pre.prettyprint {
 
 pre code {
   padding: 0;
-  color: inherit;
+  color: #cc6666;
+  /* color: inherit; */
   white-space: pre;
   white-space: pre-wrap;
   background-color: transparent;

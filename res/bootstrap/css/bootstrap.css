@@ -222,7 +222,9 @@ textarea {
 }
 
 body {
-  margin: 0;
+  margin: 2%;
+  margin-left: 7%;
+  margin-right: 7%;
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-size: 14px;
   line-height: 21px;
@@ -4363,7 +4365,6 @@ input[type="submit"].btn.btn-mini {
 }
 
 .navbar {
-  *position: relative;
   *z-index: 2;
   margin-bottom: 21px;
   overflow: visible;
@@ -4371,8 +4372,12 @@ input[type="submit"].btn.btn-mini {
 
 .navbar-inner {
   min-height: 40px;
+/*
   padding-right: 20px;
   padding-left: 20px;
+*/
+  text-align: center;
+
   background-color: #32373c;
   background-image: -moz-linear-gradient(top, #3a3f44, #272b30);
   background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#3a3f44), to(#272b30));

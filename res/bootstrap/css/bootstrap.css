@@ -982,7 +982,7 @@ pre {
 
 code {
   padding: 2px 4px;
-  color: #d14;
+  color: #cc6666;
   white-space: nowrap;
   background-color: #f7f7f9;
   border: 1px solid #e1e1e8;
@@ -6178,7 +6178,7 @@ h6 {
 code,
 pre {
   text-shadow: none;
-  background-color: #F7F7F7;
+  background-color: #1d1f21;
   border: 1px solid #1c1e22;
 }
 

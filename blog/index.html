@@ -4,7 +4,11 @@ title: Your New Jekyll Site
 ---
 
 <div id="home">
-  <h1>Blog Posts</h1>
+  <h1>
+    Blog Posts
+    <!-- Feedly -->
+    <a href='http://cloud.feedly.com/#subscription%2Ffeed%2Fhttp%3A%2F%2Ffeeds.feedburner.com%2Fnetpyoung'  target='blank'><img id='feedlyFollow' src='http://s3.feedly.com/img/follows/feedly-follow-logo-green_2x.png' alt='follow us in feedly' width='28' height='28'></a>
+  </h1>
   <ul class="posts">
     {% for post in site.posts %}
       <li><span>{{ post.date | date_to_string }}</span> &raquo; <a href="{{ post.url }}">{{ post.title }}</a></li>

@@ -136,7 +136,7 @@ end
 
 하지만, Haskell은 다음과 같이 할 수 있습니다.
 
-```hakskell
+```haskell
 fmap (getPostTitle) (findPost 1)
 ```
 

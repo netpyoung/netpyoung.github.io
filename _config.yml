@@ -22,7 +22,7 @@ Paths :
 # ref: https://github.com/mojombo/jekyll/wiki/Permalinks
 permalink: /blog/:title
 
-pygments: false
+pygments: true
 
 markdown: redcarpet
 #redcarpet:

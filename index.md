@@ -24,12 +24,12 @@ title: "netpyoung.github.io"
 * 내가 만든 게임서비스
 
 ## 존경하는 사람:
-* [Michal Marcinkowski](mm.soldat.pl)
+* [Michal Marcinkowski](http://mm.soldat.pl)
 
 ## 키워드:
 * netpyoung
 * 1986.09.04
 * lisp
-* emacs
+* [emacs](https://github.com/netpyoung/netpyoung.emacs.d)
 * [세벌식](https://ko.wikipedia.org/wiki/%EC%84%B8%EB%B2%8C%EC%8B%9D_%EC%9E%90%ED%8C%90)
 * [Arch linux](https://wiki.archlinux.org/index.php/Arch_Linux)

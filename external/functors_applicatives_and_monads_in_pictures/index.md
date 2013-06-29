@@ -6,7 +6,7 @@ title: "Functors, Applicatives, And Monads In Pictures"
 Functors, Applicatives, And Monads In Pictures
 =======================================
 
-원문 : http://adit.io/posts/2013-04-17-functors,_applicatives,_and_monads_in_pictures.html
+[original site link](http://adit.io/posts/2013-04-17-functors,_applicatives,_and_monads_in_pictures.html)
 
  여기, 단순한 값(value)이 있습니다.
 

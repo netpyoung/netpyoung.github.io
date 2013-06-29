@@ -10,7 +10,3 @@ title: "netpyoung.github.io"
  - elisp를 이용, lexical scoping과 dynamic scoping에 대해 다룸.
 * [functors, applicatives and monads in pictures](functors_applicatives_and_monads_in_pictures/)
  - 하스켈을 이용, 그림과 함께 모나드 개념에 대해 설명한다.
-
-
-
-## haha

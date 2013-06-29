@@ -25,13 +25,13 @@ Emacs Lisp에서의 lexcial scoping과 dynamic scoping
 
 예를들어, 현재 init 파일의 첫줄은 다음과 같습니다.
 
-```lisp
+```cl
 ;; -*- coding: utf-8 -*-
 ```
 
 그리고, 다음과 같이 바꾸겠습니다.
 
-```lisp
+```cl
 ;; -*- coding: utf-8; lexical-binding: t -*-
 ```
 
@@ -39,7 +39,7 @@ Emacs Lisp에서의 lexcial scoping과 dynamic scoping
 
 **lexcial scoping**이 무엇인지 확인해보기 위해, 우선 빈 el파일을 만들어서 (`C-x C-f lexical-scratch.el RET`) 다음 라인을 추가해 봅시다:
 
-```lisp
+```cl
 ;; -*- lexical-binding: t -*-
 ```
 
@@ -47,7 +47,7 @@ Emacs Lisp에서의 lexcial scoping과 dynamic scoping
 
 **dynamic scoping**과 **lexical scoping**은 무엇일까요? 간단한 예제 파일을 살펴보도록 하겠습니다.
 
-```lisp
+```cl
 (setq a 17)
 (defun my-print-a ()
   (print a))
@@ -66,7 +66,7 @@ Emacs Lisp에서의 lexcial scoping과 dynamic scoping
 
 동일한 코드를 Javascript로 옮겨봤습니다.
 
-```lisp
+```cl
 var a;
 a = 17;
 function myPrintA() {
@@ -83,7 +83,7 @@ a = 1717;
 
 여러분께서 Emacs 24를 사용하신다면, 다음 코드를 scratch버퍼에서 돌림으로써 `1717`을 출력하는 것을 확인해 볼 수 있습니다.
 
-```lisp
+```cl
 (eval
  '(progn
     (setq a 17)
@@ -99,7 +99,7 @@ Emacs 24에서의 `eval`함수는 두번째 인자(optional)를 받습니다. �
 
 **Lexical scoping**은 **lecical closures**를 가능케 합니다. 그렇다면 **lexcial closure**는 무엇일까요? 다음 코드를 살펴보도록 하겠습니다.
 
-```lisp
+```cl
 (setq a 0)
 (let ((a 17))
   (defun my-print-a ()
@@ -122,7 +122,7 @@ Emacs 24에서의 `eval`함수는 두번째 인자(optional)를 받습니다. �
 
 자, JavaScript로 된 코드를 살펴봅시다:
 
-```lisp
+```cl
 var a, myPrintA;
 a = 0;
 (function () {
@@ -146,7 +146,7 @@ Emacs 24에서, **lexically scoped** (interpreted) 함수들은 `(closure ENV AR
 
 다음 코드는 **dynamic scoping**에서 `(lambda (x y) (+ x y))`을 두번 출력하는 코드입니다.
 
-```lisp
+```cl
 (defun my-sum (x y)
   (+ x y))
 ;; print the contents of function cell of my-sum
@@ -161,7 +161,7 @@ Emacs 24에서, **lexically scoped** (interpreted) 함수들은 `(closure ENV AR
 
  **dynamic scoping**에서 `my-func1`란 함수를 가졌다고 가정해봅시다. 이 함수는 `my-func2`라는 함수를 호출하고, `my-func2`는 `my-func3`을 `my-func3`은 `a`를 출력합니다. 그리고 `my-func2`는 `my-func3`을 호출할때 내부적으로 `a`를 `2`로 설정한다고 해봅시다. **dynamic scoping** 에서 `my-func1`를 호출하면 어떤일이 발생할까요? 이는 `2`를 출력합니다. `a`가 `1`인 환경에서 `my-func1`를 호출하면 어떨까요? 여전히 `1`대신 `2`를 출력합니다. 다음 코드를 돌려봅시다.
 
-```lisp
+```cl
 (defun my-func1 ()
   (my-func2))
 (defun my-func2 ()
@@ -177,7 +177,7 @@ Emacs 24에서, **lexically scoped** (interpreted) 함수들은 `(closure ENV AR
 
 **dynamic scoping** 에서 골치아프지만 여러분이 꼭 알아야만 할 것이 있습니다. 함수가 함수를 인자로 취하도록 만들길 원한다고 가정해 봅시다. 간단한 예제 함수가 준비되어있습니다.
 
-```lisp
+```cl
 (defun my-call (f n)
   (funcall f n))
 
@@ -191,7 +191,7 @@ Emacs 24에서, **lexically scoped** (interpreted) 함수들은 `(closure ENV AR
 
 지금까진 놀랄만한게 없습니다. 다음으로 넘어가 보도록 하겠습니다.
 
-```lisp
+```cl
 (dolist (n (list 1 2 3))
   (print
    (my-call (lambda (x) (* n x)) 5))) ; prints 25 25 25 in dynamic scoping.
@@ -203,7 +203,7 @@ Emacs 24에서, **lexically scoped** (interpreted) 함수들은 `(closure ENV AR
 
 하나 더 발견해봅시다. `f`와 `g` 함수를 취해, `g`를 먼저 적용하고 `f`를 적용시킨 것과 동일한 합성함수를 반환하는 함수를 정의해 봅시다.
 
-```lisp
+```cl
 ;; in dynamic scoping
 (defun my-compose (f g)
   (lambda (x)
@@ -220,7 +220,7 @@ Emacs 24에서, **lexically scoped** (interpreted) 함수들은 `(closure ENV AR
 
 Emacs 24에서, `defvar`는 special variables라 불리는 것을 생성합니다. Special variables는, **lexically scoped** 함수 안이라 할지라도 dynamically하게 bind되는, **dynamically scoped** 변수(variables)입니다. `case-fold-search`는 special variable의 한 예입니다. 대소문자를 구분하는 함수 `search-forward`는 special variable `case-fold-search`의 값에 영향을 받습니다. `(search-forward "hello")`는 `case-fold-search`가 `t`일때 `HELLO`를 찾지만, `case-fold-search`가 `nil`일때는 그렇지 않습니다. **lexically scoped el** 파일에서 대소문자를 결정하기 위해 `case-fold-search`를 이용하되 추가 옵션을 지닌, `my-search-forward` 함수를 정의한다고 가정해봅시다. `case-fold-search`가 special variable이기에, 다음을 호출하면
 
-```lisp
+```cl
 (let ((case-fold-search t))
   (my-search-forward "hello"))
 ```
@@ -229,7 +229,7 @@ Emacs 24에서, `defvar`는 special variables라 불리는 것을 생성합니�
 
 variable이 special인지 확인하기 위해, 함수 `special-variable-p`를 이용할 수 있습니다
 
-```lisp
+```cl
 (special-variable-p 'print-level) ; => t
 (special-variable-p 'print-length) ; => t
 (special-variable-p 'debug-on-error) ; => t
@@ -248,7 +248,7 @@ Special variables는 유용할 수 있습니다. [reddit의 gsg가 말할길][re
 
 다음 코드를 **lexical scoping** 에서 돌려봅시다.
 
-```lisp
+```cl
 (let (c)
   (defun my-get-c ()
     c)
@@ -260,7 +260,7 @@ Special variables는 유용할 수 있습니다. [reddit의 gsg가 말할길][re
 
 세개의 함수를 이용하는 다음 코드를 돌려봅시다. **lexical scoping** 에서 돌린거나 그렇지 않은 곳에서 돌린거나 결과는 같은데, **dynamically scoped** 환경에서 호출된 **lexically scoped** 함수들은 여전히 **lexically scoped** 함수이기 때문입니다.
 
-```lisp
+```cl
 (my-set-c 10)
 (my-add-to-c 5)
 (print (my-get-c)) ; prints 15.
@@ -275,7 +275,7 @@ Special variables는 유용할 수 있습니다. [reddit의 gsg가 말할길][re
 
 이제 **lexical closure** 의 이용하여 C에서의 static 변수가 하는 일을 해봅시다.
 
-```lisp
+```cl
 (require 'cl) ; for incf
 (eval
  '(let ((i 0))
@@ -294,7 +294,7 @@ Special variables는 유용할 수 있습니다. [reddit의 gsg가 말할길][re
 
 위 코드가 어떻게 동작하는지 어려워하시는 분을 위해, 여기 자세한 예제코드가 있습니다.
 
-```lisp
+```cl
 (eval
  '(let ((i1 0))
     (defun my-test ()
@@ -313,7 +313,7 @@ Special variables는 유용할 수 있습니다. [reddit의 gsg가 말할길][re
 
 이제 **lexical closure** 인 함수를 반환하는 함수를 테스트 해봅시다.
 
-```lisp
+```cl
 (eval
  '(defun my-get-counter (start step)
     (let ((count start))
@@ -350,7 +350,7 @@ Special variables는 유용할 수 있습니다. [reddit의 gsg가 말할길][re
 
 여러분들은 아마 `my-get-even-numbers`, `my-get-odd-numbers`, `my-get-even-numbers-2`가 `하나의 count`를 공유하는 대신 왜 `자기만의 count`를 가지고 있는지 혼란스러워 하실지도 모르겠습니다. 이들은 실제로 `자신만의 count`를 가지고 있습니다. 혼란스러우신 여러분을 위해, 다음 코드를 **lexical scoping** 에서 돌린다면 어떻게될까요?
 
-```lisp
+```cl
 (let ((count 0))
   (setq my-count
         (lambda ()
@@ -371,7 +371,7 @@ Special variables는 유용할 수 있습니다. [reddit의 gsg가 말할길][re
 
 간단한 예제로 해봅시다.
 
-```lisp
+```cl
 (eval
  '(defun my-bah ())
  t)
@@ -391,7 +391,7 @@ Special variables는 유용할 수 있습니다. [reddit의 gsg가 말할길][re
 
  다음 코드는 **lexically scoped**환경에선 `t`를, 그렇지 않으면 `nil`을 반환합니다. [여기서 lexical-binding 값을 확인하는 것은 좋지 않은 생각입니다][yoo2080's how-to-check-dynamically].
 
-```lisp
+```cl
 (let ((x nil)
       (f (let ((x t)) (lambda () x))))
   (funcall f))
@@ -399,7 +399,7 @@ Special variables는 유용할 수 있습니다. [reddit의 gsg가 말할길][re
 
 Alice는 the my-bah & my-bah-2 코드를 수정했습니다.
 
-```lisp
+```cl
 (eval
  '(defun my-bah ()
     (let ((x nil)
@@ -414,14 +414,14 @@ Alice는 the my-bah & my-bah-2 코드를 수정했습니다.
 
 `my-bah-2`가 **lexically scoped** 함수인지 확인해 봅시다.
 
-```lisp
+```cl
 (my-bah) ; => t
 (my-bah-2) ; => t
 ```
 
 그럼, `Bob`이 생각한게 맞은건가요? 이와 유사한, defun을 사용하지 않은 코드로 테스트해봅시다.
 
-```lisp
+```cl
 (eval
  '(setq my-nah
         (lambda ()
@@ -446,7 +446,7 @@ Alice는 the my-bah & my-bah-2 코드를 수정했습니다.
 
 `defun my-bah` 예도 유사합니다. symbol `my-bah`의 함수 공간(cell)은 **lexically scoped** 함수를 담고있습니다. 다음 테스트를 살펴보겠습니다.
 
-```lisp
+```cl
 (print my-nah-2)
 (print (symbol-function 'my-bah-2))
 ```
@@ -455,7 +455,7 @@ Alice는 the my-bah & my-bah-2 코드를 수정했습니다.
 
 이제 `my-nah-2` & `my-bah-2` 예제를 이해했을 것입니다. `my-get-counter`를 다시 살펴보도록 하겠습니다. `(defun my-get-counter ...)`가 **lexically scoped el** 파일에 있는 동안, `my-get-counter`가 반환하는 함수들은 **lexically scoped** 입니다. 확인해봅시다.
 
-```lisp
+```cl
 (eval
  '(progn
     (setq my-get-even-numbers (my-get-counter 0 2))
@@ -467,7 +467,7 @@ Alice는 the my-bah & my-bah-2 코드를 수정했습니다.
 
 이는 `0 2 4`를 출력합니다. 여기서 `Alice`가 다시 "`my-get-even-numbers` 함수는 **dynamically scoped** 환경에서 정의됬어. 그런대 왜 **lexically scoped** 함수처럼 행동하는 거야?" 라고 의문을 표할지도 모릅니다. 변수 `my-get-even-numbers`는 `my-nah-2`와 마찬가지로 **lexically scoped** 함수를 지니고 있습니다. 이해가 어려우신 분들을 위해, 우선 `my-get-sum`을 살펴보도록 하겠습니다.
 
-```lisp
+```cl
 (defun my-get-sum (x y)
   (+ x y))
 ```
@@ -478,7 +478,7 @@ Alice는 the my-bah & my-bah-2 코드를 수정했습니다.
 
 그건 그렇고, 어째서인지 무심코 `lambda` form의 평가를 막아버린다면, **lexically scoped** 함수는 **dynamically scoped** 함수를 생성하고 반환할 수 있습니다.
 
-```lisp
+```cl
 (eval
  '(defun my-return-dynamically-scoped-function ()
     (list 'lambda '() 'a)
@@ -496,7 +496,7 @@ Alice는 the my-bah & my-bah-2 코드를 수정했습니다.
 
 이제 `my-call` 예를 다시 살펴보도록 하겠습니다.
 
-```lisp
+```cl
 (eval
  '(defun my-call (f n)
     (funcall f n))
@@ -513,7 +513,7 @@ Alice는 the my-bah & my-bah-2 코드를 수정했습니다.
 
 `mapcar*` 함수는 함수를 인자로 받고, **dynamically scoped el** 파일에서 정의되었다는 점에서 `my-call`와 비슷합니다. 다음 **dynamic scoping** 예제는 [StackOverflow 답변]에서 나온 것입니다.
 
-```lisp
+```cl
 (let ((cl-x 10))
   (mapcar* (lambda (elt) (* cl-x elt)) '(1 2 3)))
 ```

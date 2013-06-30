@@ -23,6 +23,13 @@ title: "netpyoung.github.io"
 * 내가 만든 홈페이지
 * 내가 만든 게임서비스
 
+# 중요:
+* 너의 꿈을 무시하지 말라.
+* 일을 너무 많이 하지 말라.
+* 너의 생각을 말해라.
+* 우정을 지켜라.
+* 행복해져라.
+
 ## 존경하는 사람:
 * [Michal Marcinkowski](http://mm.soldat.pl)
 

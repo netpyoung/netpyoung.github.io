@@ -5,6 +5,13 @@
 * 디자인에 영 꽝이여서 bootstrap을 이용하기로 결정. 어두운걸 좋아하니 bootswatch에서, slate 테마를 받음.
 * font awsome이용해서 아이콘 삽입..
 * syntax highlight는 tomorrow-night 테마를 이용하기로 결정. :) 만족스럽다.
+* 참고 사이트:
+ - http://spoqa.github.io/
+ - http://dogfeet.github.io/
+
+# TODO
+* search 기능
+* comment 기능
 
 # jekyll
 * 홈페이지:  http://jekyllrb.com/

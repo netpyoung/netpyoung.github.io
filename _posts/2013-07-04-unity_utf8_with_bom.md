@@ -46,7 +46,7 @@ class AssetPostprocessUTF8Encode (AssetPostprocessor):
 	static def checkAndWriteBOM(fpath as string) :
 		# check: is source file?
 		ext = Path.GetExtension(fpath)
-		if (['.cs', '.js', '.boo']).Contains(ext) :
+		unless (['.cs', '.js', '.boo']).Contains(ext) :
 			return;
 		
 		# check: is with bom_utf8?

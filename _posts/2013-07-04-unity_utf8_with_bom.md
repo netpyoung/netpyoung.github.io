@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: post
 title: 'Unity UTF8 with BOM'
 
 ---

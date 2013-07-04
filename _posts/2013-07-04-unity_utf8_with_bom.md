@@ -20,14 +20,20 @@ tip) 꼭 한글 주석 달고 마침표로 끝을 알려주자.
 ## 해결책은?
 * Unity에는 AssetPostprocessor란 클래스가 있고, OnPostprocessAllAssets란 메소드가 있는데, 이를 이용하면 파일 생성시 마다 BOM을 추가시켜줄 수 있다.
 
+# inspired
+* http://debuglog.tumblr.com/post/26550984743/utf-8
+ - https://github.com/sharkattack51/Unity-EditorScript/blob/master/AssetPostprocessUTF8Encode.cs
+
 ## example source
+
+SimpleUtf8BOM.boo
 
 ```boo
 import UnityEngine
 
 import System.IO
 
-class AssetPostprocessUTF8Encode (AssetPostprocessor): 
+class SimpleUtf8BOM (AssetPostprocessor): 
  
 	static def OnPostprocessAllAssets(
 		imported_assets        as (string),

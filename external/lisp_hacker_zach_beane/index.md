@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Lisp Hackers: Zach Beane
+title: "Lisp Hackers: Zach Beane"
 
 ---
 

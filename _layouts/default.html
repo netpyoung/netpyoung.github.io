@@ -6,27 +6,51 @@
     <title>{{ page.title }}</title>
 
     <link rel="stylesheet" href="{{ site.Paths.resources }}/bootstrap/css/bootstrap.min.css" />
-
     <link rel="stylesheet" href="{{ site.Paths.resources }}/font-awesome/css/font-awesome.css" />
     <link rel="stylesheet" href="{{ site.Paths.resources }}/pygments/css/github.css">
 
-    <!--
     <style type="text/css">
+     @import url(http://fonts.googleapis.com/css?family=Droid+Sans+Mono);
+     @import url(http://fonts.googleapis.com/earlyaccess/nanumgothiccoding.css);
+
+     html, body {
+       height: 100%;
+     }
+
+     body {
+       background-color: #1D1F21;
+     }
+
      .container {
-       margin: 0 auto;
-       max-width: 1000px;
+       font-family: 'Droid Sans Mono', 'Nanum Gothic Coding';
+       min-height: 100%;
+       max-width: 850px;
+       background-color: #FFFFFF;
      }
-     p {
-       padding-bottom: 10px;
+
+     img {
+       max-width: 100%;
      }
+    </style>
+
+    <!--
+    
+    <style type="text/css">
+    .container {
+    margin: 0 auto;v
+    max-width: 1000px;
+    }
+    p {
+    padding-bottom: 10px;
+    }
     </style>
     -->
   </head>
 
   <body>
-    <div class="container">
 
-      <div class="navbar navbar-inversne" role="navigation">
+    <div class="container">
+      <div class="navbar navbar-default">
 
         <div class="navbar-header">
           <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
@@ -35,7 +59,7 @@
             <span class="icon-bar"></span>
           </button>
           <a href="{{ site.Paths.home }}" class="navbar-brand"><i class="icon-home"></i> {{ site.title }}</a>
-        </div>
+        </div><!-- /.navbar-header -->
 
         <div class="collapse navbar-collapse">
           <ul class="nav navbar-nav">
@@ -70,19 +94,20 @@
                 <li class="divider"></li>
               </ul>
             </li>
-          </ul>
-
+          </ul><!-- /.navbar-right -->
         </div><!-- /.nav-collapse -->
       </div><!-- /.navbar -->
 
-      <div class="contents">
+      
+
         {{ content }}
-      </div> <!-- /.contents -->
+      <div class="contents">
+      </div><!-- /.contents -->
 
       <div class="footer">
-      </div> <!-- /.footer  -->
+      </div><!-- /.footer  -->
 
-    </div> <!-- /.container -->
+    </div><!-- /.container -->
 
     <script src="http://code.jquery.com/jquery-latest.js"></script>
     <script src="{{ site.Paths.resources }}/bootstrap/js/bootstrap.min.js"></script>

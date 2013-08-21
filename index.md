@@ -3,8 +3,11 @@ layout: default
 title: "netpyoung.github.io"
 ---
 
-# 저에 관하여
----------------
+<div class="jumbotron">
+    <h1>(저에 관하여)</h1>
+</div>
+
+----------
 
 `불꽃`
 

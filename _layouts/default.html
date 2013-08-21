@@ -24,27 +24,15 @@
      .container {
        font-family: 'Droid Sans Mono', 'Nanum Gothic Coding';
        min-height: 100%;
-       max-width: 850px;
+       max-width: 950px;
        background-color: #FFFFFF;
      }
 
      img {
+       min-height: 100%;
        max-width: 100%;
      }
     </style>
-
-    <!--
-    
-    <style type="text/css">
-    .container {
-    margin: 0 auto;v
-    max-width: 1000px;
-    }
-    p {
-    padding-bottom: 10px;
-    }
-    </style>
-    -->
   </head>
 
   <body>
@@ -94,14 +82,13 @@
                 <li class="divider"></li>
               </ul>
             </li>
+
           </ul><!-- /.navbar-right -->
         </div><!-- /.nav-collapse -->
       </div><!-- /.navbar -->
 
-      
-
-        {{ content }}
       <div class="contents">
+        {{ content }}
       </div><!-- /.contents -->
 
       <div class="footer">

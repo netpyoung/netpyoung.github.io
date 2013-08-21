@@ -6,6 +6,11 @@ title: "Lenses In Pictures"
 Lenses In Pictures
 =======================================
 
+* egonSchiele
+ - [blog](http://adit.io/index.html)
+ - [twitter](https://twitter.com/_egonschiele)
+ - Haskell, Ruby에 관심이 많으며, 그림에도 소질이 있어 보인다.
+
 [original site link](http://adit.io/posts/2013-07-22-lenses-in-pictures.html)
 
 

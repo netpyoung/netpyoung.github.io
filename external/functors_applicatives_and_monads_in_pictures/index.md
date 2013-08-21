@@ -6,6 +6,11 @@ title: "Functors, Applicatives, And Monads In Pictures"
 Functors, Applicatives, And Monads In Pictures
 =======================================
 
+* egonSchiele
+ - [blog](http://adit.io/index.html)
+ - [twitter](https://twitter.com/_egonschiele)
+ - Haskell, Ruby에 관심이 많으며, 그림에도 소질이 있어 보인다.
+ 
 [original site link](http://adit.io/posts/2013-04-17-functors,_applicatives,_and_monads_in_pictures.html)
 
  여기, 단순한 값(value)이 있습니다.

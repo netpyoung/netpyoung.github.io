@@ -5,90 +5,84 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>{{ page.title }}</title>
 
-    <link rel="stylesheet" href="{{ site.Paths.resources }}/bootstrap/css/bootstrap.css" />
-    <link rel="stylesheet" href="{{ site.Paths.resources }}/bootstrap/css/bootstrap-responsive.min.css" />
-    <link rel="stylesheet" href="{{ site.Paths.resources }}/jekyll/css/syntax.css">
-    <link rel="stylesheet" href="{{ site.Paths.resources }}/font-awesome/css/font-awesome.css" />
+    <link rel="stylesheet" href="{{ site.Paths.resources }}/bootstrap/css/bootstrap.min.css" />
 
+    <link rel="stylesheet" href="{{ site.Paths.resources }}/font-awesome/css/font-awesome.css" />
+    <link rel="stylesheet" href="{{ site.Paths.resources }}/pygments/css/github.css">
+
+    <!--
     <style type="text/css">
-    .container {
-      margin: 0 auto;
-      max-width: 1000px;
-    }
-    p {
-      padding-bottom: 10px;
-    }
+     .container {
+       margin: 0 auto;
+       max-width: 1000px;
+     }
+     p {
+       padding-bottom: 10px;
+     }
     </style>
+    -->
   </head>
 
   <body>
-
     <div class="container">
 
-      <div class="site">
+      <div class="navbar navbar-inversne" role="navigation">
 
-        <header class="row">
-          <div class="navbar">
-            <div class="navbar-inner">
-              <a href="{{ site.Paths.home }}" class="brand"><i class="icon-home"></i> {{ site.title }}</a>
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a href="{{ site.Paths.home }}" class="navbar-brand"><i class="icon-home"></i> {{ site.title }}</a>
+        </div>
 
-              <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-              </a>
-
-              <div class="nav-collapse collapse">
-                <ul class="nav">
+        <div class="collapse navbar-collapse">
+          <ul class="nav navbar-nav">
                   {% if page.url contains '/blog/' %}
-                  <li class='active'><a href="{{ site.Paths.blog }}"><i class="icon-book"></i> blog</a></li>
+            <li class='active'><a href="{{ site.Paths.blog }}"><i class="icon-book"></i> blog</a></li>
                   {% else %}
-                  <li><a href="{{ site.Paths.blog }}"><i class="icon-book"></i> blog</a></li>
+            <li><a href="{{ site.Paths.blog }}"><i class="icon-book"></i> blog</a></li>
                   {% endif %}
 
                   {% if page.url contains '/internal/' %}
-                  <li class='active'><a href="{{ site.Paths.internal }}"><i class="icon-edit"></i> internal</a></li>
+            <li class='active'><a href="{{ site.Paths.internal }}"><i class="icon-edit"></i> internal</a></li>
                   {% else %}
-                  <li><a href="{{ site.Paths.internal }}"><i class="icon-edit"></i> internal</a></li>
+            <li><a href="{{ site.Paths.internal }}"><i class="icon-edit"></i> internal</a></li>
                   {% endif %}
 
                   {% if page.url contains '/external/' %}
-                  <li class='active'><a href="{{ site.Paths.external }}"><i class="icon-external-link"></i> external</a></li>
+            <li class='active'><a href="{{ site.Paths.external }}"><i class="icon-external-link"></i> external</a></li>
                   {% else %}
-                  <li><a href="{{ site.Paths.external }}"><i class="icon-external-link"></i> external</a></li>
+            <li><a href="{{ site.Paths.external }}"><i class="icon-external-link"></i> external</a></li>
                   {% endif %}
 
-                  <li><a href="http://github.com/{{ site.author.github }}/"><i class="icon-github"></i> github</a></li>
+            <li><a href="http://github.com/{{ site.author.github }}/"><i class="icon-github"></i> github</a></li>
+          </ul>
 
+          <ul class="nav navbar-nav navbar-right">
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown">connect
+                <b class="caret"></b>
+              </a>
+              <ul class="dropdown-menu">
+                <li><a href="https://www.facebook.com/{{ site.author.facebook }}"><i class="icon-facebook-sign"></i> facebook</a></li>
+                <li class="divider"></li>
+              </ul>
+            </li>
+          </ul>
 
-                  <li class="dropdown">
-                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">connect
-                      <b class="caret"></b>
-                    </a>
-
-                    <ul class="dropdown-menu">
-                      <li><a href="https://www.facebook.com/{{ site.author.facebook }}"><i class="icon-facebook-sign"></i> facebook</a></li>
-                      <li class="divider"></li>
-                    </ul>
-                  </li>
-
-                </ul>
-
-              </div> <!-- nav-collapse collapse -->
-            </div> <!-- /navbar-inner -->
-          </div> <!-- /navbar -->
-        </header>
-      </div> <!-- /site -->
+        </div><!-- /.nav-collapse -->
+      </div><!-- /.navbar -->
 
       <div class="contents">
         {{ content }}
-      </div> <!-- contents -->
+      </div> <!-- /.contents -->
 
       <div class="footer">
+      </div> <!-- /.footer  -->
 
-      </div> <!-- footer  -->
-
-    </div> <!-- /container -->
+    </div> <!-- /.container -->
 
     <script src="http://code.jquery.com/jquery-latest.js"></script>
     <script src="{{ site.Paths.resources }}/bootstrap/js/bootstrap.min.js"></script>

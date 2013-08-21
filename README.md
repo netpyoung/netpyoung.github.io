@@ -4,7 +4,6 @@
 * 마크다운 엔진은 github가 쓰는 redcarpet을 사용하기로 결정.
 * 디자인에 영 꽝이여서 bootstrap을 이용하기로 결정. 어두운걸 좋아하니 bootswatch에서, slate 테마를 받음.
 * font awsome이용해서 아이콘 삽입..
-* syntax highlight는 tomorrow-night 테마를 이용하기로 결정. :) 만족스럽다.
 * 참고 사이트:
  - http://spoqa.github.io/
  - http://dogfeet.github.io/
@@ -36,7 +35,8 @@
 # Font Awesome
 * http://fortawesome.github.io/Font-Awesome/
 
-# tomorrow theme
+# code highlight
+* https://github.com/richleland/pygments-css
 * https://github.com/chriskempson/tomorrow-theme
 * 참고:
  - tomorrow-pygments: https://github.com/MozMorris/tomorrow-pygments

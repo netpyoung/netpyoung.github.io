@@ -3,24 +3,24 @@ url: netpyoung.github.io
 description: netpyoung's blog
 
 author :
-  name : Eunpyoung Kim
-  email : netpyoung@gmail.com
-  github : netpyoung
-  facebook : netpyoung
-  feedburner : netpyoung
+    name : Eunpyoung Kim
+    email : netpyoung@gmail.com
+    github : netpyoung
+    facebook : netpyoung
+    feedburner : netpyoung
 
 include: ["/blog", "/internal/", "/external"]
 exclude: ["README.md"]
 
 Paths :
-  home: /
-  blog: /blog
-  internal: /internal
-  external: /external
-  resources: /res
-  rss: /rss.xml
-  atom: /atom.xml
-  feed: /feed.xml
+    home: /
+    blog: /blog
+    internal: /internal
+    external: /external
+    resources: /res
+    rss: /rss.xml
+    atom: /atom.xml
+    feed: /feed.xml
 
 # ref: https://github.com/mojombo/jekyll/wiki/Permalinks
 permalink: /blog/:title
@@ -29,4 +29,4 @@ pygments: true
 
 markdown: redcarpet
 redcarpet:
-  extensions: ["no_intra_emphasis", "fenced_code_blocks", "autolink", "tables", "with_toc_data"]
+    extensions: ["no_intra_emphasis", "fenced_code_blocks", "autolink", "tables", "with_toc_data"]

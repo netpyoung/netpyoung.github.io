@@ -66,13 +66,17 @@ Emacs Lisp에서의 lexcial scoping과 dynamic scoping
 
 동일한 코드를 Javascript로 옮겨봤습니다.
 
-```cl
+```javascript
 var a;
 a = 17;
+
 function myPrintA() {
   console.log(a);
 }
+
+
 a = 1717;
+
 (function () {
   var a = 8;
   myPrintA();

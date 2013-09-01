@@ -94,10 +94,6 @@ go get -u code.google.com/p/rog-go/exp/cmd/godef
 (require 'go-autocomplete)
 (require 'auto-complete-config)
 
-(require 'auto-complete)
-(require 'go-autocomplete)
-(require 'auto-complete-config)
-
 (add-hook 'go-mode-hook
           (lambda ()
             (auto-complete-mode)

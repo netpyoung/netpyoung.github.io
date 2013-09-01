@@ -12,25 +12,24 @@ title: 포인터 - 함수 포인터를 향하여
 ```c
 #include <stdio.h>
 
-int main(int argc, char *argv[])
-{
-  int a = 5;
-  printf("\n  int a = 5; \n");
-  printf("&a : 0x%06X\n", &a);
-  printf("a {  %d  }\n", a);
+int main(int argc, char *argv[]) {
+    int a = 5;
+    printf("\n  int a = 5; \n");
+    printf("&a : 0x%06X\n", &a);
+    printf("a {  %d  }\n", a);
 
-  int *p = 0;
-  printf("\n   int *p = 0; \n");
-  printf("&p : 0x%06X\n", &p);
-  printf("p {  %d  }\n", p);
+    int *p = 0;
+    printf("\n   int *p = 0; \n");
+    printf("&p : 0x%06X\n", &p);
+    printf("p {  %d  }\n", p);
 
-  p = &a;
-  printf("\n   p = &a; \n");
-  printf("p { 0x%06X } == &a : 0x%06X\n", p, &a);
+    p = &a;
+    printf("\n   p = &a; \n");
+    printf("p { 0x%06X } == &a : 0x%06X\n", p, &a);
 
-  printf("\n*p : %d\n", *p);
+    printf("\n*p : %d\n", *p);
 
-  return 0;
+    return 0;
 }
 ```
 
@@ -59,22 +58,21 @@ p { 0x22FF6C } == &a : 0x22FF6C
 ```c
 #include <stdio.h>
 
-int main(int argc, char *argv[])
-{
-  int array[2] = { 1, 2 };
-  printf("\n  int array[2] = { 1, 2 };\n");
-  printf("array[0] { %d }\n", array[0]);
-  printf("array[1] { %d }\n", array[1]);
+int main(int argc, char *argv[]) {
+    int array[2] = { 1, 2 };
+    printf("\n  int array[2] = { 1, 2 };\n");
+    printf("array[0] { %d }\n", array[0]);
+    printf("array[1] { %d }\n", array[1]);
 
-  int *p_int = &array;
-  printf("\n   int *p_int = &array;\n");
-  printf("p_int { 0x%06X }\n", p_int);
-  printf("p_int+1 { 0x%06X }\n", p_int+1);
-  printf("\n");
+    int *p_int = &array;
+    printf("\n   int *p_int = &array;\n");
+    printf("p_int { 0x%06X }\n", p_int);
+    printf("p_int+1 { 0x%06X }\n", p_int+1);
+    printf("\n");
 
-  printf("&p_int[1] : 0x%06X | p_int[1] : %d\n", &p_int[1], p_int[1]);
-  printf("p_int+1 :  0x%06X | *(p_int+1) : %d", p_int+1, *(p_int+1));
-  return 0;
+    printf("&p_int[1] : 0x%06X | p_int[1] : %d\n", &p_int[1], p_int[1]);
+    printf("p_int+1 :  0x%06X | *(p_int+1) : %d", p_int+1, *(p_int+1));
+    return 0;
 }
 ```
 
@@ -104,22 +102,21 @@ p_int+1 :  0x22FF68 | *(p_int+1) : 2
 ```c
 #include <stdio.h>
 
-int main(int argc, char *argv[])
-{
-  double array[2] = { 1, 2 };
-  printf("\n  double array[2] = { 1, 2 };\n");
-  printf("array[0] { %E }\n", array[0]);
-  printf("array[1] { %E }\n", array[1]);
+int main(int argc, char *argv[]) {
+    double array[2] = { 1, 2 };
+    printf("\n  double array[2] = { 1, 2 };\n");
+    printf("array[0] { %E }\n", array[0]);
+    printf("array[1] { %E }\n", array[1]);
 
-  double *p_double = &array;
-  printf("\n   double *p_double = &array;\n");
-  printf("p_double { 0x%06X }\n", p_double);
-  printf("p_double+1 { 0x%06X }\n", p_double+1);
-  printf("\n");
+    double *p_double = &array;
+    printf("\n   double *p_double = &array;\n");
+    printf("p_double { 0x%06X }\n", p_double);
+    printf("p_double+1 { 0x%06X }\n", p_double+1);
+    printf("\n");
 
-  printf("&p_double[1] : 0x%06X | p_double[1] : %E\n", &p_double[1], p_double[1]);
-  printf("p_double+1 :  0x%06X | *(p_double+1) : %E", p_double+1, *(p_double+1));
-  return 0;
+    printf("&p_double[1] : 0x%06X | p_double[1] : %E\n", &p_double[1], p_double[1]);
+    printf("p_double+1 :  0x%06X | *(p_double+1) : %E", p_double+1, *(p_double+1));
+    return 0;
 }
 ```
 
@@ -145,23 +142,23 @@ p_double+1 :  0x22FF50 | *(p_double+1) : 2.000000E+00
 ```c
 #include <stdio.h>
 
-int main(int argc, char *argv[])
-{
-  int one = 1;
-  int two = 2;
+int main(int argc, char *argv[]) {
+    int one = 1;
+    int two = 2;
 
-  int array[2] = { one, two };
+    int array[2] = { one, two };
+    int (*p_array)[2] = &array;
 
-  int (*p_array)[2] = &array;
-  printf("p_array { %x }\n", p_array);
-  printf("p_array+1 { %x }\n\n", p_array+1);
+    printf("p_array { %x }\n", p_array);
+    printf("p_array+1 { %x }\n\n", p_array+1);
 
-  printf("*p_array { %x }\n", *p_array);
-  printf("(*p_array)+1 { %x }\n\n", (*p_array)+1);
+    printf("*p_array { %x }\n", *p_array);
+    printf("(*p_array)+1 { %x }\n\n", (*p_array)+1);
 
-  printf("*(*(p_array)+1)) { %x } \n", *(*(p_array)+1));
-  printf("(*p_array)[1] = %d\n", (*p_array)[1]);
-  return 0;
+    printf("*(*(p_array)+1)) { %x } \n", *(*(p_array)+1));
+    printf("(*p_array)[1] = %d\n", (*p_array)[1]);
+
+    return 0;
 }
 ```
 
@@ -187,29 +184,32 @@ p_array와 *p_array는 같은 값이지만 p_array같은 경우 int [2]를 가�
 ```c
 #include <stdio.h>
 
-int main(int argc, char *argv[])
-{
-  int one = 1;
-  int two = 2;
-  printf("one { %x }\n", one);
-  printf("two { %x }\n", two);
-  printf("&one { %x }\n", &one);
-  printf("&one { %x }\n", &two);
+int main(int argc, char *argv[]) {
+    int one = 1;
+    int two = 2;
 
-  int *p_one = &one;
-  int *p_two = &two;
-  printf("p_one { %x }\n", p_one);
-  printf("p_two { %x }\n", p_two);
+    printf("one { %x }\n", one);
+    printf("two { %x }\n", two);
+    printf("&one { %x }\n", &one);
+    printf("&one { %x }\n", &two);
 
-  int *p_array[2] = { p_one, p_two };
 
-  printf("p_array[0] { %x }\n", p_array[0]);
-  printf("p_array[1] { %x }\n\n", p_array[1]);
+    int *p_one = &one;
+    int *p_two = &two;
 
-  printf("*(p_array[0]) { %x }\n", *(p_array[0]));
-  printf("*(p_array[1]) { %x }\n\n", *(p_array[1]));
+    printf("p_one { %x }\n", p_one);
+    printf("p_two { %x }\n", p_two);
 
-  return 0;
+
+    int *p_array[2] = { p_one, p_two };
+
+    printf("p_array[0] { %x }\n", p_array[0]);
+    printf("p_array[1] { %x }\n\n", p_array[1]);
+
+    printf("*(p_array[0]) { %x }\n", *(p_array[0]));
+    printf("*(p_array[1]) { %x }\n\n", *(p_array[1]));
+
+    return 0;
 }
 ```
 
@@ -231,19 +231,19 @@ p_array[1] { 22ff60 }
 ```c
 #include <stdio.h>
 
-int main()
-{
-  int array[8] = {10, 20, 30, 40, 50, 60, 70, 80};
-  printf("array = 0x%X\n", array);
-  printf("array[1]  = %d\n", array[1]);
-  printf("*array = %d\n", *array);
-  printf("*(array) = %d\n", *(array));
-  printf("(*array) = %d\n", (*array));
-  printf("*array+1 = %d\n", *array+1);
-  printf("(*array+1) = %d\n", (*array+1));
-  printf("*(array+1) = %d\n", *(array+1));
+int main() {
+    int array[8] = {10, 20, 30, 40, 50, 60, 70, 80};
 
-  return 0;
+    printf("array = 0x%X\n", array);
+    printf("array[1]  = %d\n", array[1]);
+    printf("*array = %d\n", *array);
+    printf("*(array) = %d\n", *(array));
+    printf("(*array) = %d\n", (*array));
+    printf("*array+1 = %d\n", *array+1);
+    printf("(*array+1) = %d\n", (*array+1));
+    printf("*(array+1) = %d\n", *(array+1));
+
+    return 0;
 }
 ```
 
@@ -265,20 +265,20 @@ array[1]  = 20
 괄호를 넣는 위치도 중요하다.
 
 ```c
-int main()
-{
-  int array[10] = {0,1,2,3,4,5,6,7,8,9};
-  int * p_array = array;
-  printf("*p_array = %d\n", *p_array);
-  printf("p_array[0] = %d\n", p_array[0]);
-  printf("*(p_array + 0) = %d\n", *(p_array + 0));
+int main() {
+    int array[10] = {0,1,2,3,4,5,6,7,8,9};
+    int * p_array = array;
 
-  printf("\n--------------------\n");
-  printf("p_array[5] = %d\n", p_array[5]);
-  printf("*(p_array + 5] = %d\n", *(p_array + 5));
-  printf("*(5 + p_array) = %d\n", *(5 + p_array));
-  printf("5[p_array] = %d\n", 5[p_array]);
-  return 0;
+    printf("*p_array = %d\n", *p_array);
+    printf("p_array[0] = %d\n", p_array[0]);
+    printf("*(p_array + 0) = %d\n", *(p_array + 0));
+
+    printf("\n--------------------\n");
+    printf("p_array[5] = %d\n", p_array[5]);
+    printf("*(p_array + 5] = %d\n", *(p_array + 5));
+    printf("*(5 + p_array) = %d\n", *(5 + p_array));
+    printf("5[p_array] = %d\n", 5[p_array]);
+    return 0;
 }
 ```
 
@@ -304,28 +304,26 @@ p_array[5] = 5
 ```c
 #include <stdio.h>
 
-void printHellow(int);
-
-int main(int argc, char *argv[])
-{
-  void (* pHellow)(int);
-
-  printf("printHellow : 0x%X\n", printHellow);
-  printf("&pHellow : 0x%X\n", &pHellow);
-  pHellow = printHellow;
-  printf("\n  pHellow = &printHellow;\n");
-  printf("&pHellow : 0x%X\n", &pHellow);
-  printf("&printHellow : 0x%X\n", &printHellow);
-  printf("pHellow { 0x%X }\n\n", pHellow);
-  printHellow(5);
-  pHellow(5);
-  return 0;
+void printHellow(int number) {
+    printf("Hellow [%d]\n", number);
 }
 
-void printHellow(int number)
-{
-  printf("Hellow [%d]\n", number);
+int main(int argc, char *argv[]) {
+    void (* pHellow)(int);
+
+    printf("printHellow : 0x%X\n", printHellow);
+    printf("&pHellow : 0x%X\n", &pHellow);
+    pHellow = printHellow;
+    printf("\n  pHellow = &printHellow;\n");
+    printf("&pHellow : 0x%X\n", &pHellow);
+    printf("&printHellow : 0x%X\n", &printHellow);
+    printf("pHellow { 0x%X }\n\n", pHellow);
+    printHellow(5);
+    pHellow(5);
+
+    return 0;
 }
+
 ```
 
 결과 :

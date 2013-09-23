@@ -53,8 +53,7 @@ Why Programs Fail
 
 
 ## 05. 문제점 단순화
-delta debugging??
-http://www.st.cs.uni-saarland.de/dd/
+delta debugging?? http://www.st.cs.uni-saarland.de/dd/
 
 
 ## 06. 과학적 디버깅
@@ -73,7 +72,9 @@ http://www.st.cs.uni-saarland.de/dd/
 
 
 ## 08. 사실 관찰
+
 로깅 기법
+
 * 표준 형식 사용
  - 특정 코드 위치 : ex) 파일명, 함수명
  - 특정 사건 : ex)시간 정보

@@ -61,12 +61,6 @@
             <li><a href="{{ site.Paths.blog }}"><i class="icon-book"></i> blog</a></li>
                   {% endif %}
 
-                  {% if page.url contains '/internal/' %}
-            <li class='active'><a href="{{ site.Paths.internal }}"><i class="icon-edit"></i> internal</a></li>
-                  {% else %}
-            <li><a href="{{ site.Paths.internal }}"><i class="icon-edit"></i> internal</a></li>
-                  {% endif %}
-
                   {% if page.url contains '/external/' %}
             <li class='active'><a href="{{ site.Paths.external }}"><i class="icon-external-link"></i> external</a></li>
                   {% else %}

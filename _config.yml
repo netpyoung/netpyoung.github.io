@@ -9,13 +9,12 @@ author :
     facebook : netpyoung
     feedburner : netpyoung
 
-include: ["/blog", "/internal/", "/external"]
+include: ["/blog", "/external"]
 exclude: ["README.md"]
 
 Paths :
     home: /
     blog: /blog
-    internal: /internal
     external: /external
     resources: /res
     rss: /rss.xml

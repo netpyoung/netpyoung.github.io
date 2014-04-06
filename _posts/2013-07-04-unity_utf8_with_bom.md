@@ -1,8 +1,11 @@
 ---
+
 layout: post
 title: 'Unity UTF8 with BOM'
+tags: unity3d BOM
 
 ---
+
 
 ## BOM이란?
 * https://en.wikipedia.org/wiki/Byte_order_mark
@@ -33,30 +36,30 @@ import UnityEngine
 
 import System.IO
 
-class SimpleUtf8BOM (AssetPostprocessor): 
- 
+class SimpleUtf8BOM (AssetPostprocessor):
+
 	static def OnPostprocessAllAssets(
 		imported_assets        as (string),
 		deleted_assets         as (string),
 		moved_assets           as (string),
 		moved_from_asset_paths as (string)) :
-		
+
 		for asset in imported_assets :
 			checkAndWriteBOM(asset)
 
-	
+
 	static def checkAndWriteBOM(fpath as string) :
 		# check: is source file?
 		ext = Path.GetExtension(fpath)
 		unless (['.cs', '.js', '.boo']).Contains(ext) :
 			return;
-		
+
 		# check: is with bom_utf8?
 		fbytes = File.ReadAllBytes(fpath)
-		
+
 		front_3bytes = fbytes[:3]
 		bom_utf8     = array(byte, (0xEF, 0xBB, 0xBF))
-		
+
 		# write bom
 		unless front_3bytes == bom_utf8 :
 			File.WriteAllBytes(fpath, bom_utf8 + fbytes)

@@ -19,6 +19,14 @@
  - jekyll wiki: https://github.com/mojombo/jekyll/wiki
  - jekyll tutorial : http://www.andrewmunsell.com/blog/ultimate-jekyll-tutorial/
 
+
+    gem install json
+    gem install commander
+    gem install jekyll --no-ri
+    jekyll serve --watch
+
+
+
 # jekyll bootstrap
 * 홈페이지: http://jekyllbootstrap.com/
 * JB api: http://jekyllbootstrap.com/api/bootstrap-api.html

@@ -1,7 +1,7 @@
 ---
 
 layout: post
-title: 'Timl exapmle (:Ls Command)'
+title: 'Timl example (:Ls Command)'
 tags: vim Viml clojure Timl
 
 ---

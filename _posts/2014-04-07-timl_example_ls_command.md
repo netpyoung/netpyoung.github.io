@@ -22,7 +22,6 @@ tags: vim Viml clojure Timl
 
 
 ## Example.
-
 * `:!ls`로 Vim `밖`에서 파일목록을 볼 수 있지만, Vim 버퍼 `안`에서 ls 명령결과를 확인할 수 있는 플러그 인을 작성해보자.
 
 

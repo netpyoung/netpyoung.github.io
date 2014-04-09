@@ -17,9 +17,7 @@ Paths :
     blog: /blog
     external: /external
     resources: /res
-    rss: /rss.xml
-    atom: /atom.xml
-    feed: /feed.xml
+    feed: /feed
 
 # ref: https://github.com/mojombo/jekyll/wiki/Permalinks
 permalink: /blog/:title

@@ -38,7 +38,7 @@ title: "netpyoung.github.io"
 
 
 ## Admire:
-* [Michal Marcinkowski](http://mm.soldat.pl)
+* [Michal Marcinkowski](https://www.facebook.com/michal.marcinkowski)
 
 
 ## Keywords:

@@ -17,7 +17,7 @@ Paths :
     blog: /blog
     external: /external
     resources: /res
-	diary: /diary
+    diary: /diary
     feed: /feed
 
 # ref: https://github.com/mojombo/jekyll/wiki/Permalinks

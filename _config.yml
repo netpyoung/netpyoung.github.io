@@ -7,7 +7,7 @@ author :
     email : netpyoung@gmail.com
     github : netpyoung
     facebook : netpyoung
-    feedburner : netpyoung
+
 
 include: ["/blog", "/external"]
 exclude: ["README.md"]
@@ -17,6 +17,7 @@ Paths :
     blog: /blog
     external: /external
     resources: /res
+	diary: /diary
     feed: /feed
 
 # ref: https://github.com/mojombo/jekyll/wiki/Permalinks

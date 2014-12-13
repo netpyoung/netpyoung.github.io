@@ -9,15 +9,15 @@ author :
     facebook : netpyoung
 
 
-include: ["/blog", "/external"]
+include: ["/blog", "/external", "/diary", "/res"]
 exclude: ["README.md"]
 
 Paths :
     home: /
     blog: /blog
     external: /external
-    resources: /res
     diary: /diary
+    resources: /res
     feed: /feed
 
 # ref: https://github.com/mojombo/jekyll/wiki/Permalinks

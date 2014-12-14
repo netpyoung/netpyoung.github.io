@@ -65,9 +65,9 @@
           <ul class="nav navbar-nav">
 			<!-- /blog -->
                   {% if page.url contains '/blog/' %}
-            <li class='active'><a href="{{ site.Paths.blog }}"><i class="fa fa-book"></i> blog</a></li>
+            <li class='active'><a href="{{ site.Paths.blog }}"><i class="fa fa-coffee"></i> blog</a></li>
                   {% else %}
-            <li><a href="{{ site.Paths.blog }}"><i class="fa fa-book"></i> blog</a></li>
+            <li><a href="{{ site.Paths.blog }}"><i class="fa fa-coffee"></i> blog</a></li>
                   {% endif %}
 
             <!-- /external -->
@@ -79,9 +79,9 @@
 
             <!-- /diary -->
                   {% if page.url contains '/diary/' %}
-            <li class='active'><a href="{{ site.Paths.diary }}"><i class="fa fa-external-link"></i> diary</a></li>
+            <li class='active'><a href="{{ site.Paths.diary }}"><i class="fa fa-book"></i> diary</a></li>
                   {% else %}
-            <li><a href="{{ site.Paths.diary }}"><i class="fa fa-external-link"></i> diary</a></li>
+            <li><a href="{{ site.Paths.diary }}"><i class="fa fa-book"></i> diary</a></li>
                   {% endif %}
 
             <li><a href="http://github.com/{{ site.author.github }}/"><i class="fa fa-github"></i> github</a></li>

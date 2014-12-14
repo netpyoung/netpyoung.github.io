@@ -37,8 +37,9 @@ title: "netpyoung.github.io"
 * 행복해져라.
 
 
-## Size:
-* 100, 32, 260
+## Love:
+* `처음 본 그 순간부터 당신을 사랑합니다.`
+
 
 ## Admire:
 * [Michal Marcinkowski](https://www.facebook.com/michal.marcinkowski)
@@ -52,6 +53,10 @@ title: "netpyoung.github.io"
 * [Emacs](https://github.com/netpyoung/netpyoung.emacs.d)
 * [세벌식](https://ko.wikipedia.org/wiki/%EC%84%B8%EB%B2%8C%EC%8B%9D_%EC%9E%90%ED%8C%90)
 * [Arch linux](https://wiki.archlinux.org/index.php/Arch_Linux)
+
+
+## Size:
+* 100, 32, 260
 
 
 ## Presentation:

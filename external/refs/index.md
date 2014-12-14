@@ -25,12 +25,18 @@ title: References
  - http://realmofracket.com/
  - land of lisp 따라한책. racket으로 진행하는데 뭐 볼만 함 ㅇㅇ.
 
-* Clojure Programming
-* Joy Of Clojure
+
 * Understading Computation
 * 알고리즘 문제해결 전략
 
 ## 읽은 책
+* Clojure Programming
+ - http://shop.oreilly.com/product/0636920013754.do
+ 
+
+* Joy Of Clojure
+ - http://www.manning.com/fogus2/
+
 * On Lisp - Paul Grahom
  - http://www.paulgraham.com/onlisp.html
  - 매크로를 가지고 노는 책임 ㅇㅇ. 사실 알고보면 조금만 파는것인데도 불구하고, 매크로 특성상 좀 어렵다. 잼있으므로 강추.

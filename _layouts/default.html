@@ -56,35 +56,35 @@
 
         <div class="navbar-header">
           <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-            <span class="fa-bars"></span>
+            <span class="fa fa-bars"></span>
           </button>
-          <a href="{{ site.Paths.home }}" class="navbar-brand"><i class="fa-home"></i> {{ site.title }}</a>
+          <a href="{{ site.Paths.home }}" class="navbar-brand"><i class="fa fa-home"></i> {{ site.title }}</a>
         </div><!-- /.navbar-header -->
 
         <div class="collapse navbar-collapse">
           <ul class="nav navbar-nav">
 			<!-- /blog -->
                   {% if page.url contains '/blog/' %}
-            <li class='active'><a href="{{ site.Paths.blog }}"><i class="fa-book"></i> blog</a></li>
+            <li class='active'><a href="{{ site.Paths.blog }}"><i class="fa fa-book"></i> blog</a></li>
                   {% else %}
-            <li><a href="{{ site.Paths.blog }}"><i class="fa-book"></i> blog</a></li>
+            <li><a href="{{ site.Paths.blog }}"><i class="fa fa-book"></i> blog</a></li>
                   {% endif %}
 
             <!-- /external -->
                   {% if page.url contains '/external/' %}
-            <li class='active'><a href="{{ site.Paths.external }}"><i class="fa-external-link"></i> external</a></li>
+            <li class='active'><a href="{{ site.Paths.external }}"><i class="fa fa-external-link"></i> external</a></li>
                   {% else %}
-            <li><a href="{{ site.Paths.external }}"><i class="fa-external-link"></i> external</a></li>
+            <li><a href="{{ site.Paths.external }}"><i class="fa fa-external-link"></i> external</a></li>
                   {% endif %}
 
             <!-- /diary -->
                   {% if page.url contains '/diary/' %}
-            <li class='active'><a href="{{ site.Paths.diary }}"><i class="fa-external-link"></i> diary</a></li>
+            <li class='active'><a href="{{ site.Paths.diary }}"><i class="fa fa-external-link"></i> diary</a></li>
                   {% else %}
-            <li><a href="{{ site.Paths.diary }}"><i class="fa-external-link"></i> diary</a></li>
+            <li><a href="{{ site.Paths.diary }}"><i class="fa fa-external-link"></i> diary</a></li>
                   {% endif %}
 
-            <li><a href="http://github.com/{{ site.author.github }}/"><i class="fa-github"></i> github</a></li>
+            <li><a href="http://github.com/{{ site.author.github }}/"><i class="fa fa-github"></i> github</a></li>
           </ul>
 
           <ul class="nav navbar-nav navbar-right">
@@ -93,7 +93,7 @@
                 <b class="caret"></b>
               </a>
               <ul class="dropdown-menu">
-                <li><a href="https://www.facebook.com/{{ site.author.facebook }}"><i class="fa-facebook-sign"></i> facebook</a></li>
+                <li><a href="https://www.facebook.com/{{ site.author.facebook }}"><i class="fa fa-facebook-sign"></i> facebook</a></li>
                 <li class="divider"></li>
               </ul>
             </li>

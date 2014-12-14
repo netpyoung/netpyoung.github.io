@@ -37,6 +37,9 @@ title: "netpyoung.github.io"
 * 행복해져라.
 
 
+## Size:
+* 100, 32, 260
+
 ## Admire:
 * [Michal Marcinkowski](https://www.facebook.com/michal.marcinkowski)
 

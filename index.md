@@ -15,7 +15,24 @@ title: "netpyoung.github.io"
 
 영원히 잊혀지지 않을 그 `불꽃`이 되고 싶다.
 
+
 <iframe src="http://player.vimeo.com/video/30270950" width="500" height="281" frameborder="0" webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe>
+
+
+    빛이 나는 사람들.
+
+    사람을 자세히 살펴 보다보면,
+    내 마음 속에서 그 사람 고유의 빛이 보이는 것 같다.
+
+    아에 빛이 안나다 봇해 검게 빨려 들어가는 어두운 빛,
+    겉이 화려한데 심지가 안보이는 빛,
+    아직은 서프른 빛.
+
+    가끔씩 내가 빛이 난다고 하는 말하는 사람들이 있는데,
+    `얼핓 보기에 은은한데 자세히 보면 볼 수룩 밝아지는 빛`을 가진 사람들.
+    의외로 이런 사람들이 많다는 것을 알 수 있다.
+
+    이런 사람들을 나는 다 붙잡고싶다.
 
 
 ## Interesting:
@@ -36,6 +53,7 @@ title: "netpyoung.github.io"
 * 우정을 지켜라.
 * 행복해져라.
 
+* 눈에 보여지는 것, 눈에 안 보여지는 것들에 대해 소중히 여겨라.
 
 ## Love:
 * `처음 본 그 순간부터 당신을 사랑합니다.`

@@ -17,8 +17,7 @@ title: "netpyoung.github.io"
 영원히 잊혀지지 않을 그 `불꽃`이 되고 싶다.
 
 
-<iframe src="http://player.vimeo.com/video/30270950" width="500" height="281" frameborder="0" webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe>
-
+* [Fireworks in SEOUL - 우연수집](http://vimeo.com/30270950)
 
     빛이 나는 사람들.
 
@@ -38,6 +37,9 @@ title: "netpyoung.github.io"
     이러한 사람들을 더 많이 만나 볼 수 있을 것이라 믿기에,
     나 역시 멋진 빛을 갖고 있는 것을 확인하기 위해,
     오늘도 내 안의 빛을 가꾼다.
+
+
+<iframe src="http://player.vimeo.com/video/70177311" width="500" height="281" frameborder="0" webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe>
 
 
 ## Interesting:
@@ -80,7 +82,7 @@ title: "netpyoung.github.io"
 * [Arch linux](https://wiki.archlinux.org/index.php/Arch_Linux)
 
 
-## Size:
+## SZ:
 * 100, 32, 260
 
 

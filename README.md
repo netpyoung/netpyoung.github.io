@@ -12,6 +12,7 @@ netpyoung.github.io
 # TODO
 * search 기능
 * comment 기능
+* https://github.com/lacarmen/cryogen 로 옮기는것 심각하게 고려해볼것.
 
 
 # jekyll

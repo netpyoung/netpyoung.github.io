@@ -5,9 +5,9 @@ description: netpyoung's blog
 author :
     name : Eunpyoung Kim
     email : netpyoung@gmail.com
-    github : netpyoung
-    facebook : netpyoung
-    instagram : netpyoung
+    github : https://github.com/netpyoung
+    facebook : https://www.facebook.com/netpyoung
+    instagram : http://instagram.com/netpyoung
 
 
 include: ["/blog", "/external", "/diary", "/res"]

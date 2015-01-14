@@ -17,7 +17,9 @@ title: "netpyoung.github.io"
 영원히 잊혀지지 않을 그 `불꽃`이 되고 싶다.
 
 
-* [Fireworks in SEOUL - 우연수집](http://vimeo.com/30270950)
+
+<iframe src="http://player.vimeo.com/video/30270950" width="500" height="281" frameborder="0" webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe>
+
 
 
 ```
@@ -41,8 +43,6 @@ title: "netpyoung.github.io"
     오늘도 내 안의 빛을 가꾼다.
 ```
 
-<iframe src="http://player.vimeo.com/video/70177311" width="500" height="281" frameborder="0" webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe>
-
 
 ## Interesting:
 * [Lisp](https://en.wikipedia.org/wiki/Lisp_%28programming_language%29)
@@ -63,11 +63,7 @@ title: "netpyoung.github.io"
 * 우정을 지켜라.
 * 행복해져라.
 
-* 눈에 보여지는 것, 눈에 안 보여지는 것들에 대해 소중히 여겨라.
-
-
-## Love:
-* `처음 본 그 순간부터 당신을 사랑합니다.`
+* 눈에 안 보여지는 것들, 눈에 보여지는 것들 역시 소중히 여겨라.
 
 
 ## Admire:
@@ -84,7 +80,7 @@ title: "netpyoung.github.io"
 * [Arch linux](https://wiki.archlinux.org/index.php/Arch_Linux)
 
 
-## SZ:
+## Sz:
 * 100, 32, 260
 
 

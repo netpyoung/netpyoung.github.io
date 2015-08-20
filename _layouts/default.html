@@ -47,6 +47,16 @@
       ga('create', 'UA-51514673-1', 'netpyoung.github.io');
       ga('send', 'pageview');
     </script>
+	
+	<script>
+        function apply_table() {
+            var tables = document.getElementsByTagName("table");
+            for (var i = 0; i < tables.length; i++) {
+                tables[i].setAttribute("class", "table"); 
+            }
+        }
+	</script>
+	
   </head>
 
   <body>
@@ -74,7 +84,7 @@
                   {% if page.url contains '/resume/' %}
             <li class='active'><a href="{{ site.Paths.resume }}"><i class="fa fa-coffee"></i> resume</a></li>
                   {% else %}
-            <li><a href="{{ site.Paths.resume }}"><i class="fa fa-file-text-o"></i> blog</a></li>
+            <li><a href="{{ site.Paths.resume }}"><i class="fa fa-file-text-o"></i> resume</a></li>
                   {% endif %}
 
             <!-- /external -->
@@ -121,5 +131,8 @@
 
     <script src="http://code.jquery.com/jquery-latest.js"></script>
     <script src="{{ site.Paths.resources }}/bootstrap/js/bootstrap.min.js"></script>
+	<script>
+		apply_table();
+	</script>
   </body>
 </html>

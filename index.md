@@ -80,6 +80,11 @@ title: "netpyoung.github.io"
 * [Arch linux](https://wiki.archlinux.org/index.php/Arch_Linux)
 
 
+## Blog history
+2009.08.15 ~ 2013.07.03 : http://netpyoung.tistory.com/
+2013.07.03 ~            : http://netpyoung.github.io/
+
+
 ## Sz:
 * 100, 32, 260
 

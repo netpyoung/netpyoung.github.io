@@ -81,8 +81,8 @@ title: "netpyoung.github.io"
 
 
 ## Blog history
-2009.08.15 ~ 2013.07.03 : http://netpyoung.tistory.com/
-2013.07.03 ~            : http://netpyoung.github.io/
+* 2009.08.15 ~ 2013.07.03 : http://netpyoung.tistory.com/
+* 2013.07.03 ~            : http://netpyoung.github.io/
 
 
 ## Sz:

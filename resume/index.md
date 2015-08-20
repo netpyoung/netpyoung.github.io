@@ -30,7 +30,7 @@ https://github.com/netpyoung/netpyoung.github.io/blob/master/resume/index.md
 영어                 | TOEIC                      | 하   | 650점 (2011.??.??), 기술문서 읽을 수준은 됨.
 프로그래밍(업무활용) | C++                        | 하   |
                      | C#                         | 중   |
-                     | Clojure                    | 중   |
+                     | Clojure                    | 중   | http://codingdojang.com/profile/answer/1693 , https://github.com/netpyoung/exercism/tree/master/clojure
                      | Go                         | 하   |
                      | Python                     | 중   |
                      | Ruby                       | 하   |
@@ -42,7 +42,11 @@ https://github.com/netpyoung/netpyoung.github.io/blob/master/resume/index.md
                      | chatops(sevabot, hubot)    |      |
                      | ITS(jira, redmine)         |      |
                      | Build(make,CMake,rake)     |      |
+                     | Editor(Emacs, Vim)         |      | https://github.com/netpyoung/netpyoung.emacs.d , https://github.com/netpyoung/netpyoung.vim
 
+
+					 
+* 싫어하는 언어 : javascript / bash / php / perl
 
 
 # 경력 (최근순)

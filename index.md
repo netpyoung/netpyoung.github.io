@@ -44,6 +44,12 @@ title: "netpyoung.github.io"
 ```
 
 
+```
+But are we all lost stars, trying to light up the dark?
+ - Adam Levine - Lost Stars
+```
+
+
 ## Interesting:
 * [Lisp](https://en.wikipedia.org/wiki/Lisp_%28programming_language%29)
 * [Interactive programming](http://en.wikipedia.org/wiki/Interactive_programming)

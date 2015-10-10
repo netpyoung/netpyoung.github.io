@@ -47,16 +47,7 @@
       ga('create', 'UA-51514673-1', 'netpyoung.github.io');
       ga('send', 'pageview');
     </script>
-	
-	<script>
-        function apply_table() {
-            var tables = document.getElementsByTagName("table");
-            for (var i = 0; i < tables.length; i++) {
-                tables[i].setAttribute("class", "table"); 
-            }
-        }
-	</script>
-	
+
   </head>
 
   <body>
@@ -131,8 +122,21 @@
 
     <script src="http://code.jquery.com/jquery-latest.js"></script>
     <script src="{{ site.Paths.resources }}/bootstrap/js/bootstrap.min.js"></script>
-	<script>
-		apply_table();
-	</script>
+    
+    <script>
+    function apply_table() {
+        var tables = document.getElementsByTagName("table");
+        for (var i = 0; i < tables.length; i++) {
+            tables[i].setAttribute("class", "table"); 
+        }
+    }
+    apply_table();
+    </script>
+	
+    <!-- SCM Music Player http://scmplayer.net -->
+    <script type="text/javascript" src="http://scmplayer.net/script.js" 
+    data-config="{'skin':'skins/cyber/skin.css','volume':50,'autoplay':false,'shuffle':false,'repeat':1,'placement':'top','showplaylist':false,'playlist':[{'title':' Sia - Chandelier','url':'https://www.youtube.com/watch?v=2vjPBrBU-TM'}]}" ></script>
+    <!-- SCM Music Player script end -->
+
   </body>
 </html>

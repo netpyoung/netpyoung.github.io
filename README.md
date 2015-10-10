@@ -52,6 +52,9 @@ jekyll serve --watch
 # SCM Music Player
 * http://scmplayer.net/
 
+# Tags
+* http://www.minddust.com/post/tags-and-categories-on-github-pages/
+
 # code highlight
 * https://github.com/richleland/pygments-css
 * https://github.com/chriskempson/tomorrow-theme
@@ -67,3 +70,6 @@ jekyll serve --watch
 # Ref.
 * http://spoqa.github.io/
 * http://dogfeet.github.io/
+
+
+https://github.com/Shopify/liquid/wiki/Liquid-for-Designers

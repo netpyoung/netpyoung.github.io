@@ -5,20 +5,27 @@ layout: default
 <h2>{{ page.title }}</h2>
 <p class="meta">{{ page.date | date_to_string }}</p>
 
+
 <div class="post">
 {{ content }}
-</div>
+</div><!-- post -->
+<hr />
 
-<hr />
-<h4>Tags</h4>
+
 <div class="tags">
+<h4>Tags<i class="fa fa-tags"></i></h4>
 {% for tag in page.tags %}
-<li>
-  {{ tag }} <span>{{ site.tags[tag].size }}</span>
-</li>
+  <li>
+  {% if site.data.tags contains tag %}
+    <a href="/blog/tag/{{ tag }}/">{{ tag }}</a>
+  {% else %}
+    {{ tag }}
+  {% endif %}
+  </li>
 {% endfor %}
-</div>
+</div><!--tags -->
 <hr />
+
 
 <!--
 <h4>Comments</h4>

@@ -14,4 +14,12 @@ title: netpyoung.github.io
       <li><span>{{ post.date | date: "%Y.%m.%d" }}</span> &raquo; <a href="{{ post.url }}">{{ post.title }}</a></li>
     {% endfor %}
   </ul>
+  
+
+  <div class='tags'>  
+  <h2>Tags<i class="fa fa-tags"></i></h2>
+  {% for tag in site.data.tags %}
+    <li><a href="/blog/tag/{{ tag }}/">{{ tag }}</a></li>
+  {% endfor %}
+  </div>
 </div>

@@ -49,6 +49,8 @@ jekyll serve --watch
 # Font Awesome
 * http://fortawesome.github.io/Font-Awesome/
 
+# SCM Music Player
+* http://scmplayer.net/
 
 # code highlight
 * https://github.com/richleland/pygments-css

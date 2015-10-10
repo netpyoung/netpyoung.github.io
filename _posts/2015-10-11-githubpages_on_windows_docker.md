@@ -12,7 +12,7 @@ tags: docker jekyll
 & MacBook이 있기에, Windows에서 삽질을 하지 않아도 되지만... Docker에 익숙해지고, Windows에서의 Docker활용하면서 삽질을 미리 경험해보고자... 삽을 푸기로 했다. 사실 이 문서를 보게될 사람 역시 (아마도) 삽질매니아 인가보다.
 
 
-![img](http://cdn.ddanzi.com/201304-images/1082526.png)
+![](http://www.newsm.com/news/photo/200812/1106_2264_4956.jpg)
 
 ## Github Pages란?
 * github 저장소를 이용하여, github.io 도메인으로 정적웹사이트 서비스를 제공한다.
@@ -24,6 +24,8 @@ tags: docker jekyll
  - https://help.github.com/articles/using-jekyll-with-pages/#installing-jekyll
 
 ## Jekyll이란?
+![](https://jekyllrb.com/img/logo-2x.png)
+
 * http://jekyllrb.com/
 * 정적 웹 블로그 프레임워크로, Ruby로 짜여졌다.
 * Markdown, Liquid, HTML & CSS을 template제공하여, 렌더링할 수 있게 도와주며 프레임워크인 만큼 여러 편의 기능들이 내장되어 있다.
@@ -43,6 +45,8 @@ tags: docker jekyll
 
 
 ## Docker란?
+![](https://www.docker.com/sites/all/themes/docker/assets/images/logo.png)
+
 * An open platform for distributed applications for developers and sysadmins
 * ref:
  - [가장 빨리 만나는 도커(Docker) 출간 및 원고 공개](http://pyrasis.com/private/2014/11/30/publish-docker-for-the-really-impatient-book)
@@ -120,4 +124,4 @@ root# jekyll serve --port 8000 --watch --force_polling
 사실 이 글을 작성하기 시작한건 꽤 되었는데, 그동안 Boot2Docker가 공식 메뉴얼에서 deprecate되었다.. 대충 기능은 비슷하고 docker-container로 변경된점?
 게임회사에서 기능별로 브랜치까고, 서버 테스트를 할때 공유서버가 아닌, 기능 담당자별 서버가 필요한데. 배포나 설치하는걸 docker로 하면 그냥 간단하게 될것같다.
 쩝 지금있는데는 뭐 한쪽은 svn쓰고, 한쪽은 git을 svn처럼 활용하고 있는데 뭐 더 할말이 있겠냐만은..
-
+음.. 이제 좀 포스트하는데 편해졌다.

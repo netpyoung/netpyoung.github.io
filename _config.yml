@@ -11,7 +11,7 @@ author :
 
 
 include: ["/blog", "/external", "/diary", "/res"]
-exclude: ["README.md"]
+exclude: ["README.md", 'Rakefile']
 
 Paths :
     home: /

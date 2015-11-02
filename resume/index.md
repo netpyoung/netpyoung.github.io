@@ -11,8 +11,8 @@ Resume
 ### [Details](/resume/detail/)
 
 ### About.
-* <i class="fa fa-envelope-o" />[netpyoung at gmail dot com](mailto:netpyoung@gmail.com)
-* <i class="fa fa-github" />[netpyoung](http://github.com/netpyoung)
+* <i class="fa fa-envelope-o"></i>[mail](mailto:netpyoung@gmail.com)
+* <i class="fa fa-github"></i>[github](http://github.com/netpyoung)
 
  
 ### Skills.

@@ -44,7 +44,7 @@ https://github.com/netpyoung/netpyoung.github.io/blob/master/resume/detail.md
 2011.08           |	학점은행제 학위취득 |                    | 전자계산학 전공
 2012.04 ~ 2013.12 |	Ncrew Entertainment | pc/mobile 게임     | 스터디 모임에서 면접제의를 받았고, 회사에서 새로운 도약을 준비하고 있는 상황이 흥미로워 합류.
 2014.01 ~ 2014.07 | Sonaclo             | 게임/소프트웨어    | 평소 공부해오던 Clojure란 언어를 가지고, 같이 해보자 해서 합류.
-2014.08 ~         | Gree Korea Inc.     | mobile 게임회사    | 일본계 회사라는 점이 흥미롭고, gree github에 다양한 프로젝트가 올라와 있어 흥미로워서, 집이 가까워서 지원.
+2014.08 ~ 2015.11 | Gree Korea Inc.     | mobile 게임회사    | 일본계 회사라는 점이 흥미롭고, gree github에 다양한 프로젝트가 올라와 있어 흥미로워서, 집이 가까워서 지원.
 
 
 
@@ -77,7 +77,7 @@ https://github.com/netpyoung/netpyoung.github.io/blob/master/resume/detail.md
 # 경력 (최근순)
 회사                | 이름                    | 기간               | 담당       | 비율 | 결과
 --------------------|-------------------------|--------------------|------------|------|------
-Gree Korea Inc.     | .                       | 2014.08 ~ 재직중   | .          | .    | .
+Gree Korea Inc.     | .                       | 2014.08 ~ 2015.11  | .          | .    | .
 활용 기술           | .
 맡은일              | .
 참조                | .

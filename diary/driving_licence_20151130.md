@@ -1,6 +1,6 @@
 ---
 layout: default
-title: "운전면허(2015.11.30 ~ )"
+title: "운전면허(2015.11.30 ~ 2015.12.22)"
 permalink: /diary/driving_licence_20151130/
 
 ---
@@ -60,14 +60,21 @@ permalink: /diary/driving_licence_20151130/
  뭐 난 붙었으니..
 
 
+### 2015.12.22
+ 강남시험장으로 가서 연습면허증을 운전면허증으로 교환! 이제 끝이군!
+
+
+<a data-flickr-embed="true"  href="https://www.flickr.com/photos/netpyoung/23531768939/in/photostream/" title="획득! #운전면허증"><img src="https://farm6.staticflickr.com/5668/23531768939_acc6a7315e_k.jpg" width="2048" height="1536" alt="획득! #운전면허증"></a><script async src="//embedr.flickr.com/assets/client-code.js" charset="utf-8"></script>
+
+
 ## 비용:
 
-    132,000 : 학과교육/장내기능수강
-      7,500 : 학과시험접수(건강검진 안받았으면 추가로 5,500원 더 내야함)
+    132,000 : 학과교육/장내기능수강료
+    330,000 : 도로기능수강료
+      7,500 : 학과시험접수(건강검진 안받았으면 추가로 5,000원 더 내야함)
      36,500 : 장내검정료
-    330,000 : 도로기능수강
      44,000 : 도로주행기능검정료
-     88,000 : +도로기능수강
+     88,000 : +도로기능수강료
      44,000 : +도로주행기능검정료
      44,000 : +도로주행기능검정료
       7,500 : 면허증 수수료

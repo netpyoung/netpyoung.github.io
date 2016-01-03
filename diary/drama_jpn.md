@@ -1,7 +1,7 @@
 ---
 layout: default
 title: "일본드라마"
-permalink: /diary/drama_jp/
+permalink: /diary/drama_jpn/
 
 ---
 

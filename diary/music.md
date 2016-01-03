@@ -6,10 +6,12 @@ permalink: /diary/music/
 ---
 
 # 노래
-개인 비중 - (멜로디+리듬 64%/가사 36%)
+개인 비중 - 곡구성(멜로디+리듬) 64% / 가사 36%
 하이톤과 일렉기타소리 좋아함.
 그로울링 중심의 노래는 못듣겠음.
-힙합이랍시고 멜로디에 신경 덜 신경썻다고 생각되는건 노래로 취급안함.
+힙합, EDM이랍시고 멜로디에 신경 덜 신경썻다고 생각되는건 취급안함.
+
+
 
 
 ## 신해철
@@ -35,6 +37,9 @@ permalink: /diary/music/
 ### [Guts Over Fear ft. Sia](https://youtu.be/0AqnCSdkjQ0)
 곡도 좋고, 중간에 들어가는 `Sia`의 목소리 소름.
 (노래 특성상 확률적으로 가사에 지나친 비중을 두는 경우가 많아)힙합을 별로 안듣는데, 이런 곡은 좋지.
+
+### [Not Afraid](https://www.youtube.com/watch?v=j5-yKhDd64s)
+Eminem이라면...
 
 
 ## Avantasia
@@ -93,3 +98,8 @@ God Help The Girl의 노래는 다 추천!! `Come monday night`도 추천.
 ## DragonForce
 ### [Black Winter Night](https://youtu.be/9vE5LP0keEE)
 Dragonforce는 기타 속주가 일품.(너무 과하다는 느낌도 있지만)
+
+
+## Diane Warren
+### [Rita Ora - Grateful](https://www.youtube.com/watch?v=kBgsZ6jBE2c)
+처음 들었을때, Rita Ora가 아닌줄... 이런 노래가 나올리가 없는데... 과연..

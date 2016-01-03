@@ -14,7 +14,7 @@ title: "netpyoung.github.io"
 
 
 <ul>
-<li><a href="/music"><i class="fa fa-music"></i> music</a></li>
-<li><a href="/movie"><i class="fa fa-film"></i> movie</a></li>
-<li><a href="/book"><i class="fa fa-book"></i> book</a></li>
+<li><a href="/diary/music"><i class="fa fa-music"></i> music</a></li>
+<li><a href="/diary/movie"><i class="fa fa-film"></i> movie</a></li>
+<li><a href="/diary/book"><i class="fa fa-book"></i> book</a></li>
 </ul>

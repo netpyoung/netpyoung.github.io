@@ -12,3 +12,9 @@ title: "netpyoung.github.io"
 * [2015.10.11 ~ : 클리리넷](clarinet_20150826)
 * [2015.12.14 ~ : 일본](japan_20151214)
 
+
+<ul>
+<li><a href="/music"><i class="fa fa-music"></i> music</a></li>
+<li><a href="/movie"><i class="fa fa-film"></i> movie</a></li>
+<li><a href="/book"><i class="fa fa-book"></i> book</a></li>
+</ul>

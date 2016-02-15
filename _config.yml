@@ -27,8 +27,6 @@ Paths :
 # ref: https://github.com/mojombo/jekyll/wiki/Permalinks
 permalink: /blog/:title
 
-highlighter: pygments
-
 markdown: kramdown
 kramdown:
     input: GFM

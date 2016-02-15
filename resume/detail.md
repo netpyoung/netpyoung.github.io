@@ -13,7 +13,7 @@ permalink: /resume/detail/
 * 이런사람.
  - 코드가지고 리뷰든 토론이든 리펙토링이든 뭔가 한다는 것 자체를 재미있어함.
  - 코드 이외의 잡무들은 자동화가 안되어있으면 불안감을 느낌.
- - 뭔가 새로운걸 하는걸 좋아함. 
+ - 뭔가 새로운걸 하는걸 좋아함.
  - 업무적/사적 대화를 구분하지 못하는 자, 대화자체를 거부하는 자를 싫어함.
  - 조용한 분위기보다는 재미있는 분위기를 선호함.
  - 사람간의 대화를 1순위로 여기지만, 문서화 또한 중요하다고 여김.
@@ -26,11 +26,11 @@ permalink: /resume/detail/
  - 모두가 소중한 사람이고, 하나의 작품을 위해 일한다는 점을 알고,
  - 자신이 맡은일은 부끄럼없이 충실히,
  - 다른이의 단점을 들추기보단 팀맴버들의 장점으로 매꾸고,
- - 화보다는 전략적인 의사소통이, 
+ - 화보다는 전략적인 의사소통이,
  - 변화무쌍한 환경에 즐겁게 대처 하는 것을 보았으며,
  - 나는 이러한 개발방향이 올바른 방향이라고 믿고, 바르게 행하고자 부단히 노력합니다.
  - 추가로, 과정 50%, 결과 50%이라고 생각하고. 결과만 잘내면 되는게 아닌 과정자체 역시 상당히 중요시 여깁니다.
- 
+
 
 
 # 연혁
@@ -61,32 +61,33 @@ kind                 | content                    | level | detail
                      | Ruby                       | 하    |
 툴                   | Scaleform                  | 하    |
                      | Unity3D                    | 중    |
-개발환경             | OS(*nix)                   |       | 
-                     | VC(svn, mercurial, git)    |       | 
-                     | CI(jenkins)                |       | 
-                     | chatops(sevabot, hubot)    |       | 
-                     | ITS(jira, redmine)         |       | 
-                     | Build(make,CMake,rake)     |       | 
+개발환경             | OS(*nix)                   |       |
+                     | VC(svn, mercurial, git)    |       |
+                     | CI(jenkins)                |       |
+                     | chatops(sevabot, hubot)    |       |
+                     | ITS(jira, redmine)         |       |
+                     | Build(make,CMake,rake)     |       |
                      | Editor(Emacs, Vim)         |       | https://github.com/netpyoung/netpyoung.emacs.d , https://github.com/netpyoung/netpyoung.vim
 
 
-					 
+
 * 싫어하는 언어 : javascript / bash / php / perl
 
 
 # Expereience (ordered by recent)
+
 company             | project name            | period            | assign                | ratio | result
 --------------------|-------------------------|-------------------|-----------------------|-------|-------
-Gree Korea Inc.     | .                       | 2014.08 ~ 2015.11 | .          | .    | .
+Gree Korea Inc.     | .                       | 2014.08 ~ 2015.11 | .                     | .     | .
 활용 기술           | .
 맡은일              | .
 참조                | .
 좋았던점            | .
 별로였던점          | .
 마무리              | .
-	
 
-	
+
+
 company             | project name            | period            | assign                | ratio | result
 --------------------|-------------------------|-------------------|-----------------------|-------|-------
 Sonaclo             | 가칭: W-Casino          | 2014.01 ~ 2014.07 | 클라/서버 신규        | 30%  | ?
@@ -144,7 +145,7 @@ company             | project name            | period            | assign      
 Ncrew Entertainment | 카르테                  | 2012.04 ~ 2012.09 | 클라이언트 라이브     | 10% | 서비스 종료(2011.06 ~ 2013.03)
 활용 기술           | C++, CMake, DirectX, Orge, Scaleform, sqlite
 맡은일              | 버그수정
-                    | 컨텐츠 추가. (다중 카드 합성 등)	
+                    | 컨텐츠 추가. (다중 카드 합성 등)
 참조                | https://www.youtube.com/watch?v=4NicQp58-kE
 좋았던점            | 기존에 짰던 소스를 분석하고 물어보는 과정 자체가 즐겁게 이루어진점.
 별로였던점          | 라이브 특성상, 리펙토링하기 어려운 역사적인 코드가 남아있었던 점, 새로운 기법 적용이 어려웠던점.

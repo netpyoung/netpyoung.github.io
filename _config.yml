@@ -1,3 +1,4 @@
+# coding: utf-8
 title: 넷평 남짓한 공간
 url: http://netpyoung.github.io
 description: netpyoung's blog
@@ -28,6 +29,8 @@ permalink: /blog/:title
 
 highlighter: pygments
 
-markdown: redcarpet
-redcarpet:
-    extensions: ["no_intra_emphasis", "fenced_code_blocks", "autolink", "tables", "with_toc_data"]
+markdown: kramdown
+kramdown:
+    input: GFM
+
+# extensions: ["no_intra_emphasis", "fenced_code_blocks", "autolink", "tables", "with_toc_data"]

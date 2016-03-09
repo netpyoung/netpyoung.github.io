@@ -81,7 +81,7 @@ company             | project name            | period            | assign      
 Gree Korea Inc.     | .                       | 2014.08 ~ 2015.11 | .                     | .     | .
 활용 기술           | .
 맡은일              | .
-참조                | .
+참조                | [lostinstars.link] ![lostinstars.jpg]
 좋았던점            | .
 별로였던점          | .
 마무리              | .
@@ -109,7 +109,7 @@ Ncrew Entertainment | 데빌메이커: 도쿄        | 2013.08 ~ 2013.12 | 서�
 맡은일              | 컨텐츠 추가(카드 퓨전, 카드 보관함 등)
                     | 버그수정
                     | 던전 테스트 툴 작성.
-참조                | http://www.palmple.com/devilmaker/movie
+참조                | .
 좋았던점            | 따로 공부해온게 있어 python 및 *nix환경에 익숙해, 별 어려움없이 작업 투입.
                     | 서버쪽을 도와주면서 클라이언트에선 알 수 없었던 재미, 고충을 어느정도 이해할 수 있게 되었다.
 별로였던점          | 다른 퇴사자들이 늘어나는것을 바라볼때의 그 씁쓸함, 그리고 미안함.
@@ -125,7 +125,7 @@ Ncrew Entertainment | 데빌메이커: 도쿄        | 2012.09 ~ 2013.04 | 클�
 맡은일              | 초기 기반 시스템 구축 (각종 매니져, 로컬라이징, 프로토콜, 빌드, 패치시스템 등)
                     | 컨텐츠 추가 (튜토리얼, 로그인, 카드 대전, 던전 탐색 등)
                     | 서드파티 연동(카카오톡, 팜플)
-참조                | http://www.palmple.com/devilmaker/movie ![](/res/pic/devilmaker.jpg)
+참조                | [devilmaker.link] ![devilmaker.jpg]
 좋았던점            | 게임이 나오기에 필요한 전반적인 것들을 볼 수 있었고, 팀빌딩이 되는 순간에 서로간의 이해와 대화로 개발 효율이 상당히 올라가는 것을 경험.
 별로였던점          | 인원이 없어 오픈 두달 전까지 매인을 잡아 바쁘게 개발하게되는 상황.
                     | 일정을 맞추기 위해 의도치않게 코드 품질을 조금 떨어뜨릴수 밖에 없었던 상황.
@@ -160,5 +160,10 @@ Ncrew Entertainment | 카르테                  | 2012.04 ~ 2012.09 | 클라이
 마무리              | 프로토타입 작업으로 7월까지 유지보수를 하게 되었고, 이후 수익문제로 서비스 종료.
 
 
+
+[lostinstars.link]: https://youtu.be/zaUb5cVU1nU
+[lostinstars.jpg]: /res/pic/lostinstars.jpg
+[devilmaker.link]: http://www.palmple.com/devilmaker/movie
+[devilmaker.jpg]: /res/pic/devilmaker.jpg
 [carte.link]: https://www.youtube.com/watch?v=4NicQp58-kE
 [carte.jpg]: /res/pic/carte.jpg

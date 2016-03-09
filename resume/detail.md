@@ -154,7 +154,11 @@ Ncrew Entertainment | 카르테                  | 2012.04 ~ 2012.09 | 클라이
 활용 기술           | C++, CMake, DirectX, Orge, Scaleform, sqlite
 맡은일              | 버그수정
                     | 컨텐츠 추가. (다중 카드 합성 등)
-참조                | <iframe width="560" height="315" src="https://www.youtube.com/embed/4NicQp58-kE" frameborder="0" allowfullscreen></iframe>https://www.youtube.com/watch?v=4NicQp58-kE ![](/res/pic/carte.jpg)
+참조                | [carte.link] ![carte.jpg]
 좋았던점            | 기존에 짰던 소스를 분석하고 물어보는 과정 자체가 즐겁게 이루어진점.
 별로였던점          | 라이브 특성상, 리펙토링하기 어려운 역사적인 코드가 남아있었던 점, 새로운 기법 적용이 어려웠던점.
 마무리              | 프로토타입 작업으로 7월까지 유지보수를 하게 되었고, 이후 수익문제로 서비스 종료.
+
+
+[carte.link]: https://www.youtube.com/watch?v=4NicQp58-kE
+[carte.jpg]: /res/pic/carte.jpg

@@ -70,6 +70,8 @@ But are we all lost stars, trying to light up the dark?
 * 행복해져라.
 
 * 눈에 안 보여지는 것들, 눈에 보여지는 것들 역시 소중히 여겨라.
+* 따라잡는 것은 비교적 훨씬 빠르지만, 앞서 나가는 것은 훨씬 어렵다.
+* 감당할 수 있는 만큼, 부단히 노력하길 바란다.
 
 
 ## Admire:

@@ -3,17 +3,17 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-	
+
     <title>{{ page.title }}</title>
-	
-	<link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+
+    <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
     <link rel="icon" href="/favicon.ico" type="image/x-icon">
 
     <link rel="alternate" type="application/atom+xml" title="Atom" href="{{ site.Paths.feed }}" />
-    
+
     <link rel="stylesheet" href="{{ site.Paths.resources }}/bootstrap/css/bootstrap.min.css" />
     <link rel="stylesheet" href="{{ site.Paths.resources }}/font-awesome/css/font-awesome.css" />
-    <link rel="stylesheet" href="{{ site.Paths.resources }}/pygments/css/github.css">
+    <!-- <link rel="stylesheet" href="{{ site.Paths.resources }}/pygments/css/github.css"> -->
 
     <style type="text/css">
      @import url(http://fonts.googleapis.com/css?family=Droid+Sans+Mono);
@@ -46,12 +46,39 @@
     </style>
 
     <script>
+     // google analystics
       (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
       (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
       m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
       })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
       ga('create', 'UA-51514673-1', 'netpyoung.github.io');
       ga('send', 'pageview');
+
+     // search
+     var SEARCH_PATH = 'search/';
+
+     var ready = function(fn) {
+         if (document.readyState != 'loading'){
+             fn();
+         } else {
+             document.addEventListener('DOMContentLoaded', fn);
+         }
+     }
+
+     ready(function() {
+         // If we're on the search page, get the index containers and filter them
+         // based on the GET query
+         if (window.location.pathname.slice(-SEARCH_PATH.length) === SEARCH_PATH) {
+             var tagsContainer = document.querySelector('.tag-index'),
+                 categoriesContainer = document.querySelector('.category-index'),
+                 errorsContainer = document.querySelector('.error');
+             // We need both containers for the method to work
+             if (!!tagsContainer || !!categoriesContainer) {
+                 filterPosts(categoriesContainer, tagsContainer, errorsContainer);
+             }
+         }
+     });
+
     </script>
 
   </head>
@@ -76,7 +103,7 @@
                   {% else %}
             <li><a href="{{ site.Paths.blog }}"><i class="fa fa-coffee"></i> blog</a></li>
                   {% endif %}
-				  
+
 	    <!-- /resume -->
 	    <!--
                   {% if page.url contains '/resume/' %}
@@ -132,19 +159,22 @@
 
     <script src="http://code.jquery.com/jquery-latest.js"></script>
     <script src="{{ site.Paths.resources }}/bootstrap/js/bootstrap.min.js"></script>
-    
-    <script>
-    function apply_table() {
-        var tables = document.getElementsByTagName("table");
-        for (var i = 0; i < tables.length; i++) {
-            tables[i].setAttribute("class", "table"); 
-        }
-    }
-    apply_table();
-    </script>
-	
+    <script src="{{ site.Paths.resources }}/lunr/lunr.min.js"></script>
+    <script src="{{ site.Paths.resources }}/custom/search.js"></script>
+
+    <!--
+         <script>
+         function apply_table() {
+         var tables = document.getElementsByTagName("table");
+         for (var i = 0; i < tables.length; i++) {
+         tables[i].setAttribute("class", "table");
+         }
+         }
+         apply_table();
+         </script>
+       -->
     <!-- SCM Music Player http://scmplayer.net -->
-    <script type="text/javascript" src="http://scmplayer.net/script.js" 
+    <script type="text/javascript" src="http://scmplayer.net/script.js"
     data-config="{'skin':'skins/cyber/skin.css','volume':50,'autoplay':false,'shuffle':false,'repeat':1,'placement':'top','showplaylist':false,
     'playlist':[
     {'title':'N.EX.TStranger Than Heaven','url':'https://www.youtube.com/watch?v=QlTdgvIFo2o'},
@@ -162,6 +192,5 @@
     ]}"
     ></script>
     <!-- SCM Music Player script end -->
-
   </body>
 </html>

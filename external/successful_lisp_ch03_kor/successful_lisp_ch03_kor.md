@@ -5,9 +5,9 @@ permalink: /external/successful_lisp_ch03_kor/
 
 ---
 
-latest update: 20160513
-원문: https://www.psg.com/~dlamkins/sl/chapter03.html
-주의: 미숙한 번역이라 오역이 난무할지도 모릅니다.
+- latest update: 20160513
+- 원문: https://www.psg.com/~dlamkins/sl/chapter03.html
+- 주의: 미숙한 번역이라 오역이 난무할지도 모릅니다.
 
 
 # Chapter 3 - Essential Lisp in Twelve Lessons
@@ -16,23 +16,23 @@ latest update: 20160513
 
  여러분은 이번 장을 쭉 읽어야 합니다. 이따금 다음 단락이나 다음 장을을 언급하겠지만, 이번장을 이해하기 위해서 반드시 그러한 참고들을 따를 필요는 없습니다. 이번 장을 끝냈을때, Lisp 시스템의 키보드에 앉아있으면서 여러분은 4장을 진행하고 있을것입니다.
 
-Lesson 1 [p 39] - Essential Syntax
-Lesson 2 [p 41] - Essential Evaluation
-Lesson 3 [p 46] - Some Examples of Special Forms and Macros
-Lesson 4 [p 51] - Putting things together, and taking them apart
-Lesson 5 [p 53] - Naming and Identity
-Lesson 6 [p 56] - Binding versus Assignment
-Lesson 7 [p 59] - Essential Function Definition
-Lesson 8 [p 61] - Essential Macro Definition
-Lesson 9 [p 63] - Essential Multiple Values
-Lesson 10 [p 65] - A Preview of Other Data Type
-Lesson 11 [p 77] - Essential Input and Output
-Lesson 12 [p 82] - Essential Reader Macros
+* Lesson 1 [p 39] - Essential Syntax
+* Lesson 2 [p 41] - Essential Evaluation
+* Lesson 3 [p 46] - Some Examples of Special Forms and Macros
+* Lesson 4 [p 51] - Putting things together, and taking them apart
+* Lesson 5 [p 53] - Naming and Identity
+* Lesson 6 [p 56] - Binding versus Assignment
+* Lesson 7 [p 59] - Essential Function Definition
+* Lesson 8 [p 61] - Essential Macro Definition
+* Lesson 9 [p 63] - Essential Multiple Values
+* Lesson 10 [p 65] - A Preview of Other Data Type
+* Lesson 11 [p 77] - Essential Input and Output
+* Lesson 12 [p 82] - Essential Reader Macros
 
 
 ## Lesson 1 - Essential Syntax
 
-* List는 괄호로 감싸져있다.
+### `list`는 괄호로 감싸져있다.
  이것이 Lisp에 대해 여러분이 우선적으로 알아할 것입니다: 괄호로 둘러싸인 모든것은 list이다. 여기 예가 나와있습니다:
 
 ```lisp
@@ -41,12 +41,12 @@ Lesson 12 [p 82] - Essential Reader Macros
 (cat 77 dog 89)
 ```
 
- 말씀드린대로, 괄호로 둘러싸인 것은 list입니다. 이와 같은 문장을 들었을 때, 여러분은 아마도 다음과 같은 질문을 하고자 할 것입니다:
+ 말씀드린대로, 괄호로 둘러싸인 것은 `list`입니다. 이와 같은 문장을 들었을 때, 여러분은 아마도 다음과 같은 질문을 하고자 할 것입니다:
 
 1. 아무것도 없는것을 괄호로 둘러싼다면?
 2. 다른 list를 괄호로 둘러싼다면?
 
- 두 경우 모두 대답은 같습니다. 여전히 list입니다. 따라서 다음 나오는 것들 또한 list입니다:
+ 두 경우 모두 대답은 같습니다. 여전히 `list`입니다. 따라서 다음 나오는 것들 또한 list입니다:
 
 ```lisp
 ()
@@ -74,7 +74,7 @@ Lesson 12 [p 82] - Essential Reader Macros
 
 ### Atom은 공백이나 괄호로 분리된 것입니다
 
- 이제 여러분은 list를 인지할 수 있으며, 괄호 사이에 나타나지만(list 가 아닌 것) 단어나 숫자인 것들에 대한 이름을 알고자 할 것입니다. 이러한 것들을 atom이라 합니다.
+ 이제 여러분은 list를 인지할 수 있으며, 괄호 사이에 나타나지만(list 가 아닌 것) 단어나 숫자인 것들에 대한 이름을 알고자 할 것입니다. 이러한 것들을 `atom`이라 합니다.
 
  그러므로, 다음 단어와 숫자들은 모두 atom입니다:
 
@@ -127,7 +127,7 @@ case-2
 
 ### A form is meant to be evaluated
 
- form은 atom이나 list가 될 수 있습니다. 중요한 것은 form이 평가된다는 것입니다. 평가evaluation는 이번 section에서 서서히 나타날 상당한 기술적 정의입니다.
+ `form`은 `atom`이나 `list`가 될 수 있습니다. 중요한 것은 form이 평가된다는 것입니다. 평가evaluation는 이번 section에서 서서히 나타날 상당한 기술적 정의입니다.
 
  form이 atom이라면 평가는 단순합니다. Lisp는 atom을 이름처럼 다루고, (값이 존재한다면)이름에 대한 값을 받습니다. 여러분은 아마도 왜 제가 atom이라 불리는 변수에 대한 더욱 자세한 설명을 피하는지에 대해 혼란스러울 것입니다. 이유는 atom은 변수 값이나 상수 값을 지닐 수 있기 때문입니다. 그리고 atom의 값은 두가지 경우에 대해 상수가 될 수 있습니다.
 
@@ -137,7 +137,7 @@ case-2
 
  defconstant에서 정의된 symbol은 상수 값을 지닙니다. Lisp는 atom이 변수 값을 지녔을때 값을 저장할 것이며, 그리고 값을 바꿀 수 없다는 기록을 추가할 것입니다.
 
- KEYWORD package에 있는 symbol은 self-evaluation입니다. package에대해 31장[p 247]에서 자세히 살펴볼 것입니다. 지금, 여러분이 알아야 할것은 (package prefix 라 불리는) : 문자로 시작하는 symbol은 keyword symbol이라는 것입니다. keyword symbol은 그 자신을 값으로 갖습니다.
+ KEYWORD package에 있는 symbol은 self-evaluation입니다. package에대해 31장[p 247]에서 자세히 살펴볼 것입니다. 지금, 여러분이 알아야 할것은 (package prefix 라 불리는) `:` 문자로 시작하는 symbol은 keyword symbol이라는 것입니다. keyword symbol은 그 자신을 값으로 갖습니다.
 
  symbol은 다양한 방식으로 변수 값을 얻을 수 있습니다. Lisp는 실제로 symbol에 대한 다양한 값을 지닙니다. 하나는 변수처럼 다뤄지는 symbol의 값이라는 전통적인 의미를 지닙니다. 다른 하나는 symbol의 함수라는 의미를 지닙니다. 다른 것들은 the symbol’s documentation, its printed representation, symbol과 연관짓기 위해 프로그래머가 선택한 properties를 지닙니다. 이러한 것들에 대해 Lesson 5 [p 53], Lesson 6 [p 56], Lesson 7 [p 59]에서 더욱 자세히 살펴볼 것입니다.
 
@@ -150,8 +150,8 @@ case-2
 
  주어진 list를 평가할때 Lisp는 form을 함수 호출로 다룹니다. 지금부터 저희는 수많은 Lisp 평가를 보게될 것이며, Lisp의 input과 이의 반응을 구분하기 위해 시각적 지원aids를 이용할 것입니다:
 
-@  Lisp의 input 앞에 있는 Lisp prompt
->  Lisp 평가의 결과
+    @  Lisp의 input 앞에 있는 Lisp prompt
+    >  Lisp 평가의 결과
 
  예:
 
@@ -203,12 +203,12 @@ case-2
 |  Error: Unbound variable
 ```
 
- 숫자와 keyword는 self-evaluating입니다. 문자열도 그러합니다. *FEATURES* 변수는 Lisp에 의해 미리정의된 것입니다. 여러분의 system은 아마도 다른 값을 반환할 것입니다.
+ 숫자와 keyword는 self-evaluating입니다. 문자열도 그러합니다. `*FEATURES*` 변수는 Lisp에 의해 미리정의된 것입니다. 여러분의 system은 아마도 다른 값을 반환할 것입니다.
 
  symbol WHAT-IS-THIS?는 Lisp에 의해 미리 정의되지 않았으므로, 값을 지니지 않으며, 이의 값을 줄 수 없습니다. 시스템은 값대신 에러메시지로 응답할 것입니다. 저희는 이러한 메시지를 성공적인 평가를 위해 사용하는 > 표지가 아니라, |로 표시하였습니다. 여러분의 system은 아마도 다른 메시지를 출력할 것입니다.
 
 
-A function can return any number of values
+### A function can return any number of values
  종종 여러분은 다수의 값을 반환하는 함수를 지니기를 원합니다. 예를들어, 데이터베이스 전체를 살펴보는 함수는 요구하는 값과 완료상태코드를 동시에 반환해야 합니다. 이를 행할 방법은 함수를  하나의 결과를 위한 위치에 넣는 것입니다; 이는 가능하지만, Lisp 프로그램에 매우 드믄 일입니다.
 
  또 다른 접근법은 결과와 상태코드를 묶어 하나의 반환 값을 생성하는 것입니다.
@@ -1314,12 +1314,12 @@ COLOR RED)
  프로그램을 작성하는것에 관한 어려운 일중 하나는 프로그램의 이름을 짓는 부분입니다. 한편으론, 기억하기 쉽고 명명된 object의 규칙과 목적을 환기evocative시켜주는 이름을 이용하기 원할 것입니다. 다른 한편으론, 언젠가 여러분의 프로그램과 작업하게될, 다른 프로그램의 어딘가에 이미 사용한 (혹은 사용될 것 같은)이름을 이용하지 않길 원할 것입니다.
 
  이름충돌naming conflict을 피하는 법 중 하나는 프로그램에 있는 모든 이름에 누구도 사용하지 않는 고유 접두사prefix를 붙이는 것입니다. 여러분은 이것이 라이브러리에 매번 필요하다고 생각할 것입니다 - 보통 하나에서 세개정도 문자의 접두사가 있다. 불행히도, 여전히 두 소프트웨어 개발자가 동일한 prefix를 선택하기 위한 많은 관문이 남아있습니다; 유달히 몇몇 prefix들이 다른 것보다 더욱 evocative하기 때문입니다. 여러분이 생산한 모든 소프트웨어를 제어하고자 한다면, 모든 prefix를 선택하고 문제를 피할 수 있습니다. prefix naming scheme을 이용하는 third-parfy 소프트웨어를 사고자 한다면, 제조사에 의해 선택된 이름에 관련된 일을 해야할 것이며, 두 제조사가 우연히 동일한 prefix를 사용하지 않기를 희망할 것입니다.
-[prefixed-names.gif]
+![prefixed-names.gif]
 
  naming conflicts 피하는 또 하나의 방법은 qualified name을 이용하는 것입니다. 이를 하기 위해선, 언어가 프로그래머에 의해 정의되고 제어되는 분리된 이름공간의 지원을 제공해야 합니다. 어떻게 이것이 동작하는지 이해하기 위해, 프로그램을 위해 여러분이 만든 모든 이름이 여러분의 이름이 타이틀 상단에 쓰여진 한장에 종이에 작성되었다고 상상해보시기 바랍니다. 이름이 이용하기에 안전한지 확인하기 위해선, 여러분이 이 페이지에 작성한 이름 목록을 확인하기만 하면 됩니다. 누군가의 소프트웨어가 여러분의 프로그램의 서비스를 필요로 할때, 그것은 여러분의 qualifier와 name을 이용하여 여러분의 이름을 참조합니다. 다른이의 소프트웨어는 다른 qualifier를 지니고 그들의 qualifier는 그들만의 name을 암시하기에(이것을 작성할 필요는 없습니다), 이름 충돌을 피할 방도가 없습니다.
 
  여러분은 qualifier는 이름에 prefix를 붙이기 위한 복잡한 방법에 지나지 않는다고 생각할 것입니다. 그러나, 거기엔 미묘하며 중대한 차이점이 있습니다. prefix는 이름의 일부입니다; 이는 한번 작성되면 바뀔 수 없습니다. qualifier는 이가 qualify한 이름에서 분리되었으며, 정확히 한 장소에서 "작성"되었습니다. 더욱이, 여러분은 이름들이 쓰여진 "종이"를 가리켜 이를 "그러한 이름들"이라 말할 수 있습니다. 다른 프로그래머와 동일한 qualifier를 선택하게 된다면, 여러분은 여전히 여러분이 선택한 qualifier에 의해 "그 이름"을 참조할 수 있습니다 - 다른 말로 하자면, 여러분이 사용할 소프트웨어가 출고된 후에도, 여러분은 qualifier를 바꿀 수 있습니다.
-[rename-package.gif]
+![rename-package.gif]
 
  위 예제에는, 파일 LIB1과 LIB2에서 가져온 두 라이브러리가 있습니다. 두 라이브러리 설계자는, Lisp에서 package 이름으로 알려진, 이름 공간namespace을 위해 UTIL이란 이름을 사용하였습니다. 각 라이브러리는 client에게 보여지는 이름들을 나열list했습니다. 두 라이브러리를 이용하는 프로그래머는 MY-PACKAGE란 package 이름에서 코드를 작성합니다. 각 라이브러리를 로드한후, 프로그래머는 이의 package의 이름을 다른 이름으로 바꿉니다. 그러면, UTIL-1:INITIALIZE와 UTIL-2:INITIALIZE의 호출에서 봤던 것처럼, 라이브러리에 있는 이름들은 이름이 바뀐 qualifier를 이용하여 참조됩니다. 프로그래머는 여전히 qualify form이 아닌 INITIALIZE 이름은 이용할 수 있다는 것을 주목하시기 바랍니다 - 이는 MY-PACKAGE:INITIALIZE와 동일합니다.
 
@@ -1585,3 +1585,7 @@ COLOR RED)
  [ ] { } ! ?
 
  여러분은 이중 일부나 전체를 Lisp의 중재없이 macro characters처럼 정의할 수 있습니다. 그러나, 다른 프로그래머와 코드를 공유한다면, 분쟁을 조심해야 합니다.
+
+ 
+ [prefixed-names.gif]: ./prefixed-names.gif
+ [rename-package.gif]: ./rename-package.gif

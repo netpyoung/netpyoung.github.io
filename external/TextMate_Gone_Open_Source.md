@@ -1,6 +1,8 @@
 ---
 layout: default
 title: TextMate Gone Open Source
+permalink: /external/TextMate_Gone_Open_Source/
+
 ---
 
 * 원문 http://ergoemacs.org/misc/textmate_open_sourced.html

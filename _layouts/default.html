@@ -3,17 +3,16 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-	
+
     <title>{{ page.title }}</title>
-	
-	<link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+
+    <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
     <link rel="icon" href="/favicon.ico" type="image/x-icon">
 
     <link rel="alternate" type="application/atom+xml" title="Atom" href="{{ site.Paths.feed }}" />
-    
+
     <link rel="stylesheet" href="{{ site.Paths.resources }}/bootstrap/css/bootstrap.min.css" />
     <link rel="stylesheet" href="{{ site.Paths.resources }}/font-awesome/css/font-awesome.css" />
-    <link rel="stylesheet" href="{{ site.Paths.resources }}/pygments/css/github.css">
 
     <style type="text/css">
      @import url(http://fonts.googleapis.com/css?family=Droid+Sans+Mono);
@@ -46,6 +45,7 @@
     </style>
 
     <script>
+     // google analystics
       (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
       (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
       m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
@@ -72,11 +72,11 @@
           <ul class="nav navbar-nav">
             <!-- /blog -->
                   {% if page.url contains '/blog/' %}
-            <li class='active'><a href="{{ site.Paths.blog }}"><i class="fa fa-coffee"></i> blog</a></li>
+            <li class='active'><a href="{{ site.Paths.blog }}"><i class="fa fa-coffee"></i></a></li>
                   {% else %}
-            <li><a href="{{ site.Paths.blog }}"><i class="fa fa-coffee"></i> blog</a></li>
+            <li><a href="{{ site.Paths.blog }}"><i class="fa fa-coffee"></i></a></li>
                   {% endif %}
-				  
+
 	    <!-- /resume -->
 	    <!--
                   {% if page.url contains '/resume/' %}
@@ -88,38 +88,47 @@
 
             <!-- /external -->
                   {% if page.url contains '/external/' %}
-            <li class='active'><a href="{{ site.Paths.external }}"><i class="fa fa-external-link"></i> external</a></li>
+            <li class='active'><a href="{{ site.Paths.external }}"><i class="fa fa-external-link"></i></a></li>
                   {% else %}
-            <li><a href="{{ site.Paths.external }}"><i class="fa fa-external-link"></i> external</a></li>
+            <li><a href="{{ site.Paths.external }}"><i class="fa fa-external-link"></i></a></li>
                   {% endif %}
 
             <!-- /diary -->
                   {% if page.url contains '/diary/' %}
-            <li class='active'><a href="{{ site.Paths.diary }}"><i class="fa fa-book"></i> diary</a></li>
+            <li class='active'><a href="{{ site.Paths.diary }}"><i class="fa fa-book"></i></a></li>
                   {% else %}
-            <li><a href="{{ site.Paths.diary }}"><i class="fa fa-book"></i> diary</a></li>
+            <li><a href="{{ site.Paths.diary }}"><i class="fa fa-book"></i></a></li>
                   {% endif %}
 
-            <li><a href="{{ site.author.flickr }}"><i class="fa fa-flickr"></i> flickr</a></li>
-            <li><a href="{{ site.author.youtube }}"><i class="fa fa-youtube-play"></i> youtube</a></li>
+            <li><a href="{{ site.author.flickr }}"><i class="fa fa-flickr"></i></a></li>
+            <li><a href="{{ site.author.youtube }}"><i class="fa fa-youtube-play"></i></a></li>
 
-            <li><a href="{{ site.author.github }}"><i class="fa fa-github"></i> github</a></li>
+            <li><a href="{{ site.author.github }}"><i class="fa fa-github"></i></a></li>
+            </form>
           </ul>
 
+
           <ul class="nav navbar-nav navbar-right">
-            <li class="dropdown">
-              <a href="#" class="dropdown-toggle" data-toggle="dropdown">connect
-                <b class="caret"></b>
-              </a>
-              <ul class="dropdown-menu">
-                <li><a href="{{ site.author.facebook }}"><i class="fa fa-facebook-square"></i> facebook</a></li>
-                <li class="divider"></li>
-              </ul>
-            </li>
+              <li class="dropdown">
+                  <a href="#" class="dropdown-toggle" data-toggle="dropdown">connect
+                      <b class="caret"></b>
+                  </a>
+                  <ul class="dropdown-menu">
+                      <li><a href="{{ site.author.facebook }}"><i class="fa fa-facebook-square"></i> facebook</a></li>
+                      <li class="divider"></li>
+                  </ul>
+              </li>
 
           </ul><!-- /.navbar-right -->
         </div><!-- /.nav-collapse -->
       </div><!-- /.navbar -->
+
+
+      <!-- <form action="get" id="site_search">
+           <input type="text" id="search_box">
+           <input type="submit" value="search">
+           </form>
+           <ul id="search_results"></ul> -->
 
       <div class="contents">
         {{ content }}
@@ -132,27 +141,31 @@
 
     <script src="http://code.jquery.com/jquery-latest.js"></script>
     <script src="{{ site.Paths.resources }}/bootstrap/js/bootstrap.min.js"></script>
-    
+    <script src="{{ site.Paths.resources }}/lunr/lunr.min.js"></script>
+    <script src="{{ site.Paths.resources }}/custom/search.js"></script>
+
+
     <script>
-    function apply_table() {
-        var tables = document.getElementsByTagName("table");
-        for (var i = 0; i < tables.length; i++) {
-            tables[i].setAttribute("class", "table"); 
-        }
-    }
-    apply_table();
+     function apply_table() {
+         var tables = document.getElementsByTagName("table");
+         for (var i = 0; i < tables.length; i++) {
+             tables[i].setAttribute("class", "table");
+         }
+     }
+     apply_table();
     </script>
-	
+
     <!-- SCM Music Player http://scmplayer.net -->
-    <script type="text/javascript" src="http://scmplayer.net/script.js" 
+    <script type="text/javascript" src="http://scmplayer.net/script.js"
     data-config="{'skin':'skins/cyber/skin.css','volume':50,'autoplay':false,'shuffle':false,'repeat':1,'placement':'top','showplaylist':false,
     'playlist':[
+    {'title':'[MV] 자우림(Jaurim) - 스물다섯, 스물하나','url':'https://www.youtube.com/watch?v=LrB-fJn-3w4'},
     {'title':'N.EX.TStranger Than Heaven','url':'https://www.youtube.com/watch?v=QlTdgvIFo2o'},
     {'title':'가을방학 - 사람의 홍수 속에서','url':'https://www.youtube.com/watch?v=uCwdnCtxHYU'},
-	{'title':'블랙홀 - 일어나,괜찮아','url':'https://www.youtube.com/watch?v=NLhq1Zq4UZg'},
-	{'title':'N.EX.T - 해에게서 소년에게','url':'https://www.youtube.com/watch?v=a-AOd_ZfNaw'},
-	{'title':'Sia - Chandelier','url':'https://www.youtube.com/watch?v=2vjPBrBU-TM'},
-	{'title':'The Invitation (photographs by William Kroll ©, words by Oriah Mountain Dreamer, music by Nicolette)','url':'https://www.youtube.com/watch?v=0BcSD_LyFOo'},
+    {'title':'블랙홀 - 일어나,괜찮아','url':'https://www.youtube.com/watch?v=NLhq1Zq4UZg'},
+    {'title':'N.EX.T - 해에게서 소년에게','url':'https://www.youtube.com/watch?v=a-AOd_ZfNaw'},
+    {'title':'Sia - Chandelier','url':'https://www.youtube.com/watch?v=2vjPBrBU-TM'},
+    {'title':'The Invitation (photographs by William Kroll ©, words by Oriah Mountain Dreamer, music by Nicolette)','url':'https://www.youtube.com/watch?v=0BcSD_LyFOo'},
     {'title':'Come Monday Night','url':'https://www.youtube.com/watch?v=RPVA9ZM0kZg'},
     {'title':'Perfection as a Hipster','url':'https://www.youtube.com/watch?v=1AF1M2Eg4Rs'},
     {'title':'KID WISE - HOPE (OFFICIAL VIDEO)','url':'https://www.youtube.com/watch?v=-ylvopE8jTI'},

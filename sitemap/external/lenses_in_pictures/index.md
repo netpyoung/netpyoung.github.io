@@ -1,6 +1,7 @@
 ---
 layout: default
 title: "Lenses In Pictures"
+permalink: /external/lenses_in_pictures/
 ---
 
 Lenses In Pictures

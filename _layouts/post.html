@@ -5,25 +5,12 @@ layout: default
 <h2>{{ page.title }}</h2>
 <p class="meta">{{ page.date | date: "%Y.%m.%d" }}</p>
 
-
 <div class="post">
 {{ content }}
 </div><!-- post -->
+
+
 <hr />
-
-
-<div class="tags">
-<h4>Tags<i class="fa fa-tags"></i></h4>
-{% for tag in page.tags %}
-  <li>
-  {% if site.data.tags contains tag %}
-    <a href="/blog/tag/{{ tag }}/">{{ tag }}</a>
-  {% else %}
-    {{ tag }}
-  {% endif %}
-  </li>
-{% endfor %}
-</div><!--tags -->
 <hr />
 
 

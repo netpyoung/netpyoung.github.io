@@ -12,8 +12,8 @@ author :
     youtube : https://www.youtube.com/user/netpyoung/videos
 
 
-include: ["/blog", "/external", "/diary", "/res"]
-exclude: ["README.md", 'Rakefile']
+include: ["/sitemap", "/res"]
+exclude: ["README.md"]
 
 Paths :
     home: /

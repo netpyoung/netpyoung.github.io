@@ -1,6 +1,7 @@
 ---
 layout: default
 title: "Lisp Hackers: Zach Beane"
+permalink: /external/lisp_hacker_zach_beane/
 
 ---
 

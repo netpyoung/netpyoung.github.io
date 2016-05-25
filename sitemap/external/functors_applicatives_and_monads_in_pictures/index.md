@@ -1,6 +1,7 @@
 ---
 layout: default
 title: "Functors, Applicatives, And Monads In Pictures"
+permalink: /external/functors_applicatives_and_monads_in_pictures/
 ---
 
 Functors, Applicatives, And Monads In Pictures

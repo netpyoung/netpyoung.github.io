@@ -1,6 +1,7 @@
 ---
 layout: default
 title: Emacs Lisp에서의 lexcial scoping과 dynamic scoping
+permalink: /external/elisp_lexcical_dynamic/
 ---
 
 

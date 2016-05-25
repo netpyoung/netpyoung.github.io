@@ -45,7 +45,7 @@ permalink: /resume/detail/
 2012.04 ~ 2013.12 | Ncrew Entertainment | pc/mobile 게임     | 스터디 모임에서 면접제의를 받았고, 회사에서 새로운 도약을 준비하고 있는 상황이 흥미로워 합류.
 2014.01 ~ 2014.07 | Sonaclo             | 게임/소프트웨어    | 평소 공부해오던 Clojure란 언어를 가지고, 같이 해보자 해서 합류.
 2014.08 ~ 2015.11 | Gree Korea Inc.     | mobile 게임회사    | 일본계 회사라는 점이 흥미롭고, gree github에 다양한 프로젝트가 올라와 있어 흥미로워서, 집이 가까워서 지원.
-
+{: .table .table-striped}
 
 
 # Skill
@@ -68,7 +68,7 @@ kind                 | content                    | level | detail
                      | ITS(jira, redmine)         |       |
                      | Build(make,CMake,rake)     |       |
                      | Editor(Emacs, Vim)         |       | https://github.com/netpyoung/netpyoung.emacs.d , https://github.com/netpyoung/netpyoung.vim
-
+{: .table .table-striped}
 
 
 * 싫어하는 언어 : javascript / bash / php / perl
@@ -76,95 +76,101 @@ kind                 | content                    | level | detail
 
 # Expereience (ordered by recent)
 
-company             | project name            | period            | assign                | ratio | result
---------------------|-------------------------|-------------------|-----------------------|-------|-------
-Gree Korea Inc.     | .                       | 2014.08 ~ 2015.11 | .                     | .     | .
-활용 기술           | .
-맡은일              | .
-참조                | [lostinstars.link] ![lostinstars.jpg]
+---
+company             | Gree Korea Inc.
+--------------------|-------------------------
+project name        | .
+period              | 2014.08 ~ 2015.11
+position            | game client // live && new
 참여인원            | .
+맡은일              | .
+활용 기술           | .
+참조                | [lostinstars.link] ![lostinstars.jpg]
 좋았던점            | .
 별로였던점          | .
 마무리              | .
-
+{: .table .table-striped}
 
 ---
-
-company             | project name            | period            | assign                | ratio | result
---------------------|-------------------------|-------------------|-----------------------|-------|-------
-Sonaclo             | 가칭: W-Casino          | 2014.01 ~ 2014.07 | 클라/서버 신규        | 30%  | ?
-활용 기술           | Clojure, Clojurescript
-맡은일              | 클라이언트 구조 설계 및 구현.
-                    | 서버 기능 추가.
-참조                | .
+company             | Sonaclo
+--------------------|-------------------------
+project name        | project: W-Casino
+period              | 2014.01 ~ 2014.07
+position            | game client/server // new
 참여인원            | client - 2, server - 2
+맡은일              | 클라이언트 구조 설계 및 구현. 서버 기능 추가.
+활용 기술           | Clojure, Clojurescript
+참조                | .
 좋았던점            | Clojure를 마음껏 써본점.
 별로였던점          | 자금 조달 문제 및 잡혀지지 않은 프로세스.
 마무리              | 의견 차이로 퇴사
+{: .table .table-striped}
+
+
 
 ---
-
-company             | project name            | period            | assign                | ratio | result
---------------------|-------------------------|-------------------|-----------------------|-------|-------
-Ncrew Entertainment | 데빌메이커: 도쿄        | 2013.08 ~ 2013.12 | 서버 라이브           | 20%  | 라이브 서비스 중 (2013.03 ~ ), 출시 초 앱스토어1위
-활용 기술           | Python, Go, bottle, gevent, memcached, mysql
-맡은일              | 컨텐츠 추가(카드 퓨전, 카드 보관함 등)
-                    | 버그수정
-                    | 던전 테스트 툴 작성.
-참조                | .
+company             | Ncrew Entertainment
+--------------------|-
+project name        | 데빌메이커: 도쿄
+period              | 2013.08 ~ 2013.12
+position            | game server // live
 참여인원            | client - 8, server - 8
-좋았던점            | 따로 공부해온게 있어 python 및 *nix환경에 익숙해, 별 어려움없이 작업 투입.
-                    | 서버쪽을 도와주면서 클라이언트에선 알 수 없었던 재미, 고충을 어느정도 이해할 수 있게 되었다.
+맡은일              | 컨텐츠 추가(카드 퓨전, 카드 보관함 등), 버그수정, 던전 테스트 툴 작성.
+활용 기술           | Python, Go, bottle, gevent, memcached, mysql
+참조                | 
+좋았던점            | 따로 공부해온게 있어 python 및 *nix환경에 익숙해, 별 어려움없이 작업 투입. 서버쪽을 도와주면서 클라이언트에선 알 수 없었던 재미, 고충을 어느정도 이해할 수 있게 되었다.
 별로였던점          | 다른 퇴사자들이 늘어나는것을 바라볼때의 그 씁쓸함, 그리고 미안함.
-마무리              | 보다 행복해지기 위해 퇴사.
+마무리              | 비전이 없다고 판단.
+{: .table .table-striped}
 
 
----
 
-company             | project name            | period            | assign                | ratio | result
---------------------|-------------------------|-------------------|-----------------------|-------|-------
-Ncrew Entertainment | 데빌메이커: 도쿄        | 2012.09 ~ 2013.04 | 클라이언트 신규       | 60%  | 라이브 서비스 중 (2013.03 ~ ), 출시 초 앱스토어1위
-활용 기술           | C#, Boo, Ruby, Unity3D, NGUI
-맡은일              | 초기 기반 시스템 구축 (각종 매니져, 로컬라이징, 프로토콜, 빌드, 패치시스템 등)
-                    | 컨텐츠 추가 (튜토리얼, 로그인, 카드 대전, 던전 탐색 등)
-                    | 서드파티 연동(카카오톡, 팜플)
-참조                | [devilmaker.link] ![devilmaker.jpg]
+--
+company             | Ncrew Entertainment
+--------------------|-
+project name        | 데빌메이커: 도쿄
+period              | 2012.09 ~ 2013.04
+position            | game client // new
 참여인원            | client - 1 => 4, server - 2 => 4
+맡은일              | 각종 매니져, 로컬라이징, 프로토콜, 빌드, 패치시스템. 튜토리얼, 로그인, 카드 대전, 던전 탐색 등 컨텐츠 추가. 카카오톡, 팜플 서드파티 연동
+활용 기술           | C#, Boo, Ruby, Unity3D, NGUI
+참조                | [devilmaker.link] ![devilmaker.jpg]
 좋았던점            | 게임이 나오기에 필요한 전반적인 것들을 볼 수 있었고, 팀빌딩이 되는 순간에 서로간의 이해와 대화로 개발 효율이 상당히 올라가는 것을 경험.
-별로였던점          | 인원이 없어 오픈 두달 전까지 매인을 잡아 바쁘게 개발하게되는 상황.
-                    | 일정을 맞추기 위해 의도치않게 코드 품질을 조금 떨어뜨릴수 밖에 없었던 상황.
-마무리              | 지속된 강행군으로 인한, 피로 누적으로 오픈 후 3달간 휴식을 취하기로 함.
+별로였던점          | 인원이 없어 오픈 두달 전까지 매인을 잡아 바쁘게 개발하게되는 상황. 일정을 맞추기 위해 의도치않게 코드 품질을 조금 떨어뜨릴수 밖에 없었던 상황.
+마무리              | 게임 성공적으로 출시. 앱스토어 1위. 피로 누적으로 오픈 후 3달간 휴식을 취하기로 함.
+{: .table .table-striped}
 
 
-
----
-
-company             | project name            | period            | assign                | ratio | result
---------------------|-------------------------|-------------------|-----------------------|-------|-------
-Ncrew Entertainment | 가칭: 카르테 웹         | 2012.08 ~ 2012.07 | 클라이언트 프로토     | 100%  | 프로젝트 무산(2012.08 ~ 2013.01)
-활용 기술           | C#, Unity3D, NGUI
-맡은일              | 프로토타이핑(기존 카르테 게임을, 서버프로토콜을 유지하면서, Unity3d로 재구현(로그인, 1vs1 배틀 등))
-참조                | .
+--
+company             | Ncrew Entertainment
+--------------------|-
+project name        | project: 카르테 웹
+period              | 2012.08 ~ 2012.07
+position            | game client // prototyping
 참여인원            | client - 1
+맡은일              | 기존 카르테 게임을, 서버프로토콜을 유지하면서, Unity3d로 재구현(로그인, 1vs1 배틀 등)
+활용 기술           | C#, Unity3D, NGUI
+참조                | .
 좋았던점            | 뭔가 주도적으로 하는 느낌. 유지보수 때보다 기존 클라이언트를 재해석할 시간, 토론할 시간이 많아서 좋았다. C#의 유연함과 편안함.
 별로였던점          | 개발을 하고 신규게임을 위해 인수인계를 하였는데, 매듭을 짓고싶었는데 하는 아쉬움.
-마무리              | 신규게임 개발시작으로, 동료에게 인수인계. 이후 시장성 문제로 프로젝트 무산.
+마무리              | 신규게임 개발시작으로, 동료에게 인수인계. 이후 시장성 문제로 프로젝트 무산.(2012.08 ~ 2013.01)
+{: .table .table-striped}
 
 
 ---
-
-company             | project name            | period            | assign                | ratio | result
---------------------|-------------------------|-------------------|-----------------------|-------|-------
-Ncrew Entertainment | 카르테                  | 2012.04 ~ 2012.09 | 클라이언트 라이브     | 10% | 서비스 종료(2011.06 ~ 2013.03)
-활용 기술           | C++, CMake, DirectX, Orge, Scaleform, sqlite
-맡은일              | 버그수정
-                    | 컨텐츠 추가. (다중 카드 합성 등)
-참조                | [carte.link] ![carte.jpg]
+company             | Ncrew Entertainment
+--------------------|-
+project name        | 카르테
+period              | 2012.04 ~ 2012.09
+position            | game client // live
 참여인원            | client - 3, server - 1
+맡은일              | 버그수정, 컨텐츠 추가. (다중 카드 합성 등)
+활용 기술           | C++, CMake, DirectX, Orge, Scaleform, sqlite
+참조                | [carte.link] ![carte.jpg]
 좋았던점            | 기존에 짰던 소스를 분석하고 물어보는 과정 자체가 즐겁게 이루어진점.
 별로였던점          | 라이브 특성상, 리펙토링하기 어려운 역사적인 코드가 남아있었던 점, 새로운 기법 적용이 어려웠던점.
-마무리              | 프로토타입 작업으로 7월까지 유지보수를 하게 되었고, 이후 수익문제로 서비스 종료.
-
+마무리              | 프로토타입 작업으로 7월까지 유지보수를 하게 되었고, 이후 수익문제로 서비스 종료(2011.06 ~ 2013.03).
+{: .table .table-striped}
 
 
 [lostinstars.link]: https://youtu.be/zaUb5cVU1nU

@@ -14,4 +14,5 @@ jekyll serve --port 8000 --watch --force_polling
 # ref
 * http://netpyoung.github.io/blog/netpyoung.github.io_on_jekyll
 * https://pages.github.com/versions/
-
+* https://help.github.com/articles/configuring-jekyll/
+* http://kramdown.gettalong.org/quickref.html

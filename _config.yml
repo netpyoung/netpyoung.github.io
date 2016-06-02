@@ -17,10 +17,10 @@ exclude: ["README.md"]
 
 Paths :
     home: /
-    blog: /blog
-    resume: /resume
-    external: /external
-    diary: /diary
+    blog: /sitemap/blog
+    resume: /sitemap/resume
+    external: /sitemap/external
+    diary: /sitemap/diary
     resources: /res
     feed: /feed
 

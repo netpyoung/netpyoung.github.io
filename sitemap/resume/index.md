@@ -1,7 +1,6 @@
 ---
 layout: default
 title: "resume"
-permalink: /resume/
 ---
 
 
@@ -14,7 +13,7 @@ Resume
 * <i class="fa fa-envelope-o"></i>[mail](mailto:netpyoung@gmail.com)
 * <i class="fa fa-github"></i>[github](http://github.com/netpyoung)
 
- 
+
 ### Skills.
 * Major Language : Csharp, Clojure ...
 * Support Language : Ruby, Python ...
@@ -22,7 +21,7 @@ Resume
 
 
 ### Career.
-#### Ncrew Entertainment 
+#### Ncrew Entertainment
 * 2012.04 ~ 2013.12
 * Game Client Programmer (Cpp, Csharp, Boo, Ruby)
 * Game Server Programmer (Python, Go)

@@ -1,8 +1,6 @@
 ---
 layout: default
 title: "resume"
-permalink: /resume/detail/
-
 ---
 
 
@@ -118,7 +116,7 @@ position            | game server // live
 참여인원            | client - 8, server - 8
 맡은일              | 컨텐츠 추가(카드 퓨전, 카드 보관함 등), 버그수정, 던전 테스트 툴 작성.
 활용 기술           | Python, Go, bottle, gevent, memcached, mysql
-참조                | 
+참조                |
 좋았던점            | 따로 공부해온게 있어 python 및 *nix환경에 익숙해, 별 어려움없이 작업 투입. 서버쪽을 도와주면서 클라이언트에선 알 수 없었던 재미, 고충을 어느정도 이해할 수 있게 되었다.
 별로였던점          | 다른 퇴사자들이 늘어나는것을 바라볼때의 그 씁쓸함, 그리고 미안함.
 마무리              | 비전이 없다고 판단.

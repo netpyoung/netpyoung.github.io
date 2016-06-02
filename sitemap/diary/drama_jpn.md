@@ -1,8 +1,6 @@
 ---
 layout: default
 title: "일본드라마"
-permalink: /diary/drama_jpn/
-
 ---
 
 
@@ -19,7 +17,7 @@ permalink: /diary/drama_jpn/
 친구가 Mr.children sign를 추천해 주길레 한번 듣고, 인터넷에서 검색하다 알게된 드라마.
 드라마 OST로 사용되었었다.
 사에라는 케릭터가 엽기적인 그녀?에 청각장애를 더 했다고 해야하나?
-오해는 오해를 낳고.... 
+오해는 오해를 낳고....
 주인공 남자가 넘 착한것도 탈.
 
 <iframe width="420" height="315" src="https://www.youtube.com/embed/4wuWJ7GAc2s" frameborder="0" allowfullscreen></iframe>
@@ -45,5 +43,3 @@ permalink: /diary/drama_jpn/
 
 ## 비밀의 화원(ヒミツの花園)
 음.. 뭐랄까 아쉬워...
-
-

@@ -1,7 +1,6 @@
 ---
 layout: default
 title: References
-permalink: /external/refs/
 ---
 
 # References
@@ -32,7 +31,7 @@ permalink: /external/refs/
 ## 읽은 책
 * Clojure Programming
  - http://shop.oreilly.com/product/0636920013754.do
- 
+
 
 * Joy Of Clojure
  - http://www.manning.com/fogus2/

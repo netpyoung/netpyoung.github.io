@@ -1,8 +1,6 @@
 ---
 layout: default
 title: "음악"
-permalink: /diary/music/
-
 ---
 
 # 노래
@@ -87,7 +85,7 @@ God Help The Girl의 노래는 다 추천!! `Come monday night`도 추천.
 
 ## Rhapsody
 ### [Emerald Sword](https://www.youtube.com/watch?v=FbIsPYfn_68)
-가사의 내용이 중요하지 않을 정도로 멜로디는 처음듣고 소름돋을 정도. 
+가사의 내용이 중요하지 않을 정도로 멜로디는 처음듣고 소름돋을 정도.
 
 
 ## 블랙홀

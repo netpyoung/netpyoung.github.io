@@ -1,8 +1,6 @@
 ---
 layout: default
 title: "영화"
-permalink: /diary/movie/
-
 ---
 
 기준을 정하자. 10점만점

@@ -1,7 +1,6 @@
 ---
 layout: default
 title: Emacs Lisp에서의 lexcial scoping과 dynamic scoping
-permalink: /external/elisp_lexcical_dynamic/
 ---
 
 
@@ -22,7 +21,7 @@ Emacs Lisp에서의 lexcial scoping과 dynamic scoping
 `Emacs Lisp`는 Emacs 23(포함)이하 버전에서는 항상 **dynamically scope**였습니다. Emacs 24에서 **lexical scoping**의 지원이 추가되었습니다. 많은 이들이 대부분의 경우 **dynamic scoping**보다 **lexical scoping이 낫다는데 동의하기에, 상당히 멋진 일입니다. 왜 그런지에 대해서는 본문에서 곧 확인하실 수 있을 것입니다.
 
 **lexical scoping**으로 블러오고자 하는 el파일이 있다면, 첫줄에 `-*- lexical-binding: t -*-`을 추가하기만 하면 됩니다. 그러면, Emacs 24가 파일을 읽을시, 그 el파일속 코드에 **lexical scoping**을 적용하게 됩니다.
- 
+
 
 예를들어, 현재 init 파일의 첫줄은 다음과 같습니다.
 
@@ -36,7 +35,7 @@ Emacs Lisp에서의 lexcial scoping과 dynamic scoping
 ;; -*- coding: utf-8; lexical-binding: t -*-
 ```
 
-이리하면, 제 init파일에 있는 코드는 Emacs24에서 **lexically scope**가 될 것입니다. 자세한 것은 [file variables]를 확인해 보시기 바랍니다. 
+이리하면, 제 init파일에 있는 코드는 Emacs24에서 **lexically scope**가 될 것입니다. 자세한 것은 [file variables]를 확인해 보시기 바랍니다.
 
 **lexcial scoping**이 무엇인지 확인해보기 위해, 우선 빈 el파일을 만들어서 (`C-x C-f lexical-scratch.el RET`) 다음 라인을 추가해 봅시다:
 
@@ -160,7 +159,7 @@ Emacs 24에서, **lexically scoped** (interpreted) 함수들은 `(closure ENV AR
 (print (lambda (x y) (+ x y)))
 ```
 
- **lexical scoping** 이라면 이 코드는 `(closure (t) (x y) (+ x y))`을 두번 출력할 것입니다. **dynamic scoping**에선 `(lambda ...)`는 그 자체로 평가되지만, **lexical scoping** 에선 `(closure ...)`로 평가됩니다 
+ **lexical scoping** 이라면 이 코드는 `(closure (t) (x y) (+ x y))`을 두번 출력할 것입니다. **dynamic scoping**에선 `(lambda ...)`는 그 자체로 평가되지만, **lexical scoping** 에선 `(closure ...)`로 평가됩니다
 
 이제 좀더 파고들어 봅시다. **lexcial scoping** 에서, `함수 A`가 `함수 B`를 정의하고, `함수 B`가 `함수 C`가 정의하고, 그 `함수 C`가 `a`를 출력하면, `a`는 우선 `C`를 찾아보고 없으면, `B`를 등등을 찾아보게 됩니다.
 

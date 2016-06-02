@@ -1,7 +1,6 @@
 ---
 layout: default
 title: "Lenses In Pictures"
-permalink: /external/lenses_in_pictures/
 ---
 
 Lenses In Pictures
@@ -259,19 +258,19 @@ foldMapDefault f = getConst . traverse (Const . f)
 
  [Const가 하는 일은?](http://www.reddit.com/r/haskell/comments/1isryj/lenses_in_pictures/cb7r0lg)
 
- 
+
 위에서 정의한 `fmapDefault`과 모양이 매우 비슷합니다! 결국에는 `Fold`라는 새로운 type alias얻어낼 수 있습니다:
 
 
- 
+
 ```haskell
 type Fold s t a b = forall m. Monoid m => (a -> Const m b) -> s -> Const m t
 ```
- 
+
 
 Setter와 무척 닮았습니다:
- 
- 
+
+
 ```haskell
 type Setter s t a b = (a -> Identity b) -> s -> Identity t
 ```

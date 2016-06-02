@@ -1,7 +1,6 @@
 ---
 layout: default
 title: "netpyoung.github.io"
-permalink: /diary/
 ---
 
 # diary

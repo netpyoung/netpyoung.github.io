@@ -1,8 +1,6 @@
 ---
 layout: default
 title: "운전면허(2015.11.30 ~ 2015.12.22)"
-permalink: /diary/driving_licence_20151130/
-
 ---
 
 ### 2015.11.30
@@ -80,7 +78,7 @@ permalink: /diary/driving_licence_20151130/
       7,500 : 면허증 수수료
     --------------
     733,000
-	
+
 ## 정보
 * 합격기 : http://angimda.tistory.com/entry/운전면허-1종-보통-합격기
  - ㅋㅋ 완전웃기면서 공감된다.

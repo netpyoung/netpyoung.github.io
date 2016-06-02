@@ -12,15 +12,15 @@ author :
     youtube : https://www.youtube.com/user/netpyoung/videos
 
 
-include: ["/sitemap", "/res"]
+include: ["/res"]
 exclude: ["README.md"]
 
 Paths :
     home: /
-    blog: /sitemap/blog
-    resume: /sitemap/resume
-    external: /sitemap/external
-    diary: /sitemap/diary
+    blog: /blog
+    resume: /resume
+    external: /external
+    diary: /diary
     resources: /res
     feed: /feed
 

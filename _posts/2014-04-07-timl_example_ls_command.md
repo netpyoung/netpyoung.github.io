@@ -7,7 +7,7 @@ tags: vim Viml clojure Timl
 ---
 
 ## Timl이란?
-* https://github.com/tpope/timl
+* <https://github.com/tpope/timl>
 * lisp 방언(dialect)중 하나로, VimL로 컴파일된다. (Clojure가 VimL을 만났다고 생각하면 된다.)
 * 4월 1일날 공개해서, 만우절 낚시인줄 알았는데 잘돌아간다..
 * [2014.04.01 sbcl 클로져 지원 낚시](http://www.reddit.com/r/Clojure/comments/21x6hr/sbcl_with_support_for_clojure_xpost_from_rlisp/)
@@ -117,7 +117,7 @@ Result.
 ## Problem.
 * 캐쉬 문제.
  - 2014.04.07 현재 캐쉬문제가 있다. 한번 컴파일이되면, 다음 변경시 재 컴파일이 안 된채로 에러를 뱉는 문제가 있다.
- - https://github.com/tpope/timl/issues/12
+ - <https://github.com/tpope/timl/issues/12>
 
 * 캐쉬 문제 해결.
  - `rm -rf ~/.cache/vim/timl/`로 캐쉬를 날려주자.
@@ -130,8 +130,8 @@ Result.
 
 # Reference.
 * 공식사이트:
- - https://github.com/tpope/timl
+ - <https://github.com/tpope/timl>
 
 * tslime2.vim:
  - vim에서 tmux에게 명령어를 보내주는 플러그인.
- - https://github.com/sjl/tslime2.vim
+ - <https://github.com/sjl/tslime2.vim>

@@ -26,7 +26,7 @@ tags: docker jekyll
 ## Jekyll이란?
 ![](https://jekyllrb.com/img/logo-2x.png)
 
-* http://jekyllrb.com/
+* <http://jekyllrb.com/>
 * 정적 웹 블로그 프레임워크로, Ruby로 짜여졌다.
 * Markdown, Liquid, HTML & CSS을 template제공하여, 렌더링할 수 있게 도와주며 프레임워크인 만큼 여러 편의 기능들이 내장되어 있다.
 
@@ -53,7 +53,7 @@ tags: docker jekyll
  - [도커(Docker) 튜토리얼 : 깐 김에 배포까지](http://blog.nacyot.com/articles/2014-01-27-easy-deploy-with-docker/)
 
 ### Windows에 Docker 설치
-* https://docs.docker.com/installation/windows/
+* <https://docs.docker.com/installation/windows/>
 
 1. 가상화 확인
 2. Docker Toolbox 설치
@@ -68,17 +68,17 @@ docker@default:~$ docker search ubuntu
 docker@default:~$ docker pull ubuntu:latest
 
 ## run image
-docker@default:~$ docker run -it --name jekyll ubuntu 
+docker@default:~$ docker run -it --name jekyll ubuntu
 
 
 
 ##########################################################################
 # install needed package
-root@33b5f808449d:/# apt-get update 
+root@33b5f808449d:/# apt-get update
 root@33b5f808449d:/# apt-get install -y git
 root@33b5f808449d:/# apt-get install -y curl
 root@33b5f808449d:/# apt-get install -y node
-root@33b5f808449d:/# apt-get install -y python-pygments 
+root@33b5f808449d:/# apt-get install -y python-pygments
 root@33b5f808449d:/# apt-get clean
 root@33b5f808449d:/# rm -rf /var/lib/apt/lists/
 
@@ -125,3 +125,6 @@ root# jekyll serve --port 8000 --watch --force_polling
 게임회사에서 기능별로 브랜치까고, 서버 테스트를 할때 공유서버가 아닌, 기능 담당자별 서버가 필요한데. 배포나 설치하는걸 docker로 하면 그냥 간단하게 될것같다.
 쩝 지금있는데는 뭐 한쪽은 svn쓰고, 한쪽은 git을 svn처럼 활용하고 있는데 뭐 더 할말이 있겠냐만은..
 음.. 이제 좀 포스트하는데 편해졌다.
+
+## 추가.
+* docker github-pages로 쉽게 테스트 해볼 수 있게 되었다. <https://github.com/Starefossen/docker-github-pages>

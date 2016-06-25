@@ -8,7 +8,7 @@ tags: skyepot sevabot NFD
 
 
 # sevabot이란?
-* http://sevabot-skype-bot.readthedocs.org/
+* <http://sevabot-skype-bot.readthedocs.org/>
 * Skype4Py 프레임워크를 기반으로한, 스카이프 봇 프로그램.
 
 
@@ -67,7 +67,7 @@ from sevabot.plugins import hangul
 
 
 # 작업된 프로젝트.
-* https://github.com/netpyoung/sevabot
+* <https://github.com/netpyoung/sevabot>
 
 
 # 참고.

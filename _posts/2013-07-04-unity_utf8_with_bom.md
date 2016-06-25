@@ -8,7 +8,7 @@ tags: unity3d BOM
 
 
 ## BOM이란?
-* https://en.wikipedia.org/wiki/Byte_order_mark
+* <https://en.wikipedia.org/wiki/Byte_order_mark>
 * BOM이란 byte order mark의 약자로, 파일 혹은 스트림의 바이트 순서(엔디안)을 나타내기 위해 사용되는 Unicode 문자.
 
 ## UTF-8의 BOM은?
@@ -24,8 +24,8 @@ tip) 꼭 한글 주석 달고 마침표로 끝을 알려주자.
 * Unity에는 AssetPostprocessor란 클래스가 있고, OnPostprocessAllAssets란 메소드가 있는데, 이를 이용하면 파일 생성시 마다 BOM을 추가시켜줄 수 있다.
 
 # inspired
-* http://debuglog.tumblr.com/post/26550984743/utf-8
- - https://github.com/sharkattack51/Unity-EditorScript/blob/master/AssetPostprocessUTF8Encode.cs
+* <http://debuglog.tumblr.com/post/26550984743/utf-8>
+ - <https://github.com/sharkattack51/Unity-EditorScript/blob/master/AssetPostprocessUTF8Encode.cs>
 
 ## example source
 

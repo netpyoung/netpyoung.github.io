@@ -9,7 +9,7 @@ title: "netpyoung.github.io"
 * Game Client/Server Developer
 * <i class="fa fa-github"></i>[github](http://github.com/netpyoung)
 * <i class="fa fa-envelope-o"></i>[mail](mailto:netpyoung@gmail.com)
-* [Details](/resume/detail/)
+* [Details](/resume/detail)
 
 
 ### Skills.

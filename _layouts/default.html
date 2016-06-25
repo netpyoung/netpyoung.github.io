@@ -10,8 +10,8 @@
     <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
     <link rel="icon" href="/favicon.ico" type="image/x-icon">
     <link rel="alternate" type="application/atom+xml" title="Atom" href="{{ site.Paths.feed }}" />
-    <link rel="stylesheet" href="{{ site.Paths.resources }}/bootstrap/css/bootstrap.min.css" />
-    <link rel="stylesheet" href="{{ site.Paths.resources }}/font-awesome/css/font-awesome.css" />
+    <link rel="stylesheet" href="{{ site.Paths.components }}/bootstrap/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="{{ site.Paths.components }}/font-awesome/css/font-awesome.css" />
 
     <style type="text/css">
      @import url(http://fonts.googleapis.com/css?family=Droid+Sans+Mono);
@@ -20,7 +20,7 @@
      html, body { height: 100%; }
 
      p {
-       margin-bottom: 2em;
+       margin-bottom: 1em;
      }
 
      body {
@@ -30,8 +30,9 @@
      .container {
        font-family: 'Droid Sans Mono', 'Nanum Gothic Coding';
        min-height: 100%;
+       max-width: 960px;
        margin-left: both;
-	     margin-right: both;
+       margin-right: both;
        background-color: #FFFFFF;
      }
 
@@ -40,7 +41,7 @@
        max-width: 100%;
      }
     </style>
-    
+
     <script>
      // google analystics
       (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
@@ -95,7 +96,7 @@
                   {% else %}
             <li><a href="{{ site.Paths.diary }}"><i class="fa fa-book"></i></a></li>
                   {% endif %}
-           
+
             <li><a href="{{ site.author.github }}"><i class="fa fa-github"></i></a></li>
             </form>
           </ul>
@@ -108,13 +109,13 @@
                   </a>
                   <ul class="dropdown-menu">
                       <li><a href="{{ site.author.facebook }}"><i class="fa fa-facebook-square"></i> facebook</a></li>
-                       <li><a href="{{ site.author.flickr }}"><i class="fa fa-flickr"></i> flickr</a></li>
+                      <!-- <li><a href="{{ site.author.flickr }}"><i class="fa fa-flickr"></i> flickr</a></li> -->
                        <!-- <li><a href="{{ site.author.youtube }}"><i class="fa fa-youtube-play"> youtube</i></a></li> -->
                       <li class="divider"></li>
                   </ul>
               </li>
           </ul><!-- /.navbar-right -->
-          
+
         </div><!-- /.nav-collapse -->
       </div><!-- /.navbar -->
 
@@ -128,6 +129,6 @@
     </div><!-- /.container -->
 
     <script src="http://code.jquery.com/jquery-latest.js"></script>
-    <script src="{{ site.Paths.resources }}/bootstrap/js/bootstrap.min.js"></script>
+    <script src="{{ site.Paths.components }}/bootstrap/js/bootstrap.min.js"></script>
   </body>
 </html>

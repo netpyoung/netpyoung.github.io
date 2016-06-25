@@ -10,17 +10,23 @@ Resume
 ### [Details](/resume/detail/)
 
 ### About.
+* Game Client/Server Developer
 * <i class="fa fa-envelope-o"></i>[mail](mailto:netpyoung@gmail.com)
 * <i class="fa fa-github"></i>[github](http://github.com/netpyoung)
+
+
 
 
 ### Skills.
 * Major Language : Csharp, Clojure ...
 * Support Language : Ruby, Python ...
-* Game Client/Server Developer
-
+* [.dotfiles](https://github.com/netpyoung/netpyoung.dotfiles)
+* [.emacs](https://github.com/netpyoung/netpyoung.emacs.d)
+* [.vim](https://github.com/netpyoung/netpyoung.vim)
+* [.nvim](https://github.com/netpyoung/netpyoung.nvim)
 
 ### Career.
+
 #### Ncrew Entertainment
 * 2012.04 ~ 2013.12
 * Game Client Programmer (Cpp, Csharp, Boo, Ruby)

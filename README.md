@@ -3,6 +3,12 @@ netpyoung.github.io
 
 넷평남짓한공간
 
+#TODO
+* bower install bootstrap 적용.
+
+
+* https://github.com/Starefossen/docker-github-pages
+
 ``` bash
 jekyll serve --port 8000 --watch --force_polling
 ```

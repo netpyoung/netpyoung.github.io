@@ -15,9 +15,9 @@ netpyoung.github.io on jekyll
  springnote의 운영중단 및 tistory의 한계를 느끼는 터에 여기에 자리잡게되었다.
  개발일을 하다보면, 구글이 친구이며, stackoverflow와 reddit이나 facebook그룹이나 각종 포럼에서 글을 섭렵하기 마련이다.
  뭔가 끌리는 아이디어, 정리할 내용이 있으면 notepad++을 꺼내들고 살며시 저장 백업을 한다. evernote가 이러한 역활에는 맞아떨어지지만 웬지 모르게 거부감이 들어 아직까지도 evernote는 잘 안쓰고 있다.
- markdown으로 블로그를 작성할 수 있는 서비스를 찾았고, https://www.tumblr.com/ 가 대안으로 떠올랐지만, 
+ markdown으로 블로그를 작성할 수 있는 서비스를 찾았고, https://www.tumblr.com/ 가 대안으로 떠올랐지만,
  http://dogfeet.github.io/ 와 http://spoqa.github.io/ 를 보면서, github pages를 알게되었고, 그것이 제공해주는 기능에 더 끌렸다.
- 
+
 
 Github Pages는 github.io에 정적 호스팅을 할 수 있는 서비스이며, 기반 엔진으로 jekyll을 이용한다.
  완전히 옮겨가기 전에 한번 jekyll bootstrap으로 시도해봤다가 이도 저도 않되었으나,
@@ -30,7 +30,7 @@ Github Pages는 github.io에 정적 호스팅을 할 수 있는 서비스이며,
 
 옮긴 이후에, clojure로 작성된 https://github.com/cryogen-project/cryogen 역시 심각히 고려해봤지만,
  github내의 편집 용의성, jekyll이 보다 빠른 실행시간을 보여줘서 jekyll로 정착하기로 했다.
- 
+
  음 되돌아보니, 2013.07.03부터 옮겼구나. jekyll bootstrap없이 생짜로 올리기 시작하면서 삽질한 내용, 참고 링크를 첨부하면서 이 포스팅을 계속 업데이트해 나가겠다.
 
 --------------------------------------------
@@ -43,7 +43,7 @@ Github Pages는 github.io에 정적 호스팅을 할 수 있는 서비스이며,
  - jekyll wiki: https://github.com/mojombo/jekyll/wiki
  - jekyll tutorial : http://www.andrewmunsell.com/blog/ultimate-jekyll-tutorial/
 
- 
+
 ## jekyll bootstrap
 * 홈페이지: http://jekyllbootstrap.com/
 * JB api: http://jekyllbootstrap.com/api/bootstrap-api.html
@@ -93,7 +93,7 @@ root@33b5f808449d:/site# jekyll serve --port 8000 --watch --force_polling
 * https://github.com/vmg/redcarpet
 
 
-## Resources
+## Components
 ### bootstrap
 * http://twitter.github.io/bootstrap/
 * 동영상강의: http://www.youtube.com/user/easydevtuts/videos?shelf_index=1&tag_id=&sort=p&view=0

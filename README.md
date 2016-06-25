@@ -40,6 +40,7 @@ jekyll serve --port 8000 --watch --force_polling
 * search : <http://jekyll.tips/tutorials/search/>
 * comment : facebook
 * README.md to html
+* essay, tech blog division
 
 # ref
 * <http://netpyoung.github.io/blog/netpyoung.github.io_on_jekyll>

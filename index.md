@@ -3,6 +3,10 @@ layout: default
 title: "netpyoung.github.io"
 ---
 
+```
+    그랴 네이티브 언어 습득이랑 시니어로 올라갈 준비 잘해봐! 너라면 잘 할수 있을거야! ㅎㅎ
+```
+
 
 ### About.
 * EunPyoung Kim (1986.09.04)

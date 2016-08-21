@@ -7,6 +7,7 @@ title: "netpyoung.github.io"
     그랴 네이티브 언어 습득이랑 시니어로 올라갈 준비 잘해봐! 너라면 잘 할수 있을거야! ㅎㅎ
 ```
 
+![netpyoung][netpyoung.png]
 
 ### About.
 * EunPyoung Kim (1986.09.04)
@@ -46,3 +47,5 @@ title: "netpyoung.github.io"
 * 2012.04.21 - Study group : [ch18. On Lisp](https://docs.google.com/presentation/d/1ae4Sxx6E7k1Srj9usIgpHzPdRsZIn-yv-HtlHrtPn0I/edit#slide=id.p39)
 * 2012.07.07 - Private seminar : [( Lisp )](https://docs.google.com/presentation/d/1WgYBPwqFD2w_PBi-1aC6RjjYXmD1hhtTga2cF6NO9_Q/edit#slide=id.p14)
 * 2013.10.18 - The 3rd Lisp Seminar in Korea : [Clojure development environment](http://www.slideshare.net/netpyoung/clojure-development-environment)
+
+[netpyoung.png]: {{ site.Paths.resources }}/pic/netpyoung.png

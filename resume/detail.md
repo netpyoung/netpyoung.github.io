@@ -66,9 +66,41 @@ kind                 | content                    | level | detail
                      | Editor(Emacs, Vim)         |       |
 {: .table .table-bordered}
 
+# What did I do
+## C# - Unity3D
+* Have a experience of mobile game client developement using Unity3D Engine
+* experience of main programmer.
+* Unity Editor tools.
+* data converter(read excel and convert to sqlite or json).
+* patch automation using AWS api, Google api.
+* Android/iOS native plugin.
+* AI using BehaviorTree.
 
+## C++
+* Have a experience of pc game client developement using DirectX 9 and Orge Engine.
+* Interop Scaleform.
+
+## Rust / Lua
+* studing.
+
+## Clojure/ClojureScript
+* Have a experience of facebook game client/server developement using Unity3D Engine
+* Web Server && Browser Game
+
+## Go/Python
+* Have a experience of mobile game server developement
+* Web Server
+* RPC Server
+
+## etc
+* hubot script (chat ops with jenkins)
+* have a experience of development in *nix environment
+* vi / emacs / tmux
+* git / mercurial / svn (but I prefer git)
+* haven't fear of studing something new.
 
 # Expereience (ordered by recent)
+
 company             | .
 :-------------------|:------------------------
 project name        | .

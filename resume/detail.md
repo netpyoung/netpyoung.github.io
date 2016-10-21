@@ -27,8 +27,8 @@ title: "resume"
 * studing.
 
 ## Clojure/ClojureScript
-* Have a experience of facebook game client/server developement using Unity3D Engine
-* Web Server && Browser Game
+* Have a experience of facebook game client/server developement
+* Web Server && Facebook Browser Game Client
 
 ## Go/Python
 * Have a experience of mobile game server developement
@@ -36,11 +36,13 @@ title: "resume"
 * RPC Server
 
 ## etc
-* hubot script (chat ops with jenkins)
-* have a experience of development in *nix environment
+* haven't fear of studing something new.
+* experience of sqlite3 / mysql
+* experience of development in *nix environment
 * vi / emacs / tmux
 * git / mercurial / svn (but I prefer git)
-* haven't fear of studing something new.
+* hubot script (chat ops with jenkins)
+
 
 -----------------------
 

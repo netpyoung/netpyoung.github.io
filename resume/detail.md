@@ -193,7 +193,7 @@ position            | game client // new
 company             | Ncrew Entertainment
 :-------------------|:------------------------
 project name        | project: 카르테 웹
-period              | 2012.08 ~ 2012.07
+period              | 2012.07 ~ 2012.09
 position            | game client // prototyping
 참여인원            | client - 1
 맡은일              | 기존 카르테 게임을, 서버프로토콜을 유지하면서, Unity3d로 재구현(로그인, 1vs1 배틀 등)

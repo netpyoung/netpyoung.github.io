@@ -41,6 +41,8 @@ title: "netpyoung.github.io"
 * Game Client Programmer (Cpp, Csharp, Boo, Ruby)
 * Game Server Programmer (Python, Go)
 
+### Admire
+* [Michal Marcinkowski](https://mm.soldat.pl/)
 
 ### Presentation:
 * 2012.02.29 - Study group : [ch09. On Lisp](https://docs.google.com/presentation/d/1oXJLxrxD3xresGchitMQD4xzk4LBLQB4neF0CLGVrTk/edit#slide=id.p47)

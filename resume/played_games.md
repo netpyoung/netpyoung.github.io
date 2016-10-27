@@ -1,3 +1,8 @@
+---
+layout: default
+title: "played games"
+---
+
 # good
 * 英雄伝説1,2,3,4
 * 幻世酔虎伝.

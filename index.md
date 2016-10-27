@@ -14,6 +14,7 @@ title: "netpyoung.github.io"
 * Game Client/Server Developer
 * <i class="fa fa-github"></i>[github](http://github.com/netpyoung)
 * <i class="fa fa-envelope-o"></i>[mail](mailto:netpyoung@gmail.com)
+* [played_games](/resume/played_games.md)
 * [Details](/resume/detail)
 
 

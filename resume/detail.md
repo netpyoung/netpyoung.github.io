@@ -91,7 +91,7 @@ kind                 | content                    | level | detail
 영어                 | TOEIC                      | 하    | 650점 (2011.??.??), 기술문서 읽을 수준은 됨.
 프로그래밍(업무활용) | C++                        | 하    |
                      | C#                         | 중    |
-                     | Clojure                    | 중    | <http://codingdojang.com/profile/answer/1693> , <https://github.com/netpyoung/exercism/tree/master/clojure>
+                     | Clojure                    | 중    | <http://codingdojang.com/profile/answer/1693> , <https://github.com/netpyoung/exercism/tree/master/clojure> , <https://www.4clojure.com/user/netpyoung>
                      | Go                         | 하    |
                      | Python                     | 중    |
                      | Ruby                       | 하    |

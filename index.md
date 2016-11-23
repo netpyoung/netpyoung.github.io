@@ -44,6 +44,7 @@ title: "netpyoung.github.io"
 
 ### Admire
 * [Michal Marcinkowski](https://mm.soldat.pl/)
+* [byulbram](http://blog.naver.com/byulbram)
 
 ### Presentation:
 * 2012.02.29 - Study group : [ch09. On Lisp](https://docs.google.com/presentation/d/1oXJLxrxD3xresGchitMQD4xzk4LBLQB4neF0CLGVrTk/edit#slide=id.p47)

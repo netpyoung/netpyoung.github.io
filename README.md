@@ -8,6 +8,11 @@ netpyoung.github.io
 
 넷평남짓한공간
 
+# using docker
+```bash
+alias homepage='cd ~/github/netpyoung.github.io/ && docker run -v "$PWD":/usr/src/app -p "4000:4000" starefossen/github-pages'
+```
+
 
 ``` bash
 jekyll serve --port 8000 --watch --force_polling
@@ -41,6 +46,7 @@ jekyll serve --port 8000 --watch --force_polling
 * comment : facebook
 * README.md to html
 * essay, tech blog division
+
 
 # ref
 * <http://netpyoung.github.io/blog/netpyoung.github.io_on_jekyll>

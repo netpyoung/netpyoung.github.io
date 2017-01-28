@@ -76,67 +76,24 @@ title: "履歴書"
 
 
 
+# Project
 
+* 2012.04~2012.09: Pc online : [Carte](https://www.youtube.com/watch?v=4NicQp58-kE)
 
+![carte.jpg]
 
+* 2012.09~2013.12: Mobile : [Devilmaker : tokyo](https://www.youtube.com/watch?v=xMv7b3Hm19w)
 
-## Detail
-# lua binding
+![devilmaker.jpg]
 
-* テュートリアル、バトルをlua scriptで作成して企画者が実験してみたいとしている内容をすぐに確認して実験して見ることができます。
+* 2014.01~2014.07: Facebook web : Project -W
+* 2014.08~2015.04: Mobile : [Lost in stars](https://www.youtube.com/watch?v=zaUb5cVU1nU)
 
-```
-=> c# function <=> lua function binding
-=> lua command => C# command queue
-=> using lua coroutine.yield()
-=> c# command process
-=> sync or async(coroutine) process like tutorial, in-game
-```
+![lostinstars.jpg]
 
-``` csharp
-script.Globals ["Character"] =(Func<string, string, TARGET_POS, TalkCharacter>)TalkCharacter.GenCharacter;
+* 2015.01~2015.11: Mobile : project-A5
+* 2016.07~0000.00: Mobile : [Quiz Corona](https://www.youtube.com/watch?v=Zs9iEhDxBcg)
 
-string scriptCode =  File.ReadAllText (Application.dataPath + "/res_r/lua/quest.lua");
-ScriptMachine machine1 = new QScriptMachine();
-yield return machine1.Init();
-StartCoroutine(machine1.Run(scriptCode));
-```
-
-
-``` csharp
-public class QuestCommand_Talk : BaseQuestCommand
-{
-	TalkCharacter character;
-	string message;
-	object[] args;
-	public QuestCommand_Talk(TalkCharacter character, string message, params object[] args)
-	{
-		this.character = character;
-		this.message = message;
-		this.args = args;
-	}
-	protected override IEnumerator Execute (QuestSequenceController controller)
-	{
-		yield return controller.Talk (character, message, args);
-	}
-}
-```
-
-``` lua
-    local rumi = Character("rumi", "img_1", TARGET_POS.BOTTOM)
-    rumi:Show()
-    rumi:Talk("helloworld)
-    rumi:Deactive()
-    rumi:Hide()
-    coroutine.yield()
-    local answer = Question("like me", "yes", "no")
-    if answer == "yes" then
-        print("test")
-    else
-        print("test")
-    end
-    coroutine.yield()
-```
 
 
 # patch, build

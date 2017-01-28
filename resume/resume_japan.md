@@ -29,7 +29,8 @@ title: "履歴書"
 
 
 # 私ができること(会社でやったこと)
-# Unity client engineerで備えた能力
+
+## Unity client engineerで備えた能力
 * メインプログラマーとしてプロトタイピングからの発売や、運営までまでゲームシステムの大部分を具現したことがあります。
 * サーバーサイドも学びながら助けたことがあります。
 * データ変換及び管理プロセスの構築。(excel, csv, json, sqlite, msgpack)
@@ -42,7 +43,7 @@ title: "履歴書"
 * AI using BehaviorTree.
 
 
-# その他
+## その他
 * DirectX 9 and Orge Engine, Scaleformを利用してゲームを開発してみた経験があります。
 * clojureでゲームサーバーをclojurescriptにhtml5 canvasを利用してスロットマシン、カードゲームfacebookゲームを作ってみたことがあります。
 * git/mercurial/svnを扱って見ました。 中でgitを好きです。

@@ -55,14 +55,6 @@ title: "履歴書"
 * ジュニア開発者よりも経験ある開発者に任せた方がいいです。
 
 
-# Side project
-* https://github.com/netpyoung/awesome-unity-free
-* https://github.com/netpyoung/nf.protocol-flow
-* https://github.com/netpyoung/nf.data-flow
-* https://github.com/netpyoung/SqlCipher4Unity3D
-* https://github.com/netpyoung/unity.libsodium
-
-
 # 語学水準
 
 日本語 | 初級 (まだ、テストしていません（N4程度) 話は少しできます。書くこと読むことは下手です。)

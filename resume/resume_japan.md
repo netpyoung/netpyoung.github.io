@@ -3,31 +3,6 @@ layout: default
 title: "履歴書"
 ---
 
-# 語学水準
-
-日本語 | 初級 (まだ、テストしていません（N4程度) 話は少しできます。書くこと読むことは下手です。)
-英語   | 中級 (技術文書の読解。英語での基本的な会話が可能。)
-{: .table .table-bordered}
-
-
-# 履歴
-
-.	              | .
-------------------|----------------------
-2002.03 ~ 2005.02 | 済州第一高等学校
-2005.03 ~ 2005.07 | 済州大学(家庭の事情中途退学)
-2006.11 ~ 2008.11 | 軍隊
-2009.03 ~ 2010.11 | 職業学校
-2011.08           | 學點銀行制 - 学士(電子計算学)
-2012.04 ~ 2013.12 | Ncrew Entertainment
-2014.01 ~ 2014.07 | Sonaclo
-2014.08 ~ 2015.11 | GREE
-2016.01 ~ 2016.03 | 渋谷外語学院
-2016.07 ~ .       | 株式会社ファンクルー
-{: .table .table-bordered}
-
-
-
 # 私ができること(会社でやったこと)
 
 ## Unity client engineerで備えた能力
@@ -37,9 +12,6 @@ title: "履歴書"
 * ゲームマネージャー設計や具現(patch, build, UI(ngui, ugui, fairtygui), sound, log,  define, lua binding,tutorial, encrypt)
 * Unity Editor.(C#define編集、スキル確認ツール, リアルタイムマスターデータロード, マスターデータクラス自動生成, キャラクター、モンスターウェイポイント編集, デザイナーデータ自動)
 * Android/iOS native plugin.
- - https://github.com/netpyoung/unity.native-example
- - https://github.com/netpyoung/unity.libsodium
- - https://github.com/netpyoung/SqlCipher4Unity3D
 * AI using BehaviorTree.
 
 
@@ -75,6 +47,46 @@ title: "履歴書"
 * 同じチームであるにクライアントがプログラムで他のパート人たちの不便さを改善することにも関心が多いです。
 
 
+# Automatation
+* 毎回人の手にするとミスによるビルドエラーの集中力減少を書くときにない資源浪費。
+* 企画者がビルドを言って作業物をすぐに確認できます。
+* デザイナー・リソース・変換作業を自動で処理します。
+* これで作業者はゲームロジックに集中できる時間が増えます。
+* ジュニア開発者よりも経験ある開発者に任せた方がいいです。
+
+
+# Side project
+* https://github.com/netpyoung/awesome-unity-free
+* https://github.com/netpyoung/nf.protocol-flow
+* https://github.com/netpyoung/nf.data-flow
+* https://github.com/netpyoung/SqlCipher4Unity3D
+* https://github.com/netpyoung/unity.libsodium
+
+
+# 語学水準
+
+日本語 | 初級 (まだ、テストしていません（N4程度) 話は少しできます。書くこと読むことは下手です。)
+英語   | 中級 (技術文書の読解。英語での基本的な会話が可能。)
+{: .table .table-bordered}
+
+
+# 履歴
+
+.	              | .
+------------------|----------------------
+2002.03 ~ 2005.02 | 済州第一高等学校
+2005.03 ~ 2005.07 | 済州大学(家庭の事情中途退学)
+2006.11 ~ 2008.11 | 軍隊
+2009.03 ~ 2010.11 | 職業学校
+2011.08           | 學點銀行制 - 学士(電子計算学)
+2012.04 ~ 2013.12 | Ncrew Entertainment
+2014.01 ~ 2014.07 | Sonaclo
+2014.08 ~ 2015.11 | GREE
+2016.01 ~ 2016.03 | 渋谷外語学院
+2016.07 ~ .       | 株式会社ファンクルー
+{: .table .table-bordered}
+
+
 
 # Project
 
@@ -95,40 +107,6 @@ title: "履歴書"
 * 2016.07~0000.00: Mobile : [Quiz Corona](https://www.youtube.com/watch?v=Zs9iEhDxBcg)
 
 
-
-# patch, build
-* 毎回人の手にするとミスによるビルドエラーの集中力減少を書くときにない資源浪費。
-* 企画者がビルドを言って作業物をすぐに確認できます。
-* デザイナー・リソース・変換作業を自動で処理します。
-* これで作業者はゲームロジックに集中できる時間が増えます。
-
-```
-[Planner PC]
- => [Slack] : planner typing command likes `!build JPN DEV`
- => [Slack bot] : parsing user command and run jenkins web api
- => [Jenkins] : build custom user script
-
-* Run Build Script Written in Ruby Rakefile
- (windows batch、powershell、bash shell scriptいずれも扱うと思うが
-これまでに経験でruby Rakefileが管理するよかったです。命令語一つにビルドおよび配布までしました。)
-
-# client master data
- => [Google Sheet]
- => [Google Api] : download excel to build machine.
- => [Converting] : excel to sqlite.
- => [Custom api] : Upload sqlite to client data patch server.
- => [Git] : versioning excel and exported file.
-
-# build
- => [Git] : pull client source.
- => [Unity ExecuteMethod] : auto versioning
- => [Android] : using mustache to generate AndroidManifest.xml.
- => [iOS] : modify `Info.plist`, `project.pbx` run xcodebuild commandline.
- => [Hockey Api] : Upload build file
-
-* assetbundleの生成(aws-api利用してアップロード)とunittestも同じような過程で行われます。
-
-```
 
 
 [lostinstars.link]: https://youtu.be/zaUb5cVU1nU

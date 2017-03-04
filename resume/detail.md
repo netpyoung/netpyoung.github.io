@@ -19,12 +19,16 @@ title: "resume"
 * Android/iOS native plugin.
 * AI using BehaviorTree.
 
-## C++
-* Have a experience of pc game client developement using DirectX 9 and Orge Engine.
-* Interop Scaleform.
 
-## Rust / Lua
-* studing.
+### Presentation:
+* 2012.02.29 - Study group : [ch09. On Lisp](https://docs.google.com/presentation/d/1oXJLxrxD3xresGchitMQD4xzk4LBLQB4neF0CLGVrTk/edit#slide=id.p47)
+* 2012.04.21 - Study group : [ch18. On Lisp](https://docs.google.com/presentation/d/1ae4Sxx6E7k1Srj9usIgpHzPdRsZIn-yv-HtlHrtPn0I/edit#slide=id.p39)
+* 2012.07.07 - Private seminar : [( Lisp )](https://docs.google.com/presentation/d/1WgYBPwqFD2w_PBi-1aC6RjjYXmD1hhtTga2cF6NO9_Q/edit#slide=id.p14)
+* 2013.10.18 - The 3rd Lisp Seminar in Korea : [Clojure development environment](http://www.slideshare.net/netpyoung/clojure-development-environment)
+
+## C++
+* Interop Scaleform.
+* Have a experience of pc game client developement using DirectX 9 and Orge Engine.
 
 ## Clojure/ClojureScript
 * Have a experience of facebook game client/server developement

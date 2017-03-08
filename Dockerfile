@@ -1,6 +1,6 @@
 FROM starefossen/ruby-node:2-4
 
-ENV GITHUB_GEM_VERSION 112
+ENV GITHUB_GEM_VERSION 127
 
 RUN mkdir -p /usr/src/app
 WORKDIR /usr/src/app
@@ -10,4 +10,4 @@ RUN gem install --no-document \
   jekyll-github-metadata
 
 EXPOSE 4000
-CMD jekyll serve -d /_site --drafts --watch --force_polling -H 0.0.0.0 -P 4000
+CMD jekyll serve -d _site --drafts --watch --force_polling -H 0.0.0.0 -P 4000

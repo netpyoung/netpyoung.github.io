@@ -42,6 +42,7 @@ jekyll serve --port 8000 --watch --force_polling
 ```
 
 # TODO
+* submodule : https://help.github.com/articles/using-submodules-with-pages/
 * search : <http://jekyll.tips/tutorials/search/>
 * comment : facebook
 * README.md to html

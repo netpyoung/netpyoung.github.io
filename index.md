@@ -17,16 +17,25 @@ title: "netpyoung.github.io"
 ### Skills.
 * Strong : C#, Clojure
 * Knowledgeable : Ruby, Python, Go
-* [.dotfiles](https://github.com/netpyoung/netpyoung.dotfiles)
-* [.emacs](https://github.com/netpyoung/netpyoung.emacs.d)
-* [.nvim](https://github.com/netpyoung/netpyoung.nvim), [.vim](https://github.com/netpyoung/netpyoung.vim)
-
 
 ### Side project
+#### Unity3D
 * [nf.protocol-flow](https://github.com/netpyoung/nf.protocol-flow)
 * [nf.data-flow](https://github.com/netpyoung/nf.data-flow)
 * [Sqlcipher4unity3d](https://github.com/netpyoung/SqlCipher4Unity3D)
 * [unity.libsodium](https://github.com/netpyoung/unity.libsodium)
+
+#### Clojure
+* [fb-sdk-cljs](https://github.com/netpyoung/fb-sdk-cljs)
+* WIP - [jjamppong](https://github.com/netpyoung/jjamppong)
+* WIP - [meetup.clj](https://github.com/netpyoung/meetup.clj)
+
+
+### Config.
+* [.dotfiles](https://github.com/netpyoung/netpyoung.dotfiles)
+* [.emacs](https://github.com/netpyoung/netpyoung.emacs.d)
+* [.nvim](https://github.com/netpyoung/netpyoung.nvim), [.vim](https://github.com/netpyoung/netpyoung.vim)
+
 
 
 ### Career.

@@ -15,7 +15,7 @@ title: "netpyoung.github.io"
 
 
 ### Skills.
-* Strong : C#, Clojure
+* Strong : C#, [Clojure](https://www.4clojure.com/user/netpyoung)
 * Knowledgeable : Ruby, Python, Go
 
 ### Side project

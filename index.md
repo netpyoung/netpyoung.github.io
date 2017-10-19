@@ -11,7 +11,8 @@ title: "netpyoung.github.io"
 * <i class="fa fa-envelope-o"></i>[mail](mailto:netpyoung@gmail.com)
 * <i class="fa fa-github"></i>[github](http://github.com/netpyoung)
 * [played_games](/resume/played_games.md)
-* [Details](/resume/resume_japan)
+* [resume - jpn](/resume/resume_jpn)
+* [resume - eng](/resume/resume_eng)
 
 
 ### Skills.

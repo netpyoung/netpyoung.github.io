@@ -6,14 +6,14 @@ title: "netpyoung.github.io"
 ![netpyoung][netpyoung.png]
 
 ### About.
-* EunPyoung Kim - Unity Engineer
-* I'm experienced with a game development.
+* EunPyoung Kim
+* I'm experienced with a game development with Unity3D GameEngine.
+* I'm interested Clojure. I'm fall in lisp power.
 * <i class="fa fa-envelope-o"></i>[mail](mailto:netpyoung@gmail.com)
 * <i class="fa fa-github"></i>[github](http://github.com/netpyoung)
 * [played_games](/resume/played_games.md)
-* [resume - jpn](/resume/resume_jpn)
-* [resume - eng](/resume/resume_eng)
-
+* [resume - jpn](https://docs.google.com/document/d/1eiagvIR9Zko-DNXf6miQRYR1zaM_KjViFT2NX4vjijQ/edit?usp=sharing)
+* [resume - eng](https://docs.google.com/document/d/1sS9sx-LH2124aj4-NtRX3thAnmGLKjNRH2j2Y_3SSdQ/edit?usp=sharing)
 
 ### Skills.
 * Strong : C#, [Clojure](https://www.4clojure.com/user/netpyoung)
@@ -40,6 +40,9 @@ title: "netpyoung.github.io"
 
 
 ### Career.
+
+#### 2016.07 ~ 2017.11 | Gree Korea Inc.
+* Mobile game client programmer (C#)
 
 #### 2014.08 ~ 2015.11 | Gree Korea Inc.
 * Mobile game client programmer (C#)

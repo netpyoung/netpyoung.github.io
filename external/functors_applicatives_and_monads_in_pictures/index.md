@@ -440,46 +440,41 @@ foo = do
 
 
 
- [value.png]: ./img/value.png
- [value_apply.png]: ./img/value_apply.png
- [value_and_context.png]: ./img/value_and_context.png
- [context.png]: ./img/context.png
- [no_fmap_ouch.png]: ./img/no_fmap_ouch.png
- [fmap_apply.png]: ./img/fmap_apply.png
- [functor_def.png]: ./img/functor_def.png
- [fmap_def.png]: ./img/fmap_def.png
- [fmap_just.png]: ./img/fmap_just.png
- [fmap_nothing.png]: ./img/fmap_nothing.png
- [fmap_list.png]: ./img/fmap_list.png
- [function_with_value.png]: ./img/function_with_value.png
- [fmap_function.png]: ./img/fmap_function.png
- [function_and_context.png]: ./img/function_and_context.png
- [applicative_just.png]: ./img/applicative_just.png
- [applicative_list.png]: ./img/applicative_list.png
- [fmap.png]: ./img/fmap.png
- [applicative.png]: ./img/applicative.png
- [half.png]: ./img/half.png
- [half_ouch.png]: ./img/half_ouch.png
- [bind_def.png]: ./img/bind_def.png
- [monad_just.png]: ./img/monad_just.png
- [monad_nothing.png]: ./img/monad_nothing.png
- [monad_chain.png]: ./img/monad_chain.png
- [whoa.png]: ./img/whoa.png
- [io.png]: ./img/io.png
- [getLine.png]: ./img/getLine.png
- [readFile.png]: ./img/readFile.png
- [putStrLn.png]: ./img/putStrLn.png
- [monad_io.png]: ./img/monad_io.png
- [recap.png]: ./img/recap.png
-
-
- [bill.png]: ./img/bill.png
- [TaTdV.gif]: ./img/TaTdV.gif
- [plunger.jpg]: ./img/plunger.jpg
-
-
- [typeclass]: http://learnyouahaskell.com/types-and-typeclasses#typeclasses-101
- [function composition]:  http://en.wikipedia.org/wiki/Function_composition
-
- [three useful monads]: http://adit.io/posts/2013-06-10-three-useful-monads.html
- [LYAH’s section on Monads]: http://learnyouahaskell.com/a-fistful-of-monads
+[value.png]: ./img/value.png
+[value_apply.png]: ./img/value_apply.png
+[value_and_context.png]: ./img/value_and_context.png
+[context.png]: ./img/context.png
+[no_fmap_ouch.png]: ./img/no_fmap_ouch.png
+[fmap_apply.png]: ./img/fmap_apply.png
+[functor_def.png]: ./img/functor_def.png
+[fmap_def.png]: ./img/fmap_def.png
+[fmap_just.png]: ./img/fmap_just.png
+[fmap_nothing.png]: ./img/fmap_nothing.png
+[fmap_list.png]: ./img/fmap_list.png
+[function_with_value.png]: ./img/function_with_value.png
+[fmap_function.png]: ./img/fmap_function.png
+[function_and_context.png]: ./img/function_and_context.png
+[applicative_just.png]: ./img/applicative_just.png
+[applicative_list.png]: ./img/applicative_list.png
+[fmap.png]: ./img/fmap.png
+[applicative.png]: ./img/applicative.png
+[half.png]: ./img/half.png
+[half_ouch.png]: ./img/half_ouch.png
+[bind_def.png]: ./img/bind_def.png
+[monad_just.png]: ./img/monad_just.png
+[monad_nothing.png]: ./img/monad_nothing.png
+[monad_chain.png]: ./img/monad_chain.png
+[whoa.png]: ./img/whoa.png
+[io.png]: ./img/io.png
+[getLine.png]: ./img/getLine.png
+[readFile.png]: ./img/readFile.png
+[putStrLn.png]: ./img/putStrLn.png
+[monad_io.png]: ./img/monad_io.png
+[recap.png]: ./img/recap.png
+[bill.png]: ./img/bill.png
+[TaTdV.gif]: ./img/TaTdV.gif
+[plunger.jpg]: ./img/plunger.jpg
+[typeclass]: http://learnyouahaskell.com/types-and-typeclasses#typeclasses-101
+[function composition]:  http://en.wikipedia.org/wiki/Function_composition
+[three useful monads]: http://adit.io/posts/2013-06-10-three-useful-monads.html
+[LYAH’s section on Monads]: http://learnyouahaskell.com/a-fistful-of-monads

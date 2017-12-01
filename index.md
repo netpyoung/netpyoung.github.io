@@ -12,6 +12,7 @@ title: "netpyoung.github.io"
 * <i class="fa fa-envelope-o"></i>[mail](mailto:netpyoung@gmail.com)
 * <i class="fa fa-github"></i>[github](http://github.com/netpyoung)
 * [played_games](/resume/played_games.md)
+* [slideshare](https://www.slideshare.net/netpyoung)
 * [resume - jpn](https://docs.google.com/document/d/1eiagvIR9Zko-DNXf6miQRYR1zaM_KjViFT2NX4vjijQ/edit?usp=sharing)
 * [resume - eng](https://docs.google.com/document/d/1sS9sx-LH2124aj4-NtRX3thAnmGLKjNRH2j2Y_3SSdQ/edit?usp=sharing)
 
@@ -41,10 +42,10 @@ title: "netpyoung.github.io"
 
 ### Career.
 
-#### 2016.07 ~ 2017.11 | Gree Korea Inc.
+#### 2016.07 ~ 2017.11 | Funcrew
 * Mobile game client programmer (C#)
 
-#### 2014.08 ~ 2015.11 | Gree Korea Inc.
+#### 2014.08 ~ 2015.11 | Gree Korea
 * Mobile game client programmer (C#)
   - [lostinstars.link]
 

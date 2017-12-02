@@ -11,8 +11,8 @@ title: "netpyoung.github.io"
 * I'm interested Clojure. I'm fall in lisp power.
 * <i class="fa fa-envelope-o"></i>[mail](mailto:netpyoung@gmail.com)
 * <i class="fa fa-github"></i>[github](http://github.com/netpyoung)
-* [played_games](/resume/played_games.md)
-* [slideshare](https://www.slideshare.net/netpyoung)
+* <i class="fa fa-linkedin-square" aria-hidden="true"></i>[linkedin](https://www.linkedin.com/in/netpyoung/)
+* <i class="fa fa-slideshare" aria-hidden="true"></i>[slideshare](https://www.slideshare.net/netpyoung)
 * [resume - jpn](https://docs.google.com/document/d/1eiagvIR9Zko-DNXf6miQRYR1zaM_KjViFT2NX4vjijQ/edit?usp=sharing)
 * [resume - eng](https://docs.google.com/document/d/1sS9sx-LH2124aj4-NtRX3thAnmGLKjNRH2j2Y_3SSdQ/edit?usp=sharing)
 

@@ -46,6 +46,10 @@ title: "netpyoung.github.io"
 
 ### Career.
 
+#### Singapore
+##### 2018.01 ~ Currently | Xii Braves
+* Mobile game client programmer (C#)
+
 #### Japan
 ##### 2016.07 ~ 2017.11 | Funcrew
 * Mobile game client programmer (C#)

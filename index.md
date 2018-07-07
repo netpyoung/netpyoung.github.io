@@ -46,9 +46,10 @@ title: "netpyoung.github.io"
 
 
 ### Career.
+#### ????
 
 #### Singapore
-##### 2018.01 ~ Currently | Xii Braves
+##### 2018.01 ~ 2018.08 | Xii Braves
 * Mobile game client programmer (C#)
 
 #### Japan

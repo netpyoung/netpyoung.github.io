@@ -15,8 +15,10 @@ title: "netpyoung.github.io"
 * <i class="fa fa-github"></i>[github](http://github.com/netpyoung)
 * <i class="fa fa-linkedin-square" aria-hidden="true"></i>[linkedin](https://www.linkedin.com/in/netpyoung/)
 * <i class="fa fa-slideshare" aria-hidden="true"></i>[slideshare](https://www.slideshare.net/netpyoung)
-* [resume - jpn](https://docs.google.com/document/d/1eiagvIR9Zko-DNXf6miQRYR1zaM_KjViFT2NX4vjijQ/edit?usp=sharing)
-* [resume - eng](https://docs.google.com/document/d/1sS9sx-LH2124aj4-NtRX3thAnmGLKjNRH2j2Y_3SSdQ/edit?usp=sharing)
+* Resume -JPN
+  - [履歴書](https://docs.google.com/document/d/1eiagvIR9Zko-DNXf6miQRYR1zaM_KjViFT2NX4vjijQ/edit?usp=sharing)
+  - [職務経歴書](https://docs.google.com/document/d/14MjsZ5TFvB9J_Lj_4QAKxk2FKypE5tlqlsKoIQTH6nw/edit?usp=sharing)
+* [Resume - eng](https://docs.google.com/document/d/1sS9sx-LH2124aj4-NtRX3thAnmGLKjNRH2j2Y_3SSdQ/edit?usp=sharing)
 
 
 ### Skills.

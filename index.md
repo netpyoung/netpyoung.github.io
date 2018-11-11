@@ -8,57 +8,59 @@ title: "netpyoung.github.io"
 
 
 ### About.
-* EunPyoung Kim
+* <span class="flag-icon flag-icon-kr flag-icon-squared"></span> EunPyoung Kim
 * I'm experienced with a game development with Unity3D GameEngine.
 * I'm interested in Clojure. I'm fall in lisp power.
-* <i class="fa fa-envelope-o"></i>[mail](mailto:netpyoung@gmail.com)
-* <i class="fa fa-github"></i>[github](http://github.com/netpyoung)
-* <i class="fa fa-linkedin-square" aria-hidden="true"></i>[linkedin](https://www.linkedin.com/in/netpyoung/)
-* <i class="fa fa-slideshare" aria-hidden="true"></i>[slideshare](https://www.slideshare.net/netpyoung)
-* Resume -JPN
-  - [履歴書](https://docs.google.com/document/d/1eiagvIR9Zko-DNXf6miQRYR1zaM_KjViFT2NX4vjijQ/edit?usp=sharing)
-  - [職務経歴書](https://docs.google.com/document/d/14MjsZ5TFvB9J_Lj_4QAKxk2FKypE5tlqlsKoIQTH6nw/edit?usp=sharing)
-* [Resume - eng](https://docs.google.com/document/d/1sS9sx-LH2124aj4-NtRX3thAnmGLKjNRH2j2Y_3SSdQ/edit?usp=sharing)
+* <i class="fa fa-envelope-o"></i> [email](mailto:netpyoung@gmail.com)
+* <i class="fa fa-github"></i> [github](http://github.com/netpyoung)
+* <i class="fa fa-slideshare" aria-hidden="true"></i> [slideshare](https://www.slideshare.net/netpyoung)
+
+### Resume
+* <i class="fa fa-linkedin-square" aria-hidden="true"></i> [linkedin](https://www.linkedin.com/in/netpyoung/)
+* <span class="flag-icon flag-icon-jp flag-icon-squared"></span> JPN: [履歴書](https://docs.google.com/document/d/1eiagvIR9Zko-DNXf6miQRYR1zaM_KjViFT2NX4vjijQ/edit?usp=sharing), [職務経歴書](https://docs.google.com/document/d/14MjsZ5TFvB9J_Lj_4QAKxk2FKypE5tlqlsKoIQTH6nw/edit?usp=sharing)
+* <span class="flag-icon flag-icon-gb flag-icon-squared"></span> ENG: [Resume](https://docs.google.com/document/d/1sS9sx-LH2124aj4-NtRX3thAnmGLKjNRH2j2Y_3SSdQ/edit?usp=sharing)
+
 
 
 ### Skills.
-* Strong : C#, [Clojure](https://www.4clojure.com/user/netpyoung)
+* Strong : C#, [Clojure](http://www.4clojure.com/user/netpyoung)
 * Knowledgeable : Ruby, Python, Go
 
 
 ### Side project
 #### Unity3D
-* [nf.protocol-flow](https://github.com/netpyoung/nf.protocol-flow)
-* [nf.data-flow](https://github.com/netpyoung/nf.data-flow)
 * [Sqlcipher4unity3d](https://github.com/netpyoung/SqlCipher4Unity3D)
 * [unity.libsodium](https://github.com/netpyoung/unity.libsodium)
 * [unity.webp](https://github.com/netpyoung/unity.webp)
+* [nf.protocol-flow](https://github.com/netpyoung/nf.protocol-flow)
+* [nf.data-flow](https://github.com/netpyoung/nf.data-flow)
 
 #### Clojure
+* [cljpyoung.address-plate](https://github.com/netpyoung/cljpyoung.address-plate)
+* [cljpyoung.result](https://github.com/netpyoung/cljpyoung.result)
+* [cljpyoung.http.status](https://github.com/netpyoung/cljpyoung.http.status)
 * [fb-sdk-cljs](https://github.com/netpyoung/fb-sdk-cljs)
-* WIP - [jjamppong](https://github.com/netpyoung/jjamppong)
-* WIP - [meetup.clj](https://github.com/netpyoung/meetup.clj)
-
+* [pt.using-fxml-on-clojure](https://github.com/netpyoung/pt.using-fxml-on-clojure)
 
 ### Config.
 * [.dotfiles](https://github.com/netpyoung/netpyoung.dotfiles)
-* [.emacs](https://github.com/netpyoung/netpyoung.emacs.d)
-* [.nvim](https://github.com/netpyoung/netpyoung.nvim), [.vim](https://github.com/netpyoung/netpyoung.vim)
-
+* [.emacs](https://github.com/netpyoung/netpyoung.emacs.d) / [init-babel](https://github.com/netpyoung/init-babel/)
+* [.nvim](https://github.com/netpyoung/netpyoung.nvim) / [.vim](https://github.com/netpyoung/netpyoung.vim)
 
 
 ### Career.
-#### ????
+#### <span class="flag-icon flag-icon-sg flag-icon-squared"></span> Singapore
+##### 2018.09 ~ | Flybot
+* Mobile game server programmer (Clojure)
 
-#### Singapore
 ##### 2018.01 ~ 2018.08 | Xii Braves
 * Mobile game client programmer (C#)
 
-#### Japan
+#### <span class="flag-icon flag-icon-jp flag-icon-squared"></span> Japan
 ##### 2016.07 ~ 2017.11 | Funcrew
 * Mobile game client programmer (C#)
 
-#### Korea
+#### <span class="flag-icon flag-icon-kr flag-icon-squared"></span> Korea
 ##### 2014.08 ~ 2015.11 | GREE
 * Mobile game client programmer (C#)
   - [lostinstars.link]

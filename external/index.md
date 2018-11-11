@@ -5,7 +5,7 @@ title: "netpyoung.github.io"
 
 # external
 
-## translated
+## translated to Korean
 
 ### text
 

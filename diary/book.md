@@ -18,10 +18,10 @@ title: "netpyoung.github.io"
     - 강추. 난이도 스파이크 튀는것만 조심하면 진짜 재미있게 볼 수 있다.
 
 * [On Lisp - Paul Grahom](http://www.paulgraham.com/onlisp.html)
-    - 매크로를 가지고 노는 책임 ㅇㅇ. 사실 알고보면 조금만 파는것인데도 불구하고, 매크로
+    - 고전.
 
 * [Structure and Interpretation of Computer Programs](https://mitpress.mit.edu/sicp/full-text/book/book.html)
     - scheme. 가뜩이나 어색한 언어 가지고 하느라 힘이 드는데... 책을 보다보면 문법보다 더 어려운 내용들이... 그래도 재미있었다.
 
-* [하스켈로 배우는 프로그래밍 - Grahom Hutton | 대림](http://www.cs.nott.ac.uk/~gmh/book.html)
+* [하스켈로 배우는 프로그래밍 - Grahom Hutton](http://www.cs.nott.ac.uk/~gmh/book.html)
     - 예제들이 주옥같다. 하스켈로 짤때는 생각하는 방식을 조금 달리해서 짜야하는듯.

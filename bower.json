@@ -11,6 +11,7 @@
   "dependencies": {
     "jquery": "^3.0.0",
     "bootstrap": "^3.3.6",
-    "components-font-awesome": "^4.6.3"
+    "components-font-awesome": "^4.6.3",
+    "flag-icon-css": "^3.2.1"
   }
 }

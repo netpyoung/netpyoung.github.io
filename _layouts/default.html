@@ -11,7 +11,8 @@
     <link rel="icon" href="/favicon.ico" type="image/x-icon">
     <link rel="alternate" type="application/atom+xml" title="Atom" href="{{ site.Paths.feed }}" />
     <link rel="stylesheet" href="{{ site.Paths.components }}/bootstrap/dist/css/bootstrap.min.css" />
-    <link rel="stylesheet" href="{{ site.Paths.components }}/components-font-awesome/css/font-awesome.css" />
+    <link rel="stylesheet" href="{{ site.Paths.components }}/components-font-awesome/css/font-awesome.min.css" />
+    <link rel="stylesheet" href="{{ site.Paths.components }}/flag-icon-css/css/flag-icon.min.css" />
 
     <style type="text/css">
      @import url(//fonts.googleapis.com/css?family=Droid+Sans+Mono);
@@ -27,13 +28,17 @@
        background-color: #1D1F21;
      }
 
+     .flag-icon {
+       box-shadow: 0 0 1px @gray-light, 0 0 1px @gray-light, 0 0 1px @gray-light;
+     }
+
      .container {
-       font-family: 'Droid Sans Mono', 'Nanum Gothic Coding';
-       min-height: 100%;
-       max-width: 960px;
-       margin-left: both;
-       margin-right: both;
-       background-color: #FFFFFF;
+         font-family: 'Droid Sans Mono', 'Nanum Gothic Coding';
+         min-height: 100%;
+         max-width: 960px;
+         margin-left: both;
+         margin-right: both;
+         background-color: #FFFFFF;
      }
 
      img {

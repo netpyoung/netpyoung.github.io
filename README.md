@@ -5,10 +5,15 @@ title: "netpyoung.github.io"
 
 netpyoung.github.io
 ===================
-
+>
 넷평남짓한공간
 
 # using docker
+```bash
+docker-compose up
+```
+
+
 ```bash
 alias homepage='cd ~/github/netpyoung.github.io/ && docker run -v "$PWD":/usr/src/app -p "4000:4000" starefossen/github-pages'
 ```
@@ -18,34 +23,9 @@ alias homepage='cd ~/github/netpyoung.github.io/ && docker run -v "$PWD":/usr/sr
 jekyll serve --port 8000 --watch --force_polling
 ```
 
-
-```tree
-[~/netpyoung.github.io]$ tree -CF --dirsfirst -L 1
-.
-├── _drafts/
-├── _layouts/
-├── _posts/
-├── components/
-├── diary/
-├── external/
-├── res/
-├── resume/
-├── 404.md
-├── README.md
-├── _config.yml
-├── blog.html
-├── bower.json
-├── etc.md
-├── favicon.ico
-├── feed.xml
-└── index.md
-```
-
 # TODO
-* submodule : https://help.github.com/articles/using-submodules-with-pages/
 * search : <http://jekyll.tips/tutorials/search/>
 * comment : facebook
-* README.md to html
 * essay, tech blog division
 
 

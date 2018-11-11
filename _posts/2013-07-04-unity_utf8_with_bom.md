@@ -6,7 +6,6 @@ tags: unity3d BOM
 
 ---
 
-
 ## BOM이란?
 * <https://en.wikipedia.org/wiki/Byte_order_mark>
 * BOM이란 byte order mark의 약자로, 파일 혹은 스트림의 바이트 순서(엔디안)을 나타내기 위해 사용되는 Unicode 문자.

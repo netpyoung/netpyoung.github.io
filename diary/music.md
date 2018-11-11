@@ -48,17 +48,15 @@ Eminem이라면...
 ## Belle and Sebastian
 ### [Dress up in you](https://youtu.be/U_zejeTlh-E)
 진짜 좋아하는 영화 `God help the Girl`의 엔딩곡으로 나오는 노래. 중간 트럼펫소리가 감미롭다.
+## God Help The Girl
+### [Musician, Please Take Heed](https://www.youtube.com/watch?v=j-ibQ5AOLno)
+God Help The Girl의 노래는 다 추천!! `Come monday night`도 추천.
 
 
 
 ## 이승철
 ### [그런 사람 또 없습니다](https://www.youtube.com/watch?v=PmSPu0bXXGs)
 이 곡은 이승철이 불러야 어울린다. `슬퍼도 행복합니다`.
-
-
-## God Help The Girl
-### [Musician, Please Take Heed](https://youtu.be/Gk7at28788M)
-God Help The Girl의 노래는 다 추천!! `Come monday night`도 추천.
 
 
 ## Rimi Natsukawa

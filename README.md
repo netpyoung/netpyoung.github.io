@@ -25,7 +25,7 @@ jekyll serve --port 8000 --watch --force_polling
 
 # TODO
 * search : <http://jekyll.tips/tutorials/search/>
-* comment : facebook
+  - client side search using `lunr.js`. but Am I need client-side search?
 * essay, tech blog division
 
 

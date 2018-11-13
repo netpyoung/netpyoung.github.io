@@ -3,10 +3,9 @@ layout: default
 title: "netpyoung.github.io"
 ---
 
-
 ![netpyoung][netpyoung.png]
 
-### About.
+### About
 * <span class="flag-icon flag-icon-kr flag-icon-squared"></span> EunPyoung Kim
 * I'm experienced with a game development with Unity3D GameEngine.
 * I'm interested in Clojure. I'm fall in lisp power.
@@ -28,23 +27,23 @@ title: "netpyoung.github.io"
 
 ### Side project
 #### Unity3D
-* [Sqlcipher4unity3d](https://github.com/netpyoung/SqlCipher4Unity3D)
-* [unity.libsodium](https://github.com/netpyoung/unity.libsodium)
-* [unity.webp](https://github.com/netpyoung/unity.webp)
-* [nf.protocol-flow](https://github.com/netpyoung/nf.protocol-flow)
-* [nf.data-flow](https://github.com/netpyoung/nf.data-flow)
+* [sqlcipher](https://github.com/netpyoung/SqlCipher4Unity3D)
+/ [libsodium](https://github.com/netpyoung/unity.libsodium)
+/ [webp](https://github.com/netpyoung/unity.webp)
+/ [protocol-flow](https://github.com/netpyoung/nf.protocol-flow)
+/ [data-flow](https://github.com/netpyoung/nf.data-flow)
 
-#### Clojure
-* [cljpyoung.address-plate](https://github.com/netpyoung/cljpyoung.address-plate)
-* [cljpyoung.result](https://github.com/netpyoung/cljpyoung.result)
-* [cljpyoung.http.status](https://github.com/netpyoung/cljpyoung.http.status)
-* [fb-sdk-cljs](https://github.com/netpyoung/fb-sdk-cljs)
-* [pt.using-fxml-on-clojure](https://github.com/netpyoung/pt.using-fxml-on-clojure)
+####  <span class="icon "><img src="{{ site.Paths.resources }}/icon/clojure.png" /></span> Clojure
+* [address-plate](https://github.com/netpyoung/cljpyoung.address-plate)
+/ [result](https://github.com/netpyoung/cljpyoung.result)
+/ [http.status](https://github.com/netpyoung/cljpyoung.http.status)
+/ [fb-sdk-cljs](https://github.com/netpyoung/fb-sdk-cljs)
+/ [pt.using-fxml-on-clojure](https://github.com/netpyoung/pt.using-fxml-on-clojure)
 
 ### Config.
 * [.dotfiles](https://github.com/netpyoung/netpyoung.dotfiles)
-* [.emacs](https://github.com/netpyoung/netpyoung.emacs.d) / [init-babel](https://github.com/netpyoung/init-babel/)
-* [.nvim](https://github.com/netpyoung/netpyoung.nvim) / [.vim](https://github.com/netpyoung/netpyoung.vim)
+/ [.emacs](https://github.com/netpyoung/netpyoung.emacs.d) / [init-babel](https://github.com/netpyoung/init-babel/)
+/ [.nvim](https://github.com/netpyoung/netpyoung.nvim) / [.vim](https://github.com/netpyoung/netpyoung.vim)
 
 
 ### Career.

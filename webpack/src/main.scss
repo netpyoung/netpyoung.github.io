@@ -1,4 +1,5 @@
 @charset "utf-8";
+
 @import "~bulma/bulma";
 @import "./rouge.css";
 
@@ -14,22 +15,8 @@ $fa-font-path: '~@fortawesome/fontawesome-free/webfonts';
 @import '~@fortawesome/fontawesome-free/scss/regular';
 @import '~@fortawesome/fontawesome-free/scss/brands';
 
-//@import '~flag-icon-css/css/flag-icon.min.css'
-// @import '~flag-icon-css/sass/flag-icon'
 
+@import url(//fonts.googleapis.com/css?family=Droid+Sans+Mono);
+@import url(//fonts.googleapis.com/css?family=Noto+Sans+KR);
 
-// @font-face {
-//   font-family: 'FontAwesome';
-//   src: url('fontawesome-webfont.eot') format('embedded-opentype'),
-//        url('fontawesome-webfont.woff2') format('woff2'),
-//        url('fontawesome-webfont.woff') format('woff'),
-//        url('fontawesome-webfont.ttf') format('ttf');
-// }
-
-// .fa-save:before,
-// .fa-floppy-o:before {
-//   content: '\f0c7';
-// }
-// .fa-table:before {
-//   content: '\f0ce';
-// }
+// @import './site.css';

@@ -1,0 +1,30 @@
+html, body { height: 100%; }
+
+p {
+    margin-bottom: 1em;
+}
+
+html {
+    background-color: #1D1F21;
+}
+
+.flag-icon {
+    box-shadow: 0 0 1px @gray-light, 0 0 1px @gray-light, 0 0 1px @gray-light;
+}
+
+.container {
+    font-family: 'Droid Sans Mono', 'Noto Sans KR';
+    min-height: 100%;
+    max-width: 960px;
+    margin-left: both;
+    margin-right: both;
+    background-color: #FFFFFF;
+}
+
+.content {
+}
+
+img {
+    height: auto;
+    max-width: 100%;
+}

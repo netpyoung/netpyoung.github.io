@@ -84,16 +84,16 @@
 
                 <div id="navbarExampleTransparentExample" class="navbar-menu">
                     <div class="navbar-start">
-                        <a class="navbar-item {% if page.url contains '/blog/' %}has-background-white-ter{% endif %}" href="{{ site.Paths.blog }}">
+                        <a class="navbar-item {% if page.url contains '/blog/' %}has-background-grey-lighter{% endif %}" href="{{ site.Paths.blog }}">
                             <i class="fas fa-coffee"></i>
                         </a>
-                        <a class="navbar-item {% if page.url contains '/external/' %}has-background-white-ter{% endif %}" href="{{ site.Paths.external }}">
+                        <a class="navbar-item {% if page.url contains '/external/' %}has-background-grey-lighter{% endif %}" href="{{ site.Paths.external }}">
                             <i class="fas fa-external-link-alt"></i>
                         </a>
-                        <a class="navbar-item {% if page.url contains '/diary/' %}has-background-white-ter{% endif %}" href="{{ site.Paths.diary }}">
+                        <a class="navbar-item {% if page.url contains '/diary/' %}has-background-grey-lighter{% endif %}" href="{{ site.Paths.diary }}">
                             <i class="fas fa-book"></i>
                         </a>
-                        <a class="navbar-item" href="{{ site.auth.github }}"><i class="fab fa-github"></i></a>
+                        <a class="navbar-item" href="{{ site.author.github }}"><i class="fab fa-github"></i></a>
                         <a class="navbar-item" href="/feed.xml"><i class="fas fa-rss-square"></i></a>
                     </div> <!-- navbar-start -->
 
@@ -125,12 +125,12 @@
                 </div> <!-- navbar-menu -->
             </nav>
 
-            <div class="content">
+            <div class="content container is-fluid">
                 {{ content }}
             </div><!-- /.content -->
 
-            <div class="footer">
-            </div><!-- /.footer  -->
+            <!-- <div class="footer">
+                 </div><!-- /.footer  -->
 
         </div><!-- /.container -->
     </body>

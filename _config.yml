@@ -23,8 +23,10 @@ Paths :
     external: /external
     diary: /diary
     resources: /res
-    components: /components
+    webpack: /webpack/dist
     feed: /feed
+
+exclude: ["webpack/node_modules"]
 
 # ref: https://github.com/mojombo/jekyll/wiki/Permalinks
 permalink: /blog/:title

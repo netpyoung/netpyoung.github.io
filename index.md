@@ -6,17 +6,16 @@ title: "netpyoung.github.io"
 
 ![netpyoung][netpyoung.png]
 
-
 ### About.
 * <span class="flag-icon flag-icon-kr flag-icon-squared"></span> EunPyoung Kim
 * I'm experienced with a game development with Unity3D GameEngine.
 * I'm interested in Clojure. I'm fall in lisp power.
-* <i class="fa fa-envelope-o"></i> [email](mailto:netpyoung@gmail.com)
-* <i class="fa fa-github"></i> [github](http://github.com/netpyoung)
-* <i class="fa fa-slideshare" aria-hidden="true"></i> [slideshare](https://www.slideshare.net/netpyoung)
+* <i class="far fa-envelope"></i> [email](mailto:netpyoung@gmail.com)
+* <i class="fab fa-github"></i> [github](http://github.com/netpyoung)
+* <i class="fab fa-slideshare" aria-hidden="true"></i> [slideshare](https://www.slideshare.net/netpyoung)
 
 ### Resume
-* <i class="fa fa-linkedin-square" aria-hidden="true"></i> [linkedin](https://www.linkedin.com/in/netpyoung/)
+* <i class="fab fa-linkedin" aria-hidden="true"></i> [linkedin](https://www.linkedin.com/in/netpyoung/)
 * <span class="flag-icon flag-icon-jp flag-icon-squared"></span> JPN: [履歴書](https://docs.google.com/document/d/1eiagvIR9Zko-DNXf6miQRYR1zaM_KjViFT2NX4vjijQ/edit?usp=sharing), [職務経歴書](https://docs.google.com/document/d/14MjsZ5TFvB9J_Lj_4QAKxk2FKypE5tlqlsKoIQTH6nw/edit?usp=sharing)
 * <span class="flag-icon flag-icon-gb flag-icon-squared"></span> ENG: [Resume](https://docs.google.com/document/d/1sS9sx-LH2124aj4-NtRX3thAnmGLKjNRH2j2Y_3SSdQ/edit?usp=sharing)
 

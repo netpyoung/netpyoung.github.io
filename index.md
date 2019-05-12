@@ -24,26 +24,31 @@ title: "netpyoung.github.io"
 * Strong : C#, [Clojure](http://www.4clojure.com/user/netpyoung)
 * Knowledgeable : Ruby, Python, Go
 
+### Config.
+
+| name                                                                                                      |
+|-----------------------------------------------------------------------------------------------------------|
+| [.dotfiles](https://github.com/netpyoung/netpyoung.dotfiles)                                              |
+| [.emacs](https://github.com/netpyoung/netpyoung.emacs.d)                                                  |
+| [.nvim](https://github.com/netpyoung/netpyoung.nvim) / [.vim](https://github.com/netpyoung/netpyoung.vim) |
 
 ### Side project
 #### Unity3D
-* [sqlcipher](https://github.com/netpyoung/SqlCipher4Unity3D)
-/ [libsodium](https://github.com/netpyoung/unity.libsodium)
-/ [webp](https://github.com/netpyoung/unity.webp)
-/ [protocol-flow](https://github.com/netpyoung/nf.protocol-flow)
-/ [data-flow](https://github.com/netpyoung/nf.data-flow)
+
+| name                                                                | desc                            |
+|---------------------------------------------------------------------|---------------------------------|
+| [nf.protocol-flow](https://github.com/netpyoung/nf.protocol-flow)   | protocol generate from protobuf |
+| [nf.data-flow](https://github.com/netpyoung/nf.data-flow)           | data exporter from excel        |
+| [SqlCipher4Unity3D](https://github.com/netpyoung/SqlCipher4Unity3D) | wrapper libsqlcipher            |
+| [unity.libsodium](https://github.com/netpyoung/unity.libsodium)     | wrapper libsodium               |
+| [unity.webp](https://github.com/netpyoung/unity.webp)               | wrapper libwebp                 |
 
 ####  <span class="icon "><img src="{{ site.Paths.resources }}/icon/clojure.png" /></span> Clojure
-* [address-plate](https://github.com/netpyoung/cljpyoung.address-plate)
-/ [result](https://github.com/netpyoung/cljpyoung.result)
-/ [http.status](https://github.com/netpyoung/cljpyoung.http.status)
-/ [fb-sdk-cljs](https://github.com/netpyoung/fb-sdk-cljs)
-/ [pt.using-fxml-on-clojure](https://github.com/netpyoung/pt.using-fxml-on-clojure)
 
-### Config.
-* [.dotfiles](https://github.com/netpyoung/netpyoung.dotfiles)
-/ [.emacs](https://github.com/netpyoung/netpyoung.emacs.d) / [init-babel](https://github.com/netpyoung/init-babel/)
-/ [.nvim](https://github.com/netpyoung/netpyoung.nvim) / [.vim](https://github.com/netpyoung/netpyoung.vim)
+| name                                                                              |
+|-----------------------------------------------------------------------------------|
+| [pt.using-fxml-on-clojure](https://github.com/netpyoung/pt.using-fxml-on-clojure) |
+| [pt.c-interop-in-clojure](https://github.com/netpyoung/pt.c-interop-in-clojure)   |
 
 
 ### Career.

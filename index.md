@@ -39,6 +39,7 @@ title: "netpyoung.github.io"
 |---------------------------------------------------------------------|---------------------------------|
 | [nf.protocol-flow](https://github.com/netpyoung/nf.protocol-flow)   | protocol generate from protobuf |
 | [nf.data-flow](https://github.com/netpyoung/nf.data-flow)           | data exporter from excel        |
+| [nf.results](https://github.com/netpyoung/NF.Results)               | optional type for C#            |
 | [SqlCipher4Unity3D](https://github.com/netpyoung/SqlCipher4Unity3D) | wrapper libsqlcipher            |
 | [unity.libsodium](https://github.com/netpyoung/unity.libsodium)     | wrapper libsodium               |
 | [unity.webp](https://github.com/netpyoung/unity.webp)               | wrapper libwebp                 |

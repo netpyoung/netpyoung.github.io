@@ -8,23 +8,21 @@ title: "netpyoung.github.io"
 ### About
 * <span class="flag-icon flag-icon-kr flag-icon-squared"></span> EunPyoung Kim
 * I'm experienced with a game development with Unity3D GameEngine.
-* I'm interested in Clojure. I'm fall in lisp power.
 * <i class="far fa-envelope"></i> [email](mailto:netpyoung@gmail.com)
 * <i class="fab fa-github"></i> [github](http://github.com/netpyoung)
 * <i class="fab fa-slideshare" aria-hidden="true"></i> [slideshare](https://www.slideshare.net/netpyoung)
 
 ### Resume
-* <i class="fab fa-linkedin" aria-hidden="true"></i> [linkedin](https://www.linkedin.com/in/netpyoung/)
-* <span class="flag-icon flag-icon-jp flag-icon-squared"></span> JPN: [履歴書](https://docs.google.com/document/d/1eiagvIR9Zko-DNXf6miQRYR1zaM_KjViFT2NX4vjijQ/edit?usp=sharing), [職務経歴書](https://docs.google.com/document/d/14MjsZ5TFvB9J_Lj_4QAKxk2FKypE5tlqlsKoIQTH6nw/edit?usp=sharing)
-* <span class="flag-icon flag-icon-gb flag-icon-squared"></span> ENG: [Resume](https://docs.google.com/document/d/1sS9sx-LH2124aj4-NtRX3thAnmGLKjNRH2j2Y_3SSdQ/edit?usp=sharing)
+* <i class="fab fa-linkedin" aria-hidden="true"></i> [LinkedIn](https://www.linkedin.com/in/netpyoung/)
+* <span class="flag-icon flag-icon-gb flag-icon-squared"></span> English: [Resume](https://docs.google.com/document/d/1sS9sx-LH2124aj4-NtRX3thAnmGLKjNRH2j2Y_3SSdQ/edit?usp=sharing)
+* <span class="flag-icon flag-icon-jp flag-icon-squared"></span> 日本語: [履歴書](https://docs.google.com/document/d/1eiagvIR9Zko-DNXf6miQRYR1zaM_KjViFT2NX4vjijQ/edit?usp=sharing), [職務経歴書](https://docs.google.com/document/d/14MjsZ5TFvB9J_Lj_4QAKxk2FKypE5tlqlsKoIQTH6nw/edit?usp=sharing)
 
 
-
-### Skills.
+### Skills
 * Strong : C#, [Clojure](http://www.4clojure.com/user/netpyoung)
 * Knowledgeable : Ruby, Python, Go
 
-### Config.
+### Configs
 
 | name                                                                                                      |
 |-----------------------------------------------------------------------------------------------------------|
@@ -32,8 +30,8 @@ title: "netpyoung.github.io"
 | [.emacs](https://github.com/netpyoung/netpyoung.emacs.d)                                                  |
 | [.nvim](https://github.com/netpyoung/netpyoung.nvim) / [.vim](https://github.com/netpyoung/netpyoung.vim) |
 
-### Side project
-#### Unity3D
+### Side projects
+#### Unity3D <span class="icon "><img src="{{ site.Paths.resources }}/icon/icons8-unity-250.png" /></span>
 
 | name                                                                | desc                            |
 |---------------------------------------------------------------------|---------------------------------|
@@ -44,7 +42,7 @@ title: "netpyoung.github.io"
 | [unity.libsodium](https://github.com/netpyoung/unity.libsodium)     | wrapper libsodium               |
 | [unity.webp](https://github.com/netpyoung/unity.webp)               | wrapper libwebp                 |
 
-####  <span class="icon "><img src="{{ site.Paths.resources }}/icon/clojure.png" /></span> Clojure
+#### Clojure <span class="icon "><img src="{{ site.Paths.resources }}/icon/clojure.png" /></span>
 
 | name                                                                              |
 |-----------------------------------------------------------------------------------|
@@ -52,31 +50,31 @@ title: "netpyoung.github.io"
 | [pt.c-interop-in-clojure](https://github.com/netpyoung/pt.c-interop-in-clojure)   |
 
 
-### Career.
-#### <span class="flag-icon flag-icon-sg flag-icon-squared"></span> Singapore
-##### 2018.09 ~ | Flybot
-* Mobile game server programmer (Clojure)
+### Career
 
-##### 2018.01 ~ 2018.08 | Xii Braves
-* Mobile game client programmer (C#)
+* Flybot, Singapore
+    - Senior Software Enginner, 2018.09 ~ 2019.10
+    - Clojure
+* Xii Braves, Singapore
+    - Senior Software Enginner, 2018.01 ~ 2018.08
+    - Unity3D
+* Funcrew, Tokyo
+    - Client Programmer, 2016.07 ~ 2017.11
+    - Unity3D
+* GREE, Seoul
+    - Client Programmer, 2014.08 ~ 2015.11
+    - Unity3D
+    - [lostinstars.link]
+* Sonaclo, Seoul
+    - Client/Server Programmer, 2014.01 ~ 2014.07
+    - Clojure
+    - Web-based Facebook game
+* Ncrew Entertainment, Seoul
+    - Client/Server Programmer, 2012.04 ~ 2013.12
+    - ORGE / Unity3D / Python
+    - [carte.link]
+    - [devilmaker.link]
 
-#### <span class="flag-icon flag-icon-jp flag-icon-squared"></span> Japan
-##### 2016.07 ~ 2017.11 | Funcrew
-* Mobile game client programmer (C#)
-
-#### <span class="flag-icon flag-icon-kr flag-icon-squared"></span> Korea
-##### 2014.08 ~ 2015.11 | GREE
-* Mobile game client programmer (C#)
-  - [lostinstars.link]
-
-##### 2014.01 ~ 2014.07 | Sonaclo
-* Web-based Facebook game client/server programmer (Clojure)
-
-##### 2012.04 ~ 2013.12 | Ncrew Entertainment
-* Mobile game client/server programmer (C# / Python)
-  - [devilmaker.link]
-* PC Online game client programmer (C++)
-  - [carte.link]
 
 ### Admire
 * [Michal Marcinkowski](https://mm.soldat.pl/)

@@ -35,12 +35,12 @@ title: "netpyoung.github.io"
 
 | name                                                                | desc                            |
 |---------------------------------------------------------------------|---------------------------------|
-| [nf.protocol-flow](https://github.com/netpyoung/nf.protocol-flow)   | protocol generate from protobuf |
-| [nf.data-flow](https://github.com/netpyoung/nf.data-flow)           | data exporter from excel        |
-| [nf.results](https://github.com/netpyoung/NF.Results)               | optional type for C#            |
 | [SqlCipher4Unity3D](https://github.com/netpyoung/SqlCipher4Unity3D) | wrapper libsqlcipher            |
 | [unity.libsodium](https://github.com/netpyoung/unity.libsodium)     | wrapper libsodium               |
 | [unity.webp](https://github.com/netpyoung/unity.webp)               | wrapper libwebp                 |
+| [NF.AI.PathFinding](https://github.com/netpyoung/NF.AI.PathFinding) | AStar, JPS, JPS+                |
+| [nf.protocol-flow](https://github.com/netpyoung/nf.protocol-flow)   | protocol generate from protobuf |
+| [nf.data-flow](https://github.com/netpyoung/nf.data-flow)           | data exporter from excel        |
 
 #### Clojure <span class="icon "><img src="{{ site.Paths.resources }}/icon/clojure.png" /></span>
 

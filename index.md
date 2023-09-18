@@ -6,6 +6,7 @@ title: "netpyoung.github.io"
 ![netpyoung][netpyoung.png]
 
 ### About
+
 * <span class="flag-icon flag-icon-kr flag-icon-squared"></span> EunPyoung Kim
 * I'm experienced with a game development with Unity3D GameEngine.
 * <i class="far fa-envelope"></i> [email](mailto:netpyoung@gmail.com)
@@ -13,14 +14,20 @@ title: "netpyoung.github.io"
 * <i class="fab fa-slideshare" aria-hidden="true"></i> [slideshare](https://www.slideshare.net/netpyoung)
 
 ### Resume
+
 * <i class="fab fa-linkedin" aria-hidden="true"></i> [LinkedIn](https://www.linkedin.com/in/netpyoung/)
-* <span class="flag-icon flag-icon-gb flag-icon-squared"></span> English: [Resume](https://docs.google.com/document/d/1sS9sx-LH2124aj4-NtRX3thAnmGLKjNRH2j2Y_3SSdQ/edit?usp=sharing)
-* <span class="flag-icon flag-icon-jp flag-icon-squared"></span> 日本語: [履歴書](https://docs.google.com/document/d/1L6bX84n7pYPciDn6IHg1FL12Uxm_ItvQTx8BrhVRCzE/edit?usp=sharing), [職務経歴書](https://docs.google.com/spreadsheets/d/1CiYNpmUbzp1wYeSwYQBOH0FmpZiTI0u9lfDzZD5EhMM/edit?usp=sharing)
+* <span class="flag-icon flag-icon-gb flag-icon-squared"></span> English
+  - [Resume/Curriculum Vitae](https://docs.google.com/document/d/1sS9sx-LH2124aj4-NtRX3thAnmGLKjNRH2j2Y_3SSdQ/edit?usp=sharing)
+  - [Portfolio](https://docs.google.com/presentation/d/1QAX_EFcksZAmCilK-Eos4qZxJ4gpBglp-202zNfVp2k/edit?usp=sharing)
+* <span class="flag-icon flag-icon-jp flag-icon-squared"></span> 日本語
+  - [履歴書](https://docs.google.com/document/d/1L6bX84n7pYPciDn6IHg1FL12Uxm_ItvQTx8BrhVRCzE/edit?usp=sharing)
+  - [職務経歴書](https://docs.google.com/spreadsheets/d/1CiYNpmUbzp1wYeSwYQBOH0FmpZiTI0u9lfDzZD5EhMM/edit?usp=sharing)
 
 
 ### Skills
+
 * Strong : C#, [Clojure](http://www.4clojure.com/user/netpyoung)
-* Knowledgeable : Ruby, Python, Go
+* Knowledgeable : Python
 
 ### Configs
 
@@ -52,6 +59,9 @@ title: "netpyoung.github.io"
 
 ### Career
 
+* Infinity Vector, Tokyo
+    - Client programmer, 2023.02 ~ 
+    - Unity3D
 * Flybot, Singapore
     - Senior Software Enginner, 2018.09 ~ 2019.10
     - Clojure
@@ -77,6 +87,7 @@ title: "netpyoung.github.io"
 
 
 ### Admire
+
 * [Michal Marcinkowski](https://mm.soldat.pl/)
 * [byulbram](http://blog.naver.com/byulbram)
 

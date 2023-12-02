@@ -23,4 +23,4 @@ jobs:
           # TOKEN: ${{ secrets.TOKEN }} # other repo
           # BUILD_DIR: Default is . (current directory)
           # OUT_DIR:  Default is public
-          GITHUB_HOSTNAME: github.io # default is github.com
+          GITHUB_HOSTNAME: github.com # default is github.com

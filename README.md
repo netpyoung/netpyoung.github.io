@@ -8,6 +8,20 @@
 zola serve
 ```
 
+## resource
+
+| library     | version |
+| ----------- | ------- |
+| bulma       | 0.9.4   |
+| fontawesome | 6.5.2   |
+| flag-icons  | 7.0.2   |
+
+| font            |
+| --------------- |
+| Droid+Sans+Mono |
+| Noto+Sans+KR    |
+
+
 ## Ref
 
 - <http://netpyoung.github.io/blog/netpyoung.github.io_on_jekyll>

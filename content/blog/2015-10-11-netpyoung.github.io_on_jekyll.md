@@ -1,6 +1,6 @@
 +++
 title = 'netpyoung.github.io 탄생'
-tags = ['talk', 'jekyll', 'docker']
+tags = ['talk', 'homepage', 'jekyll', 'docker']
 +++
 
   개인적으로 생각하기에, 개발자가 자신의 블로그를 갖고 자신의 경험(삽질)을 공유해주는걸 멋있다고 생각하기에 블로그를 시작하게 되었다.

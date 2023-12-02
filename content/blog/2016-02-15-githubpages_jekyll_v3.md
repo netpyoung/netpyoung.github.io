@@ -1,7 +1,7 @@
 +++
 
 title = 'Github Pages - Jekyll v3'
-tags = ['talk', 'jekyll', 'docker']
+tags = ['talk', 'homepage', 'jekyll', 'docker']
 
 +++
 

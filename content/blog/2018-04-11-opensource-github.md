@@ -5,7 +5,7 @@ tags = ['']
 
 +++
 
-- https://github.com/issues?utf8=%E2%9C%93&q=is%3Aissue+author%3Anetpyoung
+- <https://github.com/issues?utf8=%E2%9C%93&q=is%3Aissue+author%3Anetpyoung>
 
 
 남 프로젝트

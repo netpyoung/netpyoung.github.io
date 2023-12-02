@@ -1,5 +1,0 @@
-{
-    "yaml.schemas": {
-        "https://json.schemastore.org/github-action.json": "file:///Users/pyoung/myHome/netpyoung.github.io2/myblog/.github/workflows/deploy.yaml"
-    }
-}

@@ -15,6 +15,7 @@ jekyll 컴파일 과정이 뒤에서 일어난다 github action사용 고려
 깔끔한 폴더구조 jekyll에선 _posts로 블로그를 넣었는데 content에 넣으면 된다
 tera - https://github.com/Keats/tera
 직관적 만족
+jekyll에서 webpack썼는데 관리 귀찮
 
 추후 github action의 유료화 jekyll만 쓰도록 한다면
 

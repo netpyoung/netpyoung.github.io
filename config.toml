@@ -1,0 +1,37 @@
+# ref: https://www.getzola.org/documentation/getting-started/configuration/
+
+base_url = "https://netpyoung.github.io"
+title = "넷평 남짓한 공간"
+description = "netpyoung's blog"
+# default_language = "ko"
+
+compile_sass = true
+build_search_index = true
+
+generate_feed = true
+feed_filename = "feed.xml"
+
+[markdown]
+highlight_code = true
+highlight_theme = "base16-ocean-dark"
+render_emoji = true
+
+[slugify]
+paths = "safe"
+
+[extra]
+title = "넷평 남짓한 공간"
+[extra.paths]
+feed = "/feed"
+home = "/"
+blog = "/blog"
+resume = "/resume"
+external = "/external"
+diary = "/diary"
+resources = "/resources"
+
+[extra.author]
+name = "Eunpyoung Kim"
+email = "netpyoung@gmail.com"
+github = "https://github.com/netpyoung"
+facebook = "https://facebook.com/netpyoung"

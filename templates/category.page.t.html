@@ -1,0 +1,20 @@
+{% extends "base.t.html" %}
+
+{% block content %}
+<h1 class="title">
+  {{ page.title }}
+</h1>
+
+{% if page.date %}
+  <p class="subtitle"><strong>{{ page.date | date(format="%Y.%m.%d") }}</strong></p>
+{% endif %}
+
+<div class="post">
+  {{ page.content | safe }}
+</div><!-- post -->
+
+<hr />
+<script src="https://utteranc.es/client.js" repo="netpyoung/netpyoung.blog.comment" issue-term="url"
+  theme="github-light" crossorigin="anonymous" async></script>
+<hr />
+{% endblock content %}

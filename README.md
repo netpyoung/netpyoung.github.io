@@ -27,8 +27,3 @@ zola serve
 
 - <http://netpyoung.github.io/blog/netpyoung.github.io_on_jekyll>
 - <https://www.getzola.org/>
-
-- <https://pages.github.com/versions/>
-- <https://help.github.com/articles/configuring-jekyll/>
-- <http://kramdown.gettalong.org/quickref.html>
-- <https://github.com/Starefossen/docker-github-pages>

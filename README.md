@@ -15,6 +15,7 @@ zola serve
 | bulma       | 0.9.4   |
 | fontawesome | 6.5.2   |
 | flag-icons  | 7.0.2   |
+| mermaid     | 10.6.1  |
 
 | font            |
 | --------------- |

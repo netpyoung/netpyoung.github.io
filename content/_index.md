@@ -26,7 +26,7 @@ title = "netpyoung.github.io"
 
 ## Skills
 
-* Strong : C#, [Clojure](http://www.4clojure.com/user/netpyoung)
+* Strong : C#, Clojure
 * Knowledgeable : Python
 
 ## Configs
@@ -38,6 +38,7 @@ title = "netpyoung.github.io"
 | [.nvim](https://github.com/netpyoung/netpyoung.nvim) / [.vim](https://github.com/netpyoung/netpyoung.vim) |
 
 ## Side projects
+
 ### Unity3D <span class="icon "><img src="/resources/icon/icons8-unity-250.png" /></span>
 
 | name                                                                | desc                            |
@@ -85,6 +86,32 @@ title = "netpyoung.github.io"
   - [carte.link](https://www.youtube.com/watch?v=D7rJ-9vOqRM&list=PLUuJ0ZnxV-4Q94NCCN6B9EZHaqp4BM0RM)
   - [devilmaker.link](https://www.youtube.com/watch?v=4NicQp58-kE)
 
+
+## Study Logs
+
+<details>
+  <summary>Unity Shader</summary>
+
+- <https://github.com/netpyoung/nf.example.shader>
+- <https://github.com/netpyoung/nf.example.computeshader>
+- <https://github.com/netpyoung/unity.shader.sandbox>
+- <https://github.com/netpyoung/bs.shader_startup>
+- <https://github.com/netpyoung/bs.introduction-to-shader-programming>
+- <https://github.com/netpyoung/vs.shader-developing-using-unity>
+- <https://github.com/netpyoung/bs.physically_based_shader_develop_for_unity>
+</details>
+
+<details>
+  <summary>Clojure</summary>
+
+- <https://netpyoung.github.io/study.clojure/>
+- <https://netpyoung.github.io/study.clojurescript/>
+</details>
+
+## Contribute
+
+- <https://lispkorea.github.io/>
+- <https://lispkorea.github.io/emacs-for-lisper/>
 
 ## Admire
 

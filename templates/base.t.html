@@ -44,6 +44,10 @@
             href="{{ config.extra.paths.blog }}">
             <i class="fa-solid fa-mug-saucer"></i>
           </a>
+          <a class="navbar-item {%if current_path %}{% if current_path is containing ('/study/') %}has-background-grey-lighter{% endif %}{% endif %}"
+            href="{{ config.extra.paths.study }}">
+            <i class="fa-solid fa-pen-to-square"></i>
+          </a>
           <a class="navbar-item {%if current_path %}{% if current_path is containing('/external/') %}has-background-grey-lighter{% endif %}{% endif %}"
             href="{{ config.extra.paths.external }}">
             <i class="fa-solid fa-external-link-alt"></i>

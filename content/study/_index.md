@@ -17,13 +17,13 @@ title = "공부 노트"
 
 ## Unity Assoc Study Logs
 
-- <https://github.com/netpyoung/unity.shader.sandbox>
-- <https://github.com/netpyoung/nf.example.shader>
-- <https://github.com/netpyoung/nf.example.computeshader>
-- <https://github.com/netpyoung/bs.shader_startup>
-- <https://github.com/netpyoung/bs.introduction-to-shader-programming>
-- <https://github.com/netpyoung/vs.shader-developing-using-unity>
-- <https://github.com/netpyoung/bs.physically_based_shader_develop_for_unity>
+- [unity.shader.sandbox](https://github.com/netpyoung/unity.shader.sandbox)
+- [nf.example.shader](https://github.com/netpyoung/nf.example.shader)
+- [nf.example.computeshader](https://github.com/netpyoung/nf.example.computeshader)
+- [bs.shader_startup](https://github.com/netpyoung/bs.shader_startup)
+- [bs.introduction-to-shader-programming](https://github.com/netpyoung/bs.introduction-to-shader-programming)
+- [vs.shader-developing-using-unity](https://github.com/netpyoung/vs.shader-developing-using-unity)
+- [bs.physically_based_shader_develop_for_unity](https://github.com/netpyoung/bs.physically_based_shader_develop_for_unity)
 
 
 ## Lisp Korea

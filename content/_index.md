@@ -36,14 +36,15 @@ title = "netpyoung.github.io"
 
 ### Unity3D <span class="icon "><img src="/resources/icon/icons8-unity-250.png" /></span>
 
-| name                                                                | desc                            |
-| ------------------------------------------------------------------- | ------------------------------- |
-| [SqlCipher4Unity3D](https://github.com/netpyoung/SqlCipher4Unity3D) | wrapper libsqlcipher            |
-| [unity.libsodium](https://github.com/netpyoung/unity.libsodium)     | wrapper libsodium               |
-| [unity.webp](https://github.com/netpyoung/unity.webp)               | wrapper libwebp                 |
-| [NF.AI.PathFinding](https://github.com/netpyoung/NF.AI.PathFinding) | AStar, JPS, JPS+                |
-| [nf.protocol-flow](https://github.com/netpyoung/nf.protocol-flow)   | protocol generate from protobuf |
-| [nf.data-flow](https://github.com/netpyoung/nf.data-flow)           | data exporter from excel        |
+| name                                                                              | desc                            |
+| --------------------------------------------------------------------------------- | ------------------------------- |
+| [SqlCipher4Unity3D](https://github.com/netpyoung/SqlCipher4Unity3D)               | wrapper libsqlcipher            |
+| [unity.libsodium](https://github.com/netpyoung/unity.libsodium)                   | wrapper libsodium               |
+| [unity.webp](https://github.com/netpyoung/unity.webp)                             | wrapper libwebp                 |
+| [NF.AI.PathFinding](https://github.com/netpyoung/NF.AI.PathFinding)               | AStar, JPS, JPS+                |
+| [NF.Tool.ReleaseNoteMaker](https://github.com/netpyoung/NF.Tool.ReleaseNoteMaker) | Release Note Maker              |
+| [nf.protocol-flow](https://github.com/netpyoung/nf.protocol-flow)                 | protocol generate from protobuf |
+| [nf.data-flow](https://github.com/netpyoung/nf.data-flow)                         | data exporter from excel        |
 
 ### Clojure <span class="icon "><img src="/resources/icon/clojure.png" /></span>
 
@@ -53,7 +54,7 @@ title = "netpyoung.github.io"
 | [pt.c-interop-in-clojure](https://github.com/netpyoung/pt.c-interop-in-clojure)   |
 
 
-### 🏢 Career
+## 🏢 Career
 
 - Infinity Vector, Tokyo
   - Client programmer, 2023.02 ~ 2024.02 // 1y

@@ -17,8 +17,13 @@ title = "공부 노트"
 
 ## Unity Assoc
 
-- [nf.unitylibs.utils](https://netpyoung.github.io/nf.unitylibs.utils/)
-- [nf.unitytools.essentials](https://netpyoung.github.io/nf.unitytools.essentials/)
+| name                                                                                                                    |     |
+| ----------------------------------------------------------------------------------------------------------------------- | --- |
+| [nf.unitytools.essentials](https://netpyoung.github.io/nf.unitytools.essentials/)                                       |     |
+| [nf.unitylibs.managers.assetbundlemanagement](https://netpyoung.github.io/nf.unitylibs.managers.assetbundlemanagement/) |     |
+| [nf.unitylibs.managers.patchmanagement](https://netpyoung.github.io/nf.unitylibs.managers.patchmanagement/)             |     |
+| [nf.unitylibs.utils](https://netpyoung.github.io/nf.unitylibs.utils/)                                                   |     |
+
 
 ## Unity Assoc Study Logs
 

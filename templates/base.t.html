@@ -15,6 +15,18 @@
   <link rel="icon" href="/favicon.ico" type="image/x-icon">
   <link rel="alternate" type="application/atom+xml" title="Atom" href="{{ config.extra.paths.feed }}" />
   <link rel="stylesheet" href="/main.css" />
+
+  <!-- #region: Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-855BJNV9VD"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-855BJNV9VD');
+  </script>
+  <!-- #endregion: Google tag (gtag.js) -->
+
   <script defer src="/main.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/mermaid@10.6.1/dist/mermaid.min.js"></script>
   <script>mermaid.initialize({ startOnLoad: true });</script>

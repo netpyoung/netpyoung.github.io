@@ -8,8 +8,8 @@ description = "netpyoung's blog"
 compile_sass = true
 build_search_index = true
 
-generate_feed = true
-feed_filename = "feed.xml"
+generate_feeds = true
+feed_filenames  = ["feed.xml"]
 
 [markdown]
 highlight_code = true
@@ -36,3 +36,4 @@ name = "Eunpyoung Kim"
 email = "netpyoung@gmail.com"
 github = "https://github.com/netpyoung"
 facebook = "https://facebook.com/netpyoung"
+_googleAnalyticsTagId = "G-855BJNV9VD"

@@ -17,13 +17,13 @@
   <link rel="stylesheet" href="/main.css" />
 
   <!-- #region: Google tag (gtag.js) -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=G-855BJNV9VD"></script>
+  <script async src="https://www.googletagmanager.com/gtag/js?id={{ config.extra.author._googleAnalyticsTagId }}"></script>
   <script>
     window.dataLayer = window.dataLayer || [];
     function gtag(){dataLayer.push(arguments);}
     gtag('js', new Date());
 
-    gtag('config', 'G-855BJNV9VD');
+    gtag('config', '{{ config.extra.author._googleAnalyticsTagId }}');
   </script>
   <!-- #endregion: Google tag (gtag.js) -->
 

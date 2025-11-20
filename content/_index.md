@@ -16,8 +16,13 @@ title = "netpyoung.github.io"
 ## 📄 Resume
 
 - <i class="fab fa-linkedin" aria-hidden="true"></i> [LinkedIn](https://www.linkedin.com/in/netpyoung/)
+- <span class="flag-icon flag-icon-kr flag-icon-squared"></span> 🇰🇷 Korean / [Resume](https://docs.google.com/document/d/1I_zAec6XkjNAdME7ayxS2sDbBpCwLIi7AoSTOgbOgIE/edit?usp=sharing) / [Portfolio](https://docs.google.com/presentation/d/15AA1oKV2GAo56ctU7V3Eyrb7PGrno9vUiOeqDuuubtk/edit?usp=sharing)
+
+<div style="display:none;">
 - <span class="flag-icon flag-icon-gb flag-icon-squared"></span> 🇺🇸 English / [Resume](https://docs.google.com/document/d/1sS9sx-LH2124aj4-NtRX3thAnmGLKjNRH2j2Y_3SSdQ/edit?usp=sharing) / [Portfolio](https://docs.google.com/presentation/d/1QAX_EFcksZAmCilK-Eos4qZxJ4gpBglp-202zNfVp2k/edit?usp=sharing)
+</hide>
 - <span class="flag-icon flag-icon-jp flag-icon-squared"></span> 🇯🇵 日本語 / [履歴書](https://docs.google.com/document/d/1L6bX84n7pYPciDn6IHg1FL12Uxm_ItvQTx8BrhVRCzE/edit?usp=sharing) / [職務経歴書](https://docs.google.com/spreadsheets/d/1CiYNpmUbzp1wYeSwYQBOH0FmpZiTI0u9lfDzZD5EhMM/edit?usp=sharing)
+</div>
 
 ## 🛠 Skills
 

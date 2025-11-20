@@ -81,6 +81,10 @@ git tag -a 2.0.0 73a536e07328bc298586e75c0a5b752073aaf6f3 -m "zola verison"
 - [github action](https://www.getzola.org/documentation/deployment/github-pages/)
 - [tera](https://keats.github.io/tera/)
 
+--- 
+
+## 기타
+
 | templates/              |                                                                                    |
 | ----------------------- | ---------------------------------------------------------------------------------- |
 | index.html              | applied to the site homepage;                                                      |

@@ -24,6 +24,7 @@ title = "넷평 남짓한 공간"
 [extra.paths]
 feed = "/feed"
 home = "/"
+overview = "/overview"
 blog = "/blog"
 study = "/study"
 resume = "/resume"

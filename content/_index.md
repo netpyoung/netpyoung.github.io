@@ -91,8 +91,8 @@ title = "netpyoung.github.io"
   - Client/Server Programmer, 2012.04 ~ 2013.12 // 1y 8m
   - ORGE / Unity3D / Python
   - Projects
-    - [Devil Maker : Tokyo](https://www.youtube.com/watch?v=4NicQp58-kE)
-    - [Carte](https://www.youtube.com/watch?v=D7rJ-9vOqRM&list=PLUuJ0ZnxV-4Q94NCCN6B9EZHaqp4BM0RM)
+    - [Devil Maker : Tokyo](https://www.youtube.com/watch?v=D7rJ-9vOqRM&list=PLUuJ0ZnxV-4Q94NCCN6B9EZHaqp4BM0RM)
+    - [Carte](https://www.youtube.com/watch?v=4NicQp58-kE)
 
 
 ## Admire

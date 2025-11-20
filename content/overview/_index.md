@@ -338,6 +338,8 @@ JPS+(2014) implement
 - [homepage](https://netpyoung.github.io/sicp-journey/)
 - [github](https://github.com/netpyoung/sicp-journey)
 
+![](/res_overview/sicp.jpg)
+
   </div>
 
   <!-- 탭 2 -->

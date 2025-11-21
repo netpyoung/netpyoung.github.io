@@ -8,7 +8,7 @@ title = "참여 프로젝트"
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/crbiSQM20eI?si=hzhRbSoMaG7RM65A" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
-## Kingdom Under Fire: A War of Heroes - Bloom Technology, Blueside
+## Kingdom Under Fire: A War of Heroes - Bloom Technology
 
 - [steam](https://store.steampowered.com/app/2183600/Kingdom_Under_Fire_A_War_of_Heroes_GOLD_Edition/)
 

@@ -361,6 +361,40 @@ Release note maker likes [twisted/towncrier](https://github.com/twisted/towncrie
 
 </div>
 
+## Zig
+
+<div class="vtabs">
+  <!-- 탭 -->
+  <input type="radio" name="vtabs" id="tab-zig-1">
+  <label for="tab-zig-1">Sample.Zig.Tetris</label>
+  <div class="content">
+
+- [github](https://github.com/netpyoung/Sample.Zig.Tetris)
+
+This project is a small Tetris implementation for learning Zig while keeping up with changes across Zig versions.
+
+
+![](/res_overview/Sample.Zig.Tetris.png)
+
+  </div>
+
+  <!-- 탭 -->
+  <input type="radio" name="vtabs" id="tab-zig-2">
+  <label for="tab-zig-2">Sample.Zig.Tunneler</label>
+  <div class="content">
+
+- [github](https://github.com/netpyoung/Sample.Zig.Tunneler)
+
+- This project is a small Tunneler implementation for learning Zig while keeping up with changes across Zig/SDL versions.
+  - based on [SDL Tunneler](https://users.jyu.fi/~tvkalvas/code/tunneler/). by [Taneli Kalvas](https://users.jyu.fi/~tvkalvas/)
+  - origin by [Geoffrey Silverton](https://tunneler.org/faq/)
+
+![](/res_overview/Sample.Zig.Tunneler.png)
+
+  </div>
+
+</div>
+
 ## Lisp
 
 

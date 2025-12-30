@@ -3,7 +3,7 @@
 base_url = "https://netpyoung.github.io"
 title = "넷평 남짓한 공간"
 description = "netpyoung's blog"
-# default_language = "ko"
+default_language = "ko"
 
 compile_sass = true
 build_search_index = true
@@ -18,6 +18,9 @@ render_emoji = true
 
 [slugify]
 paths = "safe"
+
+[search]
+index_format = "fuse_javascript"
 
 [extra]
 title = "넷평 남짓한 공간"

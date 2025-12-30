@@ -392,7 +392,19 @@ This project is a small Tetris implementation for learning Zig while keeping up 
 ![](/res_overview/Sample.Zig.Tunneler.png)
 
   </div>
+  
+  <!-- 탭 -->
+  <input type="radio" name="vtabs" id="tab-zig-3">
+  <label for="tab-zig-3">Sample.Zig.Raytracing</label>
+  <div class="content">
 
+Sample project to implement raytracing in one weekend using zig
+
+- [github](https://github.com/netpyoung/Sample.Zig.Raytracing)
+
+![](/res_overview/raytracing-in-one-weekend.webp)
+
+  </div>
 </div>
 
 ## Lisp

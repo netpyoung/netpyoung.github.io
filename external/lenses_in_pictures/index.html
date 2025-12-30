@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+
+<!-- ref: https://bulma.io/ -->
+<!-- ref: https://fontawesome.com/icons -->
+<!-- ref: https://flagicons.lipis.dev/ -->
+<html>
+
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+		<title>넷평 남짓한 공간</title>
+
+		<link rel="icon" href="/favicon.ico" type="image/x-icon">
+		<link rel="icon" href="/favicon.ico" type="image/x-icon">
+		<link rel="alternate" type="application/atom+xml" title="Atom" href="&#x2F;feed">
+		<link rel="stylesheet" href="/main.css">
+
+		<!-- #region: Google tag (gtag.js) -->
+		<script async src="https://www.googletagmanager.com/gtag/js?id=G-855BJNV9VD"></script>
+		<script>
+			window.dataLayer = window.dataLayer || [];
+			function gtag(){dataLayer.push(arguments);}
+			gtag('js', new Date());
+			
+			gtag('config', 'G-855BJNV9VD');
+		</script>
+		<!-- #endregion: Google tag (gtag.js) -->
+
+		<script src="https://cdn.jsdelivr.net/npm/mermaid@10.6.1/dist/mermaid.min.js"></script>
+		<script>mermaid.initialize({ startOnLoad: true });</script>
+		<script src="https://cdn.jsdelivr.net/npm/fuse.js@7.1.0"></script>
+		<script defer src="/search_index.ko.js"></script>
+		<script defer src="/main.js"></script>
+		<script defer src="/search.js"></script>
+	</head>
+
+	<body class="layout-documentation page-layout">
+		<div class="container">
+			<nav class="navbar is-transparent is-centered has-shadow is-spaced">
+				<!-- <div class="container"> -->
+				<div class="navbar-brand">
+					<a class="navbar-item" href="&#x2F;">
+						<i class="fa-solid fa-home"></i>
+						<b>넷평 남짓한 공간</b>
+					</a>
+
+					<div class="navbar-burger burger" data-target="navbarExampleTransparentExample">
+						<span></span>
+						<span></span>
+						<span></span>
+					</div>
+				</div><!-- navbar-brand -->
+				<!-- </div> -->
+
+				<div id="navbarExampleTransparentExample" class="navbar-menu">
+					<div class="navbar-start">
+						<a class="navbar-item " href="&#x2F;overview">
+							<i class="fa-solid fa fa-street-view"></i>
+						</a>
+						<a class="navbar-item " href="&#x2F;company_project">
+							<i class="fa-solid fa fa-building"></i>
+						</a>
+						<a class="navbar-item " href="&#x2F;blog">
+							<i class="fa-solid fa-mug-saucer"></i>
+						</a>
+						<!-- <a class="navbar-item "
+            href="&#x2F;study">
+            <i class="fa-solid fa-pen-to-square"></i>
+          </a> -->
+						<a class="navbar-item has-background-grey-lighter" href="&#x2F;external">
+							<i class="fa-solid fa-external-link-alt"></i>
+						</a>
+						<a class="navbar-item " href="&#x2F;diary">
+							<i class="fa-solid fa-book"></i>
+						</a>
+						<a class="navbar-item" href="https:&#x2F;&#x2F;github.com&#x2F;netpyoung">
+							<i class="fa-brands fa-github"></i>
+						</a>
+						<a class="navbar-item" href="/feed.xml">
+							<i class="fa-solid fa-rss-square"></i>
+						</a>
+					</div>
+					<!-- navbar-start -->
+
+					<div class="navbar-end">
+						<button id="search-button" class="button is-light">
+							<span class="icon"><i class="fas fa-search"></i></span>
+						</button>
+
+						<div id="search-modal" class="modal">
+							<div class="modal-background"></div>
+							<div class="modal-content" style="min-height: 70%; max-height: 70%; ">
+								<div class="box">
+									<div class="field">
+										<p class="control has-icons-left">
+											<input id="search-input" class="input is-medium" type="text" placeholder="Search...">
+											<span class="icon is-small is-left">
+												<i class="fas fa-search"></i>
+											</span>
+										</p>
+									</div>
+									<div id="search-results" style="overflow-y: auto;"></div>
+								</div>
+							</div>
+							<button id="close-modal" class="modal-close is-large" aria-label="close"></button>
+						</div>
+
+						<!--  <div class="dropdown ">
+							<div class="dropdown-trigger">
+								<button class="button" aria-haspopup="true" aria-controls="dropdown-menu">
+									<span>connect</span>
+									<span class="icon is-small">
+										<i class="fa-solid fa-angle-down" aria-hidden="true"></i>
+									</span>
+								</button>
+							</div>
+							<div class="dropdown-menu" id="dropdown-menu" role="menu">
+								<div class="dropdown-content">
+									<a class="dropdown-item" href="https:&#x2F;&#x2F;facebook.com&#x2F;netpyoung">
+										<span class="icon">
+											<i class="fa-brands fa-facebook"></i>
+										</span>
+										facebook
+									</a>
+								</div>
+							</div>
+						</div> dropdown-->
+					</div>
+					<!-- navbar-end -->
+				</div>
+				<!-- navbar-menu -->
+			</nav>
+
+			<div class="content container is-fluid">
+				
+<h1 class="title">
+  Lenses In Pictures
+</h1>
+
+
+
+<div class="post">
+  <ul>
+<li>
+<p>egonSchiele</p>
+<ul>
+<li><a href="http://adit.io/index.html">blog</a></li>
+<li><a href="https://twitter.com/_egonschiele">twitter</a></li>
+<li>Haskell, Ruby에 관심이 많으며, 그림에도 소질이 있어 보인다.</li>
+</ul>
+</li>
+<li>
+<p><a href="http://adit.io/posts/2013-07-22-lenses-in-pictures.html">original site link</a></p>
+</li>
+</ul>
+<p>이 글을 읽기 전에 우선 functor가 무엇인지 알아야 됩니다. functor에 대해 배우고 싶으시다면 <a href="http://adit.io/posts/2013-04-17-functors,_applicatives,_and_monads_in_pictures.html">이 글</a>을 읽으시길 바랍니다.</p>
+<p>자, 이제 여러분이 게임을 만든다고 가정해봅시다:</p>
+<p><img src="https://netpyoung.github.io/external/lenses_in_pictures/./imgs/mario.png" alt="mario.png" /></p>
+<pre data-lang="haskell" style="background-color:#2b303b;color:#c0c5ce;" class="language-haskell "><code class="language-haskell" data-lang="haskell"><span style="color:#b48ead;">data </span><span style="color:#d08770;">Point </span><span>= </span><span style="color:#d08770;">Point</span><span> { _x, _y   :: </span><span style="color:#d08770;">Double</span><span> }
+</span><span style="color:#b48ead;">data </span><span style="color:#d08770;">Mario </span><span>= </span><span style="color:#d08770;">Mario</span><span> { _location :: </span><span style="color:#d08770;">Point</span><span> }
+</span><span>
+</span><span>player1 = </span><span style="color:#d08770;">Mario</span><span> (</span><span style="color:#d08770;">Point 0 0</span><span>)
+</span></code></pre>
+<p>그럼, 이제 어떻게 플레이어를 움직일까요?</p>
+<pre data-lang="haskell" style="background-color:#2b303b;color:#c0c5ce;" class="language-haskell "><code class="language-haskell" data-lang="haskell"><span>moveX (</span><span style="color:#d08770;">Mario</span><span> (</span><span style="color:#d08770;">Point</span><span> xpos ypos)) val = </span><span style="color:#d08770;">Mario</span><span> (</span><span style="color:#d08770;">Point</span><span> (xpos + val) ypos)
+</span></code></pre>
+<p>lenses로 대신, 다음과 같이 작성할 수 있습니다:</p>
+<pre data-lang="haskell" style="background-color:#2b303b;color:#c0c5ce;" class="language-haskell "><code class="language-haskell" data-lang="haskell"><span>location.x </span><span style="color:#8fa1b3;">`</span><span>over</span><span style="color:#8fa1b3;">`</span><span> (+</span><span style="color:#d08770;">10</span><span>) $ player1
+</span></code></pre>
+<p>아니면, 다음과 같이 말이죠:</p>
+<pre data-lang="haskell" style="background-color:#2b303b;color:#c0c5ce;" class="language-haskell "><code class="language-haskell" data-lang="haskell"><span>over (location . x) (+</span><span style="color:#d08770;">10</span><span>) player1
+</span></code></pre>
+<p>Lenses를 이용하여 data의 일 부분을 선택적으로 변경할 수 있습니다:</p>
+<p><img src="https://netpyoung.github.io/external/lenses_in_pictures/./imgs/go_deeper.png" alt="go_deeper.png" /></p>
+<p>훨씬 깔끔합니다! 전체 예제는 <a href="https://gist.github.com/egonSchiele/5996957">여기</a>에 있습니다.</p>
+<p><code>location</code>은 lens입니다. 그리고 <code>x</code>도 lens입니다. 여기선 <code>player</code>의 일부분을 수정하기 위해 이러한 lens들을 조합하였습니다.</p>
+<h2 id="fmap">Fmap</h2>
+<p>fmap이 어떻게 동작하는지 자네는 아마 잘 알거야, Doctor Watson. (잘 모르시겠다면 <a href="http://adit.io/posts/2013-04-17-functors,_applicatives,_and_monads_in_pictures.html">이 글</a>을 읽으시길 바랍니다.)</p>
+<p><img src="https://netpyoung.github.io/external/lenses_in_pictures/./imgs/fmap.png" alt="fmap.png" /></p>
+<p>이전 장에서, 과연 functor가 중첩되어 있다면 어떨까요?</p>
+<p><img src="https://netpyoung.github.io/external/lenses_in_pictures/./imgs/nested_functors.png" alt="nested_functors.png" /></p>
+<p><code>fmap</code>을 두번 사용해야만 할껍니다!</p>
+<p><img src="https://netpyoung.github.io/external/lenses_in_pictures/./imgs/fmap_fmap.png" alt="fmap_fmap.png" /></p>
+<p>지금, 아마 여러분은 function composition이 어떻게 동작하는지 알고 있을 것입니다:</p>
+<p><img src="https://netpyoung.github.io/external/lenses_in_pictures/./imgs/dot.png" alt="dot.png" /></p>
+<p>그렇다면, function composition의 composition은 어떨까요?</p>
+<p><img src="https://netpyoung.github.io/external/lenses_in_pictures/./imgs/dot_dot.png" alt="dot_dot.png" /></p>
+<p>"두개의 인자를 가진 함수에 function composition을 적용하고자 한다면", Sherlock이 말하길, "<code>(.).(.)</code>가 필요할걸세!"</p>
+<p>"마치 부엉이가 놀란것처럼 보여", Watson은 외쳤습니다.</p>
+<p>"정말 그렇군. 그럼 왜 이게 동작하는지 살펴보자고"</p>
+<p>function composition의 type signature는:</p>
+<pre data-lang="haskell" style="background-color:#2b303b;color:#c0c5ce;" class="language-haskell "><code class="language-haskell" data-lang="haskell"><span style="color:#8fa1b3;">(.) </span><span style="color:#b48ead;">::</span><span> (</span><span style="color:#bf616a;">b </span><span style="color:#b48ead;">-&gt; </span><span style="color:#bf616a;">c</span><span>) </span><span style="color:#b48ead;">-&gt;</span><span> (</span><span style="color:#bf616a;">a </span><span style="color:#b48ead;">-&gt; </span><span style="color:#bf616a;">b</span><span>) </span><span style="color:#b48ead;">-&gt;</span><span> (</span><span style="color:#bf616a;">a </span><span style="color:#b48ead;">-&gt; </span><span style="color:#bf616a;">c</span><span>)
+</span></code></pre>
+<p><code>fmap</code>과 무척 닮아 있습니다!</p>
+<pre data-lang="haskell" style="background-color:#2b303b;color:#c0c5ce;" class="language-haskell "><code class="language-haskell" data-lang="haskell"><span style="color:#8fa1b3;">fmap </span><span style="color:#b48ead;">::</span><span> (</span><span style="color:#bf616a;">a </span><span style="color:#b48ead;">-&gt; </span><span style="color:#bf616a;">b</span><span>) </span><span style="color:#b48ead;">-&gt; </span><span style="color:#bf616a;">f a </span><span style="color:#b48ead;">-&gt; </span><span style="color:#bf616a;">f b
+</span></code></pre>
+<p>사실, <code>a -&gt;</code>를 <code>f</code>로 바꾸면 그게 바로 fmap입니다!</p>
+<p><code>a -&gt;</code>가 functor라면 다음과 같이 정의할 수 있을 것입니다:</p>
+<pre data-lang="haskell" style="background-color:#2b303b;color:#c0c5ce;" class="language-haskell "><code class="language-haskell" data-lang="haskell"><span style="color:#b48ead;">instance Functor</span><span> ((</span><span style="color:#b48ead;">-&gt;</span><span>) </span><span style="color:#bf616a;">r</span><span>) </span><span style="color:#b48ead;">where
+</span><span>   fmap = </span><span style="color:#8fa1b3;">(.)
+</span></code></pre>
+<p>함수에게 있어, <code>fmap</code>은 단지 function composition입니다! <code>(.).(.)</code>은 <code>fmap . fmap</code>와 동일합니다!</p>
+<pre data-lang="haskell" style="background-color:#2b303b;color:#c0c5ce;" class="language-haskell "><code class="language-haskell" data-lang="haskell"><span style="color:#8fa1b3;">(.)</span><span>.</span><span style="color:#8fa1b3;">(.) </span><span>:: (b -&gt; c) -&gt; (a1 -&gt; a2 -&gt; b) -&gt; (a1 -&gt; a2 -&gt; c)
+</span><span>fmap . fmap :: (a -&gt; b) -&gt; f (f1 a) -&gt; f (f1 b)
+</span></code></pre>
+<p>저희는 여기서 패턴을 발견할 수 있습니다: <code>fmap . fmap</code>과 <code>(.) . (.)</code>은 "한 단계 깊이" 들어갈 수 있도록 해준다.
+<code>fmap</code>에서 이는 functor 안으로 들어갈 수 있다는 것을 의미합니다. function composition에서 함수는 <code>r -&gt;</code>이며, 이는 함수에 하나의 인자를 더 넘길 수 있다는 것을 의미합니다.</p>
+<p><img src="https://netpyoung.github.io/external/lenses_in_pictures/./imgs/inception.jpg" alt="inception.jpg" /></p>
+<h2 id="setters">Setters</h2>
+<p>다음과 같이 double이란 함수가 있다고 가정해봅시다:</p>
+<pre data-lang="haskell" style="background-color:#2b303b;color:#c0c5ce;" class="language-haskell "><code class="language-haskell" data-lang="haskell"><span style="color:#8fa1b3;">double </span><span style="color:#b48ead;">:: Int -&gt; Maybe Int
+</span><span>double x = </span><span style="color:#d08770;">Just</span><span> (x * </span><span style="color:#d08770;">2</span><span>)
+</span></code></pre>
+<p><img src="https://netpyoung.github.io/external/lenses_in_pictures/./imgs/double.png" alt="double.png" /></p>
+<p><code>traverse</code>로 list에 이 함수를 적용할 수 있습니다.</p>
+<p><img src="https://netpyoung.github.io/external/lenses_in_pictures/./imgs/traverse.png" alt="traverse.png" /></p>
+<p>traverse가 가능한 것과, functor로 감싸진 값을 반환하는 함수를 넘기면, traverse가 가능하지만 functor로 감싸진 것을 돌려받게됩니다.</p>
+<p>평소처럼, <code>traverse</code>을 조합하여, 한단계 더 나아가 보도록 하겠습니다.</p>
+<pre data-lang="haskell" style="background-color:#2b303b;color:#c0c5ce;" class="language-haskell "><code class="language-haskell" data-lang="haskell"><span style="color:#8fa1b3;">traverse </span><span style="color:#b48ead;">::</span><span> (</span><span style="color:#bf616a;">a </span><span style="color:#b48ead;">-&gt; </span><span style="color:#bf616a;">m b</span><span>) </span><span style="color:#b48ead;">-&gt; </span><span style="color:#bf616a;">f a </span><span style="color:#b48ead;">-&gt; </span><span style="color:#bf616a;">m</span><span> (</span><span style="color:#bf616a;">f b</span><span>)
+</span><span>traverse.traverse :: (a -&gt; m b) -&gt; f (g a) -&gt; m (f (g b))
+</span></code></pre>
+<p><code>fmap</code>을 <code>traverse</code>로 정의할 수 있어, 보다 강력해보입니다:</p>
+<pre data-lang="haskell" style="background-color:#2b303b;color:#c0c5ce;" class="language-haskell "><code class="language-haskell" data-lang="haskell"><span style="color:#8fa1b3;">fmapDefault </span><span style="color:#b48ead;">:: Traversable </span><span style="color:#bf616a;">t </span><span style="color:#b48ead;">=&gt;</span><span> (</span><span style="color:#bf616a;">a </span><span style="color:#b48ead;">-&gt; </span><span style="color:#bf616a;">b</span><span>) </span><span style="color:#b48ead;">-&gt; </span><span style="color:#bf616a;">t a </span><span style="color:#b48ead;">-&gt; </span><span style="color:#bf616a;">t b
+</span><span>fmapDefault f = runIdentity . traverse (</span><span style="color:#d08770;">Identity </span><span>. f)
+</span></code></pre>
+<p><img src="https://netpyoung.github.io/external/lenses_in_pictures/./imgs/fmap_default.png" alt="fmap_default.png" /></p>
+<p><code>Identity</code>는 언제 쓰일까요? <a href="http://www.reddit.com/r/haskell/comments/1isryj/lenses_in_pictures/cb7r1fy">답을 확인해 봅시다.</a></p>
+<p><code>fmapDefault</code>을 이용하여, <code>over</code>라는 함수를 만들어 보도록 하겠습니다. <code>over</code>에 <code>traverse</code>을 넘기지 않았다는 점을 뺀다면 <code>fmapDefault</code>와 같습니다:</p>
+<pre data-lang="haskell" style="background-color:#2b303b;color:#c0c5ce;" class="language-haskell "><code class="language-haskell" data-lang="haskell"><span style="color:#8fa1b3;">over </span><span style="color:#b48ead;">::</span><span> ((</span><span style="color:#bf616a;">a </span><span style="color:#b48ead;">-&gt; Identity </span><span style="color:#bf616a;">b</span><span>) </span><span style="color:#b48ead;">-&gt; </span><span style="color:#bf616a;">s </span><span style="color:#b48ead;">-&gt; Identity </span><span style="color:#bf616a;">t</span><span>) </span><span style="color:#b48ead;">-&gt;</span><span> (</span><span style="color:#bf616a;">a </span><span style="color:#b48ead;">-&gt; </span><span style="color:#bf616a;">b</span><span>) </span><span style="color:#b48ead;">-&gt; </span><span style="color:#bf616a;">s </span><span style="color:#b48ead;">-&gt; </span><span style="color:#bf616a;">t
+</span><span>over l f = runIdentity . l (</span><span style="color:#d08770;">Identity </span><span>. f)
+</span><span>
+</span><span style="color:#65737e;">-- over traverse f == fmapDefault f
+</span></code></pre>
+<p><img src="https://netpyoung.github.io/external/lenses_in_pictures/./imgs/over.png" alt="over.png" /></p>
+<p>이제 저희는 lenses에 매우 가까이 다가왔습니다! "음 Watson, 나는 lenses를 맛볼(taste) 수 있어. Sherlock이 침을 흘리며 말했습니다. "Lenses는 functor, fold, traversal들을 함께 compose할 수 있게 만들어주지. 지금, 내 입에서 functor와 fold가 합쳐진것을 느낄 수 있어!"</p>
+<p>여기서 빨리 type alias를 만들어야겠습니다:</p>
+<pre data-lang="haskell" style="background-color:#2b303b;color:#c0c5ce;" class="language-haskell "><code class="language-haskell" data-lang="haskell"><span style="color:#b48ead;">type </span><span style="color:#d08770;">Setter</span><span> s t a b = (a -&gt; </span><span style="color:#d08770;">Identity</span><span> b) -&gt; s -&gt; </span><span style="color:#d08770;">Identity</span><span> t
+</span></code></pre>
+<p>이제 저희는 <code>over</code>를 더욱 깔끔하게 작성할 수 있게 되었습니다:</p>
+<pre data-lang="haskell" style="background-color:#2b303b;color:#c0c5ce;" class="language-haskell "><code class="language-haskell" data-lang="haskell"><span style="color:#8fa1b3;">over </span><span style="color:#b48ead;">:: Setter </span><span style="color:#bf616a;">s t a b </span><span style="color:#b48ead;">-&gt;</span><span> (</span><span style="color:#bf616a;">a </span><span style="color:#b48ead;">-&gt; </span><span style="color:#bf616a;">b</span><span>) </span><span style="color:#b48ead;">-&gt; </span><span style="color:#bf616a;">s </span><span style="color:#b48ead;">-&gt; </span><span style="color:#bf616a;">t
+</span><span>
+</span><span style="color:#65737e;">-- same as:
+</span><span style="color:#8fa1b3;">over </span><span style="color:#b48ead;">::</span><span> ((</span><span style="color:#bf616a;">a </span><span style="color:#b48ead;">-&gt; Identity </span><span style="color:#bf616a;">b</span><span>) </span><span style="color:#b48ead;">-&gt; </span><span style="color:#bf616a;">s </span><span style="color:#b48ead;">-&gt; Identity </span><span style="color:#bf616a;">t</span><span>) </span><span style="color:#b48ead;">-&gt;</span><span> (</span><span style="color:#bf616a;">a </span><span style="color:#b48ead;">-&gt; </span><span style="color:#bf616a;">b</span><span>) </span><span style="color:#b48ead;">-&gt; </span><span style="color:#bf616a;">s </span><span style="color:#b48ead;">-&gt; </span><span style="color:#bf616a;">t
+</span></code></pre>
+<ol>
+<li><code>over</code>는 <code>Setter</code>취하고</li>
+<li>transform 함수와</li>
+<li>위 함수에 적용시킬 값도 취한 다음</li>
+<li>setter를 이용하여, 받은 함수로 받은 값의 일부를 변경한다.</li>
+</ol>
+<p>mario를 기억하십니까? 이제 다음 라인이 더 잘 이해가 될겁니다:</p>
+<pre data-lang="haskell" style="background-color:#2b303b;color:#c0c5ce;" class="language-haskell "><code class="language-haskell" data-lang="haskell"><span>location.x </span><span style="color:#8fa1b3;">`</span><span>over</span><span style="color:#8fa1b3;">`</span><span> (+</span><span style="color:#d08770;">10</span><span>) $ player1
+</span></code></pre>
+<p><img src="https://netpyoung.github.io/external/lenses_in_pictures/./imgs/over_with_mario.png" alt="over_with_mario.png" /></p>
+<p><code>location . x</code>는 setter입니다. 그리고, <code>location</code>과 <code>x</code> 역시 setter입니다! <code>fmap</code>나 <code>(.)</code>를 composing 한것처럼 한 단계 더" 나아갈 수 있게 만들어주며, setter들을 compose하여 data 내부에 좀 더 깊이 내려갈 수 있습니다! 멋지지 않을 수 없습니다!</p>
+<h2 id="folds">Folds</h2>
+<p>lenses를 만드는 것에 한단계 더 나아가게 되었습니다.
+functor를 compose할 수 있는 setter를 만들었습니다.</p>
+<p>사실, fold로도 동일한 일을 할 수 있습니다. 먼저, <code>foldMapDefault</code>를 정의해 보겠습니다:</p>
+<pre data-lang="haskell" style="background-color:#2b303b;color:#c0c5ce;" class="language-haskell "><code class="language-haskell" data-lang="haskell"><span style="color:#8fa1b3;">foldMapDefault </span><span style="color:#b48ead;">::</span><span> (</span><span style="color:#b48ead;">Traversable </span><span style="color:#bf616a;">t</span><span>, </span><span style="color:#b48ead;">Monoid </span><span style="color:#bf616a;">m</span><span>) </span><span style="color:#b48ead;">=&gt;</span><span> (</span><span style="color:#bf616a;">a </span><span style="color:#b48ead;">-&gt; </span><span style="color:#bf616a;">m</span><span>) </span><span style="color:#b48ead;">-&gt; </span><span style="color:#bf616a;">t a </span><span style="color:#b48ead;">-&gt; </span><span style="color:#bf616a;">m
+</span><span>foldMapDefault f = getConst . traverse (</span><span style="color:#d08770;">Const </span><span>. f)
+</span></code></pre>
+<p><a href="http://www.reddit.com/r/haskell/comments/1isryj/lenses_in_pictures/cb7r0lg">Const가 하는 일은?</a></p>
+<p>위에서 정의한 <code>fmapDefault</code>과 모양이 매우 비슷합니다! 결국에는 <code>Fold</code>라는 새로운 type alias얻어낼 수 있습니다:</p>
+<pre data-lang="haskell" style="background-color:#2b303b;color:#c0c5ce;" class="language-haskell "><code class="language-haskell" data-lang="haskell"><span style="color:#b48ead;">type </span><span style="color:#d08770;">Fold</span><span> s t a b = forall m. </span><span style="color:#d08770;">Monoid</span><span> m =&gt; (a -&gt; </span><span style="color:#d08770;">Const</span><span> m b) -&gt; s -&gt; </span><span style="color:#d08770;">Const</span><span> m t
+</span></code></pre>
+<p>Setter와 무척 닮았습니다:</p>
+<pre data-lang="haskell" style="background-color:#2b303b;color:#c0c5ce;" class="language-haskell "><code class="language-haskell" data-lang="haskell"><span style="color:#b48ead;">type </span><span style="color:#d08770;">Setter</span><span> s t a b = (a -&gt; </span><span style="color:#d08770;">Identity</span><span> b) -&gt; s -&gt; </span><span style="color:#d08770;">Identity</span><span> t
+</span></code></pre>
+<p><a href="https://github.com/ekmett/lens/wiki/Derivation#folds">Fold의 전체 어원</a></p>
+<p><code>Fold</code>와 <code>Setter</code>의 signature가 무척 닮아있기에, 하나의 type alias로 묶을 수 있습니다.
+그리고 저희는 할 수 있습니다!</p>
+<pre data-lang="haskell" style="background-color:#2b303b;color:#c0c5ce;" class="language-haskell "><code class="language-haskell" data-lang="haskell"><span style="color:#b48ead;">type </span><span style="color:#d08770;">Lens</span><span> s t a b = forall f. </span><span style="color:#d08770;">Functor</span><span> f =&gt; (a -&gt; f b) -&gt; s -&gt; f t
+</span></code></pre>
+<p><img src="https://netpyoung.github.io/external/lenses_in_pictures/./imgs/dexter.png" alt="dexter.png" /></p>
+<h2 id="lenses">Lenses</h2>
+<p><code>Setters</code>는 functor를 위한 것이며 <code>Folds</code>는 fold를 위한 것이지만, lenses는 더욱 general한 타입입니다. 이는 functor, function, fold, traversal을 함께 뭉칠 수 있게 만들어 줍니다! 여기 예제 하나가 있습니다:</p>
+<p>tuple에 <code>fmap</code>을 했을때, 두번째에만 효과가 있는 것이 짜증나지 않으셨습니까?</p>
+<pre data-lang="haskell" style="background-color:#2b303b;color:#c0c5ce;" class="language-haskell "><code class="language-haskell" data-lang="haskell"><span>&gt; fmap (+</span><span style="color:#d08770;">10</span><span>) (</span><span style="color:#d08770;">1</span><span>, </span><span style="color:#d08770;">2</span><span>)
+</span><span>(</span><span style="color:#d08770;">1</span><span>,</span><span style="color:#d08770;">12</span><span>)
+</span><span>
+</span></code></pre>
+<p>둘 다에 적용시키려면 어떻게 할까요? lens를 작성하면 됩니다!</p>
+<pre data-lang="haskell" style="background-color:#2b303b;color:#c0c5ce;" class="language-haskell "><code class="language-haskell" data-lang="haskell"><span>&gt; both f (a,b) = </span><span style="color:#8fa1b3;">(,) </span><span>&lt;$&gt; f a &lt;*&gt; f b
+</span></code></pre>
+<p>그런 다음, 이를 이용하면:</p>
+<pre data-lang="haskell" style="background-color:#2b303b;color:#c0c5ce;" class="language-haskell "><code class="language-haskell" data-lang="haskell"><span>&gt; both </span><span style="color:#8fa1b3;">`</span><span>over</span><span style="color:#8fa1b3;">`</span><span> (+</span><span style="color:#d08770;">10</span><span>) $ (</span><span style="color:#d08770;">1</span><span>, </span><span style="color:#d08770;">2</span><span>)
+</span><span>(</span><span style="color:#d08770;">11</span><span>,</span><span style="color:#d08770;">12</span><span>)
+</span></code></pre>
+<p>lenses를 합쳐 더 깊이 내려 갈 수 도 있습니다! 여기 both 부분과 both부분에 함수를 적용해 보도록 하겠습니다:</p>
+<pre data-lang="haskell" style="background-color:#2b303b;color:#c0c5ce;" class="language-haskell "><code class="language-haskell" data-lang="haskell"><span>&gt; (both . both) </span><span style="color:#8fa1b3;">`</span><span>over</span><span style="color:#8fa1b3;">`</span><span> (+</span><span style="color:#d08770;">2</span><span>) $ ((</span><span style="color:#d08770;">1</span><span>, </span><span style="color:#d08770;">2</span><span>), (</span><span style="color:#d08770;">3</span><span>, </span><span style="color:#d08770;">4</span><span>))
+</span><span>((</span><span style="color:#d08770;">3</span><span>,</span><span style="color:#d08770;">4</span><span>),(</span><span style="color:#d08770;">5</span><span>,</span><span style="color:#d08770;">6</span><span>))
+</span></code></pre>
+<p>또한, setter와 fold에 대해서도 합칠 수 있습니다!</p>
+<h2 id="gyeolron">결론</h2>
+<p>data가 많이 중첩되어 있다면, lenses는 매우 유용하게 쓰일 수 있습니다.
+그리고 이들의 어원 역시, 매우 멋있는 부분입니다! <a href="https://github.com/ekmett/lens/wiki/Derivation">전체 어원</a></p>
+<p><img src="https://netpyoung.github.io/external/lenses_in_pictures/./imgs/sherlock_holmes.png" alt="sherlock_holmes.png" /></p>
+<p><em>lenses를 마구 삼키는 Sherlock</em></p>
+<p>이러한 시각적 접근이 맘에 든다면, <a href="http://adit.io/posts/2013-05-15-Locks,-Actors,-And-STM-In-Pictures.html">concurrency에 대해 쓴 제 글을 살펴봐 주시기 바랍니다.</a></p>
+<h2 id="camgojaryo">참고자료</h2>
+<ul>
+<li><a href="https://github.com/ekmett/lens">github page에 많은 예제들이 있습니다.</a></li>
+<li><a href="https://github.com/ekmett/lens/wiki/Derivation">전체 어원</a></li>
+<li><a href="https://www.fpcomplete.com/school/pick-of-the-week/basic-lensing">lenses에 대한 또 다른 좋은 글.</a></li>
+<li><a href="http://www.twanvl.nl/blog/haskell/cps-functional-references">Van Laarhoven 스타일의 lenses.</a></li>
+</ul>
+
+</div><!-- post -->
+
+<hr />
+<script src="https://utteranc.es/client.js" repo="netpyoung/netpyoung.blog.comment" issue-term="url"
+  theme="github-light" crossorigin="anonymous" async></script>
+<hr />
+
+			</div><!-- /.content -->
+
+			<!-- <div class="footer">
+                 </div> .footer  -->
+		</div><!-- /.container -->
+	</body>
+</html>

@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+
+<!-- ref: https://bulma.io/ -->
+<!-- ref: https://fontawesome.com/icons -->
+<!-- ref: https://flagicons.lipis.dev/ -->
+<html>
+
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+		<title>넷평 남짓한 공간</title>
+
+		<link rel="icon" href="/favicon.ico" type="image/x-icon">
+		<link rel="icon" href="/favicon.ico" type="image/x-icon">
+		<link rel="alternate" type="application/atom+xml" title="Atom" href="&#x2F;feed">
+		<link rel="stylesheet" href="/main.css">
+
+		<!-- #region: Google tag (gtag.js) -->
+		<script async src="https://www.googletagmanager.com/gtag/js?id=G-855BJNV9VD"></script>
+		<script>
+			window.dataLayer = window.dataLayer || [];
+			function gtag(){dataLayer.push(arguments);}
+			gtag('js', new Date());
+			
+			gtag('config', 'G-855BJNV9VD');
+		</script>
+		<!-- #endregion: Google tag (gtag.js) -->
+
+		<script src="https://cdn.jsdelivr.net/npm/mermaid@10.6.1/dist/mermaid.min.js"></script>
+		<script>mermaid.initialize({ startOnLoad: true });</script>
+		<script src="https://cdn.jsdelivr.net/npm/fuse.js@7.1.0"></script>
+		<script defer src="/search_index.ko.js"></script>
+		<script defer src="/main.js"></script>
+		<script defer src="/search.js"></script>
+	</head>
+
+	<body class="layout-documentation page-layout">
+		<div class="container">
+			<nav class="navbar is-transparent is-centered has-shadow is-spaced">
+				<!-- <div class="container"> -->
+				<div class="navbar-brand">
+					<a class="navbar-item" href="&#x2F;">
+						<i class="fa-solid fa-home"></i>
+						<b>넷평 남짓한 공간</b>
+					</a>
+
+					<div class="navbar-burger burger" data-target="navbarExampleTransparentExample">
+						<span></span>
+						<span></span>
+						<span></span>
+					</div>
+				</div><!-- navbar-brand -->
+				<!-- </div> -->
+
+				<div id="navbarExampleTransparentExample" class="navbar-menu">
+					<div class="navbar-start">
+						<a class="navbar-item " href="&#x2F;overview">
+							<i class="fa-solid fa fa-street-view"></i>
+						</a>
+						<a class="navbar-item " href="&#x2F;company_project">
+							<i class="fa-solid fa fa-building"></i>
+						</a>
+						<a class="navbar-item has-background-grey-lighter" href="&#x2F;blog">
+							<i class="fa-solid fa-mug-saucer"></i>
+						</a>
+						<!-- <a class="navbar-item "
+            href="&#x2F;study">
+            <i class="fa-solid fa-pen-to-square"></i>
+          </a> -->
+						<a class="navbar-item " href="&#x2F;external">
+							<i class="fa-solid fa-external-link-alt"></i>
+						</a>
+						<a class="navbar-item " href="&#x2F;diary">
+							<i class="fa-solid fa-book"></i>
+						</a>
+						<a class="navbar-item" href="https:&#x2F;&#x2F;github.com&#x2F;netpyoung">
+							<i class="fa-brands fa-github"></i>
+						</a>
+						<a class="navbar-item" href="/feed.xml">
+							<i class="fa-solid fa-rss-square"></i>
+						</a>
+					</div>
+					<!-- navbar-start -->
+
+					<div class="navbar-end">
+						<button id="search-button" class="button is-light">
+							<span class="icon"><i class="fas fa-search"></i></span>
+						</button>
+
+						<div id="search-modal" class="modal">
+							<div class="modal-background"></div>
+							<div class="modal-content" style="min-height: 70%; max-height: 70%; ">
+								<div class="box">
+									<div class="field">
+										<p class="control has-icons-left">
+											<input id="search-input" class="input is-medium" type="text" placeholder="Search...">
+											<span class="icon is-small is-left">
+												<i class="fas fa-search"></i>
+											</span>
+										</p>
+									</div>
+									<div id="search-results" style="overflow-y: auto;"></div>
+								</div>
+							</div>
+							<button id="close-modal" class="modal-close is-large" aria-label="close"></button>
+						</div>
+
+						<!--  <div class="dropdown ">
+							<div class="dropdown-trigger">
+								<button class="button" aria-haspopup="true" aria-controls="dropdown-menu">
+									<span>connect</span>
+									<span class="icon is-small">
+										<i class="fa-solid fa-angle-down" aria-hidden="true"></i>
+									</span>
+								</button>
+							</div>
+							<div class="dropdown-menu" id="dropdown-menu" role="menu">
+								<div class="dropdown-content">
+									<a class="dropdown-item" href="https:&#x2F;&#x2F;facebook.com&#x2F;netpyoung">
+										<span class="icon">
+											<i class="fa-brands fa-facebook"></i>
+										</span>
+										facebook
+									</a>
+								</div>
+							</div>
+						</div> dropdown-->
+					</div>
+					<!-- navbar-end -->
+				</div>
+				<!-- navbar-menu -->
+			</nav>
+
+			<div class="content container is-fluid">
+				
+<h1 class="title">
+  윈도우즈 도커를 이용하여 깃허브 페이지 테스트하기
+</h1>
+
+
+  <p class="subtitle"><strong>2015.10.11</strong></p>
+
+
+<div class="post">
+  <h1 id="github-pages-on-windows-docker">Github Pages on Windows Docker</h1>
+<p>&amp; MacBook이 있기에, Windows에서 삽질을 하지 않아도 되지만... Docker에 익숙해지고, Windows에서의 Docker활용하면서 삽질을 미리 경험해보고자... 삽을 푸기로 했다. 사실 이 문서를 보게될 사람 역시 (아마도) 삽질매니아 인가보다.</p>
+<p><img src="http://www.newsm.com/news/photo/200812/1106_2264_4956.jpg" alt="" /></p>
+<h2 id="github-pagesran">Github Pages란?</h2>
+<ul>
+<li>github 저장소를 이용하여, github.io 도메인으로 정적웹사이트 서비스를 제공한다.</li>
+<li>스테틱 파일인, html 자체를 이용할 수 있을 뿐만 아니라, github에서 제공해주는 Jekyll 정적 블로그엔진을 이용할 수 있다.</li>
+<li>ref:
+<ul>
+<li><a href="http://ilmol.com/2015/01/Jekyll,Git%20%EC%9D%84%20%EB%AA%B0%EB%9D%BC%EB%8F%84%20%EB%AC%B4%EB%A3%8C%20Github%20Pages%20%EC%A6%90%EA%B8%B0%EA%B8%B0.html">Jekyll, Git 을 몰라도 무료 Github Pages 즐기기</a></li>
+<li><a href="https://dogfeet.github.io/articles/2012/github-pages.html">GitHub의 페이지 기능 이용하기</a></li>
+<li>https://pages.github.com/versions/</li>
+<li>https://help.github.com/articles/using-jekyll-with-pages/#installing-jekyll</li>
+</ul>
+</li>
+</ul>
+<h2 id="jekylliran">Jekyll이란?</h2>
+<p><img src="https://jekyllrb.com/img/logo-2x.png" alt="" /></p>
+<ul>
+<li><a href="http://jekyllrb.com/">http://jekyllrb.com/</a></li>
+<li>정적 웹 블로그 프레임워크로, Ruby로 짜여졌다.</li>
+<li>Markdown, Liquid, HTML &amp; CSS을 template제공하여, 렌더링할 수 있게 도와주며 프레임워크인 만큼 여러 편의 기능들이 내장되어 있다.</li>
+</ul>
+<h2 id="munjeneun">문제는?</h2>
+<p>일단 Jekyll을 Windows에서 그냥 실행시키려고 하면, (아마도)gem관련 오류 및 한글 encoding관련 문제에 봉착할 것이다.
+비단, Ruby든 Python이든 Windows에서 라이브러리 호환성 및 한글 인코딩 문제는 빠질 수 없다(삽질 필요).
+<a href="http://jekyllrb-ko.github.io/docs/windows/">Windows 에서 Jekyll</a>에서 소개한 http://jekyll-windows.juthilo.com/ 사이트 역시 (아마도) 어느정도만 해결하고 걸렸던게 있던걸로 기억한다.</p>
+<h2 id="haegyeolcaegeun">해결책은?</h2>
+<p>(Docker를 활용하여) Windows에 Linux환경을 만들면 된다.</p>
+<h2 id="dockerran">Docker란?</h2>
+<p><img src="https://www.docker.com/sites/all/themes/docker/assets/images/logo.png" alt="" /></p>
+<ul>
+<li>An open platform for distributed applications for developers and sysadmins</li>
+<li>ref:
+<ul>
+<li><a href="http://pyrasis.com/private/2014/11/30/publish-docker-for-the-really-impatient-book">가장 빨리 만나는 도커(Docker) 출간 및 원고 공개</a></li>
+<li><a href="http://blog.nacyot.com/articles/2014-01-27-easy-deploy-with-docker/">도커(Docker) 튜토리얼 : 깐 김에 배포까지</a></li>
+</ul>
+</li>
+</ul>
+<h3 id="windowse-docker-seolci">Windows에 Docker 설치</h3>
+<ul>
+<li><a href="https://docs.docker.com/installation/windows/">https://docs.docker.com/installation/windows/</a></li>
+</ul>
+<ol>
+<li>가상화 확인</li>
+<li>Docker Toolbox 설치</li>
+<li>Docker Toolbox 실행.</li>
+</ol>
+<pre style="background-color:#2b303b;color:#c0c5ce;"><code><span>## open port
+</span><span>docker@default:~$ echo &#39;export DOCKER_HOST=tcp://$(boot2docker ip 2&gt;/dev/null):8000&#39; &gt;&gt; ~/.bash_profile
+</span><span>
+</span><span>## install image
+</span><span>docker@default:~$ docker search ubuntu
+</span><span>docker@default:~$ docker pull ubuntu:latest
+</span><span>
+</span><span>## run image
+</span><span>docker@default:~$ docker run -it --name jekyll ubuntu
+</span><span>
+</span><span>
+</span><span>
+</span><span>##########################################################################
+</span><span># install needed package
+</span><span>root@33b5f808449d:/# apt-get update
+</span><span>root@33b5f808449d:/# apt-get install -y git
+</span><span>root@33b5f808449d:/# apt-get install -y curl
+</span><span>root@33b5f808449d:/# apt-get install -y node
+</span><span>root@33b5f808449d:/# apt-get install -y python-pygments
+</span><span>root@33b5f808449d:/# apt-get clean
+</span><span>root@33b5f808449d:/# rm -rf /var/lib/apt/lists/
+</span><span>
+</span><span>## install rvm
+</span><span>root@33b5f808449d:/# gpg --keyserver hkp://keys.gnupg.net --recv-keys 409B6B1796C275462A1703113804BB82D39DC0E3
+</span><span>root@33b5f808449d:/# \curl -sSL https://get.rvm.io | bash -s stable
+</span><span>root@33b5f808449d:/# source /etc/profile.d/rvm.sh
+</span><span>root@33b5f808449d:/# rvm list known
+</span><span>root@33b5f808449d:/# rvm install 2.2
+</span><span>root@33b5f808449d:/# rvm use 2.2
+</span><span>
+</span><span>## install github-pages
+</span><span>root@33b5f808449d:/# gem install github-pages
+</span><span>
+</span><span>root@33b5f808449d:/# exit
+</span><span>##########################################################################
+</span><span>
+</span><span>
+</span><span>docker@default:~$ docker ps
+</span><span>CONTAINER ID        IMAGE               COMMAND             CREATED             STATUS              PORTS                    NAMES
+</span><span>33b5f808449d        ubuntu              &quot;/bin/bash&quot;         About an hour ago   Up About an hour    0.0.0.0:8000-&gt;8000/tcp   jekyll
+</span><span>
+</span><span>## backup image
+</span><span>docker@default:~$ docker commit 33b5f808449d github-pages
+</span><span>docker@default:~$ docker images
+</span><span>REPOSITORY          TAG                 IMAGE ID            CREATED             VIRTUAL SIZE
+</span><span>github-pages        latest              3ccaea30ec80        About an hour ago   641.5 MB
+</span><span>ubuntu              latest              cdd474520b8c        45 hours ago        188 MB
+</span><span>
+</span><span>## set volum from VirtualBox
+</span><span>docker@default:~$ docker run -it --name jekyll -p 8000:8000 -v /c/Users/pyoung/hello/netpyoung.github.io/:/site github-pages
+</span><span>
+</span><span>
+</span><span>##########################################################################
+</span><span>root# cd /site
+</span><span>root# jekyll serve --port 8000 --watch --force_polling
+</span><span>##########################################################################
+</span></code></pre>
+<h2 id="jujeori">주저리.</h2>
+<p>사실 이 글을 작성하기 시작한건 꽤 되었는데, 그동안 Boot2Docker가 공식 메뉴얼에서 deprecate되었다.. 대충 기능은 비슷하고 docker-container로 변경된점?
+게임회사에서 기능별로 브랜치까고, 서버 테스트를 할때 공유서버가 아닌, 기능 담당자별 서버가 필요한데. 배포나 설치하는걸 docker로 하면 그냥 간단하게 될것같다.
+쩝 지금있는데는 뭐 한쪽은 svn쓰고, 한쪽은 git을 svn처럼 활용하고 있는데 뭐 더 할말이 있겠냐만은..
+음.. 이제 좀 포스트하는데 편해졌다.</p>
+<h2 id="cuga">추가.</h2>
+<ul>
+<li>docker github-pages로 쉽게 테스트 해볼 수 있게 되었다. <a href="https://github.com/Starefossen/docker-github-pages">https://github.com/Starefossen/docker-github-pages</a></li>
+</ul>
+
+</div><!-- post -->
+
+<hr />
+<script src="https://utteranc.es/client.js" repo="netpyoung/netpyoung.blog.comment" issue-term="url"
+  theme="github-light" crossorigin="anonymous" async></script>
+<hr />
+
+			</div><!-- /.content -->
+
+			<!-- <div class="footer">
+                 </div> .footer  -->
+		</div><!-- /.container -->
+	</body>
+</html>

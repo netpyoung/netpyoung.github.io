@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+
+<!-- ref: https://bulma.io/ -->
+<!-- ref: https://fontawesome.com/icons -->
+<!-- ref: https://flagicons.lipis.dev/ -->
+<html>
+
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+		<title>넷평 남짓한 공간</title>
+
+		<link rel="icon" href="/favicon.ico" type="image/x-icon">
+		<link rel="icon" href="/favicon.ico" type="image/x-icon">
+		<link rel="alternate" type="application/atom+xml" title="Atom" href="&#x2F;feed">
+		<link rel="stylesheet" href="/main.css">
+
+		<!-- #region: Google tag (gtag.js) -->
+		<script async src="https://www.googletagmanager.com/gtag/js?id=G-855BJNV9VD"></script>
+		<script>
+			window.dataLayer = window.dataLayer || [];
+			function gtag(){dataLayer.push(arguments);}
+			gtag('js', new Date());
+			
+			gtag('config', 'G-855BJNV9VD');
+		</script>
+		<!-- #endregion: Google tag (gtag.js) -->
+
+		<script src="https://cdn.jsdelivr.net/npm/mermaid@10.6.1/dist/mermaid.min.js"></script>
+		<script>mermaid.initialize({ startOnLoad: true });</script>
+		<script src="https://cdn.jsdelivr.net/npm/fuse.js@7.1.0"></script>
+		<script defer src="/search_index.ko.js"></script>
+		<script defer src="/main.js"></script>
+		<script defer src="/search.js"></script>
+	</head>
+
+	<body class="layout-documentation page-layout">
+		<div class="container">
+			<nav class="navbar is-transparent is-centered has-shadow is-spaced">
+				<!-- <div class="container"> -->
+				<div class="navbar-brand">
+					<a class="navbar-item" href="&#x2F;">
+						<i class="fa-solid fa-home"></i>
+						<b>넷평 남짓한 공간</b>
+					</a>
+
+					<div class="navbar-burger burger" data-target="navbarExampleTransparentExample">
+						<span></span>
+						<span></span>
+						<span></span>
+					</div>
+				</div><!-- navbar-brand -->
+				<!-- </div> -->
+
+				<div id="navbarExampleTransparentExample" class="navbar-menu">
+					<div class="navbar-start">
+						<a class="navbar-item " href="&#x2F;overview">
+							<i class="fa-solid fa fa-street-view"></i>
+						</a>
+						<a class="navbar-item " href="&#x2F;company_project">
+							<i class="fa-solid fa fa-building"></i>
+						</a>
+						<a class="navbar-item has-background-grey-lighter" href="&#x2F;blog">
+							<i class="fa-solid fa-mug-saucer"></i>
+						</a>
+						<!-- <a class="navbar-item "
+            href="&#x2F;study">
+            <i class="fa-solid fa-pen-to-square"></i>
+          </a> -->
+						<a class="navbar-item " href="&#x2F;external">
+							<i class="fa-solid fa-external-link-alt"></i>
+						</a>
+						<a class="navbar-item " href="&#x2F;diary">
+							<i class="fa-solid fa-book"></i>
+						</a>
+						<a class="navbar-item" href="https:&#x2F;&#x2F;github.com&#x2F;netpyoung">
+							<i class="fa-brands fa-github"></i>
+						</a>
+						<a class="navbar-item" href="/feed.xml">
+							<i class="fa-solid fa-rss-square"></i>
+						</a>
+					</div>
+					<!-- navbar-start -->
+
+					<div class="navbar-end">
+						<button id="search-button" class="button is-light">
+							<span class="icon"><i class="fas fa-search"></i></span>
+						</button>
+
+						<div id="search-modal" class="modal">
+							<div class="modal-background"></div>
+							<div class="modal-content" style="min-height: 70%; max-height: 70%; ">
+								<div class="box">
+									<div class="field">
+										<p class="control has-icons-left">
+											<input id="search-input" class="input is-medium" type="text" placeholder="Search...">
+											<span class="icon is-small is-left">
+												<i class="fas fa-search"></i>
+											</span>
+										</p>
+									</div>
+									<div id="search-results" style="overflow-y: auto;"></div>
+								</div>
+							</div>
+							<button id="close-modal" class="modal-close is-large" aria-label="close"></button>
+						</div>
+
+						<!--  <div class="dropdown ">
+							<div class="dropdown-trigger">
+								<button class="button" aria-haspopup="true" aria-controls="dropdown-menu">
+									<span>connect</span>
+									<span class="icon is-small">
+										<i class="fa-solid fa-angle-down" aria-hidden="true"></i>
+									</span>
+								</button>
+							</div>
+							<div class="dropdown-menu" id="dropdown-menu" role="menu">
+								<div class="dropdown-content">
+									<a class="dropdown-item" href="https:&#x2F;&#x2F;facebook.com&#x2F;netpyoung">
+										<span class="icon">
+											<i class="fa-brands fa-facebook"></i>
+										</span>
+										facebook
+									</a>
+								</div>
+							</div>
+						</div> dropdown-->
+					</div>
+					<!-- navbar-end -->
+				</div>
+				<!-- navbar-menu -->
+			</nav>
+
+			<div class="content container is-fluid">
+				
+<h1 class="title">
+  skype봇 sevabot의 한글명령어 문제 해결
+</h1>
+
+
+  <p class="subtitle"><strong>2014.09.04</strong></p>
+
+
+<div class="post">
+  <h2 id="sevabotiran">sevabot이란?</h2>
+<ul>
+<li><a href="http://sevabot-skype-bot.readthedocs.org/">http://sevabot-skype-bot.readthedocs.org/</a></li>
+<li>Skype4Py 프레임워크를 기반으로한, 스카이프 봇 프로그램.</li>
+</ul>
+<h2 id="munjeneun">문제는?</h2>
+<ul>
+<li>한글 명령어가 안먹히는 문제가 있음.</li>
+<li>파이썬2에선 문자열 다룰때 x신같은게 꼭 인코딩 문제가 있음.</li>
+<li>윈도우 경우, <code>utf-8</code>, <code>cp949</code> 관련 인코딩 문제가 있으며.</li>
+<li>맥인 경우, <code>utf-8</code>뿐만 아니라, <a href="http://en.wikipedia.org/wiki/Unicode_equivalence">NFD</a>문제까지 있다.</li>
+</ul>
+<h2 id="haegyeolcaegeun">해결책은?</h2>
+<ul>
+<li><code>settings.py</code>의 <code>MOUDLE_PATHS</code>를 유니코드 문자열로 바꿔주고.</li>
+</ul>
+<pre data-lang="python" style="background-color:#2b303b;color:#c0c5ce;" class="language-python "><code class="language-python" data-lang="python"><span>    </span><span style="color:#bf616a;">MODULE_PATHS </span><span>= [</span><span style="color:#b48ead;">u</span><span>&quot;</span><span style="color:#a3be8c;">modules</span><span>&quot;]
+</span></code></pre>
+<ul>
+<li>
+<p><code>NFD</code>문제 해결을 위한, <a href="https://raw.github.com/sublee/hangulize/master/hangulize/hangul.py">Hye-Shik Chang 님의 hangul.py</a> 을 <code>sevabot/hangul.py</code>로 저장.</p>
+</li>
+<li>
+<p><code>sevabot/bot/module.py</code> 수정.</p>
+</li>
+</ul>
+<pre data-lang="python" style="background-color:#2b303b;color:#c0c5ce;" class="language-python "><code class="language-python" data-lang="python"><span style="color:#65737e;"># 기본 인코딩을 utf-8로 바꿔주고
+</span><span style="color:#b48ead;">import </span><span>sys
+</span><span style="color:#96b5b4;">reload</span><span>(sys)
+</span><span>sys.</span><span style="color:#bf616a;">setdefaultencoding</span><span>(&#39;</span><span style="color:#a3be8c;">utf-8</span><span>&#39;)
+</span><span>
+</span><span style="color:#b48ead;">from </span><span>sevabot.plugins </span><span style="color:#b48ead;">import </span><span>hangul
+</span><span>
+</span><span>
+</span><span style="color:#65737e;"># windows 인코딩을 위한 threaded_run 함수 수정.
+</span><span>
+</span><span>    </span><span style="color:#b48ead;">if </span><span>sys.platform == &#39;</span><span style="color:#a3be8c;">win32</span><span>&#39;:
+</span><span>        env = os.environ.</span><span style="color:#bf616a;">copy</span><span>()
+</span><span>        env[&quot;</span><span style="color:#a3be8c;">SKYPE_USERNAME</span><span>&quot;.</span><span style="color:#bf616a;">encode</span><span>(&quot;</span><span style="color:#a3be8c;">utf-8</span><span>&quot;)] = username.</span><span style="color:#bf616a;">encode</span><span>(&quot;</span><span style="color:#a3be8c;">utf-8</span><span>&quot;)
+</span><span>        env[&quot;</span><span style="color:#a3be8c;">SKYPE_FULLNAME</span><span>&quot;.</span><span style="color:#bf616a;">encode</span><span>(&quot;</span><span style="color:#a3be8c;">utf-8</span><span>&quot;)] = full_name.</span><span style="color:#bf616a;">encode</span><span>(&quot;</span><span style="color:#a3be8c;">utf-8</span><span>&quot;)
+</span><span>
+</span><span>        p_args = [arg.</span><span style="color:#bf616a;">encode</span><span>(&#39;</span><span style="color:#a3be8c;">cp949</span><span>&#39;) </span><span style="color:#b48ead;">for </span><span>arg </span><span style="color:#b48ead;">in </span><span>args]
+</span><span>        process = subprocess.</span><span style="color:#bf616a;">Popen</span><span>(p_args, </span><span style="color:#bf616a;">stdout</span><span>=subprocess.</span><span style="color:#bf616a;">PIPE</span><span>, </span><span style="color:#bf616a;">stderr</span><span>=subprocess.</span><span style="color:#bf616a;">STDOUT</span><span>, </span><span style="color:#bf616a;">shell</span><span>=</span><span style="color:#d08770;">True</span><span>, </span><span style="color:#bf616a;">env</span><span>=env)
+</span><span>        out = process.</span><span style="color:#bf616a;">communicate</span><span>()[</span><span style="color:#d08770;">0</span><span>]
+</span><span>        </span><span style="color:#b48ead;">return </span><span>out.</span><span style="color:#bf616a;">decode</span><span>(&quot;</span><span style="color:#a3be8c;">utf-8</span><span>&quot;)
+</span><span>
+</span><span>
+</span><span style="color:#65737e;"># osx에 NFD문제 해결을 위한 load_modules 함수 수정
+</span><span>
+</span><span>        </span><span style="color:#b48ead;">if </span><span>sys.platform == &#39;</span><span style="color:#a3be8c;">darwin</span><span>&#39;:
+</span><span>            body = hangul.</span><span style="color:#bf616a;">conjoin</span><span>(body.</span><span style="color:#bf616a;">decode</span><span>(&#39;</span><span style="color:#a3be8c;">utf-8</span><span>&#39;))
+</span><span>
+</span></code></pre>
+<h2 id="namaissneun-munjejeom">남아있는 문제점.</h2>
+<ul>
+<li>윈도우즈 같은 경우 bat파일을 실행시킬 경우, output이 cp494인데, 기존 utf-8인코딩과 cp494인코딩을 동시에 지원하기에는 에로사항이 있다.</li>
+</ul>
+<h2 id="jageobdoen-peurojegteu">작업된 프로젝트.</h2>
+<ul>
+<li><a href="https://github.com/netpyoung/sevabot">https://github.com/netpyoung/sevabot</a></li>
+</ul>
+<h2 id="camgo">참고.</h2>
+<ul>
+<li><a href="http://blog.naver.com/amurorei82/10188770513">OSX에 Skype bot - sevabot 설치하기</a></li>
+<li><a href="https://github.com/opensourcehacker/sevabot/issues/58">sevabot issue / With windows many problem... #58</a></li>
+<li><a href="https://github.com/drypot/writings/blob/master/categories/mac/mac-os-x-filename-encoding.md">Mac OS X Filename Encoding</a></li>
+</ul>
+
+</div><!-- post -->
+
+<hr />
+<script src="https://utteranc.es/client.js" repo="netpyoung/netpyoung.blog.comment" issue-term="url"
+  theme="github-light" crossorigin="anonymous" async></script>
+<hr />
+
+			</div><!-- /.content -->
+
+			<!-- <div class="footer">
+                 </div> .footer  -->
+		</div><!-- /.container -->
+	</body>
+</html>

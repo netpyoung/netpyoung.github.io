@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+
+<!-- ref: https://bulma.io/ -->
+<!-- ref: https://fontawesome.com/icons -->
+<!-- ref: https://flagicons.lipis.dev/ -->
+<html>
+
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+		<title>넷평 남짓한 공간</title>
+
+		<link rel="icon" href="/favicon.ico" type="image/x-icon">
+		<link rel="icon" href="/favicon.ico" type="image/x-icon">
+		<link rel="alternate" type="application/atom+xml" title="Atom" href="&#x2F;feed">
+		<link rel="stylesheet" href="/main.css">
+
+		<!-- #region: Google tag (gtag.js) -->
+		<script async src="https://www.googletagmanager.com/gtag/js?id=G-855BJNV9VD"></script>
+		<script>
+			window.dataLayer = window.dataLayer || [];
+			function gtag(){dataLayer.push(arguments);}
+			gtag('js', new Date());
+			
+			gtag('config', 'G-855BJNV9VD');
+		</script>
+		<!-- #endregion: Google tag (gtag.js) -->
+
+		<script src="https://cdn.jsdelivr.net/npm/mermaid@10.6.1/dist/mermaid.min.js"></script>
+		<script>mermaid.initialize({ startOnLoad: true });</script>
+		<script src="https://cdn.jsdelivr.net/npm/fuse.js@7.1.0"></script>
+		<script defer src="/search_index.ko.js"></script>
+		<script defer src="/main.js"></script>
+		<script defer src="/search.js"></script>
+	</head>
+
+	<body class="layout-documentation page-layout">
+		<div class="container">
+			<nav class="navbar is-transparent is-centered has-shadow is-spaced">
+				<!-- <div class="container"> -->
+				<div class="navbar-brand">
+					<a class="navbar-item" href="&#x2F;">
+						<i class="fa-solid fa-home"></i>
+						<b>넷평 남짓한 공간</b>
+					</a>
+
+					<div class="navbar-burger burger" data-target="navbarExampleTransparentExample">
+						<span></span>
+						<span></span>
+						<span></span>
+					</div>
+				</div><!-- navbar-brand -->
+				<!-- </div> -->
+
+				<div id="navbarExampleTransparentExample" class="navbar-menu">
+					<div class="navbar-start">
+						<a class="navbar-item " href="&#x2F;overview">
+							<i class="fa-solid fa fa-street-view"></i>
+						</a>
+						<a class="navbar-item " href="&#x2F;company_project">
+							<i class="fa-solid fa fa-building"></i>
+						</a>
+						<a class="navbar-item " href="&#x2F;blog">
+							<i class="fa-solid fa-mug-saucer"></i>
+						</a>
+						<!-- <a class="navbar-item "
+            href="&#x2F;study">
+            <i class="fa-solid fa-pen-to-square"></i>
+          </a> -->
+						<a class="navbar-item " href="&#x2F;external">
+							<i class="fa-solid fa-external-link-alt"></i>
+						</a>
+						<a class="navbar-item " href="&#x2F;diary">
+							<i class="fa-solid fa-book"></i>
+						</a>
+						<a class="navbar-item" href="https:&#x2F;&#x2F;github.com&#x2F;netpyoung">
+							<i class="fa-brands fa-github"></i>
+						</a>
+						<a class="navbar-item" href="/feed.xml">
+							<i class="fa-solid fa-rss-square"></i>
+						</a>
+					</div>
+					<!-- navbar-start -->
+
+					<div class="navbar-end">
+						<button id="search-button" class="button is-light">
+							<span class="icon"><i class="fas fa-search"></i></span>
+						</button>
+
+						<div id="search-modal" class="modal">
+							<div class="modal-background"></div>
+							<div class="modal-content" style="min-height: 70%; max-height: 70%; ">
+								<div class="box">
+									<div class="field">
+										<p class="control has-icons-left">
+											<input id="search-input" class="input is-medium" type="text" placeholder="Search...">
+											<span class="icon is-small is-left">
+												<i class="fas fa-search"></i>
+											</span>
+										</p>
+									</div>
+									<div id="search-results" style="overflow-y: auto;"></div>
+								</div>
+							</div>
+							<button id="close-modal" class="modal-close is-large" aria-label="close"></button>
+						</div>
+
+						<!--  <div class="dropdown ">
+							<div class="dropdown-trigger">
+								<button class="button" aria-haspopup="true" aria-controls="dropdown-menu">
+									<span>connect</span>
+									<span class="icon is-small">
+										<i class="fa-solid fa-angle-down" aria-hidden="true"></i>
+									</span>
+								</button>
+							</div>
+							<div class="dropdown-menu" id="dropdown-menu" role="menu">
+								<div class="dropdown-content">
+									<a class="dropdown-item" href="https:&#x2F;&#x2F;facebook.com&#x2F;netpyoung">
+										<span class="icon">
+											<i class="fa-brands fa-facebook"></i>
+										</span>
+										facebook
+									</a>
+								</div>
+							</div>
+						</div> dropdown-->
+					</div>
+					<!-- navbar-end -->
+				</div>
+				<!-- navbar-menu -->
+			</nav>
+
+			<div class="content container is-fluid">
+				
+
+<!-- The home page is a section so you need to access section.content -->
+<p><img src="/resources/pic/netpyoung.png" alt="netpyoung" /></p>
+<h2 id="adult-computer-about">🧑🏻‍💻 About</h2>
+<ul>
+<li><span class="flag-icon flag-icon-kr flag-icon-squared"></span> EunPyoung Kim</li>
+<li>I'm experienced with a game development with Unity3D GameEngine.</li>
+<li><i class="far fa-envelope"></i> <a href="mailto:netpyoung@gmail.com">email</a></li>
+<li><i class="fab fa-github"></i> <a href="http://github.com/netpyoung">github</a></li>
+<li><i class="fab fa-slideshare" aria-hidden="true"></i> <a href="https://www.slideshare.net/netpyoung">slideshare</a></li>
+</ul>
+<h2 id="page-facing-up-resume">📄 Resume</h2>
+<ul>
+<li><i class="fab fa-linkedin" aria-hidden="true"></i> <a href="https://www.linkedin.com/in/netpyoung/">LinkedIn</a></li>
+<li><span class="flag-icon flag-icon-kr flag-icon-squared"></span> 🇰🇷 Korean / <a href="https://docs.google.com/document/d/1I_zAec6XkjNAdME7ayxS2sDbBpCwLIi7AoSTOgbOgIE/edit?usp=sharing">Resume</a> / <a href="https://docs.google.com/presentation/d/15AA1oKV2GAo56ctU7V3Eyrb7PGrno9vUiOeqDuuubtk/edit?usp=sharing">Portfolio</a></li>
+</ul>
+<div style="display:none;">
+- <span class="flag-icon flag-icon-gb flag-icon-squared"></span> 🇺🇸 English / [Resume](https://docs.google.com/document/d/1sS9sx-LH2124aj4-NtRX3thAnmGLKjNRH2j2Y_3SSdQ/edit?usp=sharing) / [Portfolio](https://docs.google.com/presentation/d/1QAX_EFcksZAmCilK-Eos4qZxJ4gpBglp-202zNfVp2k/edit?usp=sharing)
+</hide>
+- <span class="flag-icon flag-icon-jp flag-icon-squared"></span> 🇯🇵 日本語 / [履歴書](https://docs.google.com/document/d/1L6bX84n7pYPciDn6IHg1FL12Uxm_ItvQTx8BrhVRCzE/edit?usp=sharing) / [職務経歴書](https://docs.google.com/spreadsheets/d/1CiYNpmUbzp1wYeSwYQBOH0FmpZiTI0u9lfDzZD5EhMM/edit?usp=sharing)
+</div>
+<h2 id="tools-skills">🛠 Skills</h2>
+<ul>
+<li>Strong : C#, Clojure</li>
+<li>Knowledgeable : Python</li>
+</ul>
+<h2 id="screwdriver-configs">🪛 Configs</h2>
+<table><thead><tr><th>name</th></tr></thead><tbody>
+<tr><td><a href="https://github.com/netpyoung/netpyoung.dotfiles">.dotfiles</a></td></tr>
+<tr><td><a href="https://github.com/netpyoung/netpyoung.emacs.d">.emacs</a></td></tr>
+<tr><td><a href="https://github.com/netpyoung/netpyoung.nvim">.nvim</a> / <a href="https://github.com/netpyoung/netpyoung.vim">.vim</a></td></tr>
+</tbody></table>
+<h2 id="package-side-projects">📦 Side projects</h2>
+<h3 id="unity3d">Unity3D <span class="icon "><img src="/resources/icon/icons8-unity-250.png" /></span></h3>
+<table><thead><tr><th>name</th><th>desc</th></tr></thead><tbody>
+<tr><td><a href="https://github.com/netpyoung/SqlCipher4Unity3D">SqlCipher4Unity3D</a></td><td>wrapper libsqlcipher</td></tr>
+<tr><td><a href="https://github.com/netpyoung/unity.libsodium">unity.libsodium</a></td><td>wrapper libsodium</td></tr>
+<tr><td><a href="https://github.com/netpyoung/unity.webp">unity.webp</a></td><td>wrapper libwebp</td></tr>
+<tr><td><a href="https://github.com/netpyoung/NF.AI.PathFinding">NF.AI.PathFinding</a></td><td>AStar, JPS, JPS+</td></tr>
+<tr><td><a href="https://github.com/netpyoung/NF.Tool.ReleaseNoteMaker">NF.Tool.ReleaseNoteMaker</a></td><td>Release Note Maker</td></tr>
+<tr><td><a href="https://github.com/netpyoung/nf.protocol-flow">nf.protocol-flow</a></td><td>protocol generate from protobuf</td></tr>
+<tr><td><a href="https://github.com/netpyoung/nf.data-flow">nf.data-flow</a></td><td>data exporter from excel</td></tr>
+</tbody></table>
+<h3 id="clojure">Clojure <span class="icon "><img src="/resources/icon/clojure.png" /></span></h3>
+<table><thead><tr><th>name</th></tr></thead><tbody>
+<tr><td><a href="https://github.com/netpyoung/pt.using-fxml-on-clojure">pt.using-fxml-on-clojure</a></td></tr>
+<tr><td><a href="https://github.com/netpyoung/pt.c-interop-in-clojure">pt.c-interop-in-clojure</a></td></tr>
+</tbody></table>
+<h2 id="office-career">🏢 Career</h2>
+<ul>
+<li>Infinity Vector, Tokyo
+<ul>
+<li>Client programmer, 2023.02 ~ 2024.02 // 1y</li>
+<li>Unity3D</li>
+</ul>
+</li>
+<li>Flybot, Singapore
+<ul>
+<li>Senior Software Enginner, 2018.09 ~ 2019.10 // 1y 1m</li>
+<li>Clojure</li>
+</ul>
+</li>
+<li>Xii Braves, Singapore
+<ul>
+<li>Senior Software Enginner, 2018.01 ~ 2018.08 // 8m</li>
+<li>Unity3D</li>
+<li>Projects
+<ul>
+<li><a href="https://www.youtube.com/watch?v=TeRFsJT1n4E">Shining beyond</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li>Funcrew, Tokyo
+<ul>
+<li>Client Programmer, 2016.07 ~ 2017.11 // 1y 4m</li>
+<li>Unity3D</li>
+<li>Projects
+<ul>
+<li><a href="https://www.youtube.com/watch?v=cIXTiWbwwzw">マチガイブレイカー</a></li>
+<li><a href="https://www.youtube.com/watch?v=F4MlyLkPdkM">不思議のコロナ王国</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li>GREE, Seoul
+<ul>
+<li>Client Programmer, 2014.08 ~ 2015.11 // 1y 3m</li>
+<li>Unity3D</li>
+<li>Projects
+<ul>
+<li><a href="https://youtu.be/zaUb5cVU1nU">Lost in Stars Online</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li>Sonaclo, Seoul
+<ul>
+<li>Client/Server Programmer, 2014.01 ~ 2014.07 // 7m</li>
+<li>Clojure</li>
+<li>Web-based Facebook game</li>
+</ul>
+</li>
+<li>Ncrew Entertainment, Seoul
+<ul>
+<li>Client/Server Programmer, 2012.04 ~ 2013.12 // 1y 8m</li>
+<li>ORGE / Unity3D / Python</li>
+<li>Projects
+<ul>
+<li><a href="https://www.youtube.com/watch?v=D7rJ-9vOqRM&amp;list=PLUuJ0ZnxV-4Q94NCCN6B9EZHaqp4BM0RM">Devil Maker : Tokyo</a></li>
+<li><a href="https://www.youtube.com/watch?v=4NicQp58-kE">Carte</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h2 id="admire">Admire</h2>
+<ul>
+<li><a href="https://mm.soldat.pl/">Michal Marcinkowski</a></li>
+<li><a href="http://blog.naver.com/byulbram">byulbram</a></li>
+</ul>
+
+
+
+			</div><!-- /.content -->
+
+			<!-- <div class="footer">
+                 </div> .footer  -->
+		</div><!-- /.container -->
+	</body>
+</html>

@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+
+<!-- ref: https://bulma.io/ -->
+<!-- ref: https://fontawesome.com/icons -->
+<!-- ref: https://flagicons.lipis.dev/ -->
+<html>
+
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+		<title>넷평 남짓한 공간</title>
+
+		<link rel="icon" href="/favicon.ico" type="image/x-icon">
+		<link rel="icon" href="/favicon.ico" type="image/x-icon">
+		<link rel="alternate" type="application/atom+xml" title="Atom" href="&#x2F;feed">
+		<link rel="stylesheet" href="/main.css">
+
+		<!-- #region: Google tag (gtag.js) -->
+		<script async src="https://www.googletagmanager.com/gtag/js?id=G-855BJNV9VD"></script>
+		<script>
+			window.dataLayer = window.dataLayer || [];
+			function gtag(){dataLayer.push(arguments);}
+			gtag('js', new Date());
+			
+			gtag('config', 'G-855BJNV9VD');
+		</script>
+		<!-- #endregion: Google tag (gtag.js) -->
+
+		<script src="https://cdn.jsdelivr.net/npm/mermaid@10.6.1/dist/mermaid.min.js"></script>
+		<script>mermaid.initialize({ startOnLoad: true });</script>
+		<script src="https://cdn.jsdelivr.net/npm/fuse.js@7.1.0"></script>
+		<script defer src="/search_index.ko.js"></script>
+		<script defer src="/main.js"></script>
+		<script defer src="/search.js"></script>
+	</head>
+
+	<body class="layout-documentation page-layout">
+		<div class="container">
+			<nav class="navbar is-transparent is-centered has-shadow is-spaced">
+				<!-- <div class="container"> -->
+				<div class="navbar-brand">
+					<a class="navbar-item" href="&#x2F;">
+						<i class="fa-solid fa-home"></i>
+						<b>넷평 남짓한 공간</b>
+					</a>
+
+					<div class="navbar-burger burger" data-target="navbarExampleTransparentExample">
+						<span></span>
+						<span></span>
+						<span></span>
+					</div>
+				</div><!-- navbar-brand -->
+				<!-- </div> -->
+
+				<div id="navbarExampleTransparentExample" class="navbar-menu">
+					<div class="navbar-start">
+						<a class="navbar-item " href="&#x2F;overview">
+							<i class="fa-solid fa fa-street-view"></i>
+						</a>
+						<a class="navbar-item " href="&#x2F;company_project">
+							<i class="fa-solid fa fa-building"></i>
+						</a>
+						<a class="navbar-item has-background-grey-lighter" href="&#x2F;blog">
+							<i class="fa-solid fa-mug-saucer"></i>
+						</a>
+						<!-- <a class="navbar-item "
+            href="&#x2F;study">
+            <i class="fa-solid fa-pen-to-square"></i>
+          </a> -->
+						<a class="navbar-item " href="&#x2F;external">
+							<i class="fa-solid fa-external-link-alt"></i>
+						</a>
+						<a class="navbar-item " href="&#x2F;diary">
+							<i class="fa-solid fa-book"></i>
+						</a>
+						<a class="navbar-item" href="https:&#x2F;&#x2F;github.com&#x2F;netpyoung">
+							<i class="fa-brands fa-github"></i>
+						</a>
+						<a class="navbar-item" href="/feed.xml">
+							<i class="fa-solid fa-rss-square"></i>
+						</a>
+					</div>
+					<!-- navbar-start -->
+
+					<div class="navbar-end">
+						<button id="search-button" class="button is-light">
+							<span class="icon"><i class="fas fa-search"></i></span>
+						</button>
+
+						<div id="search-modal" class="modal">
+							<div class="modal-background"></div>
+							<div class="modal-content" style="min-height: 70%; max-height: 70%; ">
+								<div class="box">
+									<div class="field">
+										<p class="control has-icons-left">
+											<input id="search-input" class="input is-medium" type="text" placeholder="Search...">
+											<span class="icon is-small is-left">
+												<i class="fas fa-search"></i>
+											</span>
+										</p>
+									</div>
+									<div id="search-results" style="overflow-y: auto;"></div>
+								</div>
+							</div>
+							<button id="close-modal" class="modal-close is-large" aria-label="close"></button>
+						</div>
+
+						<!--  <div class="dropdown ">
+							<div class="dropdown-trigger">
+								<button class="button" aria-haspopup="true" aria-controls="dropdown-menu">
+									<span>connect</span>
+									<span class="icon is-small">
+										<i class="fa-solid fa-angle-down" aria-hidden="true"></i>
+									</span>
+								</button>
+							</div>
+							<div class="dropdown-menu" id="dropdown-menu" role="menu">
+								<div class="dropdown-content">
+									<a class="dropdown-item" href="https:&#x2F;&#x2F;facebook.com&#x2F;netpyoung">
+										<span class="icon">
+											<i class="fa-brands fa-facebook"></i>
+										</span>
+										facebook
+									</a>
+								</div>
+							</div>
+						</div> dropdown-->
+					</div>
+					<!-- navbar-end -->
+				</div>
+				<!-- navbar-menu -->
+			</nav>
+
+			<div class="content container is-fluid">
+				
+<h1 class="title">
+  jekyll에서 zola로
+</h1>
+
+
+  <p class="subtitle"><strong>2023.12.03</strong></p>
+
+
+<div class="post">
+  <p>5년전에 블로그 글을 올리고 다시 새로운 글을 올린다. 블로그에 글을 쓰는것보다 재미있는 일들/해야 할 들이 많았다.</p>
+<p>홈페이지를 새로 정리하려고 하는데, 기존에 쓰던 방식인 jekyll을 실행시키자니, 디펜던시를 받던가 도커를 실행해야하는데 이 작업자체가 귀찮았다.
+대안을 생각해보았고, 생성기를 jekyll에서 zola로 교체하였다.</p>
+<ul>
+<li>
+<p>이전글</p>
+<ul>
+<li><a href="https://netpyoung.github.io/blog/netpyoung.github.io_on_jekyll/">https://netpyoung.github.io/blog/netpyoung.github.io_on_jekyll/</a></li>
+<li><a href="https://netpyoung.github.io/blog/githubpages_jekyll_v3/">https://netpyoung.github.io/blog/githubpages_jekyll_v3/</a></li>
+</ul>
+</li>
+<li>
+<p>jekyll을 썻던 이유</p>
+<ul>
+<li>github 기본</li>
+<li>추가 커밋 불필요</li>
+</ul>
+</li>
+<li>
+<p>zola를 쓰는 이유</p>
+<ul>
+<li>github기본 jekyll버전의 업데이트가 멈추었다
+<ul>
+<li>2023.12.03 현재
+<ul>
+<li>github's jekyll current version <code>## 3.9.3 / 2023-01-27</code></li>
+<li>github's jekyll latest version <code>4.3.2</code></li>
+</ul>
+</li>
+<li>jekyll의 의존성 설치문제 짜증나서 안키게 된다</li>
+<li>깔끔한 폴더구조
+<ul>
+<li>jekyll에선 _posts로 블로그를 넣었는데, 이젠 그냥 content에 넣으면 된다</li>
+</ul>
+</li>
+<li>그냥
+<ul>
+<li>rust를 쓰니 속도가 빨라보였다</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<p>후보들</p>
+<ul>
+<li>Cobalt: rust로 작성.
+<ul>
+<li>문서, 사용자층 빈약해서 패스</li>
+</ul>
+</li>
+<li>hugo: go로 작성.
+<ul>
+<li>문서, 사용자층 괜찮음</li>
+<li>어색한 템플릿 언어 Go’s html/template and text/template</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<p>이름도 zola라 졸라 빨라 보인다</p>
+</li>
+</ul>
+<h2 id="baggumyeonseo">바꾸면서</h2>
+<ul>
+<li>만족
+<ul>
+<li>빠르다</li>
+<li>셋업에 골머리 썩힐 필요가 없었다.
+<ul>
+<li>jekyll은 ruby베이스라서 버전, 라이브러리가 os문제를 가지면 꽤나 골치 아파진다.
+<ul>
+<li>그걸 피하려고 docker버전을 썼지만 docker도 셋팅하는게 귀찮다.</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>zola의 tera
+<ul>
+<li>liquid랑 비슷해서 딱히 문제없음. hugo로 갔으면 go템플릿하느라 빡쳤을듯</li>
+</ul>
+</li>
+<li>깔끔해졌다
+<ul>
+<li>jekyll은 _posts폴더를 강제로 쓰도록하는데 zola는 괜찮았다</li>
+<li>webpack쓰던걸 그냥 cdn쓰도록
+<ul>
+<li>jekyll에서 webpack썼는데 관리 귀찮</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>다행
+<ul>
+<li>글이 별로 없어서 마이그레이션 비용이 그리 크지 않았다</li>
+</ul>
+</li>
+<li>어색
+<ul>
+<li>index.md가 아닌 contents/에 _index.md로 처리</li>
+<li>slugify's path
+<ul>
+<li>예를들어 파일이름이 <code>elisp_lexcical_dynamic</code>이런데 url은 <code>elisp-lexcical-dynamic</code>로 자동으로 바뀌는걸 방지하려면</li>
+<li>config에서 <code>[slugify]</code>의 <code>paths = "safe"</code>로 해줘야 했다</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>별로
+<ul>
+<li>zola 마크다운에서 rendering코드를 넣지 못함
+<ul>
+<li>zola에는 shortcodes
+<ul>
+<li>templates/shortcodes/에 넣는다</li>
+<li>근데 shortcode는 Tera 변수를 참조할 수 없음</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>앞으로
+<ul>
+<li>계속 쓰자
+<ul>
+<li>추후 github action의 유료화나 jekyll만 쓰도록 한다면 다시 바꾸는걸 고려해야겠지만 지금은 zola로 만족</li>
+<li>다른 좋은 생성기가 있으면 고려해보자</li>
+<li>아싸리 개인 생성기도 만드는 것도 재미있을거 같은데, 시간이 부족하다.</li>
+</ul>
+</li>
+<li>search기능도 있는것 같은데 어떻게 쓰는지 알아봐야 할 것 같다</li>
+<li>lispkorea.github.io도 zola로 바꿔봐야겠다</li>
+</ul>
+</li>
+</ul>
+<pre data-lang="bash" style="background-color:#2b303b;color:#c0c5ce;" class="language-bash "><code class="language-bash" data-lang="bash"><span style="color:#bf616a;">git</span><span> tag</span><span style="color:#bf616a;"> -a</span><span> 1.9.0 2136b1c0e601ec1a68b94aa0daefd871769dff97</span><span style="color:#bf616a;"> -m </span><span>&quot;</span><span style="color:#a3be8c;">jekyll version</span><span>&quot;
+</span><span style="color:#bf616a;">git</span><span> tag</span><span style="color:#bf616a;"> -a</span><span> 2.0.0 73a536e07328bc298586e75c0a5b752073aaf6f3</span><span style="color:#bf616a;"> -m </span><span>&quot;</span><span style="color:#a3be8c;">zola verison</span><span>&quot;
+</span></code></pre>
+<h2 id="ref">Ref</h2>
+<ul>
+<li><a href="https://www.getzola.org/documentation/getting-started/configuration/">설정</a></li>
+<li><a href="https://www.getzola.org/documentation/deployment/github-pages/">github action</a></li>
+<li><a href="https://keats.github.io/tera/">tera</a></li>
+</ul>
+<hr />
+<h2 id="gita">기타</h2>
+<table><thead><tr><th>templates/</th><th></th></tr></thead><tbody>
+<tr><td>index.html</td><td>applied to the site homepage;</td></tr>
+<tr><td>section.html</td><td>applied to all sections</td></tr>
+<tr><td>page.html</td><td>applied to all pages</td></tr>
+<tr><td>404.html</td><td></td></tr>
+<tr><td>anchor-link.html</td><td></td></tr>
+<tr><td>sitemap.xml</td><td><a href="https://www.getzola.org/documentation/templates/sitemap/">https://www.getzola.org/documentation/templates/sitemap/</a></td></tr>
+<tr><td>split_sitemap_index.xml</td><td></td></tr>
+<tr><td>atom.xml</td><td>config.toml 바꿀 수 있다. <a href="https://www.getzola.org/documentation/templates/feeds/">https://www.getzola.org/documentation/templates/feeds/</a></td></tr>
+<tr><td>rss.xml</td><td></td></tr>
+<tr><td>sitemap.xml</td><td></td></tr>
+<tr><td>split_sitemap_index.xml</td><td></td></tr>
+<tr><td>robots.txt</td><td></td></tr>
+</tbody></table>
+<pre data-lang="bash" style="background-color:#2b303b;color:#c0c5ce;" class="language-bash "><code class="language-bash" data-lang="bash"><span style="color:#bf616a;">brew</span><span> install zola
+</span><span style="color:#bf616a;">zola</span><span> init myblog
+</span><span>&gt; What </span><span style="color:#bf616a;">is</span><span> the URL of your site? (https://example.com)</span><span style="color:#96b5b4;">:</span><span> https://netpyoung.github.io
+</span><span>&gt; Do </span><span style="color:#bf616a;">you</span><span> want to enable Sass compilation? </span><span style="color:#b48ead;">[</span><span>Y/n</span><span style="color:#b48ead;">]</span><span>:
+</span><span>&gt; Do </span><span style="color:#bf616a;">you</span><span> want to enable syntax highlighting? </span><span style="color:#b48ead;">[</span><span>y/N</span><span style="color:#b48ead;">]</span><span>: y
+</span><span>&gt; Do </span><span style="color:#bf616a;">you</span><span> want to build a search index of the content? </span><span style="color:#b48ead;">[</span><span>y/N</span><span style="color:#b48ead;">]</span><span>: y
+</span><span style="color:#96b5b4;">cd</span><span> myblog
+</span><span style="color:#bf616a;">zola</span><span> serve
+</span><span style="color:#bf616a;">Web</span><span> server is available at http://127.0.0.1:1111
+</span><span style="color:#bf616a;">Options:
+</span><span>  </span><span style="color:#bf616a;">-i, --interface </span><span>&lt;INTERFACE&gt;    Interface to bind on </span><span style="color:#b48ead;">[</span><span>default: 127.0.0.1</span><span style="color:#b48ead;">]
+</span><span>  </span><span style="color:#bf616a;">-p, --port </span><span>&lt;PORT&gt;              Which port to use </span><span style="color:#b48ead;">[</span><span>default: 1111</span><span style="color:#b48ead;">]
+</span><span>  </span><span style="color:#bf616a;">-o, --output-dir </span><span>&lt;OUTPUT_DIR&gt;  by default &#39;</span><span style="color:#a3be8c;">public</span><span>&#39; dir in project root
+</span><span>  </span><span style="color:#bf616a;">-u, --base-url </span><span>&lt;BASE_URL&gt;      Changes the base_url </span><span style="color:#b48ead;">[</span><span>default: 127.0.0.1</span><span style="color:#b48ead;">]
+</span><span>  </span><span style="color:#bf616a;">-O, --open</span><span>                     Open site in the default browser
+</span><span>
+</span><span style="color:#65737e;"># .gitignore
+</span><span style="color:#65737e;"># public/
+</span><span style="color:#65737e;"># .DS_Store
+</span></code></pre>
+
+</div><!-- post -->
+
+<hr />
+<script src="https://utteranc.es/client.js" repo="netpyoung/netpyoung.blog.comment" issue-term="url"
+  theme="github-light" crossorigin="anonymous" async></script>
+<hr />
+
+			</div><!-- /.content -->
+
+			<!-- <div class="footer">
+                 </div> .footer  -->
+		</div><!-- /.container -->
+	</body>
+</html>

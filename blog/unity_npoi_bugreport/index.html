@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+
+<!-- ref: https://bulma.io/ -->
+<!-- ref: https://fontawesome.com/icons -->
+<!-- ref: https://flagicons.lipis.dev/ -->
+<html>
+
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+		<title>넷평 남짓한 공간</title>
+
+		<link rel="icon" href="/favicon.ico" type="image/x-icon">
+		<link rel="icon" href="/favicon.ico" type="image/x-icon">
+		<link rel="alternate" type="application/atom+xml" title="Atom" href="&#x2F;feed">
+		<link rel="stylesheet" href="/main.css">
+
+		<!-- #region: Google tag (gtag.js) -->
+		<script async src="https://www.googletagmanager.com/gtag/js?id=G-855BJNV9VD"></script>
+		<script>
+			window.dataLayer = window.dataLayer || [];
+			function gtag(){dataLayer.push(arguments);}
+			gtag('js', new Date());
+			
+			gtag('config', 'G-855BJNV9VD');
+		</script>
+		<!-- #endregion: Google tag (gtag.js) -->
+
+		<script src="https://cdn.jsdelivr.net/npm/mermaid@10.6.1/dist/mermaid.min.js"></script>
+		<script>mermaid.initialize({ startOnLoad: true });</script>
+		<script src="https://cdn.jsdelivr.net/npm/fuse.js@7.1.0"></script>
+		<script defer src="/search_index.ko.js"></script>
+		<script defer src="/main.js"></script>
+		<script defer src="/search.js"></script>
+	</head>
+
+	<body class="layout-documentation page-layout">
+		<div class="container">
+			<nav class="navbar is-transparent is-centered has-shadow is-spaced">
+				<!-- <div class="container"> -->
+				<div class="navbar-brand">
+					<a class="navbar-item" href="&#x2F;">
+						<i class="fa-solid fa-home"></i>
+						<b>넷평 남짓한 공간</b>
+					</a>
+
+					<div class="navbar-burger burger" data-target="navbarExampleTransparentExample">
+						<span></span>
+						<span></span>
+						<span></span>
+					</div>
+				</div><!-- navbar-brand -->
+				<!-- </div> -->
+
+				<div id="navbarExampleTransparentExample" class="navbar-menu">
+					<div class="navbar-start">
+						<a class="navbar-item " href="&#x2F;overview">
+							<i class="fa-solid fa fa-street-view"></i>
+						</a>
+						<a class="navbar-item " href="&#x2F;company_project">
+							<i class="fa-solid fa fa-building"></i>
+						</a>
+						<a class="navbar-item has-background-grey-lighter" href="&#x2F;blog">
+							<i class="fa-solid fa-mug-saucer"></i>
+						</a>
+						<!-- <a class="navbar-item "
+            href="&#x2F;study">
+            <i class="fa-solid fa-pen-to-square"></i>
+          </a> -->
+						<a class="navbar-item " href="&#x2F;external">
+							<i class="fa-solid fa-external-link-alt"></i>
+						</a>
+						<a class="navbar-item " href="&#x2F;diary">
+							<i class="fa-solid fa-book"></i>
+						</a>
+						<a class="navbar-item" href="https:&#x2F;&#x2F;github.com&#x2F;netpyoung">
+							<i class="fa-brands fa-github"></i>
+						</a>
+						<a class="navbar-item" href="/feed.xml">
+							<i class="fa-solid fa-rss-square"></i>
+						</a>
+					</div>
+					<!-- navbar-start -->
+
+					<div class="navbar-end">
+						<button id="search-button" class="button is-light">
+							<span class="icon"><i class="fas fa-search"></i></span>
+						</button>
+
+						<div id="search-modal" class="modal">
+							<div class="modal-background"></div>
+							<div class="modal-content" style="min-height: 70%; max-height: 70%; ">
+								<div class="box">
+									<div class="field">
+										<p class="control has-icons-left">
+											<input id="search-input" class="input is-medium" type="text" placeholder="Search...">
+											<span class="icon is-small is-left">
+												<i class="fas fa-search"></i>
+											</span>
+										</p>
+									</div>
+									<div id="search-results" style="overflow-y: auto;"></div>
+								</div>
+							</div>
+							<button id="close-modal" class="modal-close is-large" aria-label="close"></button>
+						</div>
+
+						<!--  <div class="dropdown ">
+							<div class="dropdown-trigger">
+								<button class="button" aria-haspopup="true" aria-controls="dropdown-menu">
+									<span>connect</span>
+									<span class="icon is-small">
+										<i class="fa-solid fa-angle-down" aria-hidden="true"></i>
+									</span>
+								</button>
+							</div>
+							<div class="dropdown-menu" id="dropdown-menu" role="menu">
+								<div class="dropdown-content">
+									<a class="dropdown-item" href="https:&#x2F;&#x2F;facebook.com&#x2F;netpyoung">
+										<span class="icon">
+											<i class="fa-brands fa-facebook"></i>
+										</span>
+										facebook
+									</a>
+								</div>
+							</div>
+						</div> dropdown-->
+					</div>
+					<!-- navbar-end -->
+				</div>
+				<!-- navbar-menu -->
+			</nav>
+
+			<div class="content container is-fluid">
+				
+<h1 class="title">
+  Unity NPOI with IL2CPP
+</h1>
+
+
+  <p class="subtitle"><strong>2016.07.01</strong></p>
+
+
+<div class="post">
+  <h2 id="npoiran">NPOI란?</h2>
+<ul>
+<li><a href="https://npoi.codeplex.com/">https://npoi.codeplex.com/</a></li>
+<li>Excel을 읽어들일 수 있는 POI Java project를 dotnet으로 구현한 것으로, net20, net40 dll을 제공하고 있다.</li>
+<li>게임 개발을 하면서 데이터를 excel로 관리하는 경우가 많은데, 툴을 구현할 시 유용하다.</li>
+</ul>
+<h2 id="munjeneun">문제는?</h2>
+<ul>
+<li>iOS 디바이스에서 빌드해서 사용시, 문제가 있다는 것을 1년전 쯤에 빌드해보고 알고있었다.(그때는 IL2CPP나 개발 중이여서 추후에 보자고 덮어뒀었다.)</li>
+<li>최근 혹시나 하는 마음에 빌드를 하였고, XCodeProject생성 빌드시 IL2CPP에서 문제가 발생하였다.</li>
+</ul>
+<h2 id="haegyeolcaegeun">해결책은?</h2>
+<ul>
+<li>이번에는 1년 전과는 달리 포럼에 <a href="http://forum.unity3d.com/threads/il2cpp-build-error-unity5-3-5f1-personal-version.413861/">post</a>를 남기어 두었고, 관계자의 답글대로, Unity Editor의 Bug Report를 이용하여 버그리포트를 보냈다.</li>
+<li>지금(5.3.5f1)에서는 .NET 2.0 Subset로 빌드하면 된다.</li>
+<li><a href="https://issuetracker.unity3d.com/issues/ios-build-fails-with-net-2-dot-0-in-mscorlib-dot-dll">issue</a>가 등록되었고, UnityQA에서 온 메일로 확인한 결과, 5.3.5p8에서는 이용할 수 있다고 한다. (ios device에서 excel reading이 가능해 질 것으로 본다)</li>
+</ul>
+
+</div><!-- post -->
+
+<hr />
+<script src="https://utteranc.es/client.js" repo="netpyoung/netpyoung.blog.comment" issue-term="url"
+  theme="github-light" crossorigin="anonymous" async></script>
+<hr />
+
+			</div><!-- /.content -->
+
+			<!-- <div class="footer">
+                 </div> .footer  -->
+		</div><!-- /.container -->
+	</body>
+</html>

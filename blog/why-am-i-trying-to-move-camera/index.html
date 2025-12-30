@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+
+<!-- ref: https://bulma.io/ -->
+<!-- ref: https://fontawesome.com/icons -->
+<!-- ref: https://flagicons.lipis.dev/ -->
+<html>
+
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+		<title>넷평 남짓한 공간</title>
+
+		<link rel="icon" href="/favicon.ico" type="image/x-icon">
+		<link rel="icon" href="/favicon.ico" type="image/x-icon">
+		<link rel="alternate" type="application/atom+xml" title="Atom" href="&#x2F;feed">
+		<link rel="stylesheet" href="/main.css">
+
+		<!-- #region: Google tag (gtag.js) -->
+		<script async src="https://www.googletagmanager.com/gtag/js?id=G-855BJNV9VD"></script>
+		<script>
+			window.dataLayer = window.dataLayer || [];
+			function gtag(){dataLayer.push(arguments);}
+			gtag('js', new Date());
+			
+			gtag('config', 'G-855BJNV9VD');
+		</script>
+		<!-- #endregion: Google tag (gtag.js) -->
+
+		<script src="https://cdn.jsdelivr.net/npm/mermaid@10.6.1/dist/mermaid.min.js"></script>
+		<script>mermaid.initialize({ startOnLoad: true });</script>
+		<script src="https://cdn.jsdelivr.net/npm/fuse.js@7.1.0"></script>
+		<script defer src="/search_index.ko.js"></script>
+		<script defer src="/main.js"></script>
+		<script defer src="/search.js"></script>
+	</head>
+
+	<body class="layout-documentation page-layout">
+		<div class="container">
+			<nav class="navbar is-transparent is-centered has-shadow is-spaced">
+				<!-- <div class="container"> -->
+				<div class="navbar-brand">
+					<a class="navbar-item" href="&#x2F;">
+						<i class="fa-solid fa-home"></i>
+						<b>넷평 남짓한 공간</b>
+					</a>
+
+					<div class="navbar-burger burger" data-target="navbarExampleTransparentExample">
+						<span></span>
+						<span></span>
+						<span></span>
+					</div>
+				</div><!-- navbar-brand -->
+				<!-- </div> -->
+
+				<div id="navbarExampleTransparentExample" class="navbar-menu">
+					<div class="navbar-start">
+						<a class="navbar-item " href="&#x2F;overview">
+							<i class="fa-solid fa fa-street-view"></i>
+						</a>
+						<a class="navbar-item " href="&#x2F;company_project">
+							<i class="fa-solid fa fa-building"></i>
+						</a>
+						<a class="navbar-item has-background-grey-lighter" href="&#x2F;blog">
+							<i class="fa-solid fa-mug-saucer"></i>
+						</a>
+						<!-- <a class="navbar-item "
+            href="&#x2F;study">
+            <i class="fa-solid fa-pen-to-square"></i>
+          </a> -->
+						<a class="navbar-item " href="&#x2F;external">
+							<i class="fa-solid fa-external-link-alt"></i>
+						</a>
+						<a class="navbar-item " href="&#x2F;diary">
+							<i class="fa-solid fa-book"></i>
+						</a>
+						<a class="navbar-item" href="https:&#x2F;&#x2F;github.com&#x2F;netpyoung">
+							<i class="fa-brands fa-github"></i>
+						</a>
+						<a class="navbar-item" href="/feed.xml">
+							<i class="fa-solid fa-rss-square"></i>
+						</a>
+					</div>
+					<!-- navbar-start -->
+
+					<div class="navbar-end">
+						<button id="search-button" class="button is-light">
+							<span class="icon"><i class="fas fa-search"></i></span>
+						</button>
+
+						<div id="search-modal" class="modal">
+							<div class="modal-background"></div>
+							<div class="modal-content" style="min-height: 70%; max-height: 70%; ">
+								<div class="box">
+									<div class="field">
+										<p class="control has-icons-left">
+											<input id="search-input" class="input is-medium" type="text" placeholder="Search...">
+											<span class="icon is-small is-left">
+												<i class="fas fa-search"></i>
+											</span>
+										</p>
+									</div>
+									<div id="search-results" style="overflow-y: auto;"></div>
+								</div>
+							</div>
+							<button id="close-modal" class="modal-close is-large" aria-label="close"></button>
+						</div>
+
+						<!--  <div class="dropdown ">
+							<div class="dropdown-trigger">
+								<button class="button" aria-haspopup="true" aria-controls="dropdown-menu">
+									<span>connect</span>
+									<span class="icon is-small">
+										<i class="fa-solid fa-angle-down" aria-hidden="true"></i>
+									</span>
+								</button>
+							</div>
+							<div class="dropdown-menu" id="dropdown-menu" role="menu">
+								<div class="dropdown-content">
+									<a class="dropdown-item" href="https:&#x2F;&#x2F;facebook.com&#x2F;netpyoung">
+										<span class="icon">
+											<i class="fa-brands fa-facebook"></i>
+										</span>
+										facebook
+									</a>
+								</div>
+							</div>
+						</div> dropdown-->
+					</div>
+					<!-- navbar-end -->
+				</div>
+				<!-- navbar-menu -->
+			</nav>
+
+			<div class="content container is-fluid">
+				
+<h1 class="title">
+  Why am I trying to move camera?
+</h1>
+
+
+  <p class="subtitle"><strong>2018.06.16</strong></p>
+
+
+<div class="post">
+  <h2 id="naneun-wae-kamerareul-idongsikyeossneunga">나는 왜 카메라를 이동시켰는가?</h2>
+<p>퇴근 20분을 남기고, 동료 개발자가 <code>특정 위치에서 드래그 스킬 영역 표시가 의도한 바로 이동하지 않는다.</code>라고 말을 해온다. 평소같았으면 퇴근 20분 남기고 버그를 고치려고 하지 않지만, 어제까지 잘 되던게, 오늘 안되는거라 쉽게 발견할 수 있을거 같아 확인해 보기로 했다.</p>
+<p>게임을 다시 시작하고 해당 위치로 이동하여 드래그 스킬을 사용해 보았다.</p>
+<p>뭔가 이상하다. 특정 위치로 띄엄띄엄 이동한다.</p>
+<p>"나는 분명 UI 카메라에서 레이를 쏘아 충돌 지점에 드래그 스킬 영역이 표시되도록 시켰는데"</p>
+<p>유니티 에디터 하이라키창을 확인한다.</p>
+<p>의도했던대로, UI카메라와 전투(케릭터) 카메라는 동일 위치에 있었다.</p>
+<p><code>그냥 한번 UI카메라를 이동시켜 보았다. - 의도없이 무의식적으로</code></p>
+<p>역시 결과는 같았다.</p>
+<p><code>다음 예상가능한 변수들을 생각해보았다.</code></p>
+<ul>
+<li>콜라이더 안박혔나?</li>
+<li>레이마스크를 제대로 지정안했나?</li>
+</ul>
+<p>일단 레이쏘는 코드에 디버깅을 걸고 체크엔 트라이</p>
+<ul>
+<li>레이마스크는 지정자체를 안하여서 레이마스크는 영향없고,(프로토단계여서 일단 레이마스크 씌우는 작업은 건너뛰었다).</li>
+<li>콜라이더를 확인해보니, 바닥에 콜라이더가 없다..</li>
+</ul>
+<p>드문드문 이동한것은 구조물에 박힌 콜라이더에 영향을 받은 것이였다.</p>
+<p>사실 문제를 발견하고 고치는데까지는 별 시간이 걸리지 않았다. 하지만 더 큰 문제를 발견했는데. 왜 나는 생각하지않고 카메라를 이동시켰는가이다. 제대로 사고해보지않고 마치 잡혀라 하면서 아무데나 그물을 던지는 것과 같은 행동을 말이다. 신입이 오면 가장 주의깊게 살피고, 피드백 주는 부분이 그 부분인데, 내가 그러한 행동을 하고 있는게 참으로 부끄러웠다. 예전에 하던 그러한 기질이 방심했을때 올라온다. 조심하자.</p>
+
+</div><!-- post -->
+
+<hr />
+<script src="https://utteranc.es/client.js" repo="netpyoung/netpyoung.blog.comment" issue-term="url"
+  theme="github-light" crossorigin="anonymous" async></script>
+<hr />
+
+			</div><!-- /.content -->
+
+			<!-- <div class="footer">
+                 </div> .footer  -->
+		</div><!-- /.container -->
+	</body>
+</html>

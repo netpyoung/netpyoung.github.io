@@ -1,0 +1,544 @@
+<!DOCTYPE html>
+
+<!-- ref: https://bulma.io/ -->
+<!-- ref: https://fontawesome.com/icons -->
+<!-- ref: https://flagicons.lipis.dev/ -->
+<html>
+
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+		<title>넷평 남짓한 공간</title>
+
+		<link rel="icon" href="/favicon.ico" type="image/x-icon">
+		<link rel="icon" href="/favicon.ico" type="image/x-icon">
+		<link rel="alternate" type="application/atom+xml" title="Atom" href="&#x2F;feed">
+		<link rel="stylesheet" href="/main.css">
+
+		<!-- #region: Google tag (gtag.js) -->
+		<script async src="https://www.googletagmanager.com/gtag/js?id=G-855BJNV9VD"></script>
+		<script>
+			window.dataLayer = window.dataLayer || [];
+			function gtag(){dataLayer.push(arguments);}
+			gtag('js', new Date());
+			
+			gtag('config', 'G-855BJNV9VD');
+		</script>
+		<!-- #endregion: Google tag (gtag.js) -->
+
+		<script src="https://cdn.jsdelivr.net/npm/mermaid@10.6.1/dist/mermaid.min.js"></script>
+		<script>mermaid.initialize({ startOnLoad: true });</script>
+		<script src="https://cdn.jsdelivr.net/npm/fuse.js@7.1.0"></script>
+		<script defer src="/search_index.ko.js"></script>
+		<script defer src="/main.js"></script>
+		<script defer src="/search.js"></script>
+	</head>
+
+	<body class="layout-documentation page-layout">
+		<div class="container">
+			<nav class="navbar is-transparent is-centered has-shadow is-spaced">
+				<!-- <div class="container"> -->
+				<div class="navbar-brand">
+					<a class="navbar-item" href="&#x2F;">
+						<i class="fa-solid fa-home"></i>
+						<b>넷평 남짓한 공간</b>
+					</a>
+
+					<div class="navbar-burger burger" data-target="navbarExampleTransparentExample">
+						<span></span>
+						<span></span>
+						<span></span>
+					</div>
+				</div><!-- navbar-brand -->
+				<!-- </div> -->
+
+				<div id="navbarExampleTransparentExample" class="navbar-menu">
+					<div class="navbar-start">
+						<a class="navbar-item " href="&#x2F;overview">
+							<i class="fa-solid fa fa-street-view"></i>
+						</a>
+						<a class="navbar-item " href="&#x2F;company_project">
+							<i class="fa-solid fa fa-building"></i>
+						</a>
+						<a class="navbar-item " href="&#x2F;blog">
+							<i class="fa-solid fa-mug-saucer"></i>
+						</a>
+						<!-- <a class="navbar-item "
+            href="&#x2F;study">
+            <i class="fa-solid fa-pen-to-square"></i>
+          </a> -->
+						<a class="navbar-item has-background-grey-lighter" href="&#x2F;external">
+							<i class="fa-solid fa-external-link-alt"></i>
+						</a>
+						<a class="navbar-item " href="&#x2F;diary">
+							<i class="fa-solid fa-book"></i>
+						</a>
+						<a class="navbar-item" href="https:&#x2F;&#x2F;github.com&#x2F;netpyoung">
+							<i class="fa-brands fa-github"></i>
+						</a>
+						<a class="navbar-item" href="/feed.xml">
+							<i class="fa-solid fa-rss-square"></i>
+						</a>
+					</div>
+					<!-- navbar-start -->
+
+					<div class="navbar-end">
+						<button id="search-button" class="button is-light">
+							<span class="icon"><i class="fas fa-search"></i></span>
+						</button>
+
+						<div id="search-modal" class="modal">
+							<div class="modal-background"></div>
+							<div class="modal-content" style="min-height: 70%; max-height: 70%; ">
+								<div class="box">
+									<div class="field">
+										<p class="control has-icons-left">
+											<input id="search-input" class="input is-medium" type="text" placeholder="Search...">
+											<span class="icon is-small is-left">
+												<i class="fas fa-search"></i>
+											</span>
+										</p>
+									</div>
+									<div id="search-results" style="overflow-y: auto;"></div>
+								</div>
+							</div>
+							<button id="close-modal" class="modal-close is-large" aria-label="close"></button>
+						</div>
+
+						<!--  <div class="dropdown ">
+							<div class="dropdown-trigger">
+								<button class="button" aria-haspopup="true" aria-controls="dropdown-menu">
+									<span>connect</span>
+									<span class="icon is-small">
+										<i class="fa-solid fa-angle-down" aria-hidden="true"></i>
+									</span>
+								</button>
+							</div>
+							<div class="dropdown-menu" id="dropdown-menu" role="menu">
+								<div class="dropdown-content">
+									<a class="dropdown-item" href="https:&#x2F;&#x2F;facebook.com&#x2F;netpyoung">
+										<span class="icon">
+											<i class="fa-brands fa-facebook"></i>
+										</span>
+										facebook
+									</a>
+								</div>
+							</div>
+						</div> dropdown-->
+					</div>
+					<!-- navbar-end -->
+				</div>
+				<!-- navbar-menu -->
+			</nav>
+
+			<div class="content container is-fluid">
+				
+<h1 class="title">
+  Emacs Lisp에서의 lexcial scoping과 dynamic scoping
+</h1>
+
+
+
+<div class="post">
+  <p>원문 : http://yoo2080.wordpress.com/2011/12/31/lexical-scoping-and-dynamic-scoping-in-emacs-lisp/</p>
+<p>본 문에서 설명할 것들:</p>
+<ol>
+<li><code>Emacs Lisp</code>에서의 <strong>lexcial scoping</strong>과 <strong>dynamic scoping</strong>의 차이점</li>
+<li><strong>dynamic scoping</strong>에서 주의해야할 점</li>
+<li><strong>lexical scoping</strong>과 <strong>lexical closures</strong>로 할 수 있는 것</li>
+<li><strong>lexical scoping</strong>코드와 <strong>dynamic scoping</strong>코드를 섞을시 발생하는 일</li>
+</ol>
+<p><code>Emacs Lisp</code>는 Emacs 23(포함)이하 버전에서는 항상 <strong>dynamically scope</strong>였습니다. Emacs 24에서 <strong>lexical scoping</strong>의 지원이 추가되었습니다. 많은 이들이 대부분의 경우 <strong>dynamic scoping</strong>보다 **lexical scoping이 낫다는데 동의하기에, 상당히 멋진 일입니다. 왜 그런지에 대해서는 본문에서 곧 확인하실 수 있을 것입니다.</p>
+<p><strong>lexical scoping</strong>으로 블러오고자 하는 el파일이 있다면, 첫줄에 <code>-*- lexical-binding: t -*-</code>을 추가하기만 하면 됩니다. 그러면, Emacs 24가 파일을 읽을시, 그 el파일속 코드에 <strong>lexical scoping</strong>을 적용하게 됩니다.</p>
+<p>예를들어, 현재 init 파일의 첫줄은 다음과 같습니다.</p>
+<pre data-lang="cl" style="background-color:#2b303b;color:#c0c5ce;" class="language-cl "><code class="language-cl" data-lang="cl"><span style="color:#65737e;">;; -*- coding: utf-8 -*-
+</span></code></pre>
+<p>그리고, 다음과 같이 바꾸겠습니다.</p>
+<pre data-lang="cl" style="background-color:#2b303b;color:#c0c5ce;" class="language-cl "><code class="language-cl" data-lang="cl"><span style="color:#65737e;">;; -*- coding: utf-8; lexical-binding: t -*-
+</span></code></pre>
+<p>이리하면, 제 init파일에 있는 코드는 Emacs24에서 <strong>lexically scope</strong>가 될 것입니다. 자세한 것은 <a href="http://www.gnu.org/software/emacs/manual/html_node/emacs/File-Variables.html">file variables</a>를 확인해 보시기 바랍니다.</p>
+<p><strong>lexcial scoping</strong>이 무엇인지 확인해보기 위해, 우선 빈 el파일을 만들어서 (<code>C-x C-f lexical-scratch.el RET</code>) 다음 라인을 추가해 봅시다:</p>
+<pre data-lang="cl" style="background-color:#2b303b;color:#c0c5ce;" class="language-cl "><code class="language-cl" data-lang="cl"><span style="color:#65737e;">;; -*- lexical-binding: t -*-
+</span></code></pre>
+<p>저장한 후, 버퍼를 돌려놓습니다 (<code>M-x revert-buffer</code>). 이제 저희는 <strong>lexical scoping</strong>에 놓인 <code>scratch</code>버퍼처럼 사용할 수 있습니다.</p>
+<p><strong>dynamic scoping</strong>과 <strong>lexical scoping</strong>은 무엇일까요? 간단한 예제 파일을 살펴보도록 하겠습니다.</p>
+<pre data-lang="cl" style="background-color:#2b303b;color:#c0c5ce;" class="language-cl "><code class="language-cl" data-lang="cl"><span>(</span><span style="color:#96b5b4;">setq</span><span> a </span><span style="color:#d08770;">17</span><span>)
+</span><span>(</span><span style="color:#b48ead;">defun </span><span style="color:#8fa1b3;">my-print-a </span><span>()
+</span><span>  (</span><span style="color:#96b5b4;">print</span><span> a))
+</span><span>(</span><span style="color:#96b5b4;">setq</span><span> a </span><span style="color:#d08770;">1717</span><span>)
+</span><span>(</span><span style="color:#b48ead;">let </span><span>((a </span><span style="color:#d08770;">8</span><span>))
+</span><span>  (my-</span><span style="color:#96b5b4;">print</span><span>-a))
+</span></code></pre>
+<p><code>my-print-a</code>값 <code>a</code>가 정해지지 않았다는 사실을 주목하시기 바랍니다. 이러한 것을 것을 **"free variable"**이라 부릅니다.</p>
+<p>위 코드를 돌려보면 결과가 어떻게 나올까요? <code>1717</code>을 출력할까요? 아니면 <code>8</code>일까요? <strong>dynamic scoping</strong>이라면 <code>8</code>을 출력하고, <strong>lexical scoping</strong>이라면 <code>1717</code>을 출력합니다.  <strong>dynamic scoping</strong>에선, <code>my-print-a</code>에 있는 <code>a</code>는 <code>my-print-a</code>가 <strong>호출될때(when my-print-a is called)</strong>  결정됩니다. <strong>lexical scoping</strong>에선 <code>my-print-a</code>가 **정의된 장소(where my-print-a is defined)**에 의해 결정됩니다.</p>
+<p><strong>dynamic scoping</strong>에서의 코드는 <code>8</code>을 출력하는데, <code>my-print-a</code>가 호출될시 <code>a</code>를 <code>8</code>로 local bind한 let form에 있기 때문입니다. let form이후에 <code>my-print-a</code>을 호출한다면, <code>1717</code>을 출력할 것입니다..</p>
+<p><strong>lexical scoping</strong>에서의 코드는 <code>1717</code>을 출력합니다. 우선, <code>my-print-a</code>가 정의된 곳이 let form 밖이므로, <code>my-print-a</code>에 있는 <code>a</code>는 let form에서 생성된 <strong>local binding</strong>이 아닌 <strong>global binding</strong>된 <code>a</code>를 참조하기 때문입니다. 다음으로, <code>my-print-a</code>가 호출될시, <code>8</code>이된 **local value "a"**완 달리, **global value "a"**는 <code>1717</code>이기 때문입니다. 만약 <code>my-print-a</code>의 정의를 let form으로 옮긴다면, 출력된 값은 <code>8</code>이 될 것입니다. <code>my-print-a</code>에 있는 <code>a</code>가 let form에서 만들어진 <strong>local binding된 a</strong>를 참조할 것이기 때문입니다.</p>
+<p>동일한 코드를 Javascript로 옮겨봤습니다.</p>
+<pre data-lang="javascript" style="background-color:#2b303b;color:#c0c5ce;" class="language-javascript "><code class="language-javascript" data-lang="javascript"><span style="color:#b48ead;">var </span><span style="color:#bf616a;">a</span><span>;
+</span><span style="color:#bf616a;">a </span><span>= </span><span style="color:#d08770;">17</span><span>;
+</span><span>
+</span><span style="color:#b48ead;">function </span><span style="color:#8fa1b3;">myPrintA</span><span>() {
+</span><span>  </span><span style="color:#ebcb8b;">console</span><span>.</span><span style="color:#96b5b4;">log</span><span>(</span><span style="color:#bf616a;">a</span><span>);
+</span><span>}
+</span><span>
+</span><span>
+</span><span style="color:#bf616a;">a </span><span>= </span><span style="color:#d08770;">1717</span><span>;
+</span><span>
+</span><span>(</span><span style="color:#b48ead;">function </span><span>() {
+</span><span>  </span><span style="color:#b48ead;">var </span><span style="color:#bf616a;">a </span><span>= </span><span style="color:#d08770;">8</span><span>;
+</span><span>  </span><span style="color:#8fa1b3;">myPrintA</span><span>();
+</span><span>}());
+</span></code></pre>
+<p>위 코드는 <code>1717</code>을 출력합니다. 오늘날 프로그래밍 언어 대부분은 <strong>lexically scoped</strong>입니다.</p>
+<p>여러분께서 Emacs 24를 사용하신다면, 다음 코드를 scratch버퍼에서 돌림으로써 <code>1717</code>을 출력하는 것을 확인해 볼 수 있습니다.</p>
+<pre data-lang="cl" style="background-color:#2b303b;color:#c0c5ce;" class="language-cl "><code class="language-cl" data-lang="cl"><span>(</span><span style="color:#96b5b4;">eval
+</span><span> &#39;(</span><span style="color:#96b5b4;">progn
+</span><span>    (</span><span style="color:#96b5b4;">setq</span><span> a </span><span style="color:#d08770;">17</span><span>)
+</span><span>    (</span><span style="color:#b48ead;">defun </span><span style="color:#8fa1b3;">my-print-a </span><span>()
+</span><span>      (</span><span style="color:#96b5b4;">print</span><span> a))
+</span><span>    (</span><span style="color:#96b5b4;">setq</span><span> a </span><span style="color:#d08770;">1717</span><span>)
+</span><span>    (</span><span style="color:#b48ead;">let </span><span>((a </span><span style="color:#d08770;">8</span><span>))
+</span><span>      (my-</span><span style="color:#96b5b4;">print</span><span>-a)))
+</span><span> </span><span style="color:#d08770;">t</span><span>)
+</span></code></pre>
+<p>Emacs 24에서의 <code>eval</code>함수는 두번째 인자(optional)를 받습니다. 이게 <code>t</code>라면, <strong>lexical scoping</strong>으로 평가합니다. <code>(progn ...)</code>앞에 '를 붙이는 것을 잊지 마시기 바랍니다.</p>
+<p><strong>Lexical scoping</strong>은 <strong>lecical closures</strong>를 가능케 합니다. 그렇다면 <strong>lexcial closure</strong>는 무엇일까요? 다음 코드를 살펴보도록 하겠습니다.</p>
+<pre data-lang="cl" style="background-color:#2b303b;color:#c0c5ce;" class="language-cl "><code class="language-cl" data-lang="cl"><span>(</span><span style="color:#96b5b4;">setq</span><span> a </span><span style="color:#d08770;">0</span><span>)
+</span><span>(</span><span style="color:#b48ead;">let </span><span>((a </span><span style="color:#d08770;">17</span><span>))
+</span><span>  (</span><span style="color:#b48ead;">defun </span><span style="color:#8fa1b3;">my-print-a </span><span>()
+</span><span>    (</span><span style="color:#96b5b4;">print</span><span> a))
+</span><span>  (</span><span style="color:#96b5b4;">setq</span><span> a </span><span style="color:#d08770;">1717</span><span>))
+</span><span>(</span><span style="color:#b48ead;">let </span><span>((a </span><span style="color:#d08770;">8</span><span>))
+</span><span>  (my-</span><span style="color:#96b5b4;">print</span><span>-a))
+</span></code></pre>
+<p><strong>lexical scoping</strong>에서, 위 코드는 <code>1717</code>을 출력합니다. 다음은 <code>Alice</code>가 생각한 것입니다:</p>
+<blockquote>
+<p>처음에는 이상하지 않았는데, 다시보니 뭔가 좀 이상한데. 먼저, "<strong>lexical scoping</strong> 이므로, <code>my-print-a</code>에 있는 <code>a</code>가 첫번째 <code>let</code> form에의해 만들어진 <strong>local binding</strong> 을 참조해서 <code>1717</code>이 출력됬다" 라고 생각했지. 다시 살펴보니, <code>my-print-a</code>가 호출될시 첫번째 <code>let</code> form에 의해 만들어진 <strong>local binding</strong>이 만기될(expired)거라는 거야! 날짜 지난(expired) 우유를 먹을 순 없잖아! "미안, 나는 더이상 존재하지 않아" 대신 왜 <code>1717</code>이 출력된 거지? 에러는 커녕 <strong>lexcial scope</strong>로 돌아가는 이유가 뭐지?</p>
+</blockquote>
+<p>첫번째 let form을 빠져나간 이후에도 첫번째 <code>a</code>에 <strong>local biding</strong>은 살아남아, <code>my-print-a</code>가 접근하기만을 기다립니다. <code>my-print-a</code>를 제외하고 첫번째 <code>a</code>에 <code>local biding</code>에 대한 모든 접근은 만료됩니다. 이는 Emacs는 뒤에서 여러가지 일들을 관리하며, <strong>lexical scoping</strong>은 **"기존것"**보다 더 많은 일을 할 수 있게되었다는 것을 의미합니다.</p>
+<p>그러면, <strong>lexcial closure</strong>란 무엇일까요? 이는 "<strong>lexical scoping</strong>이 보다 더 많은 일을 할 수 있다"라는 것이 화면 뒤에서 어떻게 구현되는지와 관련있습니다. <code>(symbol-function 'my-print-a)</code>를 평가하면 볼 수 있는 것처럼, <code>my-print-a</code>의 함수 상자(<a href="http://www.gnu.org/software/emacs/manual/html_node/elisp/Function-Cells.html">function cell</a>)은 a에 대한 만료된 binding에 대한 link를 담고 있습니다. 함수 정의와 함수 생성시 scope에 대한 link의 조합(combination)을 <strong>lexical closure</strong> 라 부릅니다. 혹은, 만료된 binding에 접근하는 <strong>lexically scoped</strong> 된 함수를 <strong>lexical closure</strong> 라 부를수도 있습니다. <strong>lexical closures</strong> 를 보통 단순하게 <strong>closures</strong> 라 불르기도 합니다. <strong>lexically scoped</strong> 언어들이 모두 <strong>closures</strong> 를 지원하는건 아닙니다.</p>
+<p><strong>lexical scoping</strong> 에서, 함수에 있는 <code>a</code>가 참조하는 것이 무엇인지 확인하기 위해선, 함수 본체 주변과 연관된 binding을 살펴보면됩니다. <strong>lexical scoping</strong> 은 코드에서 변수가 쓰여진 주변을 살펴보면 되기에 기억하기 쉬우며, 관계된 binding이 언제 만료되는지에 대해 걱정할 필요가 없습니다.</p>
+<p>자, JavaScript로 된 코드를 살펴봅시다:</p>
+<pre data-lang="cl" style="background-color:#2b303b;color:#c0c5ce;" class="language-cl "><code class="language-cl" data-lang="cl"><span>var a, myPrintA</span><span style="color:#65737e;">;
+</span><span>a = 0</span><span style="color:#65737e;">;
+</span><span>(function () {
+</span><span>  // local variable a
+</span><span>  var a = </span><span style="color:#d08770;">17</span><span style="color:#65737e;">;
+</span><span>  myPrintA = function () {
+</span><span>    console.</span><span style="color:#96b5b4;">log</span><span>(a)</span><span style="color:#65737e;">;
+</span><span>  }</span><span style="color:#65737e;">;
+</span><span>  a = </span><span style="color:#d08770;">1717</span><span style="color:#65737e;">;
+</span><span>}())</span><span style="color:#65737e;">;
+</span><span>(function () {
+</span><span>  // local variable a
+</span><span>  var a = </span><span style="color:#d08770;">8</span><span style="color:#65737e;">;
+</span><span>  myPrintA()</span><span style="color:#65737e;">;
+</span><span>}())</span><span style="color:#65737e;">;
+</span></code></pre>
+<p>Javascript는 <strong>lexical closures</strong> 를 지원하기에 <code>1717</code>을 출력할 것입니다:</p>
+<p>Emacs 24에서, <strong>lexically scoped</strong> (interpreted) 함수들은 <code>(closure ENV ARGS BODY...)</code>과 같은 함수 값 형태로 표현되는 반면, <strong>dynamically scoped</strong> 함수들은 익명함수(anonymous function)를 작성할때 사용한 것과 동일한 형태인 <code>(lambda ARGS BODY...)</code>와 같은 형태로 표현됩니다.</p>
+<p>다음 코드는 <strong>dynamic scoping</strong>에서 <code>(lambda (x y) (+ x y))</code>을 두번 출력하는 코드입니다.</p>
+<pre data-lang="cl" style="background-color:#2b303b;color:#c0c5ce;" class="language-cl "><code class="language-cl" data-lang="cl"><span>(</span><span style="color:#b48ead;">defun </span><span style="color:#8fa1b3;">my-sum </span><span>(x y)
+</span><span>  (+ x y))
+</span><span style="color:#65737e;">;; print the contents of function cell of my-sum
+</span><span>(</span><span style="color:#96b5b4;">print </span><span>(</span><span style="color:#96b5b4;">symbol-function</span><span> &#39;my-</span><span style="color:#96b5b4;">sum</span><span>))
+</span><span style="color:#65737e;">;; print an anonymous function
+</span><span>(</span><span style="color:#96b5b4;">print </span><span>(</span><span style="color:#96b5b4;">lambda </span><span>(x y) (+ x y)))
+</span></code></pre>
+<p><strong>lexical scoping</strong> 이라면 이 코드는 <code>(closure (t) (x y) (+ x y))</code>을 두번 출력할 것입니다. <strong>dynamic scoping</strong>에선 <code>(lambda ...)</code>는 그 자체로 평가되지만, <strong>lexical scoping</strong> 에선 <code>(closure ...)</code>로 평가됩니다</p>
+<p>이제 좀더 파고들어 봅시다. <strong>lexcial scoping</strong> 에서, <code>함수 A</code>가 <code>함수 B</code>를 정의하고, <code>함수 B</code>가 <code>함수 C</code>가 정의하고, 그 <code>함수 C</code>가 <code>a</code>를 출력하면, <code>a</code>는 우선 <code>C</code>를 찾아보고 없으면, <code>B</code>를 등등을 찾아보게 됩니다.</p>
+<p><strong>dynamic scoping</strong>에서 <code>my-func1</code>란 함수를 가졌다고 가정해봅시다. 이 함수는 <code>my-func2</code>라는 함수를 호출하고, <code>my-func2</code>는 <code>my-func3</code>을 <code>my-func3</code>은 <code>a</code>를 출력합니다. 그리고 <code>my-func2</code>는 <code>my-func3</code>을 호출할때 내부적으로 <code>a</code>를 <code>2</code>로 설정한다고 해봅시다. <strong>dynamic scoping</strong> 에서 <code>my-func1</code>를 호출하면 어떤일이 발생할까요? 이는 <code>2</code>를 출력합니다. <code>a</code>가 <code>1</code>인 환경에서 <code>my-func1</code>를 호출하면 어떨까요? 여전히 <code>1</code>대신 <code>2</code>를 출력합니다. 다음 코드를 돌려봅시다.</p>
+<pre data-lang="cl" style="background-color:#2b303b;color:#c0c5ce;" class="language-cl "><code class="language-cl" data-lang="cl"><span>(</span><span style="color:#b48ead;">defun </span><span style="color:#8fa1b3;">my-func1 </span><span>()
+</span><span>  (my-func2))
+</span><span>(</span><span style="color:#b48ead;">defun </span><span style="color:#8fa1b3;">my-func2 </span><span>()
+</span><span>  (</span><span style="color:#b48ead;">let </span><span>((a </span><span style="color:#d08770;">2</span><span>))
+</span><span>    (my-func3)))
+</span><span>(</span><span style="color:#b48ead;">defun </span><span style="color:#8fa1b3;">my-func3 </span><span>()
+</span><span>  (</span><span style="color:#96b5b4;">print</span><span> a))
+</span><span>(</span><span style="color:#b48ead;">let </span><span>((a </span><span style="color:#d08770;">1</span><span>))
+</span><span>  (my-func1))
+</span></code></pre>
+<p><code>my-func1</code>가 호출되고 <code>my-func2</code>가 호출되고 깊게 들어가는 동안, <code>a</code>를 <code>1</code>로 한 <strong>local binding</strong> 이 살아있습니다. <code>my-func2</code>는 <code>a</code>를 <code>1</code>로하여 이전 binding을 가리도록 또 다른 <strong>local binding</strong> 을 만들었습니다. 이 시점에서, 저희가 X라는 정소에 있다면 <code>(let ((a 1)) (let ((a 2)) X ))</code>에 있는 것과 같습니다. 이 지점에서 <code>my-func3</code>이 호출되어 <code>2</code>가 출력되게 됩니다.</p>
+<p><strong>dynamic scoping</strong> 에서 골치아프지만 여러분이 꼭 알아야만 할 것이 있습니다. 함수가 함수를 인자로 취하도록 만들길 원한다고 가정해 봅시다. 간단한 예제 함수가 준비되어있습니다.</p>
+<pre data-lang="cl" style="background-color:#2b303b;color:#c0c5ce;" class="language-cl "><code class="language-cl" data-lang="cl"><span>(</span><span style="color:#b48ead;">defun </span><span style="color:#8fa1b3;">my-call </span><span>(</span><span style="color:#96b5b4;">f</span><span> n)
+</span><span>  (</span><span style="color:#96b5b4;">funcall f</span><span> n))
+</span><span>
+</span><span>(my-call </span><span style="color:#d08770;">#&#39;1+ 5</span><span>) </span><span style="color:#65737e;">; =&gt; 6
+</span><span>(my-call </span><span style="color:#d08770;">#&#39;oddp 5</span><span>) </span><span style="color:#65737e;">; =&gt; t
+</span><span>
+</span><span>(</span><span style="color:#b48ead;">dolist </span><span>(i (</span><span style="color:#96b5b4;">list </span><span style="color:#d08770;">1 2 3</span><span>))
+</span><span>  (</span><span style="color:#96b5b4;">print
+</span><span>   (my-call (</span><span style="color:#96b5b4;">lambda </span><span>(x) (* i x)) </span><span style="color:#d08770;">5</span><span>))) </span><span style="color:#65737e;">; prints 5 10 15
+</span></code></pre>
+<p>지금까진 놀랄만한게 없습니다. 다음으로 넘어가 보도록 하겠습니다.</p>
+<pre data-lang="cl" style="background-color:#2b303b;color:#c0c5ce;" class="language-cl "><code class="language-cl" data-lang="cl"><span>(</span><span style="color:#b48ead;">dolist </span><span>(n (</span><span style="color:#96b5b4;">list </span><span style="color:#d08770;">1 2 3</span><span>))
+</span><span>  (</span><span style="color:#96b5b4;">print
+</span><span>   (my-call (</span><span style="color:#96b5b4;">lambda </span><span>(x) (* n x)) </span><span style="color:#d08770;">5</span><span>))) </span><span style="color:#65737e;">; prints 25 25 25 in dynamic scoping.
+</span></code></pre>
+<p>무슨일이 발생한 것일까요? 왜 이러한 행동을 할까요? 문제는 <code>(lambda (x) (* n x))</code>에서 사용된 <code>n</code>이 <code>my-call</code>의 인자의 이름중 하나와 같기 때문입니다. 인자 <code>n</code>이 <code>5</code>로 bind된 <code>my-call</code>내부에서, 익명함수 <code>(lambda (x) (* n x))</code>이 호출됩니다. <strong>lexical scoping</strong> 에선, 위 코드는 기대한대로 <code>5 10 15</code>을 출력합니다.</p>
+<ul>
+<li><strong>발견한것 1</strong> - <strong>dynamically scoped</strong> 함수를 다른 함수의 인자로 넘겨주는 것은, 나중에 발목을 잡을 수 있다!</li>
+</ul>
+<p>하나 더 발견해봅시다. <code>f</code>와 <code>g</code> 함수를 취해, <code>g</code>를 먼저 적용하고 <code>f</code>를 적용시킨 것과 동일한 합성함수를 반환하는 함수를 정의해 봅시다.</p>
+<pre data-lang="cl" style="background-color:#2b303b;color:#c0c5ce;" class="language-cl "><code class="language-cl" data-lang="cl"><span style="color:#65737e;">;; in dynamic scoping
+</span><span>(</span><span style="color:#b48ead;">defun </span><span style="color:#8fa1b3;">my-compose </span><span>(</span><span style="color:#96b5b4;">f</span><span> g)
+</span><span>  (</span><span style="color:#96b5b4;">lambda </span><span>(x)
+</span><span>    (</span><span style="color:#96b5b4;">funcall f </span><span>(</span><span style="color:#96b5b4;">funcall</span><span> g x))))
+</span><span>
+</span><span>(</span><span style="color:#96b5b4;">funcall
+</span><span> (my-compose (</span><span style="color:#96b5b4;">lambda </span><span>(n) (+ n </span><span style="color:#d08770;">3</span><span>)) (</span><span style="color:#96b5b4;">lambda </span><span>(n) (+ n </span><span style="color:#d08770;">20</span><span>)))
+</span><span> </span><span style="color:#d08770;">100</span><span>) </span><span style="color:#65737e;">; results in error, Lisp error: (void-variable f)
+</span></code></pre>
+<p>에러는 <code>f</code>가 정의되지 않았다고 말해주고 있습니다. 왜 그럴까요? <code>my-compose</code>에서 함수가 합성되었지만, <code>f</code>와 <code>g</code>가 bind되지 않은 곳에서 호출되었습니다. 다시돌아와서, <strong>lexical scoping</strong> 에선, 위 코드는 기대한 대로 동작합니다.</p>
+<ul>
+<li><strong>발견한것 2</strong> - <strong>dynamically scoped</strong> 함수에서 반환된 함수를 이용하는 것은, 나중에 발목을 잡을 수 있다.</li>
+</ul>
+<p>Emacs 24에서, <code>defvar</code>는 special variables라 불리는 것을 생성합니다. Special variables는, <strong>lexically scoped</strong> 함수 안이라 할지라도 dynamically하게 bind되는, <strong>dynamically scoped</strong> 변수(variables)입니다. <code>case-fold-search</code>는 special variable의 한 예입니다. 대소문자를 구분하는 함수 <code>search-forward</code>는 special variable <code>case-fold-search</code>의 값에 영향을 받습니다. <code>(search-forward "hello")</code>는 <code>case-fold-search</code>가 <code>t</code>일때 <code>HELLO</code>를 찾지만, <code>case-fold-search</code>가 <code>nil</code>일때는 그렇지 않습니다. <strong>lexically scoped el</strong> 파일에서 대소문자를 결정하기 위해 <code>case-fold-search</code>를 이용하되 추가 옵션을 지닌, <code>my-search-forward</code> 함수를 정의한다고 가정해봅시다. <code>case-fold-search</code>가 special variable이기에, 다음을 호출하면</p>
+<pre data-lang="cl" style="background-color:#2b303b;color:#c0c5ce;" class="language-cl "><code class="language-cl" data-lang="cl"><span>(</span><span style="color:#b48ead;">let </span><span>((</span><span style="color:#b48ead;">case</span><span>-fold-</span><span style="color:#96b5b4;">search </span><span style="color:#d08770;">t</span><span>))
+</span><span>  (my-</span><span style="color:#96b5b4;">search</span><span>-forward &quot;</span><span style="color:#a3be8c;">hello</span><span>&quot;))
+</span></code></pre>
+<p>대소문자를 구분하지 않고 검색한다는 것을 확신할 수 있을 것입니다.</p>
+<p>variable이 special인지 확인하기 위해, 함수 <code>special-variable-p</code>를 이용할 수 있습니다</p>
+<pre data-lang="cl" style="background-color:#2b303b;color:#c0c5ce;" class="language-cl "><code class="language-cl" data-lang="cl"><span>(special-variable-p &#39;</span><span style="color:#96b5b4;">print</span><span>-level) </span><span style="color:#65737e;">; =&gt; t
+</span><span>(special-variable-p &#39;</span><span style="color:#96b5b4;">print</span><span>-</span><span style="color:#96b5b4;">length</span><span>) </span><span style="color:#65737e;">; =&gt; t
+</span><span>(special-variable-p &#39;debug-on-</span><span style="color:#96b5b4;">error</span><span>) </span><span style="color:#65737e;">; =&gt; t
+</span><span>(special-variable-p &#39;debug-on-quit) </span><span style="color:#65737e;">; =&gt; t
+</span></code></pre>
+<p>Special variables는 유용할 수 있습니다. <a href="http://www.reddit.com/r/programming/comments/ggmc2/emacs_lisp_now_lexically_scoped_oh_very_funny_no/c1nfngv">reddit의 gsg가 말할길</a>:</p>
+<blockquote>
+<p>Dynamic scope는 명시적으로 인자를 넘기지 않고도 코드를 제한할 수 있습니다. 이는 보통 좋지 않으나, 몇몇 코드는 이로부터 덕을 봅니다.</p>
+</blockquote>
+<p><a href="http://www.reddit.com/r/programming/comments/ggmc2/emacs_lisp_now_lexically_scoped_oh_very_funny_no/c1nfngv">kragensitaker가 말하길</a>:</p>
+<blockquote>
+<p>Thread-local variables, exception handlers, current locale, current clipping region, image transform들이 dynamically하게 scope하기에 좋은 예입니다 .</p>
+</blockquote>
+<p>그럼 이제, <strong>lexical closures</strong> 로 할 수 있는 일을 살펴봅시다.</p>
+<p>다음 코드를 <strong>lexical scoping</strong> 에서 돌려봅시다.</p>
+<pre data-lang="cl" style="background-color:#2b303b;color:#c0c5ce;" class="language-cl "><code class="language-cl" data-lang="cl"><span>(</span><span style="color:#b48ead;">let </span><span>(c)
+</span><span>  (</span><span style="color:#b48ead;">defun </span><span style="color:#8fa1b3;">my-get-c </span><span>()
+</span><span>    c)
+</span><span>  (</span><span style="color:#b48ead;">defun </span><span style="color:#8fa1b3;">my-set-c </span><span>(new-c)
+</span><span>    (</span><span style="color:#96b5b4;">setq</span><span> c new-c))
+</span><span>  (</span><span style="color:#b48ead;">defun </span><span style="color:#8fa1b3;">my-add-to-c </span><span>(x)
+</span><span>    (</span><span style="color:#96b5b4;">setq</span><span> c (+ x c))))
+</span></code></pre>
+<p>세개의 함수를 이용하는 다음 코드를 돌려봅시다. <strong>lexical scoping</strong> 에서 돌린거나 그렇지 않은 곳에서 돌린거나 결과는 같은데, <strong>dynamically scoped</strong> 환경에서 호출된 <strong>lexically scoped</strong> 함수들은 여전히 <strong>lexically scoped</strong> 함수이기 때문입니다.</p>
+<pre data-lang="cl" style="background-color:#2b303b;color:#c0c5ce;" class="language-cl "><code class="language-cl" data-lang="cl"><span>(my-</span><span style="color:#96b5b4;">set</span><span>-c </span><span style="color:#d08770;">10</span><span>)
+</span><span>(my-add-</span><span style="color:#b48ead;">to</span><span>-c </span><span style="color:#d08770;">5</span><span>)
+</span><span>(</span><span style="color:#96b5b4;">print </span><span>(my-</span><span style="color:#96b5b4;">get</span><span>-c)) </span><span style="color:#65737e;">; prints 15.
+</span><span>(my-add-</span><span style="color:#b48ead;">to</span><span>-c </span><span style="color:#d08770;">1</span><span>)
+</span><span>(</span><span style="color:#96b5b4;">print </span><span>(my-</span><span style="color:#96b5b4;">get</span><span>-c)) </span><span style="color:#65737e;">; prints 16
+</span><span>(</span><span style="color:#b48ead;">let </span><span>((c </span><span style="color:#d08770;">0</span><span>))
+</span><span>  (</span><span style="color:#96b5b4;">print</span><span> c) </span><span style="color:#65737e;">; prints 0
+</span><span>  (</span><span style="color:#96b5b4;">print </span><span>(my-</span><span style="color:#96b5b4;">get</span><span>-c))) </span><span style="color:#65737e;">; prints 16.
+</span></code></pre>
+<p><code>my-get-c</code>, <code>my-set-c</code>, <code>my-add-to-c</code>가 공유하는 <code>c</code>에 대한 binding은, private 변수처럼 행동하며 <code>(let ((c 0)) ...)</code>처럼 <code>c</code>에 대한 다른 binding에 대해 독립적입니다. 이는 세개의 <code>defun</code> form을 감싸는 <code>let </code>form에서 만들어진 <code>c</code>에 대한 binding이, 이 세개의 함수의 접근을 제외하고는 다 만료시키기 때문입니다.</p>
+<p>이제 <strong>lexical closure</strong> 의 이용하여 C에서의 static 변수가 하는 일을 해봅시다.</p>
+<pre data-lang="cl" style="background-color:#2b303b;color:#c0c5ce;" class="language-cl "><code class="language-cl" data-lang="cl"><span>(</span><span style="color:#96b5b4;">require</span><span> &#39;cl) </span><span style="color:#65737e;">; for incf
+</span><span>(</span><span style="color:#96b5b4;">eval
+</span><span> &#39;(</span><span style="color:#b48ead;">let </span><span>((i </span><span style="color:#d08770;">0</span><span>))
+</span><span>    (</span><span style="color:#b48ead;">defun </span><span style="color:#8fa1b3;">my-counter </span><span>()
+</span><span>      (</span><span style="color:#96b5b4;">prog1
+</span><span>          i
+</span><span>        (incf i))))
+</span><span> </span><span style="color:#d08770;">t</span><span>)
+</span><span>(my-counter) </span><span style="color:#65737e;">; =&gt; 0
+</span><span>(my-counter) </span><span style="color:#65737e;">; =&gt; 1
+</span><span>(my-counter) </span><span style="color:#65737e;">; =&gt; 2
+</span><span>(</span><span style="color:#b48ead;">let </span><span>((i </span><span style="color:#d08770;">10</span><span>))
+</span><span>  (my-counter)) </span><span style="color:#65737e;">; =&gt; 3
+</span><span>(my-counter) </span><span style="color:#65737e;">; =&gt; 4
+</span></code></pre>
+<p>위 코드가 어떻게 동작하는지 어려워하시는 분을 위해, 여기 자세한 예제코드가 있습니다.</p>
+<pre data-lang="cl" style="background-color:#2b303b;color:#c0c5ce;" class="language-cl "><code class="language-cl" data-lang="cl"><span>(</span><span style="color:#96b5b4;">eval
+</span><span> &#39;(</span><span style="color:#b48ead;">let </span><span>((i1 </span><span style="color:#d08770;">0</span><span>))
+</span><span>    (</span><span style="color:#b48ead;">defun </span><span style="color:#8fa1b3;">my-test </span><span>()
+</span><span>      (</span><span style="color:#b48ead;">let </span><span>((i2 </span><span style="color:#d08770;">0</span><span>))
+</span><span>        (</span><span style="color:#96b5b4;">prog1
+</span><span>            (</span><span style="color:#96b5b4;">list</span><span> i1 i2)
+</span><span>          (incf i1)
+</span><span>          (incf i2)))))
+</span><span> </span><span style="color:#d08770;">t</span><span>)
+</span><span>(my-test) </span><span style="color:#65737e;">; =&gt; (0 0)
+</span><span>(my-test) </span><span style="color:#65737e;">; =&gt; (1 0)
+</span><span>(my-test) </span><span style="color:#65737e;">; =&gt; (2 0)
+</span></code></pre>
+<p><code>my-test</code>를 정의하고 3번 호출하였습니다. <code>my-test</code>속 (<code>let ((i2 0)) ..)</code> form은 <code>my-test</code>가 호출될때마다 실행되어 3번 호출되었습니다. 반면, <code>(let ((i1 0)) ... )</code> form은 <code>my-test</code>가 정의될때 단 한번만 실행됩니다. 도움되셨길 바랍니다.</p>
+<p>이제 <strong>lexical closure</strong> 인 함수를 반환하는 함수를 테스트 해봅시다.</p>
+<pre data-lang="cl" style="background-color:#2b303b;color:#c0c5ce;" class="language-cl "><code class="language-cl" data-lang="cl"><span>(</span><span style="color:#96b5b4;">eval
+</span><span> &#39;(</span><span style="color:#b48ead;">defun </span><span style="color:#8fa1b3;">my-get-counter </span><span>(start </span><span style="color:#96b5b4;">step</span><span>)
+</span><span>    (</span><span style="color:#b48ead;">let </span><span>((</span><span style="color:#96b5b4;">count</span><span> start))
+</span><span>      (</span><span style="color:#96b5b4;">lambda </span><span>()
+</span><span>        (</span><span style="color:#96b5b4;">prog1
+</span><span>            </span><span style="color:#96b5b4;">count
+</span><span>          (</span><span style="color:#96b5b4;">setq count </span><span>(+ </span><span style="color:#96b5b4;">count step</span><span>)))))
+</span><span>    )
+</span><span> </span><span style="color:#d08770;">t</span><span>)
+</span><span>
+</span><span>(</span><span style="color:#96b5b4;">setq</span><span> my-</span><span style="color:#96b5b4;">get</span><span>-even-numbers (my-</span><span style="color:#96b5b4;">get</span><span>-counter </span><span style="color:#d08770;">0 2</span><span>)
+</span><span>      my-</span><span style="color:#96b5b4;">get</span><span>-odd-numbers (my-</span><span style="color:#96b5b4;">get</span><span>-counter </span><span style="color:#d08770;">1 2</span><span>))
+</span><span>
+</span><span>(</span><span style="color:#96b5b4;">funcall</span><span> my-</span><span style="color:#96b5b4;">get</span><span>-even-numbers) </span><span style="color:#65737e;">; =&gt; 0
+</span><span>(</span><span style="color:#96b5b4;">funcall</span><span> my-</span><span style="color:#96b5b4;">get</span><span>-even-numbers) </span><span style="color:#65737e;">; =&gt; 2
+</span><span>(</span><span style="color:#96b5b4;">funcall</span><span> my-</span><span style="color:#96b5b4;">get</span><span>-even-numbers) </span><span style="color:#65737e;">; =&gt; 4
+</span><span>
+</span><span>(</span><span style="color:#96b5b4;">funcall</span><span> my-</span><span style="color:#96b5b4;">get</span><span>-odd-numbers) </span><span style="color:#65737e;">; =&gt; 1
+</span><span>(</span><span style="color:#96b5b4;">funcall</span><span> my-</span><span style="color:#96b5b4;">get</span><span>-odd-numbers) </span><span style="color:#65737e;">; =&gt; 3
+</span><span>(</span><span style="color:#96b5b4;">funcall</span><span> my-</span><span style="color:#96b5b4;">get</span><span>-odd-numbers) </span><span style="color:#65737e;">; =&gt; 5
+</span><span>
+</span><span>(</span><span style="color:#96b5b4;">funcall</span><span> my-</span><span style="color:#96b5b4;">get</span><span>-even-numbers) </span><span style="color:#65737e;">; =&gt; 6
+</span><span>(</span><span style="color:#96b5b4;">funcall</span><span> my-</span><span style="color:#96b5b4;">get</span><span>-even-numbers) </span><span style="color:#65737e;">; =&gt; 8
+</span><span>
+</span><span>(</span><span style="color:#96b5b4;">setq</span><span> my-</span><span style="color:#96b5b4;">get</span><span>-even-numbers-</span><span style="color:#d08770;">2 </span><span>(my-</span><span style="color:#96b5b4;">get</span><span>-counter </span><span style="color:#d08770;">0 2</span><span>))
+</span><span>(</span><span style="color:#96b5b4;">funcall</span><span> my-</span><span style="color:#96b5b4;">get</span><span>-even-numbers-</span><span style="color:#d08770;">2</span><span>) </span><span style="color:#65737e;">; =&gt; 0
+</span><span>(</span><span style="color:#96b5b4;">funcall</span><span> my-</span><span style="color:#96b5b4;">get</span><span>-even-numbers-</span><span style="color:#d08770;">2</span><span>) </span><span style="color:#65737e;">; =&gt; 2
+</span><span>(</span><span style="color:#96b5b4;">funcall</span><span> my-</span><span style="color:#96b5b4;">get</span><span>-even-numbers-</span><span style="color:#d08770;">2</span><span>) </span><span style="color:#65737e;">; =&gt; 4
+</span><span>
+</span><span>(</span><span style="color:#96b5b4;">funcall</span><span> my-</span><span style="color:#96b5b4;">get</span><span>-even-numbers) </span><span style="color:#65737e;">; =&gt; 10
+</span><span>(</span><span style="color:#96b5b4;">funcall</span><span> my-</span><span style="color:#96b5b4;">get</span><span>-even-numbers) </span><span style="color:#65737e;">; =&gt; 12
+</span><span>(</span><span style="color:#96b5b4;">funcall</span><span> my-</span><span style="color:#96b5b4;">get</span><span>-even-numbers) </span><span style="color:#65737e;">; =&gt; 14
+</span></code></pre>
+<p>여러분들은 아마 <code>my-get-even-numbers</code>, <code>my-get-odd-numbers</code>, <code>my-get-even-numbers-2</code>가 <code>하나의 count</code>를 공유하는 대신 왜 <code>자기만의 count</code>를 가지고 있는지 혼란스러워 하실지도 모르겠습니다. 이들은 실제로 <code>자신만의 count</code>를 가지고 있습니다. 혼란스러우신 여러분을 위해, 다음 코드를 <strong>lexical scoping</strong> 에서 돌린다면 어떻게될까요?</p>
+<pre data-lang="cl" style="background-color:#2b303b;color:#c0c5ce;" class="language-cl "><code class="language-cl" data-lang="cl"><span>(</span><span style="color:#b48ead;">let </span><span>((</span><span style="color:#96b5b4;">count </span><span style="color:#d08770;">0</span><span>))
+</span><span>  (</span><span style="color:#96b5b4;">setq</span><span> my-</span><span style="color:#96b5b4;">count
+</span><span>        (</span><span style="color:#96b5b4;">lambda </span><span>()
+</span><span>          (</span><span style="color:#96b5b4;">prog1
+</span><span>              </span><span style="color:#96b5b4;">count
+</span><span>            (</span><span style="color:#96b5b4;">setq count </span><span>(</span><span style="color:#d08770;">1</span><span>+ </span><span style="color:#96b5b4;">count</span><span>))))))
+</span><span>(</span><span style="color:#b48ead;">let </span><span>((</span><span style="color:#96b5b4;">count </span><span style="color:#d08770;">0</span><span>))
+</span><span>  (</span><span style="color:#96b5b4;">setq</span><span> my-</span><span style="color:#96b5b4;">count</span><span>-</span><span style="color:#d08770;">2
+</span><span>        (</span><span style="color:#96b5b4;">lambda </span><span>()
+</span><span>          (</span><span style="color:#96b5b4;">prog1
+</span><span>              </span><span style="color:#96b5b4;">count
+</span><span>            (</span><span style="color:#96b5b4;">setq count </span><span>(</span><span style="color:#d08770;">1</span><span>+ </span><span style="color:#96b5b4;">count</span><span>))))))
+</span></code></pre>
+<p><code>my-count</code>와 <code>my-count-2</code>는 <code>자기만의 count</code>를 지니고있습니다. 각 <code>let</code> form은 각각 <code>(setq .. (lambda ...))</code> forms을 감싸고 있습니다. 이는 실제 <code>my-get-counter</code>가 하는 일과 같습니다. <code>(my-get-counter ..)</code>이 실행될 때마다, <code>(let ((count ..)) (lambda ..))</code>이 다시 실행되며, <code>count</code>에 대한 분리된 새로운 binding을 만들어내 새로운 함수만이 접근할 수 있도록 만들어 줍니다. <code>(my-get-counter ..)</code>을 3번 실행시키면, <code>(let ((count ..)) (lambda ..))</code>은 3번 실행되어, <code>count</code>에 대한 3개의 binding과 3개의 반환 함수를 만들어냅니다.</p>
+<p><code>Alice</code>는 지금 <strong>lexically scope환경인 el</strong> 파일에서 새로운 Emacs Lisp 코드를 작성하고있습니다. <code>Alice</code>가 새로운 작성한 <strong>lexically scoped</strong> 코드와 다른이가 작성한 <strong>dynamically scoped</strong> 코드를 섞는(interact)다면, 어떤일이 벌어질까요? 멈추는건 아닐까요?</p>
+<p>간단한 예제로 해봅시다.</p>
+<pre data-lang="cl" style="background-color:#2b303b;color:#c0c5ce;" class="language-cl "><code class="language-cl" data-lang="cl"><span>(</span><span style="color:#96b5b4;">eval
+</span><span> &#39;(</span><span style="color:#b48ead;">defun </span><span style="color:#8fa1b3;">my-bah </span><span>())
+</span><span> </span><span style="color:#d08770;">t</span><span>)
+</span><span>
+</span><span>(</span><span style="color:#96b5b4;">eval
+</span><span> &#39;(fset &#39;my-bah-</span><span style="color:#d08770;">2 </span><span>(</span><span style="color:#96b5b4;">symbol-function</span><span> &#39;my-bah))
+</span><span> </span><span style="color:#d08770;">nil</span><span>)
+</span></code></pre>
+<p><code>my-bah</code>함수는 <strong>lexically scoped</strong> 환경에서 정의되었습니다. 따라서 이는 <strong>lexically scoped</strong> 함수가 되어야만 합니다. 그러면 <code>my-bah-2</code>는 어떨가요?</p>
+<blockquote>
+<p>Alice : "<code>my-bah-2</code>는 <strong>dynamically scoped</strong> 환경에서 정의되었어. 따라서 이는 <strong>dynamically scoped</strong> 함수가 되어야만 해."</p>
+</blockquote>
+<blockquote>
+<p>Bob   : "<code>my-bah-2</code>의 함수 공간은 <code>my-bah</code>의 함수 공간(cell)을 복사했어. <code>my-bah</code>의 함수 공간은 <strong>lexically scoped</strong> 함수를 포함하고 있지. <code>my-bah-2</code>의 함수 공간에 있는 것은 <strong>lexically scoped</strong> 함수와 동일해"</p>
+</blockquote>
+<blockquote>
+<p>Alice : "잠깐. 이 함수들은 아무것도 하지 않잖아. 먼가 좀 해보도록 만들어보자. 반환값으로 <strong>lexically scoped</strong>인지 알려주도록 만들어보자."</p>
+</blockquote>
+<p>다음 코드는 <strong>lexically scoped</strong>환경에선 <code>t</code>를, 그렇지 않으면 <code>nil</code>을 반환합니다. <a href="http://yoo2080.wordpress.com/2011/12/30/how-to-check-dynamically-if-lexical-scoping-is-active-in-emacs-lisp/">여기서 lexical-binding 값을 확인하는 것은 좋지 않은 생각입니다</a>.</p>
+<pre data-lang="cl" style="background-color:#2b303b;color:#c0c5ce;" class="language-cl "><code class="language-cl" data-lang="cl"><span>(</span><span style="color:#b48ead;">let </span><span>((x </span><span style="color:#d08770;">nil</span><span>)
+</span><span>      (</span><span style="color:#96b5b4;">f </span><span>(</span><span style="color:#b48ead;">let </span><span>((x </span><span style="color:#d08770;">t</span><span>)) (</span><span style="color:#96b5b4;">lambda </span><span>() x))))
+</span><span>  (</span><span style="color:#96b5b4;">funcall f</span><span>))
+</span></code></pre>
+<p>Alice는 the my-bah &amp; my-bah-2 코드를 수정했습니다.</p>
+<pre data-lang="cl" style="background-color:#2b303b;color:#c0c5ce;" class="language-cl "><code class="language-cl" data-lang="cl"><span>(</span><span style="color:#96b5b4;">eval
+</span><span> &#39;(</span><span style="color:#b48ead;">defun </span><span style="color:#8fa1b3;">my-bah </span><span>()
+</span><span>    (</span><span style="color:#b48ead;">let </span><span>((x </span><span style="color:#d08770;">nil</span><span>)
+</span><span>          (</span><span style="color:#96b5b4;">f </span><span>(</span><span style="color:#b48ead;">let </span><span>((x </span><span style="color:#d08770;">t</span><span>)) (</span><span style="color:#96b5b4;">lambda </span><span>() x))))
+</span><span>      (</span><span style="color:#96b5b4;">funcall f</span><span>)))
+</span><span> </span><span style="color:#d08770;">t</span><span>)
+</span><span>
+</span><span>(</span><span style="color:#96b5b4;">eval
+</span><span> &#39;(fset &#39;my-bah-</span><span style="color:#d08770;">2 </span><span>(</span><span style="color:#96b5b4;">symbol-function</span><span> &#39;my-bah))
+</span><span> </span><span style="color:#d08770;">nil</span><span>)
+</span></code></pre>
+<p><code>my-bah-2</code>가 <strong>lexically scoped</strong> 함수인지 확인해 봅시다.</p>
+<pre data-lang="cl" style="background-color:#2b303b;color:#c0c5ce;" class="language-cl "><code class="language-cl" data-lang="cl"><span>(my-bah) </span><span style="color:#65737e;">; =&gt; t
+</span><span>(my-bah-</span><span style="color:#d08770;">2</span><span>) </span><span style="color:#65737e;">; =&gt; t
+</span></code></pre>
+<p>그럼, <code>Bob</code>이 생각한게 맞은건가요? 이와 유사한, defun을 사용하지 않은 코드로 테스트해봅시다.</p>
+<pre data-lang="cl" style="background-color:#2b303b;color:#c0c5ce;" class="language-cl "><code class="language-cl" data-lang="cl"><span>(</span><span style="color:#96b5b4;">eval
+</span><span> &#39;(</span><span style="color:#96b5b4;">setq</span><span> my-nah
+</span><span>        (</span><span style="color:#96b5b4;">lambda </span><span>()
+</span><span>          (</span><span style="color:#b48ead;">let </span><span>((x </span><span style="color:#d08770;">nil</span><span>)
+</span><span>                (</span><span style="color:#96b5b4;">f </span><span>(</span><span style="color:#b48ead;">let </span><span>((x </span><span style="color:#d08770;">t</span><span>)) (</span><span style="color:#96b5b4;">lambda </span><span>() x))))
+</span><span>            (</span><span style="color:#96b5b4;">funcall f</span><span>))))
+</span><span> </span><span style="color:#d08770;">t</span><span>)
+</span><span>
+</span><span>(</span><span style="color:#96b5b4;">eval
+</span><span> &#39;(</span><span style="color:#96b5b4;">setq</span><span> my-nah-</span><span style="color:#d08770;">2</span><span> my-nah)
+</span><span> </span><span style="color:#d08770;">nil</span><span>)
+</span><span>
+</span><span>(</span><span style="color:#96b5b4;">funcall</span><span> my-nah) </span><span style="color:#65737e;">; =&gt; t
+</span><span>(</span><span style="color:#96b5b4;">funcall</span><span> my-nah-</span><span style="color:#d08770;">2</span><span>) </span><span style="color:#65737e;">; =&gt; t
+</span></code></pre>
+<p><code>(setq abc (+ 1 1))</code>를 돌리면, 덧셈을 기술하는 표현식 <code>(+ 1 1)</code>이 우선 평가되고, 평가결과 숫자 <code>2</code>는 변수 <code>abc</code>에 할당됩니다. 이처럼, <code>(setq my-nah (lambda ...))</code>을 돌리면, 익명함수를 기술하는 표현식 <code>(lambda ...</code>)이 먼저 평가됩니다. <strong>lexical scoping</strong> 에선, 평가결과는 <strong>lexically scoped</strong> 함수 값인 <code>(closure ....)</code>처럼 보입니다. 그리고 그 결과 <code>(closure ....)</code>가 변수 <code>my-nah</code>에 할당됩니다.</p>
+<p><code>(setq abc (+ 1 1))</code>을 돌린후 (<code>setq abc-2 abc)</code>을 돌리면, 표현식 <code>(+ 1 1)</code>에 대한 평가는 단 한번만 일어납니다. <code>(setq abc-2 abc)</code>는 <code>(+ 1 1)</code>를 또다시 평가하지 않고, 단지 이미 계산된 결과 <code>2</code>를 <code>abc-2</code>에 저장합니다. <code>(setq abc-2 abc)</code>에서 평가한 것은 symbol <code>abc</code> 자체이며, symbol <code>abc</code>를 평가하면 <code>2</code>입니다. 이처럼, <code>my-nah</code> &amp; <code>my-nah-2</code> 예제코드에서 <code>(lambda ...)</code> 표현식의 평가는 단 한번만 일어나며, <code>(setq my-nah-2 my-nah)</code>를 돌릴때 결과 <code>(closure ...)</code>는 평가되지 않으며 단순히 <code>my-nah-2</code>에 저장됩니다. <code>(setq my-nah-2 my-nah)</code>가 <strong>dynamically scoped</strong> 환경에서 돌아갈 지라도, anonymous function 표현식에 대한 평가가 <strong>lexically scoped</strong> 환경에서 발생하기에, 변수 <code>my-nah-2</code>는 결국 <strong>lexically scoped</strong> 함수를 지니게 됩니다.</p>
+<p><strong>lexically scoped</strong> 함수가 만들어져 <strong>dynamically scoped</strong> 환경에 들어가게 되도, 함수는 여전히 <strong>lexically scoped</strong> 함수로 남아있습니다.</p>
+<p><code>defun my-bah</code> 예도 유사합니다. symbol <code>my-bah</code>의 함수 공간(cell)은 <strong>lexically scoped</strong> 함수를 담고있습니다. 다음 테스트를 살펴보겠습니다.</p>
+<pre data-lang="cl" style="background-color:#2b303b;color:#c0c5ce;" class="language-cl "><code class="language-cl" data-lang="cl"><span>(</span><span style="color:#96b5b4;">print</span><span> my-nah-</span><span style="color:#d08770;">2</span><span>)
+</span><span>(</span><span style="color:#96b5b4;">print </span><span>(</span><span style="color:#96b5b4;">symbol-function</span><span> &#39;my-bah-</span><span style="color:#d08770;">2</span><span>))
+</span></code></pre>
+<p><strong>lexically scoped el</strong> 파일에서 <code>defun</code>을 가지고 있고, 내부에서 free variable에 해당하는 것을 확인하려면, <strong>dynamically scoped</strong> 파일에 있는 또 다른 이름의 함수대신, el 파일에서 그 주변을 살펴보기만 하면 됩니다.</p>
+<p>이제 <code>my-nah-2</code> &amp; <code>my-bah-2</code> 예제를 이해했을 것입니다. <code>my-get-counter</code>를 다시 살펴보도록 하겠습니다. <code>(defun my-get-counter ...)</code>가 <strong>lexically scoped el</strong> 파일에 있는 동안, <code>my-get-counter</code>가 반환하는 함수들은 <strong>lexically scoped</strong> 입니다. 확인해봅시다.</p>
+<pre data-lang="cl" style="background-color:#2b303b;color:#c0c5ce;" class="language-cl "><code class="language-cl" data-lang="cl"><span>(</span><span style="color:#96b5b4;">eval
+</span><span> &#39;(</span><span style="color:#96b5b4;">progn
+</span><span>    (</span><span style="color:#96b5b4;">setq</span><span> my-</span><span style="color:#96b5b4;">get</span><span>-even-numbers (my-</span><span style="color:#96b5b4;">get</span><span>-counter </span><span style="color:#d08770;">0 2</span><span>))
+</span><span>    (</span><span style="color:#96b5b4;">print </span><span>(</span><span style="color:#96b5b4;">funcall</span><span> my-</span><span style="color:#96b5b4;">get</span><span>-even-numbers))
+</span><span>    (</span><span style="color:#96b5b4;">print </span><span>(</span><span style="color:#96b5b4;">funcall</span><span> my-</span><span style="color:#96b5b4;">get</span><span>-even-numbers))
+</span><span>    (</span><span style="color:#96b5b4;">print </span><span>(</span><span style="color:#96b5b4;">funcall</span><span> my-</span><span style="color:#96b5b4;">get</span><span>-even-numbers)))
+</span><span> </span><span style="color:#d08770;">nil</span><span>)
+</span></code></pre>
+<p>이는 <code>0 2 4</code>를 출력합니다. 여기서 <code>Alice</code>가 다시 "<code>my-get-even-numbers</code> 함수는 <strong>dynamically scoped</strong> 환경에서 정의됬어. 그런대 왜 <strong>lexically scoped</strong> 함수처럼 행동하는 거야?" 라고 의문을 표할지도 모릅니다. 변수 <code>my-get-even-numbers</code>는 <code>my-nah-2</code>와 마찬가지로 <strong>lexically scoped</strong> 함수를 지니고 있습니다. 이해가 어려우신 분들을 위해, 우선 <code>my-get-sum</code>을 살펴보도록 하겠습니다.</p>
+<pre data-lang="cl" style="background-color:#2b303b;color:#c0c5ce;" class="language-cl "><code class="language-cl" data-lang="cl"><span>(</span><span style="color:#b48ead;">defun </span><span style="color:#8fa1b3;">my-get-sum </span><span>(x y)
+</span><span>  (+ x y))
+</span></code></pre>
+<p><code>my-get-sum</code>에 있는 덧셈을 기술하는 <code>(+ x y)</code>는 표현식이며, <code>my-get-sum</code> 은 <code>(+ x y)</code>의 평가결과를 반환하지, 표현식 <code>(+ x y)</code>자체를 반환하지는 않습니다. <code>(my-get-sum 1 2)</code>을 돌려본다면, 표현식 <code>(+ x y)</code>그대로를 반환하지 않고, <code>my-get-sum</code>안에서 <code>(+ x y)</code>가 평가된 <code>3</code>을 반환합니다</p>
+<p><code>my-get-counter</code>로 돌아가봅시다. <code>my-get-counter</code>의 <code>(lambda ...)</code>은 익명 함수를 나타내는 표현식입니다. 이 표현식은 <code>my-get-counter</code> 내부에서 한번만 평가됩니다. 평가결과는 변수 <code>my-get-even-numbers</code>에 저장된 것을 반환받은 <code>(closure ...)</code>입니다. <code>(lambda ...)</code>의 평가는 단 한번만 이루어지며, 이는 <strong>lexically scoped 함수</strong> <code>my-get-counter</code>에서 이루어집니다. <strong>lexically scoped</strong> 함수에서의 <code>lambda</code> form의 평가는 항상 <code>(closure ...)</code>가 됩니다. 이것이 바로 어떻게 <code>my-get-even-numbers</code>가 <strong>lexically scoped</strong> 함수를 지닐수 있는지에 대한 이유입니다.</p>
+<p>그건 그렇고, 어째서인지 무심코 <code>lambda</code> form의 평가를 막아버린다면, <strong>lexically scoped</strong> 함수는 <strong>dynamically scoped</strong> 함수를 생성하고 반환할 수 있습니다.</p>
+<pre data-lang="cl" style="background-color:#2b303b;color:#c0c5ce;" class="language-cl "><code class="language-cl" data-lang="cl"><span>(</span><span style="color:#96b5b4;">eval
+</span><span> &#39;(</span><span style="color:#b48ead;">defun </span><span style="color:#8fa1b3;">my-return-dynamically-scoped-function </span><span>()
+</span><span>    (</span><span style="color:#96b5b4;">list</span><span> &#39;</span><span style="color:#96b5b4;">lambda</span><span> &#39;() &#39;a)
+</span><span>    )
+</span><span> </span><span style="color:#d08770;">t</span><span>)
+</span><span>
+</span><span>(</span><span style="color:#96b5b4;">eval
+</span><span> &#39;(</span><span style="color:#b48ead;">defun </span><span style="color:#8fa1b3;">my-return-dynamically-scoped-function </span><span>()
+</span><span>    &#39;(</span><span style="color:#96b5b4;">lambda </span><span>() a) </span><span style="color:#65737e;">; quoted lambda
+</span><span>    )
+</span><span> </span><span style="color:#d08770;">t</span><span>)
+</span></code></pre>
+<p>왜 이렇게 했는지, 의도는 잘 모르겠지만, 어쨋건 가능합니다.</p>
+<p>이제 <code>my-call</code> 예를 다시 살펴보도록 하겠습니다.</p>
+<pre data-lang="cl" style="background-color:#2b303b;color:#c0c5ce;" class="language-cl "><code class="language-cl" data-lang="cl"><span>(</span><span style="color:#96b5b4;">eval
+</span><span> &#39;(</span><span style="color:#b48ead;">defun </span><span style="color:#8fa1b3;">my-call </span><span>(</span><span style="color:#96b5b4;">f</span><span> n)
+</span><span>    (</span><span style="color:#96b5b4;">funcall f</span><span> n))
+</span><span> </span><span style="color:#d08770;">nil</span><span>)
+</span><span>
+</span><span>(</span><span style="color:#96b5b4;">eval
+</span><span> &#39;(</span><span style="color:#b48ead;">dolist </span><span>(n (</span><span style="color:#96b5b4;">list </span><span style="color:#d08770;">1 2 3</span><span>))
+</span><span>    (</span><span style="color:#96b5b4;">print
+</span><span>     (my-call (</span><span style="color:#96b5b4;">lambda </span><span>(x) (* n x)) </span><span style="color:#d08770;">5</span><span>)))
+</span><span> </span><span style="color:#d08770;">t</span><span>)
+</span></code></pre>
+<p>이는 <code>5 10 15</code>를 출력합니다. <code>Alice</code>가 다시 말하길 "함수 <code>f</code>는 <strong>dynamically scoped</strong>에서 정의되었잖아. 그런데 왜 <strong>lexically scoped</strong> 함수처럼 행동하는 거야?" <code>my-call</code>에 들어온 익명함수들은 <strong>lexically scoped</strong> 환경에서 정의되었기에, <code>my-call</code>에 들어온 후라도 <strong>lexically scoped</strong> 처럼 상태를 유지합니다. 그래도 이해가 어려우신 분들을 위해서. <code>(lambda ...)</code>가 평가되고 그 결과가 <code>my-call</code>에 들어갔습니다. <code>my-call</code>은 그 결과를 <strong>지역변수(local variable)</strong> <code>f</code>에 저장했습니다. 따라서 <code>f</code>는 <strong>lexically scoped</strong> 함수를 참조하게 됩니다.</p>
+<p><code>mapcar*</code> 함수는 함수를 인자로 받고, <strong>dynamically scoped el</strong> 파일에서 정의되었다는 점에서 <code>my-call</code>와 비슷합니다. 다음 <strong>dynamic scoping</strong> 예제는 <a href="http://stackoverflow.com/a/3791877/37664">StackOverflow 답변</a>에서 나온 것입니다.</p>
+<pre data-lang="cl" style="background-color:#2b303b;color:#c0c5ce;" class="language-cl "><code class="language-cl" data-lang="cl"><span>(</span><span style="color:#b48ead;">let </span><span>((cl-x </span><span style="color:#d08770;">10</span><span>))
+</span><span>  (</span><span style="color:#b48ead;">mapcar</span><span>* (</span><span style="color:#96b5b4;">lambda </span><span>(</span><span style="color:#96b5b4;">elt</span><span>) (* cl-x </span><span style="color:#96b5b4;">elt</span><span>)) &#39;(</span><span style="color:#d08770;">1 2 3</span><span>)))
+</span></code></pre>
+<p>name <code>cl-x</code>는 <code>mapcar*</code>의 정의에서 argument name으로 사용됩니다. 따라서 <strong>dynamically scoped</strong> 환경에서 이 코드를 돌리면 깜짝 놀라게 될 것입니다(발견한것 1). 하지만 <strong>lexically scoped</strong> 환경에서 코드를 돌리면, 정상적으로 동작하는데 <code>mapcar*</code>에 들어온 <strong>lexically scoped</strong> 익명 함수는 여전히 <strong>lexically scoped</strong> 함수를 유지하기 때문입니다.</p>
+<p>이 예제로 보아, <strong>lexically scoped</strong> 코드가 잘 어울리는것 같습니다. 이제 <strong>lexical scoping</strong> 을 즐기러 나가볼 시간입니다!</p>
+
+</div><!-- post -->
+
+<hr />
+<script src="https://utteranc.es/client.js" repo="netpyoung/netpyoung.blog.comment" issue-term="url"
+  theme="github-light" crossorigin="anonymous" async></script>
+<hr />
+
+			</div><!-- /.content -->
+
+			<!-- <div class="footer">
+                 </div> .footer  -->
+		</div><!-- /.container -->
+	</body>
+</html>

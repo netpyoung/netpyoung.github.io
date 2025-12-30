@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+
+<!-- ref: https://bulma.io/ -->
+<!-- ref: https://fontawesome.com/icons -->
+<!-- ref: https://flagicons.lipis.dev/ -->
+<html>
+
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+		<title>넷평 남짓한 공간</title>
+
+		<link rel="icon" href="/favicon.ico" type="image/x-icon">
+		<link rel="icon" href="/favicon.ico" type="image/x-icon">
+		<link rel="alternate" type="application/atom+xml" title="Atom" href="&#x2F;feed">
+		<link rel="stylesheet" href="/main.css">
+
+		<!-- #region: Google tag (gtag.js) -->
+		<script async src="https://www.googletagmanager.com/gtag/js?id=G-855BJNV9VD"></script>
+		<script>
+			window.dataLayer = window.dataLayer || [];
+			function gtag(){dataLayer.push(arguments);}
+			gtag('js', new Date());
+			
+			gtag('config', 'G-855BJNV9VD');
+		</script>
+		<!-- #endregion: Google tag (gtag.js) -->
+
+		<script src="https://cdn.jsdelivr.net/npm/mermaid@10.6.1/dist/mermaid.min.js"></script>
+		<script>mermaid.initialize({ startOnLoad: true });</script>
+		<script src="https://cdn.jsdelivr.net/npm/fuse.js@7.1.0"></script>
+		<script defer src="/search_index.ko.js"></script>
+		<script defer src="/main.js"></script>
+		<script defer src="/search.js"></script>
+	</head>
+
+	<body class="layout-documentation page-layout">
+		<div class="container">
+			<nav class="navbar is-transparent is-centered has-shadow is-spaced">
+				<!-- <div class="container"> -->
+				<div class="navbar-brand">
+					<a class="navbar-item" href="&#x2F;">
+						<i class="fa-solid fa-home"></i>
+						<b>넷평 남짓한 공간</b>
+					</a>
+
+					<div class="navbar-burger burger" data-target="navbarExampleTransparentExample">
+						<span></span>
+						<span></span>
+						<span></span>
+					</div>
+				</div><!-- navbar-brand -->
+				<!-- </div> -->
+
+				<div id="navbarExampleTransparentExample" class="navbar-menu">
+					<div class="navbar-start">
+						<a class="navbar-item " href="&#x2F;overview">
+							<i class="fa-solid fa fa-street-view"></i>
+						</a>
+						<a class="navbar-item " href="&#x2F;company_project">
+							<i class="fa-solid fa fa-building"></i>
+						</a>
+						<a class="navbar-item has-background-grey-lighter" href="&#x2F;blog">
+							<i class="fa-solid fa-mug-saucer"></i>
+						</a>
+						<!-- <a class="navbar-item "
+            href="&#x2F;study">
+            <i class="fa-solid fa-pen-to-square"></i>
+          </a> -->
+						<a class="navbar-item " href="&#x2F;external">
+							<i class="fa-solid fa-external-link-alt"></i>
+						</a>
+						<a class="navbar-item " href="&#x2F;diary">
+							<i class="fa-solid fa-book"></i>
+						</a>
+						<a class="navbar-item" href="https:&#x2F;&#x2F;github.com&#x2F;netpyoung">
+							<i class="fa-brands fa-github"></i>
+						</a>
+						<a class="navbar-item" href="/feed.xml">
+							<i class="fa-solid fa-rss-square"></i>
+						</a>
+					</div>
+					<!-- navbar-start -->
+
+					<div class="navbar-end">
+						<button id="search-button" class="button is-light">
+							<span class="icon"><i class="fas fa-search"></i></span>
+						</button>
+
+						<div id="search-modal" class="modal">
+							<div class="modal-background"></div>
+							<div class="modal-content" style="min-height: 70%; max-height: 70%; ">
+								<div class="box">
+									<div class="field">
+										<p class="control has-icons-left">
+											<input id="search-input" class="input is-medium" type="text" placeholder="Search...">
+											<span class="icon is-small is-left">
+												<i class="fas fa-search"></i>
+											</span>
+										</p>
+									</div>
+									<div id="search-results" style="overflow-y: auto;"></div>
+								</div>
+							</div>
+							<button id="close-modal" class="modal-close is-large" aria-label="close"></button>
+						</div>
+
+						<!--  <div class="dropdown ">
+							<div class="dropdown-trigger">
+								<button class="button" aria-haspopup="true" aria-controls="dropdown-menu">
+									<span>connect</span>
+									<span class="icon is-small">
+										<i class="fa-solid fa-angle-down" aria-hidden="true"></i>
+									</span>
+								</button>
+							</div>
+							<div class="dropdown-menu" id="dropdown-menu" role="menu">
+								<div class="dropdown-content">
+									<a class="dropdown-item" href="https:&#x2F;&#x2F;facebook.com&#x2F;netpyoung">
+										<span class="icon">
+											<i class="fa-brands fa-facebook"></i>
+										</span>
+										facebook
+									</a>
+								</div>
+							</div>
+						</div> dropdown-->
+					</div>
+					<!-- navbar-end -->
+				</div>
+				<!-- navbar-menu -->
+			</nav>
+
+			<div class="content container is-fluid">
+				
+<h1 class="title">
+  Github Pages - Jekyll v3
+</h1>
+
+
+  <p class="subtitle"><strong>2016.02.15</strong></p>
+
+
+<div class="post">
+  <h1 id="github-pages-jekyll-v3">Github Pages - Jekyll v3</h1>
+<p>오랜만에 블로그에서 사소한 내용을 수정후 커밋하니 다음과 같은 내용의 이메일이 도착했다.</p>
+<pre data-lang="txt" style="background-color:#2b303b;color:#c0c5ce;" class="language-txt "><code class="language-txt" data-lang="txt"><span>The page build completed successfully, but returned the following warning:
+</span><span>
+</span><span>You are currently using the &#39;redcarpet&#39; Markdown engine, which will not be supported on GitHub Pages after May 1st. At that time, your site will use &#39;kramdown&#39; for markdown rendering instead. To suppress this warning, remove the &#39;markdown&#39; setting in your site&#39;s &#39;_config.yml&#39; file and confirm your site renders as expected. For more information, see https://help.github.com/articles/updating-your-markdown-processor-to-kramdown.
+</span><span>
+</span><span>GitHub Pages was recently upgraded to Jekyll 3.0. It may help to confirm you&#39;re using the correct dependencies:
+</span><span>
+</span><span>  https://github.com/blog/2100-github-pages-now-faster-and-simpler-with-jekyll-3-0
+</span><span>
+</span><span>For information on troubleshooting Jekyll see:
+</span><span>
+</span><span>  https://help.github.com/articles/using-jekyll-with-pages#troubleshooting
+</span><span>
+</span><span>If you have any questions you can contact us by replying to this email.
+</span></code></pre>
+<p>내용인즉, 깃허브가 github-pages에서 쓰고있는 jekyll의 버전을 3으로 올린다는 내용이며, 이에 준하여 업데이트를 시켜주라는 말이였다.</p>
+<p>github-pages페이지를 업데이트 시켜주고(오래간만에 gem update를...),</p>
+<pre data-lang="bash" style="background-color:#2b303b;color:#c0c5ce;" class="language-bash "><code class="language-bash" data-lang="bash"><span style="color:#bf616a;">sudo</span><span> gem update github-pages
+</span></code></pre>
+<p>나와같은 경우 다음의 라인이 문제가 되었다. 이제 github-pages를 이용시 highlighter부분과 markdown섹션을 신경쓸 필요가 없게되었다.</p>
+<pre data-lang="yaml" style="background-color:#2b303b;color:#c0c5ce;" class="language-yaml "><code class="language-yaml" data-lang="yaml"><span style="color:#bf616a;">highlighter</span><span>: </span><span style="color:#a3be8c;">pygments
+</span><span style="color:#bf616a;">markdown</span><span>: </span><span style="color:#a3be8c;">redcarpet
+</span><span style="color:#bf616a;">redcarpet</span><span>:
+</span><span>    </span><span style="color:#bf616a;">extensions</span><span>: [&quot;</span><span style="color:#a3be8c;">no_intra_emphasis</span><span>&quot;, &quot;</span><span style="color:#a3be8c;">fenced_code_blocks</span><span>&quot;, &quot;</span><span style="color:#a3be8c;">autolink</span><span>&quot;, &quot;</span><span style="color:#a3be8c;">tables</span><span>&quot;, &quot;</span><span style="color:#a3be8c;">with_toc_data</span><span>&quot;]
+</span><span>
+</span></code></pre>
+<p>수정시, highlighter만 pygments로 나두면 다음과 같은 메시지로 이메일이 날라온다.</p>
+<pre data-lang="txt" style="background-color:#2b303b;color:#c0c5ce;" class="language-txt "><code class="language-txt" data-lang="txt"><span>The page build completed successfully, but returned the following warning:
+</span><span>
+</span><span>You are attempting to use the &#39;pygments&#39; highlighter, which is currently unsupported on GitHub Pages. Your site will use &#39;rouge&#39; for highlighting instead. To suppress this warning, change the &#39;highlighter&#39; value to &#39;rouge&#39; in your &#39;_config.yml&#39;. For more information, see https://help.github.com/articles/page-build-failed-config-file-error/#fixing-highlighting-errors.
+</span></code></pre>
+<p>처음 github-pages를 설정할때 highlighter, markdown 설정 부분에서 좀 애를 먹은 기억이 있어, 나는 이와같이 github-pages가 변화한것을 환영한다.</p>
+
+</div><!-- post -->
+
+<hr />
+<script src="https://utteranc.es/client.js" repo="netpyoung/netpyoung.blog.comment" issue-term="url"
+  theme="github-light" crossorigin="anonymous" async></script>
+<hr />
+
+			</div><!-- /.content -->
+
+			<!-- <div class="footer">
+                 </div> .footer  -->
+		</div><!-- /.container -->
+	</body>
+</html>

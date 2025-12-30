@@ -1,0 +1,647 @@
+<!DOCTYPE html>
+
+<!-- ref: https://bulma.io/ -->
+<!-- ref: https://fontawesome.com/icons -->
+<!-- ref: https://flagicons.lipis.dev/ -->
+<html>
+
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+		<title>넷평 남짓한 공간</title>
+
+		<link rel="icon" href="/favicon.ico" type="image/x-icon">
+		<link rel="icon" href="/favicon.ico" type="image/x-icon">
+		<link rel="alternate" type="application/atom+xml" title="Atom" href="&#x2F;feed">
+		<link rel="stylesheet" href="/main.css">
+
+		<!-- #region: Google tag (gtag.js) -->
+		<script async src="https://www.googletagmanager.com/gtag/js?id=G-855BJNV9VD"></script>
+		<script>
+			window.dataLayer = window.dataLayer || [];
+			function gtag(){dataLayer.push(arguments);}
+			gtag('js', new Date());
+			
+			gtag('config', 'G-855BJNV9VD');
+		</script>
+		<!-- #endregion: Google tag (gtag.js) -->
+
+		<script src="https://cdn.jsdelivr.net/npm/mermaid@10.6.1/dist/mermaid.min.js"></script>
+		<script>mermaid.initialize({ startOnLoad: true });</script>
+		<script src="https://cdn.jsdelivr.net/npm/fuse.js@7.1.0"></script>
+		<script defer src="/search_index.ko.js"></script>
+		<script defer src="/main.js"></script>
+		<script defer src="/search.js"></script>
+	</head>
+
+	<body class="layout-documentation page-layout">
+		<div class="container">
+			<nav class="navbar is-transparent is-centered has-shadow is-spaced">
+				<!-- <div class="container"> -->
+				<div class="navbar-brand">
+					<a class="navbar-item" href="&#x2F;">
+						<i class="fa-solid fa-home"></i>
+						<b>넷평 남짓한 공간</b>
+					</a>
+
+					<div class="navbar-burger burger" data-target="navbarExampleTransparentExample">
+						<span></span>
+						<span></span>
+						<span></span>
+					</div>
+				</div><!-- navbar-brand -->
+				<!-- </div> -->
+
+				<div id="navbarExampleTransparentExample" class="navbar-menu">
+					<div class="navbar-start">
+						<a class="navbar-item has-background-grey-lighter" href="&#x2F;overview">
+							<i class="fa-solid fa fa-street-view"></i>
+						</a>
+						<a class="navbar-item " href="&#x2F;company_project">
+							<i class="fa-solid fa fa-building"></i>
+						</a>
+						<a class="navbar-item " href="&#x2F;blog">
+							<i class="fa-solid fa-mug-saucer"></i>
+						</a>
+						<!-- <a class="navbar-item "
+            href="&#x2F;study">
+            <i class="fa-solid fa-pen-to-square"></i>
+          </a> -->
+						<a class="navbar-item " href="&#x2F;external">
+							<i class="fa-solid fa-external-link-alt"></i>
+						</a>
+						<a class="navbar-item " href="&#x2F;diary">
+							<i class="fa-solid fa-book"></i>
+						</a>
+						<a class="navbar-item" href="https:&#x2F;&#x2F;github.com&#x2F;netpyoung">
+							<i class="fa-brands fa-github"></i>
+						</a>
+						<a class="navbar-item" href="/feed.xml">
+							<i class="fa-solid fa-rss-square"></i>
+						</a>
+					</div>
+					<!-- navbar-start -->
+
+					<div class="navbar-end">
+						<button id="search-button" class="button is-light">
+							<span class="icon"><i class="fas fa-search"></i></span>
+						</button>
+
+						<div id="search-modal" class="modal">
+							<div class="modal-background"></div>
+							<div class="modal-content" style="min-height: 70%; max-height: 70%; ">
+								<div class="box">
+									<div class="field">
+										<p class="control has-icons-left">
+											<input id="search-input" class="input is-medium" type="text" placeholder="Search...">
+											<span class="icon is-small is-left">
+												<i class="fas fa-search"></i>
+											</span>
+										</p>
+									</div>
+									<div id="search-results" style="overflow-y: auto;"></div>
+								</div>
+							</div>
+							<button id="close-modal" class="modal-close is-large" aria-label="close"></button>
+						</div>
+
+						<!--  <div class="dropdown ">
+							<div class="dropdown-trigger">
+								<button class="button" aria-haspopup="true" aria-controls="dropdown-menu">
+									<span>connect</span>
+									<span class="icon is-small">
+										<i class="fa-solid fa-angle-down" aria-hidden="true"></i>
+									</span>
+								</button>
+							</div>
+							<div class="dropdown-menu" id="dropdown-menu" role="menu">
+								<div class="dropdown-content">
+									<a class="dropdown-item" href="https:&#x2F;&#x2F;facebook.com&#x2F;netpyoung">
+										<span class="icon">
+											<i class="fa-brands fa-facebook"></i>
+										</span>
+										facebook
+									</a>
+								</div>
+							</div>
+						</div> dropdown-->
+					</div>
+					<!-- navbar-end -->
+				</div>
+				<!-- navbar-menu -->
+			</nav>
+
+			<div class="content container is-fluid">
+				
+<div id="home">
+
+  <h1 class="title">
+    오버뷰
+  </h1>
+
+  
+</div>
+
+<div id="sector-content">
+  <h2 id="unity">Unity</h2>
+<div class="vtabs">
+  <!-- 탭 1 -->
+  <input type="radio" name="vtabs" id="tab-unity-1" checked>
+  <label for="tab-unity-1">unity.webp</label>
+  <div class="content">
+<h3 id="unity-webp">unity.webp</h3>
+<p>Google's image format <a href="https://developers.google.com/speed/webp/">libwebp</a> wrapper</p>
+<ul>
+<li>Support: Windows, Linux, macOS, iOS, Android, WebGL</li>
+<li><a href="https://github.com/netpyoung/unity.webp">github</a> / <a href="https://github.com/netpyoung/prebuilt-libwebp">prebuilt</a></li>
+<li><a href="https://netpyoung.github.io/note.project-record/Unity/unity.webp">record</a></li>
+</ul>
+<p><img src="/res_overview/unity.webp.webp" alt="" /></p>
+<p><img src="/res_overview/pokemon_sleep.webp" alt="" /></p>
+  </div>
+  <!-- 탭 2 -->
+  <input type="radio" name="vtabs" id="tab-unity-2">
+  <label for="tab-unity-2">SqlCipher4Unity3D</label>
+  <div class="content">
+<h3 id="sqlcipher4unity3d">SqlCipher4Unity3D</h3>
+<p>Zetetic's <a href="https://www.zetetic.net/sqlcipher/">sqlcipher</a> wrapper</p>
+<ul>
+<li>Support: Windows, Linux, macOS, iOS, Android</li>
+<li><a href="https://github.com/netpyoung/SqlCipher4Unity3D">github</a> / <a href="https://github.com/netpyoung/prebuilt-libsqlcipher">prebuilt</a></li>
+<li><a href="https://netpyoung.github.io/note.project-record/Unity/SqlCipher4Unity3D">record</a></li>
+</ul>
+<p><img src="/res_overview/SqlCipher4Unity3D.webp" alt="" /></p>
+  </div>
+  <!-- 탭 3 -->
+  <input type="radio" name="vtabs" id="tab-unity-3">
+  <label for="tab-unity-3">unity.libsodium</label>
+  <div class="content">
+<h3 id="unity-libsodium">unity.libsodium</h3>
+<p><a href="https://github.com/jedisct1/libsodium/">jedisct1/libsodium</a> wrapper</p>
+<ul>
+<li>Support: Windows, Linux, macOS, iOS, Android, WebGL</li>
+<li><a href="https://github.com/netpyoung/unity.libsodium">github</a> / <a href="https://github.com/netpyoung/prebuilt-libsodium">prebuilt</a></li>
+<li><a href="https://netpyoung.github.io/note.project-record/Unity/unity.libsodium">record</a></li>
+</ul>
+<p><img src="/res_overview/unity.libsodium.webp" alt="" /></p>
+  </div>
+  <input type="radio" name="vtabs" id="tab-unity-4">
+  <label for="tab-unity-4">NF.AI.PathFinding</label>
+  <div class="content">
+<h3 id="nf-ai-pathfinding">NF.AI.PathFinding</h3>
+<p>JPS+(2014) implement</p>
+<ul>
+<li><a href="https://github.com/netpyoung/NF.Tool.UnityPackage">github</a></li>
+</ul>
+<p><img src="/res_overview/NF.AI.PathFinding.gif" alt="" /></p>
+  </div>
+  <input type="radio" name="vtabs" id="tab-unity-5">
+  <label for="tab-unity-5">NF.Tool.ReleaseNoteMaker</label>
+  <div class="content">
+<h3 id="nf-tool-releasenotemaker">NF.Tool.ReleaseNoteMaker</h3>
+<p>Release note maker likes <a href="https://github.com/twisted/towncrier">twisted/towncrier</a></p>
+<ul>
+<li><a href="https://netpyoung.github.io/NF.Tool.ReleaseNoteMaker">doc</a></li>
+<li><a href="https://github.com/netpyoung/NF.Tool.ReleaseNoteMaker">github</a></li>
+<li><a href="https://netpyoung.github.io/note.project-record/NF/NF.Tool.ReleaseNoteMaker">record</a></li>
+</ul>
+<p><img src="/res_overview/NF.Tool.ReleaseNoteMaker.png" alt="" /></p>
+<ul>
+<li><a href="https://marketplace.visualstudio.com/items?itemName=netpyoung.nf-tool-release-note-maker-vscode">VSCode Extension</a></li>
+</ul>
+<p><img src="/res_overview/nf-tool-release-note-maker-vscode.png" alt="" /></p>
+  </div>
+  <input type="radio" name="vtabs" id="tab-unity-6">
+  <label for="tab-unity-6">NF.Tool.UnityPackage</label>
+  <div class="content">
+<h3 id="nf-tool-unitypackage">NF.Tool.UnityPackage</h3>
+<p>.unitypackage pack/unpack</p>
+<ul>
+<li><a href="https://github.com/netpyoung/NF.Tool.UnityPackage">github</a></li>
+<li><a href="https://netpyoung.github.io/note.project-record/NF/NF.Tool.UnityPackage">record</a></li>
+</ul>
+<p><img src="/res_overview/UnityPackageGUI_Winform.png" alt="" /></p>
+  </div>
+  <input type="radio" name="vtabs" id="tab-unity-7">
+  <label for="tab-unity-7">NF.Tool.UnityCompileCache</label>
+  <div class="content">
+<h3 id="nf-tool-unitycompilecache">NF.Tool.UnityCompileCache</h3>
+<p>🌶️ Unity Compile Cache — ccache/sccache Wrapper for Android &amp; WebGL il2cpp build</p>
+<ul>
+<li><a href="https://github.com/netpyoung/NF.Tool.UnityCompileCache">github</a></li>
+<li><a href="https://netpyoung.github.io/note.project-record/NF/NF.Tool.UnityCompileCache">record</a></li>
+</ul>
+<p><img src="/res_overview/UnityCompileCacheGUI_Winform.webp" alt="" /></p>
+  </div>
+  <input type="radio" name="vtabs" id="tab-unity-8">
+  <label for="tab-unity-8">NF.Tool.ExcelFlow</label>
+  <div class="content">
+<h3 id="nf-tool-excelflow">NF.Tool.ExcelFlow</h3>
+<p>🌶️ dotnet-excel-flow : code &amp; sqlite generator</p>
+<ul>
+<li><a href="https://github.com/netpyoung/NF.Tool.ExcelFlow">github</a></li>
+<li><a href="https://netpyoung.github.io/note.project-record/NF/NF.Tool.ExcelFlow">record</a></li>
+</ul>
+<p><img src="/res_overview/NF.Tool.ExcelFlow.png" alt="" /></p>
+  </div>
+</div>
+<h2 id="nf-packages">nf packages</h2>
+<div class="vtabs">
+  <!-- 탭 1 -->
+  <input type="radio" name="vtabs" id="tab-nf-1">
+  <label for="tab-nf-1">essentials</label>
+  <div class="content">
+<h3 id="nf-unitytools-essentials">nf.unitytools.essentials</h3>
+<ul>
+<li><a href="https://netpyoung.github.io/nf.unitytools.essentials/">doc</a></li>
+<li><a href="https://github.com/netpyoung/nf.unitytools.essentials">github</a></li>
+<li><a href="https://netpyoung.github.io/note.project-record/nf/nf.unitytools.essentials">record</a></li>
+</ul>
+<p><img src="/res_overview/nf.unitytools.essentials.webp" alt="" /></p>
+  </div>
+  <!-- 탭 2 -->
+  <input type="radio" name="vtabs" id="tab-nf-2">
+  <label for="tab-nf-2">utils</label>
+  <div class="content">
+<h3 id="nf-unitylibs-utils">nf.unitylibs.utils</h3>
+<ul>
+<li><a href="https://netpyoung.github.io/nf.unitylibs.utils/">doc</a></li>
+<li><a href="https://github.com/netpyoung/nf.unitylibs.utils">github</a></li>
+</ul>
+<p><img src="/res_overview/nf.unitylibs.utils.webp" alt="" /></p>
+  </div>
+  <!-- 탭 3 -->
+  <input type="radio" name="vtabs" id="tab-nf-3">
+  <label for="tab-nf-3">assetbundlemanagement</label>
+  <div class="content">
+<h3 id="nf-unitylibs-managers-assetbundlemanagement">nf.unitylibs.managers.assetbundlemanagement</h3>
+<ul>
+<li><a href="https://netpyoung.github.io/nf.unitylibs.managers.assetbundlemanagement/">doc</a></li>
+<li><a href="https://github.com/netpyoung/nf.unitylibs.managers.assetbundlemanagement">github</a></li>
+<li><a href="https://netpyoung.github.io/note.project-record/NF/nf.unitylibs.managers.assetbundlemanagement">record</a></li>
+</ul>
+<p><img src="/res_overview/nf.unitylibs.managers.assetbundlemanagement.webp" alt="" /></p>
+  </div>
+  <!-- 탭 4 -->
+  <input type="radio" name="vtabs" id="tab-nf-4">
+  <label for="tab-nf-4">patchmanagement</label>
+  <div class="content">
+<h3 id="nf-unitylibs-managers-patchmanagement">nf.unitylibs.managers.patchmanagement</h3>
+<ul>
+<li><a href="https://netpyoung.github.io/nf.unitylibs.managers.patchmanagement/">doc</a></li>
+<li><a href="https://github.com/netpyoung/nf.unitylibs.managers.patchmanagement">github</a></li>
+<li><a href="https://netpyoung.github.io/note.project-record/NF/nf.unitylibs.managers.patchmanagement">record</a></li>
+</ul>
+<p><img src="/res_overview/nf.unitylibs.managers.patchmanagement.webp" alt="" /></p>
+  </div>
+  <!-- 탭 5 -->
+  <input type="radio" name="vtabs" id="tab-nf-5">
+  <label for="tab-nf-5">resourcesextra</label>
+  <div class="content">
+<h3 id="nf-unitylibs-managers-resourcesextra">nf.unitylibs.managers.resourcesextra</h3>
+<ul>
+<li><a href="https://netpyoung.github.io/nf.unitylibs.managers.resourcesextra/">doc</a></li>
+<li><a href="https://github.com/netpyoung/nf.unitylibs.managers.resourcesextra">github</a></li>
+</ul>
+<p><img src="/res_overview/nf.unitylibs.managers.resourcesextra.png" alt="" /></p>
+  </div>
+</div>
+<h2 id="study-unity-unity-shader">Study Unity &amp; Unity Shader</h2>
+<div class="vtabs">
+  <!-- 탭 0 -->
+  <input type="radio" name="vtabs" id="tab-unity-studylog-0">
+  <label for="tab-unity-studylog-0">study.dotnet</label>
+  <div class="content">
+<ul>
+<li>
+<p><a href="https://netpyoung.github.io/study.dotnet/">doc</a></p>
+</div>
+<!-- 탭 1 -->
+<input type="radio" name="vtabs" id="tab-unity-studylog-1">
+<label for="tab-unity-studylog-1">study.unity</label>
+<div class="content">
+</li>
+<li>
+<p><a href="https://netpyoung.github.io/study.unity/">doc</a></p>
+</div>
+<!-- 탭 2 -->
+<input type="radio" name="vtabs" id="tab-unity-studylog-2">
+<label for="tab-unity-studylog-2">study.unity-shader</label>
+<div class="content">
+</li>
+<li>
+<p><a href="https://netpyoung.github.io/study.unity-shader/">doc</a></p>
+</li>
+<li>
+<p><a href="https://github.com/netpyoung/nf.example.shader">github</a></p>
+</div>
+<!-- 탭 3 -->
+<input type="radio" name="vtabs" id="tab-unity-studylog-3">
+<label for="tab-unity-studylog-3">nf.example.computeshader</label>
+<div class="content">
+</li>
+<li>
+<p><a href="https://netpyoung.github.io/nf.example.computeshader/">doc</a></p>
+</li>
+<li>
+<p><a href="https://github.com/netpyoung/nf.example.computeshader">github</a></p>
+</div>
+<!-- 탭 4 -->
+<input type="radio" name="vtabs" id="tab-unity-studylog-4">
+<label for="tab-unity-studylog-4">기타 로그</label>
+<div class="content">
+</li>
+<li>
+<p><a href="https://github.com/netpyoung/bs.physically_based_shader_develop_for_unity">bs.physically_based_shader_develop_for_unity</a></p>
+</li>
+<li>
+<p><a href="https://github.com/netpyoung/bs.shader_startup">bs.shader_startup</a></p>
+</li>
+<li>
+<p><a href="https://github.com/netpyoung/vs.shader-developing-using-unity">vs.shader-developing-using-unity</a></p>
+</div>
+<!-- 탭 5 -->
+<input type="radio" name="vtabs" id="tab-unity-studylog-5">
+<label for="tab-unity-studylog-5">기타 - 번역</label>
+<div class="content">
+</li>
+<li>
+<p><a href="https://github.com/netpyoung/unity.shader.sandbox">github</a></p>
+</li>
+<li>
+<p><a href="https://docs.google.com/presentation/d/1zga066sEmZMnZeIaIuDt0ijVIF0ii271Atl2okzCw6c/">번역: 빌트인 함수 사용법 이것저것! 셰이더 아트의 표현력을 높이는 잔기술</a></p>
+</li>
+</ul>
+<iframe src="https://docs.google.com/presentation/d/e/2PACX-1vTcouhspr9qqOUZBvex-TGPzkKhdWYIAbzGNJdqQeTeCjb3kCmpZ3_G7cs_tWpisjTNOGLJq4KDMZng/pubembed?start=false&loop=false&delayms=3000" frameborder="0" width="960" height="569" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
+<ul>
+<li><a href="https://docs.google.com/presentation/d/13VJ470UGLtMUOdNGrGZVvI-aHW3BLkNa0XUOZLvppKI/">번역: 신나는! Unity 셰이더 그림 그리기 입문!</a></li>
+</ul>
+<iframe src="https://docs.google.com/presentation/d/e/2PACX-1vT_7orNQ-sJpnsnWiplfj6X6EiJ7ASuAfmB_rXk_1zoaEs9ISzFr9B8GlUSkiyqE9P_B0Nw7jKC8YwL/pubembed?start=false&loop=false&delayms=3000" frameborder="0" width="960" height="569" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
+  </div>
+</div>
+<h2 id="presentation">Presentation</h2>
+<div class="vtabs">
+  <!-- 탭 0 -->
+  <input type="radio" name="vtabs" id="tab-pt-0">
+  <label for="tab-pt-0">overview</label>
+  <div class="content">
+<ul>
+<li><a href="https://www.slideshare.net/netpyoung">https://www.slideshare.net/netpyoung</a></li>
+</ul>
+<p><img src="/res_overview/slideshare-netpyoung.webp" alt="" /></p>
+<iframe src="https://docs.google.com/presentation/d/e/2PACX-1vRC5MjB0ifPECy82XfaYIaRWT-3uwzfBYJNuqcmAFJ7_IuljhKRoDYhWxo7i64coo2BqgbBfmfUfDOB/pubembed?start=false&loop=false&delayms=3000" frameborder="0" width="960" height="749" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
+<iframe src="https://docs.google.com/presentation/d/e/2PACX-1vQYVQNOY_1WjIu2RcAB6RtLio-qUfDJWELRQL2kIBwELKJyPjLnuJDhukPTOb2jsgayn8FYtYVoJNQR/pubembed?start=false&loop=false&delayms=3000" frameborder="0" width="960" height="749" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
+<iframe src="https://docs.google.com/presentation/d/e/2PACX-1vRMD6Ef8TFhLcrMKm2o_Qj89vWp6PhYm5WJx4D-FKW5BAtzMJQEVTrAN_M-B0QZm5KgWQDY7yPdmmPn/pubembed?start=false&loop=false&delayms=3000" frameborder="0" width="960" height="749" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
+<iframe src="https://docs.google.com/presentation/d/e/2PACX-1vSlhI99RCpv4OY8FZfwVB1cfc-i0eoUyFXqmESagaCovCT_vKwFHaXPPtAohSrV97AphFuIPJXYDQ-p/pubembed?start=false&loop=false&delayms=3000" frameborder="0" width="960" height="749" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
+<iframe src="https://docs.google.com/presentation/d/e/2PACX-1vS4TiTMdTl9EAFLk5glrbh59fHPVAvvmd1VD5E9vXsTHonlBOypHIWKiBJ6Cibamht3FlqvtsZpNKJN/pubembed?start=false&loop=false&delayms=3000" frameborder="0" width="960" height="749" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
+  </div>
+  <!-- 탭 1 -->
+  <input type="radio" name="vtabs" id="tab-pt-1">
+  <label for="tab-pt-1">pt.using-fxml-on-clojure</label>
+  <div class="content">
+<ul>
+<li><a href="https://github.com/netpyoung/pt.using-fxml-on-clojure">github</a></li>
+<li><a href="https://www.slideshare.net/slideshow/using-fxml-on-clojure/106448710">slideshare</a></li>
+</ul>
+<iframe src="https://docs.google.com/presentation/d/e/2PACX-1vSG8S2sPZfBfkwcGcG1i4ZSLrw27vY3x0B0RB8WnaWvrcL19KhFaCyYVlK9_svqvkGwc_WUADrpWoWo/pubembed?start=false&loop=false&delayms=3000" frameborder="0" width="960" height="569" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
+  </div>
+  <!-- 탭 2 -->
+  <input type="radio" name="vtabs" id="tab-pt-2">
+  <label for="tab-pt-2">pt.c-interop-in-clojure</label>
+  <div class="content">
+<ul>
+<li><a href="https://github.com/netpyoung/pt.c-interop-in-clojure">github</a></li>
+<li><a href="https://www.slideshare.net/slideshow/interop-with-c-in-clojure/141914477">slideshare</a></li>
+<li><a href="https://youtu.be/XlEFg0PD4sg?si=sOm-tzIqKXHCrruk">youtube-presentaion</a></li>
+</ul>
+<iframe src="https://docs.google.com/presentation/d/e/2PACX-1vTI3DUWqx_vsTvFqB5yq_ZsXy7gxIt97l14U7q3FZ4oATQJRIuwkZ0yQkIS85l7LjyspORHBvtaCdjh/pubembed?start=false&loop=false&delayms=3000" frameborder="0" width="960" height="569" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
+<style>.embed-container { position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; max-width: 100%; } .embed-container iframe, .embed-container object, .embed-container embed { position: absolute; top: 0; left: 0; width: 100%; height: 100%; }</style><div class='embed-container'><iframe src='https://www.youtube.com/embed/XlEFg0PD4sg' frameborder='0' allowfullscreen></iframe></div>
+<ul>
+<li><a href="https://www.youtube.com/watch?v=40cvevHg0J8">youtube-demostration</a></li>
+</ul>
+<iframe src="https://docs.google.com/presentation/d/e/2PACX-1vRpmrJQxbWZdOwggnM7QldhvGPqq_08WJC38E_2DzEOL0tI5SvIcH3VBijUx3MsJSbGbZzkaREpvL7X/pubembed?start=false&loop=false&delayms=3000" frameborder="0" width="960" height="569" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
+<style>.embed-container { position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; max-width: 100%; } .embed-container iframe, .embed-container object, .embed-container embed { position: absolute; top: 0; left: 0; width: 100%; height: 100%; }</style><div class='embed-container'><iframe src='https://www.youtube.com/embed/40cvevHg0J8' frameborder='0' allowfullscreen></iframe></div>
+  </div>
+</div>
+<h2 id="zig">Zig</h2>
+<div class="vtabs">
+  <!-- 탭 -->
+  <input type="radio" name="vtabs" id="tab-zig-1">
+  <label for="tab-zig-1">Sample.Zig.Tetris</label>
+  <div class="content">
+<ul>
+<li><a href="https://github.com/netpyoung/Sample.Zig.Tetris">github</a></li>
+</ul>
+<p>This project is a small Tetris implementation for learning Zig while keeping up with changes across Zig versions.</p>
+<p><img src="/res_overview/Sample.Zig.Tetris.png" alt="" /></p>
+  </div>
+  <!-- 탭 -->
+  <input type="radio" name="vtabs" id="tab-zig-2">
+  <label for="tab-zig-2">Sample.Zig.Tunneler</label>
+  <div class="content">
+<ul>
+<li>
+<p><a href="https://github.com/netpyoung/Sample.Zig.Tunneler">github</a></p>
+</li>
+<li>
+<p>This project is a small Tunneler implementation for learning Zig while keeping up with changes across Zig/SDL versions.</p>
+<ul>
+<li>based on <a href="https://users.jyu.fi/~tvkalvas/code/tunneler/">SDL Tunneler</a>. by <a href="https://users.jyu.fi/~tvkalvas/">Taneli Kalvas</a></li>
+<li>origin by <a href="https://tunneler.org/faq/">Geoffrey Silverton</a></li>
+</ul>
+</li>
+</ul>
+<p><img src="/res_overview/Sample.Zig.Tunneler.png" alt="" /></p>
+  </div>
+  <!-- 탭 -->
+  <input type="radio" name="vtabs" id="tab-zig-3">
+  <label for="tab-zig-3">Sample.Zig.Raytracing</label>
+  <div class="content">
+<p>Sample project to implement raytracing in one weekend using zig</p>
+<ul>
+<li><a href="https://github.com/netpyoung/Sample.Zig.Raytracing">github</a></li>
+</ul>
+<p><img src="/res_overview/raytracing-in-one-weekend.webp" alt="" /></p>
+  </div>
+</div>
+<h2 id="lisp">Lisp</h2>
+<div class="vtabs">
+  <!-- 탭 1 -->
+  <input type="radio" name="vtabs" id="tab-lisp-1">
+  <label for="tab-lisp-1">sicp-journey</label>
+  <div class="content">
+<ul>
+<li><a href="https://netpyoung.github.io/sicp-journey/">homepage</a></li>
+<li><a href="https://github.com/netpyoung/sicp-journey">github</a></li>
+</ul>
+<p><img src="/res_overview/sicp.jpg" alt="" /></p>
+  </div>
+  <!-- 탭 2 -->
+  <input type="radio" name="vtabs" id="tab-lisp-2">
+  <label for="tab-lisp-2">studyclojure</label>
+  <div class="content">
+<ul>
+<li>
+<p><a href="https://netpyoung.github.io/study.clojure/">homepage</a></p>
+</div>
+<!-- 탭 3 -->
+<input type="radio" name="vtabs" id="tab-lisp-3">
+<label for="tab-lisp-3">study.clojurescript</label>
+<div class="content">
+</li>
+<li>
+<p><a href="https://netpyoung.github.io/study.clojurescript/">homepage</a></p>
+</div>
+</li>
+</ul>
+</div>
+<h2 id="lispkorea">Lispkorea</h2>
+<div class="vtabs">
+  <!-- 탭 1 -->
+  <input type="radio" name="vtabs" id="tab-lispkorea-1">
+  <label for="tab-lispkorea-1">lispkorea.github.io</label>
+  <div class="content">
+<ul>
+<li><a href="https://lispkorea.github.io/">homepage</a></li>
+</ul>
+<p><img src="/res_overview/lispkorea.github.io.webp" alt="" /></p>
+  </div>
+  <!-- 탭 2 -->
+  <input type="radio" name="vtabs" id="tab-lispkorea-2">
+  <label for="tab-lispkorea-2">emacs-for-lisper</label>
+  <div class="content">
+<ul>
+<li><a href="https://lispkorea.github.io/emacs-for-lisper/">homepage</a></li>
+</ul>
+<p><img src="/res_overview/emacs-for-lisper.webp" alt="" /></p>
+  </div>
+  <!-- 탭 3 -->
+  <input type="radio" name="vtabs" id="tab-lispkorea-3">
+  <label for="tab-lispkorea-3">successful-lisp-kr</label>
+  <div class="content">
+<ul>
+<li><a href="https://lispkorea.github.io/successful-lisp-kr/">homepage</a></li>
+</ul>
+<p><img src="/res_overview/successful-lisp-kr.webp" alt="" /></p>
+  </div>
+  <!-- 탭 4 -->
+  <input type="radio" name="vtabs" id="tab-lispkorea-4">
+  <label for="tab-lispkorea-4">tryclojure-kr</label>
+  <div class="content">
+<ul>
+<li><a href="https://lispkorea.github.io/tryclojure-kr/">homepage</a></li>
+</ul>
+<p><img src="/res_overview/tryclojure-kr.webp" alt="" /></p>
+  </div>
+  <!-- 탭 5 -->
+  <input type="radio" name="vtabs" id="tab-lispkorea-5">
+  <label for="tab-lispkorea-5">casting-spels-clojure</label>
+  <div class="content">
+<ul>
+<li><a href="https://lispkorea.github.io/casting-spels-clojure/">homepage</a></li>
+</ul>
+<p><img src="/res_overview/casting-spels-clojure.webp" alt="" /></p>
+  </div>
+  <!-- 탭 6 -->
+  <input type="radio" name="vtabs" id="tab-lispkorea-6">
+  <label for="tab-lispkorea-6">catchup-onlisp</label>
+  <div class="content">
+<ul>
+<li><a href="https://lispkorea.github.io/catchup-onlisp/">homepage</a></li>
+</ul>
+<p><img src="/res_overview/catchup-onlisp.webp" alt="" /></p>
+  </div>
+  <!-- 탭 7 -->
+  <input type="radio" name="vtabs" id="tab-lispkorea-7">
+  <label for="tab-lispkorea-7">commonlisp-guide</label>
+  <div class="content">
+<ul>
+<li><a href="https://lispkorea.github.io/commonlisp-guide/">homepage</a></li>
+</ul>
+<p><img src="/res_overview/commonlisp-guide.webp" alt="" /></p>
+  </div>
+</div>
+<hr />
+<style>
+/* 전체 그리드: 왼쪽 레이블 140px, 오른쪽 콘텐츠 유동 */
+.vtabs {
+  display: grid;
+  grid-template-columns: 15% 1fr;
+  align-items: start;
+  border: 1px solid #ccc;
+  min-height: 160px;
+  width: 100%;
+  font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+}
+
+/* 라디오 숨기기 (하지만 DOM순서는 유지) */
+.vtabs input[type="radio"] {
+  display: none;
+}
+
+/* 레이블: 왼쪽 컬럼에 쌓이도록 설정 */
+.vtabs label {
+  display: block;
+  padding: 0.6em 0.9em;
+  border-bottom: 1px solid #ddd;
+  background: #f3f3f3;
+  cursor: pointer;
+  user-select: none;
+  grid-column: 1;          /* 왼쪽 컬럼 */
+}
+
+/* 라벨 hover / 포커스 시 */
+.vtabs label:hover,
+.vtabs label:focus {
+  background: #e9e9e9;
+}
+
+/* 콘텐츠: 오른쪽 컬럼 */
+.vtabs .content {
+  display: none;           /* 기본 숨김 */
+  padding: 1em;
+  grid-column: 2;          /* 오른쪽 컬럼 */
+  border-left: 1px solid #eee;
+  background: white;
+}
+
+/* 체크된 탭의 레이블 스타일 (input 바로 다음 label에만 적용) */
+.vtabs input:checked + label {
+  background: white;
+  font-weight: 600;
+  border-bottom: 1px solid white; /* 이걸로 레이블과 콘텐츠가 연결된 듯 보이게 함 */
+}
+
+/* 체크된 탭에 해당하는 콘텐츠만 표시 */
+.vtabs input:checked + label + .content {
+  display: block;
+}
+
+/* 반응형: 좁은 화면에서는 레이블을 위로 쌓음 */
+@media (max-width: 520px) {
+  .vtabs {
+    grid-template-columns: 1fr;
+  }
+  .vtabs label {
+    grid-column: 1;
+    border-right: none;
+  }
+  .vtabs .content {
+    grid-column: 1;
+    border-left: none;
+    border-top: 1px solid #eee;
+  }
+}
+</style>
+
+</div>
+
+
+			</div><!-- /.content -->
+
+			<!-- <div class="footer">
+                 </div> .footer  -->
+		</div><!-- /.container -->
+	</body>
+</html>

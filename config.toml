@@ -12,8 +12,6 @@ generate_feeds = true
 feed_filenames  = ["feed.xml"]
 
 [markdown]
-highlight_code = true
-highlight_theme = "base16-ocean-dark"
 render_emoji = true
 
 [slugify]

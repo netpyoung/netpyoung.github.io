@@ -1,0 +1,411 @@
+<!DOCTYPE html>
+
+<!-- ref: https://bulma.io/ -->
+<!-- ref: https://fontawesome.com/icons -->
+<!-- ref: https://flagicons.lipis.dev/ -->
+<html>
+
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+		<title>넷평 남짓한 공간</title>
+
+		<link rel="icon" href="/favicon.ico" type="image/x-icon">
+		<link rel="icon" href="/favicon.ico" type="image/x-icon">
+		<link rel="alternate" type="application/atom+xml" title="Atom" href="&#x2F;feed">
+		<link rel="stylesheet" href="/main.css">
+
+		<!-- #region: Google tag (gtag.js) -->
+		<script async src="https://www.googletagmanager.com/gtag/js?id=G-855BJNV9VD"></script>
+		<script>
+			window.dataLayer = window.dataLayer || [];
+			function gtag(){dataLayer.push(arguments);}
+			gtag('js', new Date());
+			
+			gtag('config', 'G-855BJNV9VD');
+		</script>
+		<!-- #endregion: Google tag (gtag.js) -->
+
+		<script src="https://cdn.jsdelivr.net/npm/mermaid@10.6.1/dist/mermaid.min.js"></script>
+		<script>mermaid.initialize({ startOnLoad: true });</script>
+		<script src="https://cdn.jsdelivr.net/npm/fuse.js@7.1.0"></script>
+		<script defer src="/search_index.ko.js"></script>
+		<script defer src="/main.js"></script>
+		<script defer src="/search.js"></script>
+	</head>
+
+	<body class="layout-documentation page-layout">
+		<div class="container">
+			<nav class="navbar is-transparent is-centered has-shadow is-spaced">
+				<!-- <div class="container"> -->
+				<div class="navbar-brand">
+					<a class="navbar-item" href="&#x2F;">
+						<i class="fa-solid fa-home"></i>
+						<b>넷평 남짓한 공간</b>
+					</a>
+
+					<div class="navbar-burger burger" data-target="navbarExampleTransparentExample">
+						<span></span>
+						<span></span>
+						<span></span>
+					</div>
+				</div><!-- navbar-brand -->
+				<!-- </div> -->
+
+				<div id="navbarExampleTransparentExample" class="navbar-menu">
+					<div class="navbar-start">
+						<a class="navbar-item " href="&#x2F;overview">
+							<i class="fa-solid fa fa-street-view"></i>
+						</a>
+						<a class="navbar-item " href="&#x2F;company_project">
+							<i class="fa-solid fa fa-building"></i>
+						</a>
+						<a class="navbar-item " href="&#x2F;blog">
+							<i class="fa-solid fa-mug-saucer"></i>
+						</a>
+						<!-- <a class="navbar-item "
+            href="&#x2F;study">
+            <i class="fa-solid fa-pen-to-square"></i>
+          </a> -->
+						<a class="navbar-item has-background-grey-lighter" href="&#x2F;external">
+							<i class="fa-solid fa-external-link-alt"></i>
+						</a>
+						<a class="navbar-item " href="&#x2F;diary">
+							<i class="fa-solid fa-book"></i>
+						</a>
+						<a class="navbar-item" href="https:&#x2F;&#x2F;github.com&#x2F;netpyoung">
+							<i class="fa-brands fa-github"></i>
+						</a>
+						<a class="navbar-item" href="/feed.xml">
+							<i class="fa-solid fa-rss-square"></i>
+						</a>
+					</div>
+					<!-- navbar-start -->
+
+					<div class="navbar-end">
+						<button id="search-button" class="button is-light">
+							<span class="icon"><i class="fas fa-search"></i></span>
+						</button>
+
+						<div id="search-modal" class="modal">
+							<div class="modal-background"></div>
+							<div class="modal-content" style="min-height: 70%; max-height: 70%; ">
+								<div class="box">
+									<div class="field">
+										<p class="control has-icons-left">
+											<input id="search-input" class="input is-medium" type="text" placeholder="Search...">
+											<span class="icon is-small is-left">
+												<i class="fas fa-search"></i>
+											</span>
+										</p>
+									</div>
+									<div id="search-results" style="overflow-y: auto;"></div>
+								</div>
+							</div>
+							<button id="close-modal" class="modal-close is-large" aria-label="close"></button>
+						</div>
+
+						<!--  <div class="dropdown ">
+							<div class="dropdown-trigger">
+								<button class="button" aria-haspopup="true" aria-controls="dropdown-menu">
+									<span>connect</span>
+									<span class="icon is-small">
+										<i class="fa-solid fa-angle-down" aria-hidden="true"></i>
+									</span>
+								</button>
+							</div>
+							<div class="dropdown-menu" id="dropdown-menu" role="menu">
+								<div class="dropdown-content">
+									<a class="dropdown-item" href="https:&#x2F;&#x2F;facebook.com&#x2F;netpyoung">
+										<span class="icon">
+											<i class="fa-brands fa-facebook"></i>
+										</span>
+										facebook
+									</a>
+								</div>
+							</div>
+						</div> dropdown-->
+					</div>
+					<!-- navbar-end -->
+				</div>
+				<!-- navbar-menu -->
+			</nav>
+
+			<div class="content container is-fluid">
+				
+<h1 class="title">
+  Functors, Applicatives, And Monads In Pictures
+</h1>
+
+
+
+<div class="post">
+  <ul>
+<li>
+<p>egonSchiele</p>
+<ul>
+<li><a rel="external" href="http://adit.io/index.html">blog</a></li>
+<li><a rel="external" href="https://twitter.com/_egonschiele">twitter</a></li>
+<li>Haskell, Ruby에 관심이 많으며, 그림에도 소질이 있어 보인다.</li>
+</ul>
+</li>
+<li>
+<p><a rel="external" href="http://adit.io/posts/2013-04-17-functors,_applicatives,_and_monads_in_pictures.html">original site link</a></p>
+</li>
+</ul>
+<p>여기, 단순한 값(value)이 있습니다.</p>
+<p><img src="https://netpyoung.github.io/external/functors_applicatives_and_monads_in_pictures/./img/value.png" alt="value.png" /></p>
+<pre><code data-lang="haskell">Prelude&gt; 2
+2
+</code></pre>
+<p>그리고, 우리는 이 값에 함수(function)를 적용하는(apply) 법을 알고 있습니다.</p>
+<p><img src="https://netpyoung.github.io/external/functors_applicatives_and_monads_in_pictures/./img/value_apply.png" alt="value_apply.png" /></p>
+<pre><code data-lang="haskell">Prelude&gt; (+3) 2
+5
+</code></pre>
+<p>아주 간단합니다. 그럼 이제, 이 값이 어떠한 상태(context)안에 들어있다고 가정해봅시다. 이제 여러분은 값을 담을 수 있는 어떠한 상태를, 상자라고 생각할 수 있을 것입니다.</p>
+<p><img src="https://netpyoung.github.io/external/functors_applicatives_and_monads_in_pictures/./img/value_and_context.png" alt="value_and_context.png" /></p>
+<pre><code data-lang="haskell">Prelude&gt; Just 2
+Just 2
+</code></pre>
+<p>이제, 이 값에 함수를 적용하게 되면, <strong>상태에 따라</strong> 다른 결과를 얻게 될 것입니다.</p>
+<p>Functors, 이를 기반으로한 개념(idea) 중에는 Applicatives, Monads, Arrows 등이 있습니다. <code>Maybe</code> 데이터 타입은 두가지 상태로 정의할 수 있습니다.</p>
+<p><img src="https://netpyoung.github.io/external/functors_applicatives_and_monads_in_pictures/./img/context.png" alt="context.png" /></p>
+<pre><code data-lang="haskell">data Maybe a = Nothing | Just a
+</code></pre>
+<pre><code data-lang="haskell">Prelude&gt; :type Just
+Just :: a -&gt; Maybe a
+
+Prelude&gt; :type Nothing
+Nothing :: Maybe a
+</code></pre>
+<p>다음으로, <code>Just a</code>와 <code>Nothing</code>의 상태에 따라, 함수가 어떻게 적용되는지 보도록 하겠습니다. 우선, Functors에 대해 이야기해 보도록 하겠습니다.</p>
+<h1 id="functors">Functors</h1>
+<p>상자안에 있는 값에는, 단순한 함수를 적용할 수 없습니다.</p>
+<p><img src="https://netpyoung.github.io/external/functors_applicatives_and_monads_in_pictures/./img/no_fmap_ouch.png" alt="no_fmap_ouch.png" /></p>
+<pre><code data-lang="haskell">Prelude&gt; (+3) (Just 2)
+ ERR - No instance for (Num (Maybe a0))
+</code></pre>
+<p>길거리 출신인 <code>fmap</code>은 상자에 대해서는 빠삭합니다. <code>fmap</code>은 상자안에 있는 값에 함수를 어떻게 적용해야 할지를 알고 있습니다. 예를 들어, <code>Just 2</code>에 <code>(+3)</code>를 적용시켜 봅시다. <code>fmap</code>을 사용해보면,</p>
+<pre><code data-lang="haskell">&gt; fmap (+3) (Just 2)
+Just 5
+</code></pre>
+<p><img src="https://netpyoung.github.io/external/functors_applicatives_and_monads_in_pictures/./img/fmap_apply.png" alt="fmap_apply.png" /></p>
+<p><strong>쨘!</strong> <code>fmap</code>이 멋지게 해냈습니다. 어떻게 <code>fmap</code>이 함수를 적용시키는 법을 알고 있는 걸까요?</p>
+<h1 id="functorga-dodaece-mweobnigga">Functor가 도대체 뭡니까?</h1>
+<p><code>Functor</code>는 <a rel="external" href="http://learnyouahaskell.com/types-and-typeclasses#typeclasses-101">typeclass</a>입니다. 여기 정의가 나와있습니다.</p>
+<p><img src="https://netpyoung.github.io/external/functors_applicatives_and_monads_in_pictures/./img/functor_def.png" alt="functor_def.png" /></p>
+<p><code>Functor</code>는 fmap을 적용시키는 법을 정의한 데이터 타입입니다. 여기, 어떻게 fmap이 동작하는지 나와 있습니다.</p>
+<p><img src="https://netpyoung.github.io/external/functors_applicatives_and_monads_in_pictures/./img/fmap_def.png" alt="fmap_def.png" /></p>
+<p>따라서, 우리는 다음과 같이 할 수 있습니다.</p>
+<pre><code data-lang="haskell">&gt; fmap (+3) (Just 2)
+Just 5
+</code></pre>
+<p><code>Maybe</code>역시 <code>Functor</code>이기에, <code>fmap</code>은 마법과도 같이 함수를 적용하였습니다. 다음으로, <code>Just</code>와 <code>Nothing</code>에 대해 <code>fmap</code>을 적용시키는 방법에 대해 나와있습니다.</p>
+<pre><code data-lang="haskell">instance Functor Maybe where
+    fmap func (Just val) = Just (func val)
+    fmap func Nothing = Nothing
+</code></pre>
+<p>여기, <code>fmap (+3) (Just 2)</code>이라고 쳤을때, 어떠한 일이 뒤에서 일어나는지 나와있습니다.</p>
+<p><img src="https://netpyoung.github.io/external/functors_applicatives_and_monads_in_pictures/./img/fmap_just.png" alt="fmap_just.png" /></p>
+<p>이번에는, <code>Nothing</code>에 <code>(+3)</code>을 적용시켜 보도록 하겠습니다.</p>
+<p><img src="https://netpyoung.github.io/external/functors_applicatives_and_monads_in_pictures/./img/fmap_nothing.png" alt="fmap_nothing.png" /></p>
+<pre><code data-lang="haskell">&gt; fmap (+3) Nothing
+Nothing
+</code></pre>
+<p><img src="https://netpyoung.github.io/external/functors_applicatives_and_monads_in_pictures/./img/bill.png" alt="bill.png" /></p>
+<p><em>Maybe functor도 모르는 Bill O’Reilly</em></p>
+<p>메트릭스의 모피어스처럼, <code>fmap</code>은 무엇을 해야할지 알고 있습니다. <code>Nothing</code>으로 시작하면, <code>Nothing</code>으로 끝난다! <code>fmap</code>은 zen(시작이자 끝)입니다. 이제, <code>Maybe</code> 데이터 타입이 왜 존재하는지 알아봅시다. 예를들어, 다음과 같이 <code>Maybe</code>가 없는 언어에서 데이터를 가지고 작업을 한다고 한다면,</p>
+<pre><code data-lang="ruby">post = Post.find_by_id(1)
+if post
+  return post.title
+else
+  return nil
+end
+</code></pre>
+<p>Haskell은 다음과 같이 할 수 있습니다.</p>
+<pre><code data-lang="haskell">fmap (getPostTitle) (findPost 1)
+</code></pre>
+<p>만약, <code>findPost</code>가 게시글(post)를 반환한다면, <code>getPostTitle</code>로 제목(title)을 얻을 것입니다. <code>Nothing</code>을 반환하면, <code>Nothing</code>을 얻을 것입니다. 매우 간단하지 않습니까? <code>fmap</code>의 중위표기(infix) 버전은 <code>&lt;$&gt;</code>이며, 다음과 같이 쓰기도 합니다.</p>
+<pre><code data-lang="haskell">getPostTitle &lt;$&gt; (findPost 1)
+</code></pre>
+<p>여기, 또 다른 예가 나와있습니다. 리스트에 함수를 적용시키면 무슨일이 생길까요?</p>
+<p><img src="https://netpyoung.github.io/external/functors_applicatives_and_monads_in_pictures/./img/fmap_list.png" alt="fmap_list.png" /></p>
+<p>리스트 역시 Functor였던 것이였습니다! 여기 정의가 나와있습니다.</p>
+<pre><code data-lang="haskell">instance Functor [] where
+    fmap = map
+</code></pre>
+<p>자, 자, 마지막으로 하나 더. 함수에 또 다른 함수를 적용시키면 어떤일이 벌어질까요?</p>
+<pre><code data-lang="haskell">fmap (+3) (+1)
+</code></pre>
+<pre><code data-lang="haskell">Prelude&gt; :type fmap (+3) (+1)
+fmap (+3) (+1) :: (Functor ((-&gt;) b), Num b) =&gt; b -&gt; b
+</code></pre>
+<p>여기 하나의 함수가 있습니다.</p>
+<p><img src="https://netpyoung.github.io/external/functors_applicatives_and_monads_in_pictures/./img/function_with_value.png" alt="function_with_value.png" /></p>
+<p>함수에 또 다른 함수를 적용해 보도록 하겠습니다.</p>
+<p><img src="https://netpyoung.github.io/external/functors_applicatives_and_monads_in_pictures/./img/fmap_function.png" alt="fmap_function.png" /></p>
+<p>결과 역시 함수 입니다.</p>
+<pre><code data-lang="haskell">&gt; import Control.Applicative
+&gt; let foo = fmap (+3) (+2)
+&gt; foo 10
+15
+</code></pre>
+<p>따라서, 함수 역시 Functor입니다.</p>
+<pre><code data-lang="haskell">instance Functor ((-&gt;) r) where
+    fmap f g = f . g
+</code></pre>
+<p>함수에 fmap을 사용하면, function composition을 한것과 같습니다.</p>
+<h1 id="applicatives">Applicatives</h1>
+<p>다음 단계로 넘어가보도록 하겠습니다. Functors에서 나왔던 것처럼, 상자에 값을 넣습니다.</p>
+<p><img src="https://netpyoung.github.io/external/functors_applicatives_and_monads_in_pictures/./img/value_and_context.png" alt="value_and_context.png" /></p>
+<p>함수 역시 상자에 들어갈 수 있습니다.</p>
+<p><img src="https://netpyoung.github.io/external/functors_applicatives_and_monads_in_pictures/./img/function_and_context.png" alt="function_and_context.png" /></p>
+<p>그럼 자세히 살펴보도록 하겠습니다. Applicatives는 바보가 아닙니다. Control.Applicative는 상자 속 값에, 상자 속 함수를 적용하는 법을 알도록 <code>&lt;*&gt;</code>를 정의했습니다.</p>
+<p><img src="https://netpyoung.github.io/external/functors_applicatives_and_monads_in_pictures/./img/applicative_just.png" alt="applicative_just.png" /></p>
+<p>즉, 다음과 같이 할 수 있습니다.</p>
+<pre><code data-lang="haskell">Just (+3) &lt;*&gt; Just 2 == Just 5
+</code></pre>
+<p><code>&lt;*&gt;</code>를 사용하면 조금 흥미로운 결과를 얻을 수 있습니다. 예를들면,</p>
+<pre><code data-lang="haskell">&gt; [(*2), (+3)] &lt;*&gt; [1, 2, 3]
+[2, 4, 6, 4, 5, 6]
+</code></pre>
+<p><img src="https://netpyoung.github.io/external/functors_applicatives_and_monads_in_pictures/./img/applicative_list.png" alt="applicative_list.png" /></p>
+<p>여기, Functor로는 할 수 없지만, Applicative로 할 수 있는게 나와있습니다. 두개의 인자를 취하는 함수를, 어떻게 속에 값이 들어있는 두개의 상자에 적용시킬까요?</p>
+<pre><code data-lang="haskell">&gt; (+) &lt;$&gt; (Just 5)
+Just (+5)
+&gt; Just (+5) &lt;$&gt; (Just 4)
+ERROR ??? WHAT DOES THIS EVEN MEAN WHY IS THE FUNCTION WRAPPED IN A JUST
+</code></pre>
+<p>Applicatives:</p>
+<pre><code data-lang="haskell">&gt; (+) &lt;$&gt; (Just 5)
+Just (+5)
+&gt; Just (+5) &lt;*&gt; (Just 3)
+Just 8
+</code></pre>
+<p><code>Functor</code>을 옆으로 밀쳐내면서  <code>Applicative</code>이 말합니다.</p>
+<p>"어른은 여러 인자들을 다룰 수 있는 함수를 쓰지."</p>
+<p>"값이 들어있는 상자와 함수가 들어있는 상자를 <code>&lt;$&gt;</code>와 <code>&lt;*&gt;</code>를 이용해서, 값이 들어있는 상자를 얻을 수 있다고! ㅎㅎㅎㅎ!"</p>
+<pre><code data-lang="haskell">&gt; (*) &lt;$&gt; Just 5 &lt;*&gt; Just 3
+Just 15
+</code></pre>
+<p><img src="https://netpyoung.github.io/external/functors_applicatives_and_monads_in_pictures/./img/TaTdV.gif" alt="TaTdV.gif" /></p>
+<p><em>functor가 함수를 적용시키는 것을 지켜보고 있던 applicative</em></p>
+<p>잠깐! 여기 동일한 일을 하는 <code>liftA2</code>도 있습니다.</p>
+<pre><code data-lang="haskell">&gt; liftA2 (*) (Just 5) (Just 3)
+Just 15
+</code></pre>
+<h1 id="monads">Monads</h1>
+<p>모나드를 배우는 방법 :</p>
+<ol>
+<li>컴퓨터 공학 박사학위를 딴다.</li>
+<li>필요없으니 집어 치운다!</li>
+</ol>
+<p>Monads는 새로운 해법을 제시하였습니다.</p>
+<p>Functors는 상자에 있는 값에 함수를 적용할 수 있습니다.</p>
+<p><img src="https://netpyoung.github.io/external/functors_applicatives_and_monads_in_pictures/./img/fmap.png" alt="fmap.png" /></p>
+<p>Applicatives는 상자에 있는 값에, 상자에 있는 함수를 적용 할 수 있습니다.</p>
+<p><img src="https://netpyoung.github.io/external/functors_applicatives_and_monads_in_pictures/./img/applicative.png" alt="applicative.png" /></p>
+<p>Monads는 상자에 있는 값에 함수를 적용시켜 <strong>값이 들어있는 상자를 반환</strong> 할 수 있습니다.</p>
+<p>Monads는 이러한 일을 처리하는 ("bind"라 불리는) <code>&gt;&gt;=</code>라는 함수를 가지고 있습니다.</p>
+<p>예제를 살표봅시다. 이제까지 봐왔던 <code>Maybe</code>는 모나드입니다.</p>
+<p><img src="https://netpyoung.github.io/external/functors_applicatives_and_monads_in_pictures/./img/context.png" alt="context.png" /></p>
+<p><em>놀고있던 Just a 모나드</em></p>
+<p>짝수에 대해서만 동작하는 함수, <code>half</code>가 있다고 가정해봅시다.</p>
+<pre><code data-lang="haskell">half x = if even x
+           then Just (x `div` 2)
+           else Nothing
+</code></pre>
+<p><img src="https://netpyoung.github.io/external/functors_applicatives_and_monads_in_pictures/./img/half.png" alt="half.png" /></p>
+<p>값이 들어있는 상자를 넣으면 어떻게 될까요?</p>
+<p><img src="https://netpyoung.github.io/external/functors_applicatives_and_monads_in_pictures/./img/half_ouch.png" alt="half_ouch.png" /></p>
+<p>함수에 값이 들어있는 상자를 밀어 넣을려면, <code>&gt;&gt;=</code>가 필요합니다. 여기, <code>&gt;&gt;=</code>의 사진이 있습니다.</p>
+<p><img src="https://netpyoung.github.io/external/functors_applicatives_and_monads_in_pictures/./img/plunger.jpg" alt="plunger.jpg" /></p>
+<p>어떻게 동작하는지 확인해 봅시다.</p>
+<pre><code data-lang="haskell">&gt; Just 3 &gt;&gt;= half
+Nothing
+&gt; Just 4 &gt;&gt;= half
+Just 2
+&gt; Nothing &gt;&gt;= half
+Nothing
+</code></pre>
+<p>내부에서 어떤일이 벌어진 걸까요? <code>Monad</code>는 또 다른 <a rel="external" href="http://learnyouahaskell.com/types-and-typeclasses#typeclasses-101">typeclass</a>입니다. 여기, 정의 중 일부가 나와있습니다.</p>
+<pre><code data-lang="haskell">class Monad m where
+    (&gt;&gt;=) :: m a -&gt; (a -&gt; m b) -&gt; m b
+</code></pre>
+<p><code>&gt;&gt;=</code>는,</p>
+<p><img src="https://netpyoung.github.io/external/functors_applicatives_and_monads_in_pictures/./img/bind_def.png" alt="bind_def.png" /></p>
+<p>따라서, <code>Maybe</code>는 Monad입니다:</p>
+<pre><code data-lang="haskell">instance Monad Maybe where
+    Nothing &gt;&gt;= func = Nothing
+    Just val &gt;&gt;= func  = func val
+</code></pre>
+<p>여기, <code>Just 3</code>에 대 해 어떻게 동작하는지 나와있습니다!</p>
+<p><img src="https://netpyoung.github.io/external/functors_applicatives_and_monads_in_pictures/./img/monad_just.png" alt="monad_just.png" /></p>
+<p><code>Nothing</code>을 넣으면 보다 단순해 집니다.</p>
+<p><img src="https://netpyoung.github.io/external/functors_applicatives_and_monads_in_pictures/./img/monad_nothing.png" alt="monad_nothing.png" /></p>
+<p>이렇게 연달아 호출할 수 도 있습니다.</p>
+<pre><code data-lang="haskell">&gt; Just 20 &gt;&gt;= half &gt;&gt;= half &gt;&gt;= half
+Nothing
+</code></pre>
+<p><img src="https://netpyoung.github.io/external/functors_applicatives_and_monads_in_pictures/./img/monad_chain.png" alt="monad_chain.png" /></p>
+<p><img src="https://netpyoung.github.io/external/functors_applicatives_and_monads_in_pictures/./img/whoa.png" alt="whoa.png" /></p>
+<p>끝내줍니다. 이제 우리는 <code>Maybe</code>가 Functor이자, Applicative이며, Monad라는 것을 알게 되었습니다.</p>
+<p>이제 슬슬, <code>IO</code> 모나드 예제로 가 보겠습니다.</p>
+<p><img src="https://netpyoung.github.io/external/functors_applicatives_and_monads_in_pictures/./img/io.png" alt="io.png" /></p>
+<p><em>숫자 10아님... 영어 IO임</em></p>
+<p>세개의 특별한 함수가 있습니다. <code>getLine</code>은 인자를 받지 않고, 사용자의 입력을 받습니다.</p>
+<p><img src="https://netpyoung.github.io/external/functors_applicatives_and_monads_in_pictures/./img/getLine.png" alt="getLine.png" /></p>
+<pre><code data-lang="haskell">getLine :: IO String
+</code></pre>
+<p><code>readFile</code>는 문자열(파일명)을 받아, 파일에 있는 내용을 반환합니다.</p>
+<p><img src="https://netpyoung.github.io/external/functors_applicatives_and_monads_in_pictures/./img/readFile.png" alt="readFile.png" /></p>
+<pre><code data-lang="haskell">readFile :: FilePath -&gt; IO String
+</code></pre>
+<p><code>putStrLn</code>은 문자열을 받아 출력합니다.</p>
+<p><img src="https://netpyoung.github.io/external/functors_applicatives_and_monads_in_pictures/./img/putStrLn.png" alt="putStrLn.png" /></p>
+<pre><code data-lang="haskell">putStrLn :: String -&gt; IO ()
+</code></pre>
+<p>여기 나온 세개의 함수는 평범한 값(혹은 없거나)을 받아서, 값이 들어있는 상자를 반환합니다. 따라서, 우리는 이를 <code>&gt;&gt;=</code>로 묶을 수 있습니다!</p>
+<p><img src="https://netpyoung.github.io/external/functors_applicatives_and_monads_in_pictures/./img/monad_io.png" alt="monad_io.png" /></p>
+<pre><code data-lang="haskell">getLine &gt;&gt;= readFile &gt;&gt;= putStrLn
+</code></pre>
+<p>오 예! 모나드 쇼가 펼쳐졌습니다!</p>
+<p>덧붙이자면, Haskell은 이 모나드에 대해, <code>do</code>라는 syntax suger를 제공해 주었습니다.</p>
+<pre><code data-lang="haskell">foo = do
+    filename &lt;- getLine
+    contents &lt;- readFile filename
+    putStrLn contents
+</code></pre>
+<h1 id="conclusion">Conclusion</h1>
+<ol>
+<li>functor는 <code>Functor</code> 타입 클래스를 구현한 데이터 타입이다.</li>
+<li>applicative는 <code>Applicative</code> 타입 클래스를 구현한 데이터 타입이다.</li>
+<li>monad는 <code>Monad</code> 타입 클래스를 구현한 데이터 타입이다.</li>
+<li><code>Maybe</code>는 이 세개를 모두 구현했으므로, functor이자 applicative이며 monad이다.</li>
+</ol>
+<p>이 셋의 차이점은 무엇일까?</p>
+<p><img src="https://netpyoung.github.io/external/functors_applicatives_and_monads_in_pictures/./img/recap.png" alt="recap.png" /></p>
+<ul>
+<li>functors: <code>fmap</code>이나 <code>&lt;$&gt;</code>를 이용하여 상자 속 값에 함수를 적용할 수 있다.</li>
+<li>applicatives: <code>liftA</code>나 <code>&lt;*&gt;</code>를 이용하여 상자 속 함수를 상자 속 값에 적용할 수 있다.</li>
+<li>monads: <code>liftM</code>나 <code>&gt;&gt;=</code>를 이용하여 값이 들어있는 상자를 받아 함수를 적용하고 값이 들어있는 상자를 반환할 수 있다.</li>
+</ul>
+<p>우리 모두 모나드라는 것이 쉽고 멋진 개념(트레이드 마크)이라는 것에 대해, 동의한다고 생각합니다. 이 가이드로 만족하기엔 아직 이릅니다. <a rel="external" href="http://learnyouahaskell.com/a-fistful-of-monads">LYAH’s section on Monads</a>를 확인하시기 바랍니다. Miran님 께서 이미 모나드에 관한 깊고, 훌륭한 일을 해냈기에, 저는 많은 것을 얼버무리고 넘어갔습니다.</p>
+<p><a rel="external" href="http://habrahabr.ru/post/183150/">러시아 버전</a>도 있습니다. 더 많은 모나드와 그림을 원하신다면, <a rel="external" href="http://adit.io/posts/2013-06-10-three-useful-monads.html">three useful monads</a>를 확인하시기 바랍니다.</p>
+
+</div><!-- post -->
+
+<hr />
+<script src="https://utteranc.es/client.js" repo="netpyoung/netpyoung.blog.comment" issue-term="url"
+  theme="github-light" crossorigin="anonymous" async></script>
+<hr />
+
+			</div><!-- /.content -->
+
+			<!-- <div class="footer">
+                 </div> .footer  -->
+		</div><!-- /.container -->
+	</body>
+</html>

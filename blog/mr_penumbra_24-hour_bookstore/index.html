@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+
+<!-- ref: https://bulma.io/ -->
+<!-- ref: https://fontawesome.com/icons -->
+<!-- ref: https://flagicons.lipis.dev/ -->
+<html>
+
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+		<title>넷평 남짓한 공간</title>
+
+		<link rel="icon" href="/favicon.ico" type="image/x-icon">
+		<link rel="icon" href="/favicon.ico" type="image/x-icon">
+		<link rel="alternate" type="application/atom+xml" title="Atom" href="&#x2F;feed">
+		<link rel="stylesheet" href="/main.css">
+
+		<!-- #region: Google tag (gtag.js) -->
+		<script async src="https://www.googletagmanager.com/gtag/js?id=G-855BJNV9VD"></script>
+		<script>
+			window.dataLayer = window.dataLayer || [];
+			function gtag(){dataLayer.push(arguments);}
+			gtag('js', new Date());
+			
+			gtag('config', 'G-855BJNV9VD');
+		</script>
+		<!-- #endregion: Google tag (gtag.js) -->
+
+		<script src="https://cdn.jsdelivr.net/npm/mermaid@10.6.1/dist/mermaid.min.js"></script>
+		<script>mermaid.initialize({ startOnLoad: true });</script>
+		<script src="https://cdn.jsdelivr.net/npm/fuse.js@7.1.0"></script>
+		<script defer src="/search_index.ko.js"></script>
+		<script defer src="/main.js"></script>
+		<script defer src="/search.js"></script>
+	</head>
+
+	<body class="layout-documentation page-layout">
+		<div class="container">
+			<nav class="navbar is-transparent is-centered has-shadow is-spaced">
+				<!-- <div class="container"> -->
+				<div class="navbar-brand">
+					<a class="navbar-item" href="&#x2F;">
+						<i class="fa-solid fa-home"></i>
+						<b>넷평 남짓한 공간</b>
+					</a>
+
+					<div class="navbar-burger burger" data-target="navbarExampleTransparentExample">
+						<span></span>
+						<span></span>
+						<span></span>
+					</div>
+				</div><!-- navbar-brand -->
+				<!-- </div> -->
+
+				<div id="navbarExampleTransparentExample" class="navbar-menu">
+					<div class="navbar-start">
+						<a class="navbar-item " href="&#x2F;overview">
+							<i class="fa-solid fa fa-street-view"></i>
+						</a>
+						<a class="navbar-item " href="&#x2F;company_project">
+							<i class="fa-solid fa fa-building"></i>
+						</a>
+						<a class="navbar-item has-background-grey-lighter" href="&#x2F;blog">
+							<i class="fa-solid fa-mug-saucer"></i>
+						</a>
+						<!-- <a class="navbar-item "
+            href="&#x2F;study">
+            <i class="fa-solid fa-pen-to-square"></i>
+          </a> -->
+						<a class="navbar-item " href="&#x2F;external">
+							<i class="fa-solid fa-external-link-alt"></i>
+						</a>
+						<a class="navbar-item " href="&#x2F;diary">
+							<i class="fa-solid fa-book"></i>
+						</a>
+						<a class="navbar-item" href="https:&#x2F;&#x2F;github.com&#x2F;netpyoung">
+							<i class="fa-brands fa-github"></i>
+						</a>
+						<a class="navbar-item" href="/feed.xml">
+							<i class="fa-solid fa-rss-square"></i>
+						</a>
+					</div>
+					<!-- navbar-start -->
+
+					<div class="navbar-end">
+						<button id="search-button" class="button is-light">
+							<span class="icon"><i class="fas fa-search"></i></span>
+						</button>
+
+						<div id="search-modal" class="modal">
+							<div class="modal-background"></div>
+							<div class="modal-content" style="min-height: 70%; max-height: 70%; ">
+								<div class="box">
+									<div class="field">
+										<p class="control has-icons-left">
+											<input id="search-input" class="input is-medium" type="text" placeholder="Search...">
+											<span class="icon is-small is-left">
+												<i class="fas fa-search"></i>
+											</span>
+										</p>
+									</div>
+									<div id="search-results" style="overflow-y: auto;"></div>
+								</div>
+							</div>
+							<button id="close-modal" class="modal-close is-large" aria-label="close"></button>
+						</div>
+
+						<!--  <div class="dropdown ">
+							<div class="dropdown-trigger">
+								<button class="button" aria-haspopup="true" aria-controls="dropdown-menu">
+									<span>connect</span>
+									<span class="icon is-small">
+										<i class="fa-solid fa-angle-down" aria-hidden="true"></i>
+									</span>
+								</button>
+							</div>
+							<div class="dropdown-menu" id="dropdown-menu" role="menu">
+								<div class="dropdown-content">
+									<a class="dropdown-item" href="https:&#x2F;&#x2F;facebook.com&#x2F;netpyoung">
+										<span class="icon">
+											<i class="fa-brands fa-facebook"></i>
+										</span>
+										facebook
+									</a>
+								</div>
+							</div>
+						</div> dropdown-->
+					</div>
+					<!-- navbar-end -->
+				</div>
+				<!-- navbar-menu -->
+			</nav>
+
+			<div class="content container is-fluid">
+				
+<h1 class="title">
+  페넘브라의 24시 서점
+</h1>
+
+
+  <p class="subtitle"><strong>2015.09.04</strong></p>
+
+
+<div class="post">
+  <p>Mr. Penumbra's 24-Hour Bookstore</p>
+<p><code>페넘브라 14시 서점에서 이상한 일들이 벌어지고 있다</code></p>
+<p>it개발자가 읽으면 피식하게 웃게될만한.. 책.</p>
+<p>it실업자 주인공이, 서점에 취직하면서 일어나게 되는 사건들.</p>
+<p>누가 무얼 숨겼고, 주인공은 또 어떻게 밝혀나가는가..</p>
+<p>페넘브라 서점이 그 입구가 되어 펼쳐지는 현대의 판타지를 보는듯한 그러한 소설이였다.</p>
+<ul>
+<li>페넘브라: '페넘브라의 24시 서점'의 관리자.</li>
+<li>클레이: 주인공. 디자이너이자, 웹디자이너. 베이글 만드는 소프트웨어 회사에서 퇴직금도 받지못하고 퇴사후, 실업자. '24시 서점' 헌책방의 야간 직원으로 일하게 된다.</li>
+<li>닐 샤: 클레이의 가장 친한 친구. 나와 같이 <code>용의 노래 연대기</code>의 광팬</li>
+<li>캣: 구글에서 일하는 여자. 주인공을 도와 페넘브라 서점에 숨겨진 비밀을 밝혀낸다.</li>
+<li>알두스 마누티우스(테오발도): 베네치아에서 가장 큰 인쇄소를 운영
+<ul>
+<li>마누티우스의 코덱스 비테: 책. 평생 경험하고 배운것을, 후손을 위해 써두기로함. 사업에 타격을 입을까, 책을 암호화함.</li>
+</ul>
+</li>
+<li>그리포 게리츠존 : 마누티우스와의 절실한 친구. 마누티우스에게 마지막 메시지를 남겼다.</li>
+<li>'부러지지 않은 책등': 코덱스 비테를 풀기위한 비밀 조직.</li>
+</ul>
+<p><code>만일 오랫동안 보존해야 할 메시지가 있다면 여러분은 어떻게 하시겠습니까?</code></p>
+<p>머리가 아무리 좋아도, 돈이 많아도, 지식이 많더라도. 놓치고 포기하며 넘어가는 것일지라도, 간절하면 마법과도 이루어지는건 소설이든 현실이든 상관없이 멋있는 일이지 않은가?</p>
+<p><code>풀어야 할 수수께끼들도 많이 남았고. 어떤가, 나와 함께하겠는가?</code> - 페넘브라.</p>
+
+</div><!-- post -->
+
+<hr />
+<script src="https://utteranc.es/client.js" repo="netpyoung/netpyoung.blog.comment" issue-term="url"
+  theme="github-light" crossorigin="anonymous" async></script>
+<hr />
+
+			</div><!-- /.content -->
+
+			<!-- <div class="footer">
+                 </div> .footer  -->
+		</div><!-- /.container -->
+	</body>
+</html>

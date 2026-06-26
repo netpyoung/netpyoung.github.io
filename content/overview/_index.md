@@ -4,6 +4,13 @@ page_template = "category.page.t.html"
 title = "오버뷰"
 +++
 
+<style>
+hr {
+  border-width:3px 0 0 0;
+  border-style:dashed;
+}
+</style>
+
 ## Unity
 
 ### unity.webp
@@ -18,7 +25,7 @@ Google's image format [libwebp](https://developers.google.com/speed/webp/) wrapp
 
 ![](/res_overview/pokemon_sleep.webp)
 
-  </div>
+---
 
 ### SqlCipher4Unity3D
 
@@ -30,6 +37,7 @@ Zetetic's [sqlcipher](https://www.zetetic.net/sqlcipher/) wrapper
 
 ![](/res_overview/SqlCipher4Unity3D.webp)
 
+---
 
 ### unity.libsodium
 
@@ -41,6 +49,8 @@ Zetetic's [sqlcipher](https://www.zetetic.net/sqlcipher/) wrapper
 
 ![](/res_overview/unity.libsodium.webp)
 
+---
+
 ### NF.AI.PathFinding
 
 JPS+(2014) implement
@@ -48,6 +58,9 @@ JPS+(2014) implement
 - [github](https://github.com/netpyoung/NF.Tool.UnityPackage)
 
 ![](/res_overview/NF.AI.PathFinding.gif)
+
+
+---
 
 
 ### NF.Tool.ReleaseNoteMaker
@@ -65,6 +78,9 @@ Release note maker likes [twisted/towncrier](https://github.com/twisted/towncrie
 ![](/res_overview/nf-tool-release-note-maker-vscode.png)
 
 
+---
+
+
 ### NF.Tool.UnityPackage
 
 .unitypackage pack/unpack
@@ -73,6 +89,9 @@ Release note maker likes [twisted/towncrier](https://github.com/twisted/towncrie
 - [record](https://netpyoung.github.io/note.project-record/NF/NF.Tool.UnityPackage)
 
 ![](/res_overview/UnityPackageGUI_Winform.png)
+
+
+---
 
 
 ### NF.Tool.UnityCompileCache
@@ -86,6 +105,9 @@ Release note maker likes [twisted/towncrier](https://github.com/twisted/towncrie
 ![](/res_overview/UnityCompileCacheGUI_Winform.webp)
 
 
+---
+
+
 ### NF.Tool.ExcelFlow
 
 🌶️ dotnet-excel-flow : code & sqlite generator
@@ -95,6 +117,9 @@ Release note maker likes [twisted/towncrier](https://github.com/twisted/towncrie
 
 
 ![](/res_overview/NF.Tool.ExcelFlow.png)
+
+
+---
 
 
 ## nf packages
@@ -107,12 +132,18 @@ Release note maker likes [twisted/towncrier](https://github.com/twisted/towncrie
 
 ![](/res_overview/nf.unitytools.essentials.webp)
 
+---
+
+
 ### nf.unitylibs.utils
 
 - [doc](https://netpyoung.github.io/nf.unitylibs.utils/)
 - [github](https://github.com/netpyoung/nf.unitylibs.utils)
 
 ![](/res_overview/nf.unitylibs.utils.webp)
+
+
+---
 
 
 ### nf.unitylibs.managers.assetbundlemanagement
@@ -124,6 +155,9 @@ Release note maker likes [twisted/towncrier](https://github.com/twisted/towncrie
 ![](/res_overview/nf.unitylibs.managers.assetbundlemanagement.webp)
 
  
+---
+
+
 ### nf.unitylibs.managers.patchmanagement
 
 - [doc](https://netpyoung.github.io/nf.unitylibs.managers.patchmanagement/)
@@ -133,12 +167,18 @@ Release note maker likes [twisted/towncrier](https://github.com/twisted/towncrie
 ![](/res_overview/nf.unitylibs.managers.patchmanagement.webp)
 
 
+---
+
+
 ### nf.unitylibs.managers.resourcesextra
 
 - [doc](https://netpyoung.github.io/nf.unitylibs.managers.resourcesextra/)
 - [github](https://github.com/netpyoung/nf.unitylibs.managers.resourcesextra)
 
 ![](/res_overview/nf.unitylibs.managers.resourcesextra.png)
+
+
+---
 
 
 ## Study Unity & Unity Shader
@@ -160,6 +200,9 @@ Release note maker likes [twisted/towncrier](https://github.com/twisted/towncrie
 - [번역: 신나는! Unity 셰이더 그림 그리기 입문!](https://docs.google.com/presentation/d/13VJ470UGLtMUOdNGrGZVvI-aHW3BLkNa0XUOZLvppKI/)
 
 <iframe src="https://docs.google.com/presentation/d/e/2PACX-1vT_7orNQ-sJpnsnWiplfj6X6EiJ7ASuAfmB_rXk_1zoaEs9ISzFr9B8GlUSkiyqE9P_B0Nw7jKC8YwL/pubembed?start=false&loop=false&delayms=3000" frameborder="0" width="960" height="569" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
+
+---
+
 
 ## Presentation
 
@@ -199,6 +242,22 @@ Release note maker likes [twisted/towncrier](https://github.com/twisted/towncrie
 <style>.embed-container { position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; max-width: 100%; } .embed-container iframe, .embed-container object, .embed-container embed { position: absolute; top: 0; left: 0; width: 100%; height: 100%; }</style><div class='embed-container'><iframe src='https://www.youtube.com/embed/40cvevHg0J8' frameborder='0' allowfullscreen></iframe></div>
 
 
+---
+
+
+## Dotnet
+
+### Sample.Dotnet.Nes
+
+- [github](https://github.com/netpyoung/Sample.Dotnet.Nes)
+
+Sample NES(Nintendo Entertainment System) Emulator based on https://leanpub.com/nes-emulator-en, with the implementation adapted for .NET.
+
+![](/res_overview/Sample.Dotnet.Nes.png)
+
+---
+
+
 ## Zig
 
 ### Sample.Zig.Tetris
@@ -210,6 +269,9 @@ This project is a small Tetris implementation for learning Zig while keeping up 
 
 ![](/res_overview/Sample.Zig.Tetris.png)
 
+---
+
+
 ### Sample.Zig.Tunneler
 
 - [github](https://github.com/netpyoung/Sample.Zig.Tunneler)
@@ -220,6 +282,9 @@ This project is a small Tetris implementation for learning Zig while keeping up 
 
 ![](/res_overview/Sample.Zig.Tunneler.png)
 
+---
+
+
 ### Sample.Zig.Raytracing
 
 Sample project to implement raytracing in one weekend using zig
@@ -227,6 +292,9 @@ Sample project to implement raytracing in one weekend using zig
 - [github](https://github.com/netpyoung/Sample.Zig.Raytracing)
 
 ![](/res_overview/raytracing-in-one-weekend.webp)
+
+
+---
 
 
 ## Lisp
@@ -238,13 +306,22 @@ Sample project to implement raytracing in one weekend using zig
 
 ![](/res_overview/sicp.jpg)
 
+---
+
+
 ### study.clojure
   
 - [homepage](https://netpyoung.github.io/study.clojure/)
 
+---
+
+
 ### study.clojurescript
   
 - [homepage](https://netpyoung.github.io/study.clojurescript/)
+
+---
+
 
 ## Lispkorea
 
@@ -254,11 +331,17 @@ Sample project to implement raytracing in one weekend using zig
 
 ![](/res_overview/lispkorea.github.io.webp)
 
+---
+
+
 ### emacs-for-lisper
 
 - [homepage](https://lispkorea.github.io/emacs-for-lisper/)
 
 ![](/res_overview/emacs-for-lisper.webp)
+
+---
+
 
 ### successful-lisp-kr
   
@@ -266,11 +349,17 @@ Sample project to implement raytracing in one weekend using zig
 
 ![](/res_overview/successful-lisp-kr.webp)
 
+---
+
+
 ### tryclojure-kr
 
 - [homepage](https://lispkorea.github.io/tryclojure-kr/)
 
 ![](/res_overview/tryclojure-kr.webp)
+
+---
+
 
 ### casting-spels-clojure
 
@@ -278,14 +367,23 @@ Sample project to implement raytracing in one weekend using zig
 
 ![](/res_overview/casting-spels-clojure.webp)
 
+---
+
+
 ### catchup-onlisp
 
 - [homepage](https://lispkorea.github.io/catchup-onlisp/)
 
 ![](/res_overview/catchup-onlisp.webp)
 
+---
+
+
 ### commonlisp-guide
 
 - [homepage](https://lispkorea.github.io/commonlisp-guide/)
 
 ![](/res_overview/commonlisp-guide.webp)
+
+---
+
